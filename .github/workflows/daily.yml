@@ -1,0 +1,42 @@
+name: Daily firmware check
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape ARRI
+        run: python arri_cameras.py
+
+      - name: Scrape Sony index
+        run: python sony_downloads.py
+
+      - name: Scrape Sony FX line
+        run: python sony_fx.py
+
+      - name: Build feed
+        run: python build_feed.py
+
+      - name: Detect changes
+        run: python check_changes.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "firmware-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add feed.json snapshot.json arri_cameras.json sony_cameras.json sony_fx.json
+          git diff --staged --quiet || git commit -m "Daily firmware check"
+          git push
