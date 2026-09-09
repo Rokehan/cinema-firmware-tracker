@@ -36,6 +36,13 @@ try:
                 FX_OVERRIDE[row["product"]] = row
 except FileNotFoundError:
     pass
+    ARRI_DETAILS = {}
+try:
+    with open("arri_details.json") as f:
+        for row in json.load(f):
+            ARRI_DETAILS[row["slug"]] = row
+except FileNotFoundError:
+    pass
 # ---- ARRI ----
 with open("arri_cameras.json") as f:
     for row in json.load(f):
@@ -50,6 +57,8 @@ with open("arri_cameras.json") as f:
             "firmware_url": row.get("firmware_download"),
             "notes_url": row.get("release_notes_download"),
             "archive_url": row.get("archive_url"),
+            "summary": (ARRI_DETAILS.get(row["slug"]) or {}).get("summary"),
+            "features": (ARRI_DETAILS.get(row["slug"]) or {}).get("features") or [],
         })
 
 # ---- Sony ----
