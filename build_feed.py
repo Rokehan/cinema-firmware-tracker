@@ -45,20 +45,18 @@ with open("arri_cameras.json") as f:
         })
 
 # ---- Sony ----
-with open("sony_index.json") as f:
+with open("sony_cameras.json") as f:
     for row in json.load(f):
-        if row["product"] not in SONY_CAMERAS:
-            continue
         feed.append({
             "manufacturer": "Sony",
             "product": row["product"],
             "version": row["version"],
-            "release_date": str(row["release_year"]) + "-" + str(row["release_month"]).zfill(2),
+            "release_date": str(row["year"]) + "-" + str(row["month"]).zfill(2),
             "release_precision": "month",
-            "status": "firmware_available",
-            "source_url": row["source_url"],
-            "firmware_url": None,
-            "notes_url": None,
+            "status": "firmware_available" if row.get("firmware_url") else "documentation_only",
+            "source_url": row.get("page_url") or "https://www.sony.jp/ls-camera/update/",
+            "firmware_url": row.get("firmware_url"),
+            "notes_url": row.get("notes_url"),
             "archive_url": None,
         })
 
