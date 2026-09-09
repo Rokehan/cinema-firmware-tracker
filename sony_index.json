@@ -1,0 +1,232 @@
+[
+  {
+    "manufacturer": "Sony",
+    "product": "VENICE 2",
+    "product_raw": "VENICE 2用機器アップデートファームウェア",
+    "category_raw": "CineAltaカメラ",
+    "version": "V5.00",
+    "release_year": 2026,
+    "release_month": 7,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "VENICE",
+    "product_raw": "VENICE用機器アップデートファームウェア",
+    "category_raw": "CineAltaカメラ",
+    "version": "V6.30",
+    "release_year": 2023,
+    "release_month": 1,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "BURANO",
+    "product_raw": "BURANO用機器アップデートファームウェア",
+    "category_raw": "CineAltaカメラ",
+    "version": "V3.00",
+    "release_year": 2026,
+    "release_month": 5,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "PMW-F55",
+    "product_raw": "PMW-F55用機器アップデートファームウェア",
+    "category_raw": "CineAlta 4Kカメラ",
+    "version": "V9.20",
+    "release_year": 2018,
+    "release_month": 11,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "PMW-F5",
+    "product_raw": "PMW-F5用機器アップデートファームウェア",
+    "category_raw": "CineAlta 4Kカメラ",
+    "version": "V9.20",
+    "release_year": 2018,
+    "release_month": 11,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX9",
+    "product_raw": "FX9用機器アップデートファームウェア",
+    "category_raw": "XDCAMメモリーカムコーダー",
+    "version": "V4.02",
+    "release_year": 2023,
+    "release_month": 1,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FR7",
+    "product_raw": "FR7用機器アップデートファームウェア",
+    "category_raw": "Cinema Line カメラ",
+    "version": "V4.00",
+    "release_year": 2026,
+    "release_month": 2,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FS7 II",
+    "product_raw": "FS7 II用機器アップデートファームウェア",
+    "category_raw": "XDCAMメモリーカムコーダー",
+    "version": "V1.23",
+    "release_year": 2020,
+    "release_month": 6,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "PXW-FS7",
+    "product_raw": "PXW-FS7用機器アップデートファームウェア",
+    "category_raw": "XDCAMメモリーカムコーダー",
+    "version": "V4.31",
+    "release_year": 2018,
+    "release_month": 9,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "PXW-FS5",
+    "product_raw": "PXW-FS5用機器アップデートファームウェア",
+    "category_raw": "XDCAMメモリーカムコーダー",
+    "version": "V4.03",
+    "release_year": 2018,
+    "release_month": 4,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "「NEX-EA50JH」機器",
+    "product_raw": "「NEX-EA50JH」機器アップデートファームウェア",
+    "category_raw": "NXCAMカムコーダー",
+    "version": "V2.0",
+    "release_year": 2013,
+    "release_month": 2,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX6",
+    "product_raw": "FX6アップデートファームウェア",
+    "category_raw": "Cinema Lineカメラ",
+    "version": "V6.01",
+    "release_year": 2026,
+    "release_month": 9,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX3(ILME-FX3)",
+    "product_raw": "FX3(ILME-FX3) アップデートファームウェア",
+    "category_raw": "Cinema Lineカメラ",
+    "version": "V7.02",
+    "release_year": 2026,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX3(ILME-FX3A)",
+    "product_raw": "FX3(ILME-FX3A) アップデートファームウェア",
+    "category_raw": "Cinema Lineカメラ",
+    "version": "V2.02",
+    "release_year": 2026,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX2",
+    "product_raw": "FX2アップデートファームウェア",
+    "category_raw": "Cinema Lineカメラ",
+    "version": "V1.01",
+    "release_year": 2025,
+    "release_month": 11,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX30",
+    "product_raw": "FX30アップデートファームウェア",
+    "category_raw": "Cinema Lineカメラ",
+    "version": "V6.01",
+    "release_year": 2026,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "OCELLUS（ASR-CT1）",
+    "product_raw": "OCELLUS（ASR-CT1）用機器アップデートファームウェア",
+    "category_raw": "カメラトラッキングシステム",
+    "version": "V1.10",
+    "release_year": 2026,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "AXS-R7",
+    "product_raw": "AXS-R7用機器アップデートファームウェア",
+    "category_raw": "ポータブルメモリーレコーダー",
+    "version": "V6.01",
+    "release_year": 2026,
+    "release_month": 5,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "AXS-R5",
+    "product_raw": "AXS-R5用機器アップデートファームウェア",
+    "category_raw": "RAWレコーダー",
+    "version": "V4.10",
+    "release_year": 2014,
+    "release_month": 8,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "AXS-A1TS66",
+    "product_raw": "AXS-A1TS66用ファームウェア",
+    "category_raw": "AXSメモリーカード",
+    "version": "V5.10",
+    "release_year": 2026,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "AXS512S24",
+    "product_raw": "AXS512S24用ファームウェア",
+    "category_raw": "AXSメモリーカード",
+    "version": "V1.2",
+    "release_year": 2013,
+    "release_month": 6,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "CBK-FS7BK",
+    "product_raw": "CBK-FS7BK用機器アップデートファームウェア",
+    "category_raw": "EFPスタイルビルドアップキット",
+    "version": "V3.46",
+    "release_year": 2020,
+    "release_month": 4,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "XDCA-FS7",
+    "product_raw": "XDCA-FS7用機器アップデートファームウェア",
+    "category_raw": "拡張ユニット",
+    "version": "V2.00",
+    "release_year": 2015,
+    "release_month": 3,
+    "source_url": "https://www.sony.jp/ls-camera/update/"
+  }
+]
