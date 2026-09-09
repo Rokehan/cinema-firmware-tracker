@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "alexa-265-sup-6-1-1",
+    "summary": "Software Update Package 6.1.1 is a compatibility and reliability update.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-265-sup-6-1-1"
+  },
+  {
+    "slug": "alexa-35-sup-6-1-0",
+    "summary": "We are pleased to introduce Software Update Package SUP 6.1.0. for all camera models in the ALEXA 35 family: ALEXA 35, ALEXA 35 Xtreme, ALEXA 35 Live, and ALEXA 35 Live Xtreme. This release introduces Picture-in-Picture Tracking Zoom, a new variation of the Tracking Zoom feature first introduced for the ALEXA 35 Xtreme in SUP 5.2.0.",
+    "features": [
+      "High Frame Rate SDI*",
+      "GPS Metadata",
+      "Picture-in-Picture Tracking Zoom**",
+      "SDI Tally Overlay",
+      "Extended Genlock Support"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-6-1-0"
+  },
+  {
+    "slug": "alexa-mini-lf-sup-7-3-2",
+    "summary": "We are pleased to announce the release of ALEXA Mini LF Software Update Package SUP 7.3.2.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-lf-sup-7-3-2"
+  },
+  {
+    "slug": "alexa-lf-sup",
+    "summary": "ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This includes a fix for the orange line bug and the replacement of the MAGNIFICATION indication orange line/outline by MAGNIFICATION icons in the status area to the right of the image.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup"
+  },
+  {
+    "slug": "alexa-sup-11-1",
+    "summary": "Software Update Package (SUP) 11.1.1 for ALEXA Classic contains: New ARRI Debayer Algorithm ADA-5 Sharper images and even better color separation Expanded Media Support SxS Pro+ revision c cards (SBP-64C and SBP-128C) Expanded Support for the ARRI Electronic Control System (ECS) Support of Lens Data Encoder LDE-1 and Controlled Lens Motor CLM-5 WCU‑4 controls ALEXA user buttons 4, 5 and 6 Lens Motor calibration",
+    "features": [
+      "Sharper images and even better color separation",
+      "SxS Pro+ revision c cards (SBP-64C and SBP-128C)",
+      "Support of Lens Data Encoder LDE-1 and Controlled Lens Motor CLM-5",
+      "WCU‑4 controls ALEXA user buttons 4, 5 and 6",
+      "Lens Motor calibration time-out",
+      "Automatic UDM‑1 distance unit setting",
+      "WCU‑4 Lens Data Display from LDS lenses via UMC-4",
+      "Activation of additional Lens Motors via handset",
+      "Web Remote 2.0",
+      "Refined user buttons",
+      "Framelines in metadata",
+      "Time Zone in metadata"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1"
+  },
+  {
+    "slug": "alexa-xt-sup-11-1",
+    "summary": "Software Update Package (SUP) 11.1.1 for the ALEXA XT contains: ALEXA ProRes 3.2K ARRIRAW Checksum New ARRI Debayer Algorithm ADA-5 Sharper images and even better color separation Expanded Media Support SxS Pro+ revision c cards (SBP-64C and SBP-128C) SanDisk CFast 2.0 128 GB cards Expanded Support for the ARRI Electronic Control System (ECS) Support of Lens Data Encoder LDE-1 and Controlled Lens Motor CLM-5 WCU‑4",
+    "features": [
+      "Sharper images and even better color separation",
+      "SxS Pro+ revision c cards (SBP-64C and SBP-128C)",
+      "SanDisk CFast 2.0 128 GB cards",
+      "Support of Lens Data Encoder LDE-1 and Controlled Lens Motor CLM-5",
+      "WCU‑4 controls ALEXA user buttons 4, 5 and 6",
+      "Lens Motor calibration time-out",
+      "Automatic UDM‑1 distance unit setting",
+      "WCU‑4 Lens Data Display from LDS lenses via UMC-4",
+      "Activation of additional Lens Motors via handset",
+      "Web Remote 2.0",
+      "Refined user buttons",
+      "Framelines in metadata"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1"
+  }
+]
