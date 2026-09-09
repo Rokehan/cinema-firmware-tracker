@@ -3,14 +3,19 @@ import re
 import json
 import time
 
-CAMERA_PAGES = [
-    "alexa-265-sup-6-1-1",
-    "alexa-35-sup-6-1-0",
-    "alexa-mini-lf-sup-7-3-2",
-    "alexa-lf-sup",
-    "alexa-sup-11-1",
-    "alexa-xt-sup-11-1",
-]
+def discover_camera_pages():
+    """Read the current camera list from ARRI's index every run, so version
+    bumps and new bodies are picked up automatically."""
+    index = fetch("https://www.arri.com/en/technical-service/firmware")
+    pattern = r'href="/en/technical-service/firmware/software-and-firmware-updates-for-cameras/([^"/]+)"'
+    slugs = []
+    for slug in re.findall(pattern, index):
+        if slug in slugs:
+            continue
+        if "overview" in slug.lower():
+            continue
+        slugs.append(slug)
+    return slugs
 
 BASE = "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/"
 
@@ -55,7 +60,9 @@ def find_version(slug, html, downloads):
     return None
 
 results = []
-
+CAMERA_PAGES = discover_camera_pages()
+print("Discovered " + str(len(CAMERA_PAGES)) + " camera pages")
+print()
 for slug in CAMERA_PAGES:
     url = BASE + slug
     print("Fetching: " + slug)

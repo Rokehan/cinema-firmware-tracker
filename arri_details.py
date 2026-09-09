@@ -3,14 +3,7 @@ import re
 import json
 import time
 
-PAGES = [
-    "alexa-265-sup-6-1-1",
-    "alexa-35-sup-6-1-0",
-    "alexa-mini-lf-sup-7-3-2",
-    "alexa-lf-sup",
-    "alexa-sup-11-1",
-    "alexa-xt-sup-11-1",
-]
+PAGES = [row["slug"] for row in json.load(open("arri_cameras.json"))]
 
 BASE = "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/"
 
