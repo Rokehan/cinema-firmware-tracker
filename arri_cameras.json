@@ -1,0 +1,254 @@
+[
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-265-sup-6-1-1",
+    "version": "SUP 6.1.1",
+    "status": "firmware_available",
+    "release_date": "Aug. 10, 2026",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-265-sup-6-1-1",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": "https://arri.canto.de/direct/other/9heebnmt1p6n1cgqhjmf3fd85v/yxiAY4C8dXtmtFOuSOvtmum7T5k/original?content-type=application%2Fzip&amp;name=ALEXA_265_6.1.1_415384.zip",
+    "release_notes_download": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "ALEXA 265 SUP 6.1.1 Aug. 10, 2026 download",
+        "date": "Aug. 10, 2026",
+        "url": "https://arri.canto.de/direct/other/9heebnmt1p6n1cgqhjmf3fd85v/yxiAY4C8dXtmtFOuSOvtmum7T5k/original?content-type=application%2Fzip&amp;name=ALEXA_265_6.1.1_415384.zip"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA 265 SUP 6.1.1 - Release Notes Aug. 10, 2026 pdf | 162 KB",
+        "date": "Aug. 10, 2026",
+        "url": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-35-sup-6-1-0",
+    "version": "SUP 6.1.0",
+    "status": "firmware_available",
+    "release_date": "Jul. 7, 2026",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-6-1-0",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": "https://arri.canto.de/direct/other/6l6bf6lrr1125eiif7gevmrj53/cfXbPJwElG0QvXkI1C3sKAzVpJw/original?content-type=application%2Fzip&amp;name=ALEXA_35_6.1.0_398991.zip",
+    "release_notes_download": "https://www.arri.com/resource/blob/406920/b5bd5855b304302cd85940ef322e5d61/alexa-35-sup-6-1-0-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "ALEXA 35 SUP 6.1.0 Jul. 7, 2026 download",
+        "date": "Jul. 7, 2026",
+        "url": "https://arri.canto.de/direct/other/6l6bf6lrr1125eiif7gevmrj53/cfXbPJwElG0QvXkI1C3sKAzVpJw/original?content-type=application%2Fzip&amp;name=ALEXA_35_6.1.0_398991.zip"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA 35 SUP 6.1.0 - Release Notes Jul. 7, 2026 pdf | 6 MB",
+        "date": "Jul. 7, 2026",
+        "url": "https://www.arri.com/resource/blob/406920/b5bd5855b304302cd85940ef322e5d61/alexa-35-sup-6-1-0-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA 35 SUP 6.1.0 - User Manual EN Jul. 7, 2026 pdf | 15.6 MB",
+        "date": "Jul. 7, 2026",
+        "url": "https://www.arri.com/resource/blob/406922/b3de0f288676a2665befd33a217fd524/alexa-35-sup-6-1-0-user-manual-en-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ARRI Formats and Resolutions Overview V6.3 A detailed overview of all possible recording resolutions of ARRI digital cameras ranging from ALEXA 35 Xtreme, ALEXA 35, and ALEXA 265 to ALEXA Classic. Jul. 15, 2026 pdf | 803 KB",
+        "date": "Jul. 15, 2026",
+        "url": "https://www.arri.com/resource/blob/405022/a7f09a1b2b341f7231be2503b9660c84/2026-07-arri-formatsandresolutionsoverview-v6-3-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-mini-lf-sup-7-3-2",
+    "version": "SUP 7.3.2",
+    "status": "firmware_available",
+    "release_date": "Jun. 12, 2025",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-lf-sup-7-3-2",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": "https://arri.canto.de/direct/other/9etlakh8op5nh5shjngtqusf4d/eSMUQ-zji3HrahfRfQln_tAhF80/original?content-type=application%2Fzip&amp;name=mini_lf_fw_7.3.2_4.zip",
+    "release_notes_download": "https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "ALEXA Mini LF SUP 7.3.2 Jun. 12, 2025 download",
+        "date": "Jun. 12, 2025",
+        "url": "https://arri.canto.de/direct/other/9etlakh8op5nh5shjngtqusf4d/eSMUQ-zji3HrahfRfQln_tAhF80/original?content-type=application%2Fzip&amp;name=mini_lf_fw_7.3.2_4.zip"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Mini LF SUP 7.3.2 - Release Notes Jun. 12, 2025 pdf | 276 KB",
+        "date": "Jun. 12, 2025",
+        "url": "https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA Mini LF SUP 7.3 - User Manual Oct. 9, 2023 pdf | 10.9 MB",
+        "date": "Oct. 9, 2023",
+        "url": "https://www.arri.com/resource/blob/396566/dc4492e9149f5b0696d4fdea351ea5e0/alexa-mini-lf-sup-7-3-2-user-manual-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ARRI ALEXA Mini LF Menu Settings Chart SUP 7.3 Oct. 18, 2023 pdf | 346 KB",
+        "date": "Oct. 18, 2023",
+        "url": "https://www.arri.com/resource/blob/346124/075d4cf86300c91570f8c9a71361fb84/2023-10-alexaminilf-menusettingschart-sup7-3-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-lf-sup",
+    "version": "SUP 4.3",
+    "status": "documentation_only",
+    "release_date": "Apr. 30, 2020",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": null,
+    "release_notes_download": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "release_notes",
+        "label": "ALEXA LF SUP 4.3 Release Notes Apr. 30, 2020 pdf | 389 KB",
+        "date": "Apr. 30, 2020",
+        "url": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA LF SUP 4.3 User Manual Apr. 30, 2020 pdf | 12.7 MB",
+        "date": "Apr. 30, 2020",
+        "url": "https://www.arri.com/resource/blob/200812/09cab27c321dbffdb466b8525e946b5e/arri-alexa-lf-user-manual-sup-4-3-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA LF SUP 4.0 Menu Setting Chart Dec. 10, 2019 pdf | 261 KB",
+        "date": "Dec. 10, 2019",
+        "url": "https://www.arri.com/resource/blob/42688/6b4e219cc5f9f66312e9f139a2ffd705/menu-setting-chart-alexa-lf-sup4-0-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA LF Supporting Tools and Software Overview Dec. 3, 2019 pdf | 229 KB",
+        "date": "Dec. 3, 2019",
+        "url": "https://www.arri.com/resource/blob/189502/61ebf14beb6d7a57fbad9637677f3ce3/2019-12-03-alexa-lf-supporting-tools-and-software-overview-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-sup-11-1",
+    "version": "SUP 11.1",
+    "status": "documentation_only",
+    "release_date": "Dec. 13, 2018",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": null,
+    "release_notes_download": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "documentation",
+        "label": "ALEXA Classic SUP 11.0 - Menu Setting Chart Dec. 13, 2018 pdf | 767 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76210/b23f35f5593078aa926574201b8f5df9/alexa-classic-sup-11-0-menu-settings-chart-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA Classic SUP 11.0 - Pocket Guide Dec. 13, 2018 pdf | 6.7 MB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76212/703c25ee4e321db2cf47bd6f35a98dd6/alexa-classic-sup-11-0-pocket-guide-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA Classic SUP 11.1.1 - User Manual Apr. 15, 2024 pdf | 10.7 MB",
+        "date": "Apr. 15, 2024",
+        "url": "https://www.arri.com/resource/blob/76240/0a0185ebcbe1c872f87a7f7200f44e12/alexa-classic-sup-11-1-1-user-manual-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Classic SUP 11.0 - Release Notes Dec. 13, 2018 pdf | 777 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Classic SUP 11.0.1 - Release Notes Dec. 13, 2018 pdf | 744 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76388/a4bae68236d1be0e6cc39dc12f5d126e/alexa-classic-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Classic SUP 11.1 - Release Notes Dec. 13, 2018 pdf | 2.2 MB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76386/4f855f89c5ace85adaac6c84d0d98368/alexa-classic-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Classic SUP 11.1.1 - Release Notes Dec. 13, 2018 pdf | 292 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-xt-sup-11-1",
+    "version": "SUP 11.1",
+    "status": "documentation_only",
+    "release_date": "Dec. 13, 2018",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": null,
+    "release_notes_download": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "documentation",
+        "label": "ALEXA XT SUP 11.0 - Menu Setting Chart Dec. 13, 2018 pdf | 767 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76282/b23f35f5593078aa926574201b8f5df9/alexa-xt-sup-11-0-menu-settings-chart-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA XT SUP 11.0 - Pocket Guide Dec. 13, 2018 pdf | 6.7 MB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76284/703c25ee4e321db2cf47bd6f35a98dd6/alexa-xt-sup-11-0-pocket-guide-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA XT SUP 11.1.1 - User Manual Dec. 13, 2018 pdf | 10.7 MB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76288/0a0185ebcbe1c872f87a7f7200f44e12/alexa-xt-sup-11-1-1-user-manual-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA XT SUP 11.0 - Release Notes Dec. 13, 2018 pdf | 777 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA XT SUP 11.0.1 - Release Notes Dec. 13, 2018 pdf | 744 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76404/a4bae68236d1be0e6cc39dc12f5d126e/alexa-xt-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA XT SUP 11.1 - Release Notes Dec. 13, 2018 pdf | 2.2 MB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76406/4f855f89c5ace85adaac6c84d0d98368/alexa-xt-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA XT SUP 11.1.1 - Release Notes Dec. 13, 2018 pdf | 292 KB",
+        "date": "Dec. 13, 2018",
+        "url": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      }
+    ]
+  }
+]

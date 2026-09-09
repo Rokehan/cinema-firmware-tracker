@@ -1,0 +1,128 @@
+import urllib.request
+import re
+import json
+import time
+
+CAMERA_PAGES = [
+    "alexa-265-sup-6-1-1",
+    "alexa-35-sup-6-1-0",
+    "alexa-mini-lf-sup-7-3-2",
+    "alexa-lf-sup",
+    "alexa-sup-11-1",
+    "alexa-xt-sup-11-1",
+]
+
+BASE = "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/"
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    return urllib.request.urlopen(req).read().decode("utf-8")
+
+def classify(label):
+    low = label.lower()
+    if "release note" in low:
+        return "release_notes"
+    if "user manual" in low or "pocket guide" in low or "setting chart" in low or "overview" in low or "tools" in low:
+        return "documentation"
+    if "pdf |" in low:
+        return "documentation"
+    return "firmware"
+
+def find_date(label):
+    m = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+(\d{1,2}),\s+(\d{4})", label)
+    return m.group(0) if m else None
+
+def find_version(slug, html, downloads):
+    # 1. Best source: the URL slug, e.g. alexa-mini-lf-sup-7-3-2
+    m = re.search(r"sup-(\d+(?:-\d+)*)$", slug)
+    if m:
+        return "SUP " + m.group(1).replace("-", ".")
+    # 2. Next: the page title
+    t = re.search(r"<title[^>]*>(.*?)</title>", html, re.DOTALL)
+    if t:
+        v = re.search(r"SUP\s+([\d.]+)", t.group(1))
+        if v:
+            return "SUP " + v.group(1).rstrip(".")
+    # 3. Last resort: highest version seen in the download labels
+    found = []
+    for d in downloads:
+        v = re.search(r"SUP\s+([\d.]+)", d["label"])
+        if v:
+            found.append(v.group(1).rstrip("."))
+    if found:
+        best = sorted(found, key=lambda s: [int(p) for p in s.split(".")])[-1]
+        return "SUP " + best
+    return None
+
+results = []
+
+for slug in CAMERA_PAGES:
+    url = BASE + slug
+    print("Fetching: " + slug)
+    html = fetch(url)
+
+    anchors = re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html, re.DOTALL)
+
+    downloads = []
+    archive = None
+    seen = set()
+
+    for href, raw in anchors:
+        label = re.sub(r"<[^>]+>", " ", raw)
+        label = re.sub(r"\s+", " ", label).strip()
+        full = href if href.startswith("http") else "https://www.arri.com" + href
+
+        if ("archive" in href.lower() or "archive" in label.lower()) and not archive:
+            archive = full
+            continue
+
+        is_file = "crblob" in href or re.search(r"\.(zip|pdf|exe|dmg|gz)$", href, re.I)
+        if not is_file or not label or full in seen:
+            continue
+        seen.add(full)
+
+        downloads.append({
+            "kind": classify(label),
+            "label": label,
+            "date": find_date(label),
+            "url": full,
+        })
+
+    firmware = [d for d in downloads if d["kind"] == "firmware"]
+    notes = [d for d in downloads if d["kind"] == "release_notes"]
+
+    release_date = firmware[0]["date"] if firmware else (notes[0]["date"] if notes else None)
+    version = find_version(slug, html, downloads)
+    status = "firmware_available" if firmware else "documentation_only"
+
+    entry = {
+        "manufacturer": "ARRI",
+        "category": "Cameras",
+        "slug": slug,
+        "version": version,
+        "status": status,
+        "release_date": release_date,
+        "source_url": url,
+        "archive_url": archive,
+        "firmware_download": firmware[0]["url"] if firmware else None,
+        "release_notes_download": notes[0]["url"] if notes else None,
+        "all_downloads": downloads,
+    }
+    results.append(entry)
+
+    print("  Version: " + str(version))
+    print("  Release date: " + str(release_date))
+    print("  Firmware pkg: " + ("yes" if firmware else "NO"))
+    print("  Release notes: " + ("yes" if notes else "NO"))
+    print("  Docs: " + str(len([d for d in downloads if d["kind"] == "documentation"])))
+    print()
+    if not firmware:
+        print("  --- no firmware package, listing all links ---")
+        for d in downloads:
+            print("    [" + d["kind"] + "] " + d["label"][:70])
+    time.sleep(1)
+
+with open("arri_cameras.json", "w") as f:
+    json.dump(results, f, indent=2)
+
+print("Saved to arri_cameras.json")
