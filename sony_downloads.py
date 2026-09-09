@@ -60,7 +60,30 @@ for m in VERSION.finditer(html):
         "notes_url": None,
     })
 
+# Warn about anything on the index we don't recognise, so a new body
+# gets noticed instead of silently vanishing.
+KNOWN_NON_CAMERAS = ["OCELLUS", "AXS", "CBK", "XDCA", "NEX"]
+unknown = []
+for m in VERSION.finditer(html):
+    before = chunks(html[max(0, m.start() - 800):m.start()])
+    if not before:
+        continue
+    name = re.split(r"用機器|用ファームウェア|アップデートファームウェア", before[-1])[0].strip()
+    if not name or name in CAMERAS or name in unknown:
+        continue
+    if any(p in name for p in KNOWN_NON_CAMERAS):
+        continue
+    if name.startswith("Ver.") or "--" in name or "<" in name:
+        continue
+    unknown.append(name)
+
 print("Cameras matched: " + str(len(entries)))
+if unknown:
+    print()
+    print("*** UNKNOWN PRODUCTS on Sony's index ***")
+    for u in unknown:
+        print("  " + u)
+    print("If any is a camera, add it to the CAMERAS list.")
 print()
 
 for e in entries:
