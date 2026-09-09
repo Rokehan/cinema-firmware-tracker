@@ -36,7 +36,7 @@ try:
                 FX_OVERRIDE[row["product"]] = row
 except FileNotFoundError:
     pass
-    ARRI_DETAILS = {}
+ARRI_DETAILS = {}
 try:
     with open("arri_details.json") as f:
         for row in json.load(f):

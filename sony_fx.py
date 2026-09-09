@@ -50,6 +50,11 @@ for name, url in PAGES.items():
             version = "V" + m2.group(1)
             date = m2.group(2)
 
+    # Sony's JP pages don't publish changelogs in a consistent scrapeable form.
+    # Deliberately not extracted: one camera in fifteen isn't worth the upkeep.
+    summary = None
+    features = []
+    changelog_version = None
     fname = re.search(r"([A-Z0-9_]+\.DAT)", page)
 
     results.append({
@@ -59,6 +64,9 @@ for name, url in PAGES.items():
         "release_date": date,
         "page_url": url,
         "file_name": fname.group(1) if fname else None,
+        "summary": summary,
+        "features": features,
+        "changelog_version": changelog_version,
     })
 
     print("      " + str(version) + "   " + str(date)

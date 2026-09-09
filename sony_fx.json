@@ -5,7 +5,10 @@
     "version": "V6.01",
     "release_date": "2026-09-01",
     "page_url": "https://support.sony.jp/electronics/support/software/00378932",
-    "file_name": "BODYDATA.DAT"
+    "file_name": "BODYDATA.DAT",
+    "summary": null,
+    "features": [],
+    "changelog_version": null
   },
   {
     "manufacturer": "Sony",
@@ -13,7 +16,10 @@
     "version": "V7.02",
     "release_date": "2026-03-17",
     "page_url": "https://support.sony.jp/electronics/support/software/00378858",
-    "file_name": null
+    "file_name": null,
+    "summary": null,
+    "features": [],
+    "changelog_version": null
   },
   {
     "manufacturer": "Sony",
@@ -21,7 +27,10 @@
     "version": "V2.02",
     "release_date": "2026-03-17",
     "page_url": "https://support.sony.jp/electronics/support/software/00378859",
-    "file_name": "BODYDATA.DAT"
+    "file_name": "BODYDATA.DAT",
+    "summary": null,
+    "features": [],
+    "changelog_version": null
   },
   {
     "manufacturer": "Sony",
@@ -29,6 +38,9 @@
     "version": "V6.01",
     "release_date": "2026-03-17",
     "page_url": "https://support.sony.jp/electronics/support/software/00378860",
-    "file_name": null
+    "file_name": null,
+    "summary": null,
+    "features": [],
+    "changelog_version": null
   }
 ]
