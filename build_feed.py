@@ -27,7 +27,15 @@ def arri_product(slug):
     return name.replace("ALEXA", "ALEXA").strip()
 
 feed = []
-
+# FX pages give exact dates, so they override the month-only index values
+FX_OVERRIDE = {}
+try:
+    with open("sony_fx.json") as f:
+        for row in json.load(f):
+            if row.get("version"):
+                FX_OVERRIDE[row["product"]] = row
+except FileNotFoundError:
+    pass
 # ---- ARRI ----
 with open("arri_cameras.json") as f:
     for row in json.load(f):
@@ -47,15 +55,20 @@ with open("arri_cameras.json") as f:
 # ---- Sony ----
 with open("sony_cameras.json") as f:
     for row in json.load(f):
+        fx = FX_OVERRIDE.get(row["product"])
         feed.append({
             "manufacturer": "Sony",
             "product": row["product"],
-            "version": row["version"],
-            "release_date": str(row["year"]) + "-" + str(row["month"]).zfill(2),
-            "release_precision": "month",
-            "status": "firmware_available" if row.get("firmware_url") else "documentation_only",
-            "source_url": row.get("page_url") or "https://www.sony.jp/ls-camera/update/",
-            "firmware_url": row.get("firmware_url"),
+            "version": fx["version"] if fx else row["version"],
+            "release_date": fx["release_date"] if fx
+                else str(row["year"]) + "-" + str(row["month"]).zfill(2),
+            "release_precision": "day" if fx else "month",
+            "status": "firmware_available"
+                if (row.get("firmware_url") or fx) else "documentation_only",
+            "source_url": fx["page_url"] if fx
+                else (row.get("page_url") or "https://www.sony.jp/ls-camera/update/"),
+            "firmware_url": row.get("firmware_url") or (fx["page_url"] if fx else None),
+            "firmware_kind": "page" if (fx and not row.get("firmware_url")) else "file",
             "notes_url": row.get("notes_url"),
             "archive_url": None,
         })
