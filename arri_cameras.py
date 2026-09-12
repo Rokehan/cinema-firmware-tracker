@@ -164,7 +164,7 @@ for slug in CAMERA_PAGES:
             archive = full
             continue
 
-        is_file = "crblob" in href or re.search(r"\.(zip|pdf|exe|dmg|gz)$", href, re.I)
+        is_file = "crblob" in href or "canto.de" in href or re.search(r"\.(zip|pdf|exe|dmg|gz|pkg|sup)$", href, re.I)
         if not is_file or not label or full in seen:
             continue
         seen.add(full)

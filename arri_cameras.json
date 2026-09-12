@@ -106,13 +106,19 @@
     "category": "Cameras",
     "slug": "alexa-lf-sup",
     "version": "SUP 4.3",
-    "status": "documentation_only",
+    "status": "firmware_available",
     "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "firmware_download": null,
+    "firmware_download": "https://arri.canto.de/direct/other/ppe6nvs0b131ff1r9v522k3q3s/aDqQoYlO9MAvbBzZ1PFCY0wDre0/original?content-type=pkg&amp;name=SUP_AlexaLF_4.3_44087.pkg",
     "release_notes_download": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
     "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "ALEXA LF SUP 4.3 Sep. 15, 2021 download",
+        "date": "Sep. 15, 2021",
+        "url": "https://arri.canto.de/direct/other/ppe6nvs0b131ff1r9v522k3q3s/aDqQoYlO9MAvbBzZ1PFCY0wDre0/original?content-type=pkg&amp;name=SUP_AlexaLF_4.3_44087.pkg"
+      },
       {
         "kind": "release_notes",
         "label": "ALEXA LF SUP 4.3 Release Notes Apr. 30, 2020 pdf | 389 KB",
@@ -182,13 +188,19 @@
     "category": "Cameras",
     "slug": "alexa-sxt-sup-overview",
     "version": "SUP 2.1",
-    "status": "documentation_only",
+    "status": "firmware_available",
     "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sxt-sup-overview",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "firmware_download": null,
+    "firmware_download": "https://arri.canto.de/direct/other/flalldd9tt367fotiajtvesg2b/i4MVvW81AqdXZYyTFlXfNK3DmGo/original?content-type=pkg&amp;name=SUP_AlexaSXT_2.1_43968.pkg",
     "release_notes_download": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
     "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "ALEXA SXT SUP 2.1 Sep. 15, 2021 download",
+        "date": "Sep. 15, 2021",
+        "url": "https://arri.canto.de/direct/other/flalldd9tt367fotiajtvesg2b/i4MVvW81AqdXZYyTFlXfNK3DmGo/original?content-type=pkg&amp;name=SUP_AlexaSXT_2.1_43968.pkg"
+      },
       {
         "kind": "release_notes",
         "label": "ALEXA SXT SUP 2.1 - Release Notes Oct. 31, 2019 pdf | 528 KB",
@@ -252,11 +264,11 @@
     "category": "Cameras",
     "slug": "alexa-sup-11-1",
     "version": "SUP 11.1.1",
-    "status": "documentation_only",
+    "status": "firmware_available",
     "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "firmware_download": null,
+    "firmware_download": "https://arri.canto.de/direct/other/29o1c7lrut4lp692u9hbg7bm5e/hZ8NEmPxIOsSpOKF-MgZjn5W-_Y/original?content-type=pkg&amp;name=SUP_Alexa_11.1.1_34260.pkg",
     "release_notes_download": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
     "all_downloads": [
       {
@@ -300,6 +312,12 @@
         "label": "ALEXA Classic SUP 11.1.1 - Release Notes Dec. 13, 2018 pdf | 292 KB",
         "date": "Dec. 13, 2018",
         "url": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "firmware",
+        "label": "ALEXA Classic SUP 11.1.1 Nov. 5, 2025 download",
+        "date": "Nov. 5, 2025",
+        "url": "https://arri.canto.de/direct/other/29o1c7lrut4lp692u9hbg7bm5e/hZ8NEmPxIOsSpOKF-MgZjn5W-_Y/original?content-type=pkg&amp;name=SUP_Alexa_11.1.1_34260.pkg"
       }
     ]
   },
@@ -308,11 +326,11 @@
     "category": "Cameras",
     "slug": "alexa-xt-sup-11-1",
     "version": "SUP 11.1.1",
-    "status": "documentation_only",
+    "status": "firmware_available",
     "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "firmware_download": null,
+    "firmware_download": "https://arri.canto.de/direct/other/erkqsum3dp0rp270pg9g2ov00o/sEW6GXprIA0UjIwjPK9VfO3fmaM/original?content-type=pkg&amp;name=SUP_AlexaX_11.1.1_34260.pkg",
     "release_notes_download": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
     "all_downloads": [
       {
@@ -356,6 +374,12 @@
         "label": "ALEXA XT SUP 11.1.1 - Release Notes Dec. 13, 2018 pdf | 292 KB",
         "date": "Dec. 13, 2018",
         "url": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "firmware",
+        "label": "ALEXA XT SUP 11.1.1 Nov. 5, 2025 download",
+        "date": "Nov. 5, 2025",
+        "url": "https://arri.canto.de/direct/other/erkqsum3dp0rp270pg9g2ov00o/sEW6GXprIA0UjIwjPK9VfO3fmaM/original?content-type=pkg&amp;name=SUP_AlexaX_11.1.1_34260.pkg"
       }
     ]
   }
