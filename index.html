@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firmware Index / cinema camera firmware, in one place</title>
+<meta name="description" content="Every professional cinema camera firmware update in one place. ARRI and Sony, checked daily, every record linked to the manufacturer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#100c09; --plate:#191510; --edge:#2b2521; --edge-hi:#5c4a37;
+  --text:#ede9e3; --mute:#8f8579; --dim:#8d8378;
+  --orange:#ff7200; --olive:#a3bd6a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--text);
+  font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+a{color:inherit}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px}
+
+header{border-bottom:1px solid var(--edge);padding:56px 0 40px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-family:"JetBrains Mono",monospace;
+  font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.tally{width:7px;height:7px;border-radius:50%;background:var(--orange);
+  animation:tally 2.6s ease-in-out infinite}
+@keyframes tally{0%,100%{opacity:1}50%{opacity:.25}}
+h1{margin:22px 0 0;font-size:clamp(2.1rem,5.4vw,3.9rem);font-weight:800;
+  line-height:1.02;letter-spacing:-.03em;max-width:16ch}
+h1 em{font-style:normal;color:var(--orange)}
+.stats{display:flex;flex-wrap:wrap;gap:44px;margin-top:40px}
+.stat span{display:block;font-family:"JetBrains Mono",monospace;font-size:.7rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.stat strong{display:block;margin-top:8px;font-family:"JetBrains Mono",monospace;
+  font-size:1.65rem;font-weight:500;letter-spacing:-.02em;color:var(--text)}
+
+nav{display:flex;gap:8px;padding:26px 0;border-bottom:1px solid var(--edge)}
+nav button{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mute);background:none;cursor:pointer;
+  border:1px solid var(--edge);padding:9px 16px;transition:.18s}
+nav button:hover{border-color:var(--edge-hi);color:var(--text)}
+nav button[aria-current=true]{border-color:var(--orange);color:var(--orange)}
+nav .soon{opacity:.45;cursor:default;pointer-events:none}
+
+.grid{display:grid;gap:1px;background:var(--edge);border:1px solid var(--edge);
+  grid-template-columns:repeat(auto-fill,minmax(272px,1fr));margin:32px 0 0}
+.plate{background:var(--plate);padding:0;position:relative;display:flex;flex-direction:column}
+.plate .stripe{height:3px;width:100%}
+.plate .top{display:flex;justify-content:space-between;gap:12px;padding:20px 20px 0;
+  font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.1em;color:var(--mute)}
+.plate .body{padding:26px 20px 22px}
+.plate .name{font-size:1.06rem;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.plate .ver{margin-top:10px;font-family:"JetBrains Mono",monospace;font-size:1.75rem;
+  line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.plate .state{margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:.68rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.plate .links{margin-top:18px;padding-top:16px;border-top:1px solid var(--edge);
+  display:flex;flex-wrap:wrap;gap:8px}
+.plate .links a{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;text-decoration:none;border:1px solid var(--edge);
+  padding:7px 11px;color:var(--mute);transition:.18s}
+.plate .links a:hover{border-color:var(--orange);color:var(--orange)}
+.plate .sum{margin-top:16px;font-size:.86rem;line-height:1.55;color:var(--mute)}
+
+footer{border-top:1px solid var(--edge);margin-top:64px;padding:36px 0 72px;
+  font-size:.86rem;line-height:1.65;color:var(--mute);max-width:62ch}
+footer strong{color:var(--text);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="eyebrow"><span class="tally"></span> Firmware Index / monitoring ARRI + Sony</p>
+  <h1>Every cinema camera firmware update, <em>in one place.</em></h1>
+  <div class="stats">
+    <div class="stat"><span>Cameras</span><strong>24</strong></div>
+    <div class="stat"><span>With links</span><strong>18</strong></div>
+    <div class="stat"><span>Manufacturers</span><strong>2 of 3</strong></div>
+    <div class="stat"><span>Checked daily</span><strong>09:00 JST</strong></div>
+  </div>
+</header>
+
+<nav id="filters">
+  <button data-make="all" aria-current="true">All</button>
+  <button data-make="Sony">Sony</button><button data-make="ARRI">ARRI</button>
+  <button class="soon" data-make="RED">RED / soon</button>
+</nav>
+
+<main class="grid" id="grid">
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>Sony</span><span>1 Sep 2026</span></div><div class="body"><h2 class="name">FX6</h2><p class="ver" style="color:#a3bd6a">V6.01</p><p class="state">Card update via Sony</p><div class="links"><a href="https://support.sony.jp/electronics/support/software/00378932" target="_blank" rel="noopener">Update page</a><a href="https://support.sony.jp/electronics/support/software/00378932" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>ARRI</span><span>10 Aug 2026</span></div><div class="body"><h2 class="name">ALEXA 265</h2><p class="ver" style="color:#ff7200">SUP 6.1.1</p><p class="state">Firmware + notes</p><p class="sum">Software Update Package 6.1.1 is a compatibility and reliability update.</p><div class="links"><a href="https://arri.canto.de/direct/other/9heebnmt1p6n1cgqhjmf3fd85v/yxiAY4C8dXtmtFOuSOvtmum7T5k/original?content-type=application%2Fzip&amp;amp;name=ALEXA_265_6.1.1_415384.zip" target="_blank" rel="noopener">Download</a><a href="https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-265-sup-6-1-1" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>ARRI</span><span>7 Jul 2026</span></div><div class="body"><h2 class="name">ALEXA 35</h2><p class="ver" style="color:#ff7200">SUP 6.1.0</p><p class="state">Firmware + notes</p><p class="sum">We are pleased to introduce Software Update Package SUP 6.1.0. for all camera models in the ALEXA 35 family: ALEXA 35, ALEXA 35 Xtreme, ALEXA 35 Live, and ALEXA 35 Live Xtreme. This relea...</p><div class="links"><a href="https://arri.canto.de/direct/other/6l6bf6lrr1125eiif7gevmrj53/cfXbPJwElG0QvXkI1C3sKAzVpJw/original?content-type=application%2Fzip&amp;amp;name=ALEXA_35_6.1.0_398991.zip" target="_blank" rel="noopener">Download</a><a href="https://www.arri.com/resource/blob/406920/b5bd5855b304302cd85940ef322e5d61/alexa-35-sup-6-1-0-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-6-1-0" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Jul 2026</span></div><div class="body"><h2 class="name">VENICE 2</h2><p class="ver" style="color:#ff7200">V5.00</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/26/07/Dg7f1deef3/MPC-3628_3626_V500.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/support/download/pdf/MPC-3628_3626_V500_ReleaseNote.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/VENICE_2.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>May 2026</span></div><div class="body"><h2 class="name">BURANO</h2><p class="ver" style="color:#ff7200">V3.00</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/26/05/0zcde5bfee/MPC-2610_V300.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/support/download/pdf/MPC-2610_V30_ReleaseNotes.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/BURANO.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>Sony</span><span>17 Mar 2026</span></div><div class="body"><h2 class="name">FX3(ILME-FX3)</h2><p class="ver" style="color:#a3bd6a">V7.02</p><p class="state">Card update via Sony</p><div class="links"><a href="https://support.sony.jp/electronics/support/software/00378858" target="_blank" rel="noopener">Update page</a><a href="https://support.sony.jp/electronics/support/software/00378858" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>Sony</span><span>17 Mar 2026</span></div><div class="body"><h2 class="name">FX3(ILME-FX3A)</h2><p class="ver" style="color:#a3bd6a">V2.02</p><p class="state">Card update via Sony</p><div class="links"><a href="https://support.sony.jp/electronics/support/software/00378859" target="_blank" rel="noopener">Update page</a><a href="https://support.sony.jp/electronics/support/software/00378859" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>Sony</span><span>17 Mar 2026</span></div><div class="body"><h2 class="name">FX30</h2><p class="ver" style="color:#a3bd6a">V6.01</p><p class="state">Card update via Sony</p><div class="links"><a href="https://support.sony.jp/electronics/support/software/00378860" target="_blank" rel="noopener">Update page</a><a href="https://support.sony.jp/electronics/support/software/00378860" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#8d8378"></span><div class="top"><span>Sony</span><span>Feb 2026</span></div><div class="body"><h2 class="name">FR7</h2><p class="ver" style="color:#8d8378">V4.00</p><p class="state">Version only</p><div class="links"><a href="https://support.d-imaging.sony.co.jp/www/cscs/firm/?mdl=ILME-FR7&amp;area=jp&amp;lang=jp" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#8d8378"></span><div class="top"><span>Sony</span><span>Nov 2025</span></div><div class="body"><h2 class="name">FX2</h2><p class="ver" style="color:#8d8378">V1.01</p><p class="state">Version only</p><div class="links"><a href="https://support.d-imaging.sony.co.jp/www/cscs/firm/?mdl=ILME-FX2&amp;lang=jp&amp;area=jp" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>ARRI</span><span>12 Jun 2025</span></div><div class="body"><h2 class="name">ALEXA MINI LF</h2><p class="ver" style="color:#ff7200">SUP 7.3.2</p><p class="state">Firmware + notes</p><p class="sum">We are pleased to announce the release of ALEXA Mini LF Software Update Package SUP 7.3.2.</p><div class="links"><a href="https://arri.canto.de/direct/other/9etlakh8op5nh5shjngtqusf4d/eSMUQ-zji3HrahfRfQln_tAhF80/original?content-type=application%2Fzip&amp;amp;name=mini_lf_fw_7.3.2_4.zip" target="_blank" rel="noopener">Download</a><a href="https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-lf-sup-7-3-2" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Jan 2023</span></div><div class="body"><h2 class="name">VENICE</h2><p class="ver" style="color:#ff7200">V6.30</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/22/12/KJBBLlo_bA/MPC-3610_V630.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/support/download/pdf/MPC-3610_V630_ReleaseNote.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/VENICE.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Jan 2023</span></div><div class="body"><h2 class="name">FX9</h2><p class="ver" style="color:#ff7200">V4.02</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/23/01/TJB8027o1f/PXW-FX9_V402.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/download/pdf/PXW-FX9_Update_Guide.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/pxw-fx9.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>ARRI</span><span>7 Feb 2022</span></div><div class="body"><h2 class="name">ALEXA MINI</h2><p class="ver" style="color:#ff7200">SUP 6.1.2</p><p class="state">Firmware + notes</p><div class="links"><a href="https://arri.canto.de/direct/other/n71p0l1o954drfvr24vd68gk3s/KdPOZDBssbImP_zipxeLgzdLboc/original?content-type=application%2Fzip&amp;amp;name=alexa-mini-sup-6-1-2-data.zip" target="_blank" rel="noopener">Download</a><a href="https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-sup-overview" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>ARRI</span><span>7 Feb 2022</span></div><div class="body"><h2 class="name">AMIRA</h2><p class="ver" style="color:#ff7200">SUP 6.1.2</p><p class="state">Firmware + notes</p><div class="links"><a href="https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;amp;name=AMIRA_SUP_6.1.2_data.zip" target="_blank" rel="noopener">Download</a><a href="https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/amira-sup-overview" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>ARRI</span><span>15 Sep 2021</span></div><div class="body"><h2 class="name">ALEXA LF</h2><p class="ver" style="color:#a3bd6a">SUP 4.3</p><p class="state">Documentation only</p><p class="sum">ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This inc...</p><div class="links"><a href="https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>ARRI</span><span>15 Sep 2021</span></div><div class="body"><h2 class="name">ALEXA SXT</h2><p class="ver" style="color:#a3bd6a">SUP 2.1</p><p class="state">Documentation only</p><div class="links"><a href="https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sxt-sup-overview" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>ARRI</span><span>15 Sep 2021</span></div><div class="body"><h2 class="name">ALEXA</h2><p class="ver" style="color:#a3bd6a">SUP 11.1.1</p><p class="state">Documentation only</p><p class="sum">Software Update Package (SUP) 11.1.1 for ALEXA Classic contains: New ARRI Debayer Algorithm ADA-5 Sharper images and even better color separation Expanded Media Support SxS Pro+ revision...</p><div class="links"><a href="https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="ARRI"><span class="stripe" style="background:#a3bd6a"></span><div class="top"><span>ARRI</span><span>15 Sep 2021</span></div><div class="body"><h2 class="name">ALEXA XT</h2><p class="ver" style="color:#a3bd6a">SUP 11.1.1</p><p class="state">Documentation only</p><p class="sum">Software Update Package (SUP) 11.1.1 for the ALEXA XT contains: ALEXA ProRes 3.2K ARRIRAW Checksum New ARRI Debayer Algorithm ADA-5 Sharper images and even better color separation Expande...</p><div class="links"><a href="https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.arri.com/en/cine-systems/archive-technologies" target="_blank" rel="noopener">Archive</a><a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Jun 2020</span></div><div class="body"><h2 class="name">FS7 II</h2><p class="ver" style="color:#ff7200">V1.23</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/20/05/rN5MfEtjGx/PXW-FS7M2_V123.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/update/pxw-fs7m2.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Nov 2018</span></div><div class="body"><h2 class="name">PMW-F55</h2><p class="ver" style="color:#ff7200">V9.20</p><p class="state">Firmware + notes</p><div class="links"><a href="http://support.d-imaging.sony.co.jp/download/CCS/OHnxRg45K7/PMW-F55_V920.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/pmw-f55.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Nov 2018</span></div><div class="body"><h2 class="name">PMW-F5</h2><p class="ver" style="color:#ff7200">V9.20</p><p class="state">Firmware + notes</p><div class="links"><a href="http://support.d-imaging.sony.co.jp/download/CCS/OHnxRg45K7/PMW-F5_V920.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf" target="_blank" rel="noopener">Release notes</a><a href="https://www.sony.jp/ls-camera/update/pmw-f5.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Sep 2018</span></div><div class="body"><h2 class="name">PXW-FS7</h2><p class="ver" style="color:#ff7200">V4.31</p><p class="state">Firmware + notes</p><div class="links"><a href="http://support.d-imaging.sony.co.jp/download/CCS/BDdL1e19jG/PXW-FS7_V431.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/update/pxw-fs7.html" target="_blank" rel="noopener">Source</a></div></div></article>
+<article class="plate" data-make="Sony"><span class="stripe" style="background:#ff7200"></span><div class="top"><span>Sony</span><span>Apr 2018</span></div><div class="body"><h2 class="name">PXW-FS5</h2><p class="ver" style="color:#ff7200">V4.03</p><p class="state">Firmware + notes</p><div class="links"><a href="https://download.pro.sony/23/09/CgFpRi-6r0/PXW-FS5_V403_J.zip" target="_blank" rel="noopener">Download</a><a href="https://www.sony.jp/ls-camera/update/pxw-fs5.html" target="_blank" rel="noopener">Source</a></div></div></article>
+</main>
+
+<footer>
+  <strong>Every record links to the manufacturer's own page.</strong>
+  Version numbers, dates and files are read from that page, never generated.
+  Sony publishes month-precision dates outside the FX line, and the FX bodies
+  update from a file copied to a card rather than a direct download.
+  Last checked 12 Sep 2026 00:01 UTC.
+</footer>
+</div>
+
+<script>
+var buttons = document.querySelectorAll("#filters button[data-make]:not(.soon)");
+buttons.forEach(function (b) {
+  b.addEventListener("click", function () {
+    var make = b.dataset.make;
+    buttons.forEach(function (o) { o.setAttribute("aria-current", String(o === b)); });
+    document.querySelectorAll("#grid .plate").forEach(function (p) {
+      p.style.display = (make === "all" || p.dataset.make === make) ? "flex" : "none";
+    });
+  });
+});
+</script>
+</body>
+</html>

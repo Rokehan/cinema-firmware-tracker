@@ -67,79 +67,6 @@ def find_version(slug, html, downloads):
         return "SUP " + best
     return None
 
-LONG_MONTHS = {
-    "january": "Jan", "february": "Feb", "march": "Mar", "april": "Apr",
-    "may": "May", "june": "Jun", "july": "Jul", "august": "Aug",
-    "september": "Sep", "october": "Oct", "november": "Nov",
-    "december": "Dec",
-}
-
-SHORT_MONTHS = ("Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec")
-
-LONG_DATE_RE = re.compile(
-    r"(January|February|March|April|May|June|July|August|September|"
-    r"October|November|December)"
-    r"\s+(\d{1,2})(?:st|nd|rd|th)?,\s*(\d{4})",
-    re.I,
-)
-
-SHORT_DATE_RE = re.compile(
-    r"(" + SHORT_MONTHS + r")\.?\s+(\d{1,2}),\s*(\d{4})"
-)
-
-
-def visible_text(fragment):
-    """Tags out, entities and runs of whitespace tidied."""
-    fragment = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", fragment)
-    fragment = re.sub(r"(?s)<[^>]+>", " ", fragment)
-    fragment = fragment.replace("&nbsp;", " ").replace("&amp;", "&")
-    return re.sub(r"\s+", " ", fragment).strip()
-
-
-def headline_version_and_date(html):
-    """Read the version and release date straight off ARRI's own headline.
-
-    Returns (version, date) with either value None when the page does not
-    state it. The date comes back as "Feb. 7, 2022" to match the format the
-    rest of the pipeline already expects.
-    """
-    heads = list(re.finditer(r"(?is)<h1[^>]*>(.*?)</h1>", html))
-    if not heads:
-        return None, None
-
-    chosen = None
-    for head in heads:
-        if "sup" in visible_text(head.group(1)).lower():
-            chosen = head
-            break
-    if chosen is None:
-        chosen = heads[-1]
-
-    title = visible_text(chosen.group(1))
-
-    version = None
-    found = re.search(r"SUP\s+(\d+(?:\.\d+)*)", title, re.I)
-    if found:
-        version = "SUP " + found.group(1).rstrip(".")
-
-    # ARRI prints the release date immediately below the headline.
-    window = visible_text(html[chosen.end():chosen.end() + 4000])[:400]
-
-    date = None
-    long_hit = LONG_DATE_RE.search(window)
-    if long_hit:
-        month = LONG_MONTHS.get(long_hit.group(1).lower())
-        if month:
-            date = month + ". " + str(int(long_hit.group(2))) + ", " + long_hit.group(3)
-    if date is None:
-        short_hit = SHORT_DATE_RE.search(window)
-        if short_hit:
-            date = (short_hit.group(1) + ". " + str(int(short_hit.group(2)))
-                    + ", " + short_hit.group(3))
-
-    return version, date
-
-
 results = []
 CAMERA_PAGES = discover_camera_pages()
 print("Discovered " + str(len(CAMERA_PAGES)) + " camera pages")
@@ -179,12 +106,8 @@ for slug in CAMERA_PAGES:
     firmware = [d for d in downloads if d["kind"] == "firmware"]
     notes = [d for d in downloads if d["kind"] == "release_notes"]
 
-    head_version, head_date = headline_version_and_date(html)
-
-    fallback_date = firmware[0]["date"] if firmware else (
-        notes[0]["date"] if notes else None)
-    release_date = head_date or fallback_date
-    version = head_version or find_version(slug, html, downloads)
+    release_date = firmware[0]["date"] if firmware else (notes[0]["date"] if notes else None)
+    version = find_version(slug, html, downloads)
     status = "firmware_available" if firmware else "documentation_only"
 
     entry = {

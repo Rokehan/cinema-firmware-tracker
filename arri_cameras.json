@@ -107,7 +107,7 @@
     "slug": "alexa-lf-sup",
     "version": "SUP 4.3",
     "status": "documentation_only",
-    "release_date": "Apr. 30, 2020",
+    "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "firmware_download": null,
@@ -142,10 +142,118 @@
   {
     "manufacturer": "ARRI",
     "category": "Cameras",
-    "slug": "alexa-sup-11-1",
-    "version": "SUP 11.1",
+    "slug": "alexa-mini-sup-overview",
+    "version": "SUP 6.1.2",
+    "status": "firmware_available",
+    "release_date": "Feb. 7, 2022",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-sup-overview",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": "https://arri.canto.de/direct/other/n71p0l1o954drfvr24vd68gk3s/KdPOZDBssbImP_zipxeLgzdLboc/original?content-type=application%2Fzip&amp;name=alexa-mini-sup-6-1-2-data.zip",
+    "release_notes_download": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "here",
+        "date": null,
+        "url": "https://arri.canto.de/direct/other/n71p0l1o954drfvr24vd68gk3s/KdPOZDBssbImP_zipxeLgzdLboc/original?content-type=application%2Fzip&amp;name=alexa-mini-sup-6-1-2-data.zip"
+      },
+      {
+        "kind": "release_notes",
+        "label": "ALEXA Mini SUP 6.1.2 - Release Notes Mar. 20, 2022 pdf | 331 KB",
+        "date": "Mar. 20, 2022",
+        "url": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA Mini SUP 6.1 - User Manual Nov. 30, 2020 pdf | 15.1 MB",
+        "date": "Nov. 30, 2020",
+        "url": "https://www.arri.com/resource/blob/224858/9f4f64094e252696c3845cbcf4fe0b7b/user-manual-sup-6-1-alexa-mini-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA Mini Menu Settings Chart SUP 6.1 May 19, 2021 pdf | 311 KB",
+        "date": "May 19, 2021",
+        "url": "https://www.arri.com/resource/blob/248156/167939729cc7cf6d91bbc82f16b44706/arri-alexamini-menusettingschart-sup6-1-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-sxt-sup-overview",
+    "version": "SUP 2.1",
     "status": "documentation_only",
-    "release_date": "Dec. 13, 2018",
+    "release_date": "Sep. 15, 2021",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sxt-sup-overview",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": null,
+    "release_notes_download": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "release_notes",
+        "label": "ALEXA SXT SUP 2.1 - Release Notes Oct. 31, 2019 pdf | 528 KB",
+        "date": "Oct. 31, 2019",
+        "url": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA SXT SUP 2.0 - User Manual Dec. 4, 2018 pdf | 9.6 MB",
+        "date": "Dec. 4, 2018",
+        "url": "https://www.arri.com/resource/blob/42776/10ad4e8b9b3f83a840a149a167c9ac78/alexa-sxt-user-manual-sup-2-0-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ALEXA SXT Menu Settings Chart SUP 2.0 Dec. 4, 2018 pdf | 240 KB",
+        "date": "Dec. 4, 2018",
+        "url": "https://www.arri.com/resource/blob/42778/a93a2e0c57b62fb2e1ec2e142e03dcb3/alexa-sxt-msc-sup2-0-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "amira-sup-overview",
+    "version": "SUP 6.1.2",
+    "status": "firmware_available",
+    "release_date": "Feb. 7, 2022",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/amira-sup-overview",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "firmware_download": "https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;name=AMIRA_SUP_6.1.2_data.zip",
+    "release_notes_download": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
+    "all_downloads": [
+      {
+        "kind": "firmware",
+        "label": "AMIRA SUP 6.1.2 Nov. 5, 2025 download",
+        "date": "Nov. 5, 2025",
+        "url": "https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;name=AMIRA_SUP_6.1.2_data.zip"
+      },
+      {
+        "kind": "release_notes",
+        "label": "AMIRA SUP 6.1.2 - Release Notes Mar. 20, 2022 pdf | 355 KB",
+        "date": "Mar. 20, 2022",
+        "url": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "AMIRA / AMIRA Live SUP 6.1 - User Manual Nov. 30, 2020 pdf | 15 MB",
+        "date": "Nov. 30, 2020",
+        "url": "https://www.arri.com/resource/blob/224856/740d5ff8ba649665bdc73dc7222fb498/user-manual-amira-sup-6-1-data.pdf"
+      },
+      {
+        "kind": "documentation",
+        "label": "ARRI AMIRA Menu Settings Chart SUP 6.1.1 Apr. 16, 2021 pdf | 763 KB",
+        "date": "Apr. 16, 2021",
+        "url": "https://www.arri.com/resource/blob/247186/2dcbb801e6adc3b4c9f2f7783ee83292/2021-04-arri-amira-menusettingschart-sup6-1-data.pdf"
+      }
+    ]
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Cameras",
+    "slug": "alexa-sup-11-1",
+    "version": "SUP 11.1.1",
+    "status": "documentation_only",
+    "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "firmware_download": null,
@@ -199,9 +307,9 @@
     "manufacturer": "ARRI",
     "category": "Cameras",
     "slug": "alexa-xt-sup-11-1",
-    "version": "SUP 11.1",
+    "version": "SUP 11.1.1",
     "status": "documentation_only",
-    "release_date": "Dec. 13, 2018",
+    "release_date": "Sep. 15, 2021",
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "firmware_download": null,
