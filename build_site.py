@@ -61,10 +61,11 @@ nav .soon{opacity:.45;cursor:default;pointer-events:none}
 .search{position:relative;margin-left:auto}
 .search input{font-family:"JetBrains Mono",monospace;font-size:.8rem;
   letter-spacing:.04em;color:var(--text);background:var(--plate);
-  border:1px solid var(--edge);padding:10px 34px 10px 14px;width:254px;
+  border:1px solid var(--edge);padding:10px 34px 10px 14px;width:320px;
   transition:.18s}
 .search input::placeholder{color:var(--mute);text-transform:uppercase;
   font-size:.7rem;letter-spacing:.16em}
+.search input::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
 .search input:focus{outline:none;border-color:var(--orange)}
 .search button{position:absolute;right:0;top:0;bottom:0;width:32px;padding:0;
   border:0;background:none;color:var(--mute);cursor:pointer;font-size:1rem;
@@ -190,7 +191,7 @@ footer strong{color:var(--text);font-weight:700}
   <div class="search" id="search">
     <label for="q" class="visually-hidden"></label>
     <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="Search camera or version" aria-label="Search cameras">
+           placeholder="Search equipment or version" aria-label="Search cameras">
     <button type="button" id="clear" aria-label="Clear search">&times;</button>
   </div>
 </div>
