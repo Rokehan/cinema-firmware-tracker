@@ -560,7 +560,11 @@ def state_of(cam):
     if has_file and kind == "page":
         if make == "RED":
             return "Login required for download", OLIVE
-        return "Card update via Sony", OLIVE
+        if make == "Sony":
+            return "Card update via Sony", OLIVE
+        if has_notes:
+            return "Firmware + notes", ORANGE
+        return "Firmware", ORANGE
     if has_file and has_notes:
         return "Firmware + notes", ORANGE
     if has_file:
