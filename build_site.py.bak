@@ -456,17 +456,10 @@ MENU_SENTENCE_RE = re.compile(
     r"\s+in the\s+[A-Za-z ]{2,24}\s+menu)", re.I)
 # RED writes its path as "Go to Menu > Maintenance > Upgrade and select
 # Camera Upgrade."
-# Must name the update itself, so ARRI's "MENU > Media > Prepare USB
-# Medium" does not win over "Menu > System > Update Camera".
 MENU_GOTO_RE = re.compile(
-    r"((?:Menu|MENU)\s*>\s*[A-Za-z ]{2,20}\s*>\s*"
-    r"[A-Za-z ]{0,20}(?:Update|Upgrade)[A-Za-z .]{0,18})")
+    r"((?:Menu|MENU)\s*>\s*[A-Za-z ]{2,20}\s*>\s*[A-Za-z ]{2,24})")
 ROOT_RE = re.compile(r"\broot directory\b", re.I)
 TOP_LEVEL_RE = re.compile(r"\btop level directory\b", re.I)
-# ARRI names a folder on the stick, e.g. ARRI/A-Mini/SUP or ARRI/ALEXA265/SUP.
-FOLDER_RE = re.compile(r"\b(ARRI/[A-Za-z0-9-]+/(?:SUP|LICENSES))\b")
-# ARRI's file is a *.SUP or *.SWU package rather than a fixed filename.
-PKG_RE = re.compile(r"(\*\.(?:SUP|SWU))\b", re.I)
 
 
 def install_lines(cam):
@@ -491,10 +484,8 @@ def bench_line(cam):
 
     file_name = cam.get("file_name")
     if not file_name:
-        hit = FILE_RE.search(joined) or PKG_RE.search(joined)
+        hit = FILE_RE.search(joined)
         file_name = hit.group(1) if hit else None
-    if file_name:
-        file_name = file_name.upper() if file_name.startswith("*") else file_name
 
     slot = None
     for line in lines:
@@ -529,10 +520,7 @@ def bench_line(cam):
     if not (file_name and menu):
         return None
 
-    folder = FOLDER_RE.search(joined)
-    if folder:
-        where = folder.group(1)
-    elif ROOT_RE.search(joined):
+    if ROOT_RE.search(joined):
         where = "card root"
     elif TOP_LEVEL_RE.search(joined):
         where = "card top level"

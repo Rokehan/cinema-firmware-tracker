@@ -1,0 +1,610 @@
+[
+  {
+    "manufacturer": "Sony",
+    "product": "FX6",
+    "version": "V6.01",
+    "release_date": "2026-09-01",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "847.1 MB",
+    "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
+    "changelog": [
+      "Improves error messages displayed during recording",
+      "Fixes an issue where noise may occur in the playback audio after playing multiple clips recorded at 59.94P and 23.98P continuously for an extended period. (The recorded content itself is not affected.)",
+      "Improves color reproduction in highly saturated areas",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Software Update Preparation",
+        "items": [
+          "The software version update data is first saved to an SD card or CFexpress Type A memory card . \\t Note: “CFexpress Type A memory card” is referred to as “CFexpress card(s)” in this document.",
+          "The camera is then updated using the screen menu. \\t Note: Refer to the camera's Operating Instructions for details on how to use the menu."
+        ]
+      },
+      {
+        "heading": "Checking the Current Software Version",
+        "items": [
+          "Select Version .",
+          "Select Version Number in the Maintenance menu."
+        ]
+      },
+      {
+        "heading": "Notes About Updating",
+        "items": [
+          "When updating the software, always connect the supplied AC adaptor to the camera. If a battery pack is attached at the same time, the update will continue even if the AC adaptor is subsequently disconnected.",
+          "Remove any connected devices (such as USB devices, SDI/HDMI cables, microphones, and shoe mount accessories), and eject any media cards that are not necessary for the update.",
+          "When using an SD card, use an SDXC memory card.",
+          "Use an SDXC or CFexpress card that has been formatted in the memory card slot using the camera's formatting function. \\t Note: Refer to the camera's Operating Instructions for details about the formatting function and supported SDXC / CFexpress cards."
+        ]
+      },
+      {
+        "heading": "Saving the Software Version Update Data to an SDXC Card or CFexpress Card",
+        "items": [
+          "Connect the formatted SDXC or CFexpress card to a computer.",
+          "Download the software version update data from the download page, then save the data file to your computer.",
+          "Save the data file in the root directory of the SDXC or CFexpress card. Do not change the file name."
+        ]
+      },
+      {
+        "heading": "Before you start",
+        "items": [
+          "Do not perform any of the following actions while updating the system software. Doing so could cause the update to fail and the camera to stop working:\\n\\n\\t",
+          "Turning the camera off",
+          "Refer to the camera's Operating Instructions for more information."
+        ]
+      },
+      {
+        "heading": "How to update the system software version",
+        "items": [
+          "Insert the SDXC or CFexpress card that contains the saved software version update data into slot B of the camera. \\t Note: Only slot B will recognize the software version update data.",
+          "Select Version .",
+          "Select Version Up in the Maintenance menu. \\t Note: The Version Up option cannot be selected if the software version update data cannot be found.",
+          "Select Execute . \\t Note: After performing this step, a “Please use the AC Adaptor” message will appear.",
+          "Select Execute on the software version update confirmation screen. \\t Note: After performing this step, a “Version Update VX.XX &gt; VY.YY” message will appear. \\t( X.XX : current version number; Y.YY : newest version number)",
+          "Select Execute on the software version update confirmation screen again.\\n\\t",
+          "When the software version update is successfully completed, the access indicator will stop flashing, and the unit will restart automatically.",
+          "Check that the software version has been updated (refer to the Checking the Current Software Version section of this document for details). \\t Note: If the system software has not been updated to the latest version, check the version update procedure, and then perform the update procedure again from step 1 .",
+          "Set the camera power switch to OFF , disconnect and reconnect the power cord, and then set the power switch to ON .",
+          "Check the software version update procedure, then perform the update procedure again from step 1 .",
+          "If the issue persists and the update is not successful, there may be a problem with the camera. In this case, please contact a Sony service representative for further assistance."
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX3",
+    "version": "V7.02",
+    "release_date": "2026-03-17",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "811.9 MB",
+    "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
+    "changelog": [
+      "Improves the camera's overall performance and stability"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name .",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the update progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 7.02 . \\t"
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX30",
+    "version": "V6.01",
+    "release_date": "2026-03-17",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "906.6 MB",
+    "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
+    "changelog": [
+      "Optimizes user LUT processing",
+      "Improves the camera's overall performance and stability"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name .",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the update progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 6.01 . \\t"
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FX2",
+    "version": "V1.01",
+    "release_date": "2025-11-05",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "891.2 MB",
+    "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
+    "changelog": [
+      "Fixes an issue where recording in DCI 4K at 24fps and shooting at 48fps results in normal-speed recording at 24fps when the APS-C S35 Shooting setting is Off or when a full-frame lens is attached and set to Auto \\t Note: APS-C S35 Shooting is locked to On when selecting a shooting frame rate of 48fps.",
+      "Fixes an issue where the power may turn off when a mount adapter is attached despite having sufficient battery charge"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t",
+          "If the system software version is Ver. 1.01 , the update is not required.",
+          "If the Date/Time setting screen appears when you turn on your camera, be sure to set the date and/or time to the correct values."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please format the memory card in advance using this camera.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute .",
+          "Please scroll down the screen as necessary to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times , and the recording lamp and rec (recording) button will flash 1 time -> 2 times -> 3 times depending on the progress of the update. The update will take approximately 6 minutes to complete. \\t \\t Notes: \\n\\t",
+          "If the access lamp repeats 5 long blinks (0.5-second cycle) and 6 short blinks (0.25-second cycle), or 7 long blinks (0.5-second cycle) and 7 short blinks (0.25-second cycle), the system software may have been incorrectly copied to the memory card.\\n\\t\\t",
+          "When the update is complete, the camera will automatically restart. \\tAfter restarting, when the “Body update complete” screen appears, press OK . \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 1.01 . \\t"
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "VENICE 2",
+    "version": "V5.00",
+    "release_date": null,
+    "file_name": null,
+    "file_size": null,
+    "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3628/software/00376811",
+    "changelog": [],
+    "install": [],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "BURANO",
+    "version": "V3.00",
+    "release_date": null,
+    "file_name": null,
+    "file_size": null,
+    "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
+    "changelog": [],
+    "install": [],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "FR7",
+    "version": "V4.00",
+    "release_date": "2026-02-12",
+    "file_name": "Update_ILMEFR7V400.dat",
+    "file_size": "1332.7 MB",
+    "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
+    "changelog": [
+      "Adds support for the new camera tracking data output function OpenTrackIO * for Virtual Production",
+      "Expands the camera tracking data ( free‑d ) functionality:\\n\\t",
+      "Adds support for the following camera position and orientation offsets:\\n\\t\\t",
+      "Offset for the slide‑base scale position",
+      "Supports additional name setting characters for the following Web App features:\\n\\t",
+      "PTZ Trace",
+      "PTZ Auto‑Framing composition presets",
+      "Improves SRT connectivity",
+      "Improves operational stability of the camera",
+      "*Compliant with SMPTE RIS‑OSVP",
+      "The output values for camera position information (X/Y/Z axis offsets) and orientation information (pan/tilt/roll angles) are unified between OpenTrackIO and free‑d . For details, please refer to the Integration Manual for Tracking Data Output .",
+      "If the camera is updated while SETUP switch 4 is ON , the IP address will be forcibly fixed and the camera may not be able to connect after the update.",
+      "Access the camera from a web browser and update the firmware. For details, please refer to the ILME-FR7 Help Guide .",
+      "The camera software update must be performed with the lens removed and the pan/tilt lock unlocked."
+    ],
+    "install": [
+      {
+        "heading": "Step 1: Download the Update File",
+        "items": [
+          "Connect your computer to the internet.",
+          "Click the Download button above.",
+          "After reading the disclaimer, click Download .\\n\\t",
+          "Save the file to the desktop of your computer (recommended)."
+        ]
+      },
+      {
+        "heading": "Step 2: Update the Software",
+        "items": [
+          "Connect the camera and the computer with the saved update file to the same network, and then turn them on.",
+          "Display the Web App screen of the camera in a web browser on the computer.\\n\\t",
+          "Select Maintenance -> Information -> Camera , and then check the Model Name and Version Number in the web menu.",
+          "Select Maintenance -> Information -> Camera -> Version Up in the web menu, press the Choose File button, and select the update file ( Update_ILMEFR7V400.dat ) that you downloaded. \\t \\t Note: Do not perform the following actions until the update has been completed:\\n\\t",
+          "Disconnecting the network",
+          "Closing the Web App screen (web browser)",
+          "The following screen appears: \\t \\n\\t",
+          "The update will fail if no update is required. Check the software version of the camera again.",
+          "The update file will start uploading. A progress bar will appear during this process. Wait until the uploading is complete before proceeding. \\t",
+          "When the update file finishes uploading, the Web App screen will appear and the update will start. \\t Notes: \\n\\t",
+          "The update process time will vary depending on your network environment.",
+          "The POWER lamp will blink yellow during the update process.",
+          "When the update process ends, the camera will reboot automatically. This will take a few minutes. Leave the camera turned on and wait until the POWER lamp lights up in green."
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "PXW-FS5",
+    "version": "V4.03",
+    "release_date": null,
+    "file_name": null,
+    "file_size": null,
+    "source_url": "https://www.sony.com/electronics/support/professional-camcorders-handheld-camcorders/pxw-fs5/software/mpengb00000897",
+    "changelog": [],
+    "install": [],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "a7 V",
+    "version": "V2.00",
+    "release_date": "2026-05-14",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "376.5 MB",
+    "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
+    "changelog": [
+      "Allows high-quality audio recording (96 kHz, 32-bit float) when the XLR-A4 adapter (sold separately) is attached to the Multi Interface Shoe",
+      "Adds support for the Preset Focus function with lenses that do not have power zoom\\n",
+      "Supports displaying the focal length down to one decimal place",
+      "Allows simultaneous Delete and Rating of images recorded on both memory card slot 1 and slot 2",
+      "Allows the display of folder names and file names during playback",
+      "Allows you to cancel the scheduled transfer of selected images during FTP* transfer *FTP = File Transfer Protocol",
+      "Adds support for the following Transfer & Tagging settings:\\n",
+      "A setting to automatically schedule FTP transfer of protected still images and videos from FTP Upload Preset",
+      "A setting to automatically protect still images transferred via FTP from FTP Upload Preset",
+      "A setting for configuring the SFTP (Secure File Transfer Protocol) server\\n",
+      "Supports the Write Digital Signature function for movies as part of Sony’s Camera Authenticity Solution\\n",
+      "Services may not be available in some countries or regions. For more information, please visit the Authenticity Catalog Page .",
+      "Supports Scan and Tag , Photo Cropping , and Volume Photography Commands under the Volume Photography License\\n",
+      "The license is scheduled to become available from late May 2026 onwards. Note: Services may not be available in some countries or regions."
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed.",
+          "If the system software version is Ver. 2.00 , the update is not required.",
+          "If the Date / Time setting screen appears when you turn on your camera, set the date and/or time to the correct values."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. On-screen message: \\n",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, the elapsed time and update progress will appear. The access lamp will then flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete.",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen."
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. The update was successful if the screen shows Ver. 2.00 ."
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "a7 IV",
+    "version": "V6.02",
+    "release_date": "2026-05-28",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "757.5 MB",
+    "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
+    "changelog": [
+      "Fixes an issue where Focus Bracket shooting could not be performed in some cases",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software of Your Camera",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body.",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 6.02 . \\t"
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "a7R V",
+    "version": "V4.00",
+    "release_date": "2025-11-26",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "754.5 MB",
+    "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
+    "changelog": [],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please format the memory card in advance using this camera.",
+          "Before formatting, copy the data to a computer or other device. \\tOnce you format the memory card, all the data recorded on the memory card will be deleted and cannot be restored.",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. For models with two slots, make sure to insert the memory card into slot 1 . Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body.",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute .",
+          "Please scroll down the screen as necessary to view the full text.",
+          "When the system software update starts, a black screen will appear and the access lamp will flash 1 time -> 3 times -> 5 times depending on the progress of the update. The update will take approximately 6 minutes to complete. \\t \\t Notes: \\n\\t",
+          "If the access lamp repeats 5 long blinks (0.5-second cycle) and 6 short blinks (0.25-second cycle), or 7 long blinks (0.5-second cycle) and 7 short blinks (0.25-second cycle), the system software may have been incorrectly copied to the memory card.\\n\\t\\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 4.00 . \\t"
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "a7S III",
+    "version": "V5.01",
+    "release_date": "2026-05-28",
+    "file_name": "BODYDATA.DAT",
+    "file_size": "743.8 MB",
+    "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
+    "changelog": [
+      "Fixes an issue where part of the green frame indicating the AF (autofocus) status was not displayed when using the Expand Spot feature",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software of Your Camera",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. On-screen message: \\n",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete.",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen."
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. The update was successful if the screen shows Ver. 5.01 ."
+        ]
+      }
+    ],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  }
+]

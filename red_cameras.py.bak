@@ -80,51 +80,6 @@ def product_name(html, slug):
     return slug.replace("-firmware", "").replace("-", " ").upper()
 
 
-# RED's own section names. SIGNIFICANT CHANGES is the changelog and is
-# handled separately; the rest is the update procedure.
-INSTALL_HEADS = ("upgrade", "important", "operational notes")
-CHANGE_HEAD = "significant changes"
-
-
-def looks_like_heading(piece):
-    letters = [c for c in piece if c.isalpha()]
-    if not letters or len(piece) > 70:
-        return False
-    upper = sum(1 for c in letters if c.isupper())
-    return upper / len(letters) > 0.85
-
-
-def install_sections(block):
-    """RED's update procedure, grouped under RED's own headings."""
-    sections = []
-    current = None
-    for raw in block.split(BREAK.strip()):
-        piece = raw.strip().strip("|").strip()
-        if not piece:
-            continue
-        if re.match(r"(?i)copyright|^\(c\) 20|^\u00a9|^&copy;|^login$", piece):
-            current = None
-            continue
-        if looks_like_heading(piece):
-            low = piece.lower()
-            if low.startswith(CHANGE_HEAD):
-                current = None
-                continue
-            if any(word in low for word in INSTALL_HEADS):
-                current = {"heading": piece, "items": []}
-                sections.append(current)
-            else:
-                current = None
-            continue
-        if current is None:
-            continue
-        item = re.sub(r"^\d+\.\s*", "", piece).strip()
-        item = re.sub(r"^\d+\.\s*", "", item).strip()
-        if 3 < len(item) < 420 and item not in current["items"]:
-            current["items"].append(item)
-
-    return [s for s in sections if s["items"]]
-
 def newest_release(html):
     """Version, ISO date, size and change list from the newest block."""
     text = flat(html, keep_items=True)
@@ -169,7 +124,6 @@ def newest_release(html):
         "release_date": date,
         "size": size,
         "features": features[:12],
-        "install": install_sections(block),
         "history_count": len(blocks),
     }
 
@@ -214,10 +168,6 @@ def main():
             "summary": None,
             "features": release["features"],
             "file_size": release["size"],
-            "install": release["install"],
-            "install_version": release["version"],
-            "install_source": url,
-            "file_name": "upgrade.bin",
         })
 
         print("  " + name)
@@ -226,10 +176,6 @@ def main():
               + "   Size: " + str(release["size"]))
         print("  Releases on page: " + str(release["history_count"]))
         print("  Changes captured: " + str(len(release["features"])))
-        print("  Install sections: " + str(len(release["install"])))
-        for block in release["install"]:
-            print("    [" + block["heading"][:40] + "] "
-                  + str(len(block["items"])) + " lines")
         for item in release["features"][:4]:
             print("    " + item[:66])
         print("")

@@ -27,7 +27,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -57,7 +87,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-x-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -87,7 +147,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-x-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -117,7 +207,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xe-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -147,7 +267,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -177,7 +327,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-8k-s35-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -207,7 +387,37 @@
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
     ],
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-s35-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -237,7 +447,34 @@
       "Added SmallHD RED Touch OS 6.1.2 firmware (SmallHD OS 6.1)",
       "Changed Serial Protocol \"Network (PPP)\" to \"Network RCP2 (PPP)\""
     ],
-    "file_size": "161.9 MB"
+    "file_size": "161.9 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE KOMODO-X FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the KOMODO-X media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "Warning message will occur with unapproved Media."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/komodo-x-firmware",
+    "file_name": "upgrade.bin"
   },
   {
     "manufacturer": "RED",
@@ -261,6 +498,34 @@
       "Improved Lens compatibility",
       "Changed Serial Protocol \"Network (PPP)\" to \"Network RCP2 (PPP)\""
     ],
-    "file_size": "121.6 MB"
+    "file_size": "121.6 MB",
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE KOMODO FIRMWARE",
+        "items": [
+          "Copy upgrade.bin to a /upgrade directory on the CFast card.",
+          "Power up the camera and insert a CFAST card into the KOMODO media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select OK.",
+          "The camera initiates a 2 stage upgrade process which will automatically restart the camera.",
+          "After the camera restarts to complete the upgrade process, select RESTART once it appears.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "Warning message will occur with unapproved media and batteries."
+        ]
+      }
+    ],
+    "install_version": "V1.8.9",
+    "install_source": "https://www.red.com/download/komodo-firmware",
+    "file_name": "upgrade.bin"
   }
 ]

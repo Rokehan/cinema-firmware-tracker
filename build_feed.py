@@ -26,6 +26,53 @@ def arri_product(slug):
     name = re.sub(r"\s+SUP.*$", "", name)
     return name.replace("ALEXA", "ALEXA").strip()
 
+EN_DETAILS = {}
+try:
+    with open("sony_english.json") as f:
+        for row in json.load(f):
+            EN_DETAILS[row["product"]] = row
+except FileNotFoundError:
+    pass
+
+
+# feed product name -> sony_english.json key. Explicit, because loose
+# matching once gave the FX3A the FX3's changelog: they are separate bodies
+# on separate firmware tracks.
+EN_ALIASES = {
+    "FX3(ILME-FX3)": "FX3",
+    "PXW-FX9": "FX9",
+    "PXW-FS7 II": "FS7 II",
+    "FS7 II": "FS7 II",
+    "FX3 (ILME-FX3)": "FX3",
+    "α7 V (ILCE-7M5)": "a7 V",
+    "α7 IV (ILCE-7M4)": "a7 IV",
+    "α7R V (ILCE-7RM5)": "a7R V",
+    "α7S III (ILCE-7SM3)": "a7S III",
+}
+
+
+def english_extras(product):
+    """Sony's English changelog and install steps for this body, if any.
+
+    Only an exact name or a declared alias counts. An unmatched body gets
+    nothing rather than a neighbour's instructions.
+    """
+    row = EN_DETAILS.get(product)
+    if row is None:
+        alias = EN_ALIASES.get(product)
+        if alias:
+            row = EN_DETAILS.get(alias)
+    if row is None:
+        return {}
+    return {
+        "changelog": row.get("changelog") or [],
+        "install": row.get("install") or [],
+        "file_name": row.get("file_name"),
+        "install_version": row.get("version"),
+        "install_source": row.get("source_url"),
+        "guides": row.get("guides") or [],
+    }
+
 feed = []
 # FX pages give exact dates, so they override the month-only index values
 FX_OVERRIDE = {}
@@ -36,6 +83,15 @@ try:
                 FX_OVERRIDE[row["product"]] = row
 except FileNotFoundError:
     pass
+ARRI_INSTALL = {}
+try:
+    with open("arri_install.json") as f:
+        for row in json.load(f):
+            ARRI_INSTALL[row["slug"]] = row
+except FileNotFoundError:
+    pass
+
+
 ARRI_DETAILS = {}
 try:
     with open("arri_details.json") as f:
@@ -60,6 +116,10 @@ with open("arri_cameras.json") as f:
             "archive_url": row.get("archive_url"),
             "summary": (ARRI_DETAILS.get(row["slug"]) or {}).get("summary"),
             "features": (ARRI_DETAILS.get(row["slug"]) or {}).get("features") or [],
+            "install": (ARRI_INSTALL.get(row["slug"]) or {}).get("install") or [],
+            "install_version": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_version"),
+            "install_source": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_source"),
+            "file_name": (ARRI_INSTALL.get(row["slug"]) or {}).get("file_name"),
         })
 
 # ---- Sony ----
@@ -88,6 +148,7 @@ with open("sony_cameras.json") as f:
             "file_size": (fx or {}).get("file_size"),
             "notes_url": row.get("notes_url"),
             "archive_url": None,
+            **english_extras(row["product"]),
         })
 
 # ---- RED ----
@@ -110,6 +171,11 @@ try:
                 "archive_url": None,
                 "summary": row.get("summary"),
                 "features": row.get("features") or [],
+                "install": row.get("install") or [],
+                "install_version": row.get("install_version"),
+                "install_source": row.get("install_source"),
+                "file_name": row.get("file_name"),
+                "file_size": row.get("file_size"),
             })
 except FileNotFoundError:
     print("red_cameras.json not found, skipping RED")
@@ -136,6 +202,7 @@ try:
                 "summary": row.get("summary"),
                 "features": row.get("features") or [],
                 "file_size": row.get("file_size"),
+                **english_extras(row["product"]),
             })
 except FileNotFoundError:
     print("sony_alpha.json not found, skipping Sony Alpha bodies")

@@ -11,7 +11,74 @@
     "firmware_kind": "file",
     "file_size": "847.1 MB",
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [
+      "Improves error messages displayed during recording",
+      "Fixes an issue where noise may occur in the playback audio after playing multiple clips recorded at 59.94P and 23.98P continuously for an extended period. (The recorded content itself is not affected.)",
+      "Improves color reproduction in highly saturated areas",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Software Update Preparation",
+        "items": [
+          "The software version update data is first saved to an SD card or CFexpress Type A memory card . \\t Note: “CFexpress Type A memory card” is referred to as “CFexpress card(s)” in this document.",
+          "The camera is then updated using the screen menu. \\t Note: Refer to the camera's Operating Instructions for details on how to use the menu."
+        ]
+      },
+      {
+        "heading": "Checking the Current Software Version",
+        "items": [
+          "Select Version .",
+          "Select Version Number in the Maintenance menu."
+        ]
+      },
+      {
+        "heading": "Notes About Updating",
+        "items": [
+          "When updating the software, always connect the supplied AC adaptor to the camera. If a battery pack is attached at the same time, the update will continue even if the AC adaptor is subsequently disconnected.",
+          "Remove any connected devices (such as USB devices, SDI/HDMI cables, microphones, and shoe mount accessories), and eject any media cards that are not necessary for the update.",
+          "When using an SD card, use an SDXC memory card.",
+          "Use an SDXC or CFexpress card that has been formatted in the memory card slot using the camera's formatting function. \\t Note: Refer to the camera's Operating Instructions for details about the formatting function and supported SDXC / CFexpress cards."
+        ]
+      },
+      {
+        "heading": "Saving the Software Version Update Data to an SDXC Card or CFexpress Card",
+        "items": [
+          "Connect the formatted SDXC or CFexpress card to a computer.",
+          "Download the software version update data from the download page, then save the data file to your computer.",
+          "Save the data file in the root directory of the SDXC or CFexpress card. Do not change the file name."
+        ]
+      },
+      {
+        "heading": "Before you start",
+        "items": [
+          "Do not perform any of the following actions while updating the system software. Doing so could cause the update to fail and the camera to stop working:\\n\\n\\t",
+          "Turning the camera off",
+          "Refer to the camera's Operating Instructions for more information."
+        ]
+      },
+      {
+        "heading": "How to update the system software version",
+        "items": [
+          "Insert the SDXC or CFexpress card that contains the saved software version update data into slot B of the camera. \\t Note: Only slot B will recognize the software version update data.",
+          "Select Version .",
+          "Select Version Up in the Maintenance menu. \\t Note: The Version Up option cannot be selected if the software version update data cannot be found.",
+          "Select Execute . \\t Note: After performing this step, a “Please use the AC Adaptor” message will appear.",
+          "Select Execute on the software version update confirmation screen. \\t Note: After performing this step, a “Version Update VX.XX &gt; VY.YY” message will appear. \\t( X.XX : current version number; Y.YY : newest version number)",
+          "Select Execute on the software version update confirmation screen again.\\n\\t",
+          "When the software version update is successfully completed, the access indicator will stop flashing, and the unit will restart automatically.",
+          "Check that the software version has been updated (refer to the Checking the Current Software Version section of this document for details). \\t Note: If the system software has not been updated to the latest version, check the version update procedure, and then perform the update procedure again from step 1 .",
+          "Set the camera power switch to OFF , disconnect and reconnect the power cord, and then set the power switch to ON .",
+          "Check the software version update procedure, then perform the update procedure again from step 1 .",
+          "If the issue persists and the update is not successful, there may be a problem with the camera. In this case, please contact a Sony service representative for further assistance."
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V6.01",
+    "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
+    "guides": []
   },
   {
     "manufacturer": "ARRI",
@@ -26,7 +93,24 @@
     "notes_url": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "summary": "Software Update Package 6.1.1 is a compatibility and reliability update.",
-    "features": []
+    "features": [],
+    "install": [
+      {
+        "heading": "Update Procedure",
+        "items": [
+          "After downloading the update file from the Software Update Packages for Cameras webpage, double-click the downloaded .zip file to unpack it, or unpack it manually. This will extract two update files to your computer (*.SWU and *.lic)",
+          "If not done beforehand, prepare the USB-C medium for use with the ARRI ALEXA 265 by connecting it to the Remote and push CONFIRM. This will create the required folder structure on the USB-C medium",
+          "Connect the USB-C medium to your computer. Place the downloaded *.swu file in the ARRI/ALEXA265/SUP folder. Place the downloaded *.lic file in the ARRI/ALEXA265/LICENSES folder",
+          "The camera Software Update Package includes updates not only for the camera body but also for the MVF-2 viewfinder and the lens mount. Therefore, ensure that the MVF-2 viewfinder and the lens mount are connected to the camera during the update process",
+          "Ensure the camera is connected to a power supply or powered by a fully charged battery to prevent power loss during the update",
+          "Connect the USB-C medium to the camera and navigate to the menu item",
+          "Ensure that the correct time zone is set in MENU > System > System Time & Date"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.1",
+    "install_source": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf",
+    "file_name": "*.SWU"
   },
   {
     "manufacturer": "ARRI",
@@ -47,7 +131,26 @@
       "Picture-in-Picture Tracking Zoom**",
       "SDI Tally Overlay",
       "Extended Genlock Support"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "Update Procedure",
+        "items": [
+          "After downloading the update file from the Software Update Packages for Cameras webpage, double-click the downloaded .zip file to unpack it, or unpack it manually. This will extract two update files to your computer (*.SWU and *.lic)",
+          "If not done beforehand, prepare the USB-C medium for use with the ARRI ALEXA camera by connecting it to Remote and push CONFIRM. This will create the required folder structure on the USB-C medium",
+          "Connect the USB-C medium to your computer. Place the downloaded *.swu file in the ARRI/ALEXA35/SUP folder. Place the downloaded *.lic file in the ARRI/ALEXA35/LICENSES folder. Place the downloaded *.swu file in the ARRI/ALEXA265/SUP folder. Place the downloaded *.lic file in the ARRI/ALEXA265/LICENSES folder",
+          "The camera Software Update Package includes updates not only for the camera body but also for the MVF-2 viewfinder and the lens mount. Therefore, ensure that the MVF-2 viewfinder and the lens mount are connected to the camera during the update process",
+          "Ensure the camera is connected to a power supply or powered by a fully charged battery to prevent power loss during the update. ALEXA Series, Software Update Package 6.1.0",
+          "Connect the USB-C medium to the camera and navigate to the menu item",
+          "Ensure that the correct time zone is set in MENU > System > System Time & Date",
+          "Please note that ALEXA 35 Live is not compatible with any software version earlier than SUP 2.0.0",
+          "Please note that ALEXA 265 is not compatible with any software version earlier than SUP 3.0.3. To downdate an ALEXA 265 to SUP 3.0.3, you shall first downdate to SUP 3.0.4 and then from SUP 3.0.4 to SUP 3.0.3. All SUPs and licenses shall be on the USB-C medium you use for downdating. ALEXA Series, Software Update Package 6.1.0"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.0",
+    "install_source": "https://www.arri.com/resource/blob/406920/b5bd5855b304302cd85940ef322e5d61/alexa-35-sup-6-1-0-release-notes-data.pdf",
+    "file_name": "*.SWU"
   },
   {
     "manufacturer": "Sony",
@@ -61,7 +164,13 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3628_3626_V500_ReleaseNote.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [],
+    "install": [],
+    "file_name": null,
+    "install_version": "V5.00",
+    "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3628/software/00376811",
+    "guides": []
   },
   {
     "manufacturer": "RED",
@@ -83,7 +192,36 @@
       "Fixed intermittent boot issues",
       "Improved Lens compatibility",
       "Changed Serial Protocol \"Network (PPP)\" to \"Network RCP2 (PPP)\""
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE KOMODO FIRMWARE",
+        "items": [
+          "Copy upgrade.bin to a /upgrade directory on the CFast card.",
+          "Power up the camera and insert a CFAST card into the KOMODO media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select OK.",
+          "The camera initiates a 2 stage upgrade process which will automatically restart the camera.",
+          "After the camera restarts to complete the upgrade process, select RESTART once it appears.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "Warning message will occur with unapproved media and batteries."
+        ]
+      }
+    ],
+    "install_version": "V1.8.9",
+    "install_source": "https://www.red.com/download/komodo-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "121.6 MB"
   },
   {
     "manufacturer": "Sony",
@@ -99,7 +237,59 @@
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "757.5 MB"
+    "file_size": "757.5 MB",
+    "changelog": [
+      "Fixes an issue where Focus Bracket shooting could not be performed in some cases",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software of Your Camera",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body.",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 6.02 . \\t"
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V6.02",
+    "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -115,7 +305,59 @@
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "743.8 MB"
+    "file_size": "743.8 MB",
+    "changelog": [
+      "Fixes an issue where part of the green frame indicating the AF (autofocus) status was not displayed when using the Expand Spot feature",
+      "Improves the operational stability of the camera"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software of Your Camera",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. On-screen message: \\n",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete.",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen."
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. The update was successful if the screen shows Ver. 5.01 ."
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V5.01",
+    "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
+    "guides": []
   },
   {
     "manufacturer": "RED",
@@ -143,7 +385,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -171,7 +444,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-x-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -199,7 +503,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-x-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -227,7 +562,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xe-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -255,7 +621,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -283,7 +680,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-xl-8k-s35-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -311,7 +739,38 @@
       "Added User Buttons Video Overlays",
       "Added ND Iris Tracking",
       "Added Angelbird Media Updater (RD4.30)"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE V-RAPTOR FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the V-RAPTOR media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "RED CONNECT is a license enabled feature, for more info see https://support.reddigitalcinema.com/hc/en-us/articles/7391709361683",
+          "Some devices may experience intermittent connection issue over USB-C tethering.",
+          "Warning message will occur with unapproved media and batteries.",
+          "ST 2110 Return Feed is non-operational."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/v-raptor-s35-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "183.6 MB"
   },
   {
     "manufacturer": "RED",
@@ -339,7 +798,35 @@
       "Added Nextorage B2 Pro+ 660GB/1330GB support",
       "Added SmallHD RED Touch OS 6.1.2 firmware (SmallHD OS 6.1)",
       "Changed Serial Protocol \"Network (PPP)\" to \"Network RCP2 (PPP)\""
-    ]
+    ],
+    "install": [
+      {
+        "heading": "IMPORTANT",
+        "items": [
+          "Download the latest REDCINE-X PRO from https://www.reddigitalcinema.com/downloads"
+        ]
+      },
+      {
+        "heading": "UPGRADE KOMODO-X FIRMWARE",
+        "items": [
+          "Unzip and copy the upgrade folder, containing the upgrade.bin file, to the top level directory of the CFexpress card.",
+          "Power up the camera and insert a CFexpress card into the KOMODO-X media slot.",
+          "Go to Menu &gt; Maintenance &gt; Upgrade and select Camera Upgrade.",
+          "The camera starts the upgrade process which will automatically restart the camera.",
+          "Go to Menu &gt; System Settings &gt; System Status &gt; Camera Info to verify the firmware version after the camera boots."
+        ]
+      },
+      {
+        "heading": "OPERATIONAL NOTES",
+        "items": [
+          "Warning message will occur with unapproved Media."
+        ]
+      }
+    ],
+    "install_version": "V2.2.4",
+    "install_source": "https://www.red.com/download/komodo-x-firmware",
+    "file_name": "upgrade.bin",
+    "file_size": "161.9 MB"
   },
   {
     "manufacturer": "Sony",
@@ -355,7 +842,73 @@
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "376.5 MB"
+    "file_size": "376.5 MB",
+    "changelog": [
+      "Allows high-quality audio recording (96 kHz, 32-bit float) when the XLR-A4 adapter (sold separately) is attached to the Multi Interface Shoe",
+      "Adds support for the Preset Focus function with lenses that do not have power zoom\\n",
+      "Supports displaying the focal length down to one decimal place",
+      "Allows simultaneous Delete and Rating of images recorded on both memory card slot 1 and slot 2",
+      "Allows the display of folder names and file names during playback",
+      "Allows you to cancel the scheduled transfer of selected images during FTP* transfer *FTP = File Transfer Protocol",
+      "Adds support for the following Transfer & Tagging settings:\\n",
+      "A setting to automatically schedule FTP transfer of protected still images and videos from FTP Upload Preset",
+      "A setting to automatically protect still images transferred via FTP from FTP Upload Preset",
+      "A setting for configuring the SFTP (Secure File Transfer Protocol) server\\n",
+      "Supports the Write Digital Signature function for movies as part of Sony’s Camera Authenticity Solution\\n",
+      "Services may not be available in some countries or regions. For more information, please visit the Authenticity Catalog Page .",
+      "Supports Scan and Tag , Photo Cropping , and Volume Photography Commands under the Volume Photography License\\n",
+      "The license is scheduled to become available from late May 2026 onwards. Note: Services may not be available in some countries or regions."
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed.",
+          "If the system software version is Ver. 2.00 , the update is not required.",
+          "If the Date / Time setting screen appears when you turn on your camera, set the date and/or time to the correct values."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. On-screen message: \\n",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click the Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, the elapsed time and update progress will appear. The access lamp will then flash 1 time -> 3 times -> 5 times depending on the progress. The update will take approximately 6 minutes to complete.",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen."
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. The update was successful if the screen shows Ver. 2.00 ."
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V2.00",
+    "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -369,7 +922,13 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-2610_V30_ReleaseNotes.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [],
+    "install": [],
+    "file_name": null,
+    "install_version": "V3.00",
+    "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -383,7 +942,58 @@
     "firmware_kind": "file",
     "file_size": "811.9 MB",
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [
+      "Improves the camera's overall performance and stability"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name .",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, click Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the update progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 7.02 . \\t"
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V7.02",
+    "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -411,7 +1021,59 @@
     "firmware_kind": "file",
     "file_size": "906.6 MB",
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [
+      "Optimizes user LUT processing",
+      "Improves the camera's overall performance and stability"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name .",
+          "Please use this camera to format the memory card in advance.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute button.",
+          "Scroll down as needed to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times depending on the update progress. The update will take approximately 6 minutes to complete. \\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 6.01 . \\t"
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V6.01",
+    "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -425,7 +1087,56 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [
+      "Adds support for the new camera tracking data output function OpenTrackIO * for Virtual Production",
+      "Expands the camera tracking data ( free‑d ) functionality:\\n\\t",
+      "Adds support for the following camera position and orientation offsets:\\n\\t\\t",
+      "Offset for the slide‑base scale position",
+      "Supports additional name setting characters for the following Web App features:\\n\\t",
+      "PTZ Trace",
+      "PTZ Auto‑Framing composition presets",
+      "Improves SRT connectivity",
+      "Improves operational stability of the camera",
+      "*Compliant with SMPTE RIS‑OSVP",
+      "The output values for camera position information (X/Y/Z axis offsets) and orientation information (pan/tilt/roll angles) are unified between OpenTrackIO and free‑d . For details, please refer to the Integration Manual for Tracking Data Output .",
+      "If the camera is updated while SETUP switch 4 is ON , the IP address will be forcibly fixed and the camera may not be able to connect after the update.",
+      "Access the camera from a web browser and update the firmware. For details, please refer to the ILME-FR7 Help Guide .",
+      "The camera software update must be performed with the lens removed and the pan/tilt lock unlocked."
+    ],
+    "install": [
+      {
+        "heading": "Step 1: Download the Update File",
+        "items": [
+          "Connect your computer to the internet.",
+          "Click the Download button above.",
+          "After reading the disclaimer, click Download .\\n\\t",
+          "Save the file to the desktop of your computer (recommended)."
+        ]
+      },
+      {
+        "heading": "Step 2: Update the Software",
+        "items": [
+          "Connect the camera and the computer with the saved update file to the same network, and then turn them on.",
+          "Display the Web App screen of the camera in a web browser on the computer.\\n\\t",
+          "Select Maintenance -> Information -> Camera , and then check the Model Name and Version Number in the web menu.",
+          "Select Maintenance -> Information -> Camera -> Version Up in the web menu, press the Choose File button, and select the update file ( Update_ILMEFR7V400.dat ) that you downloaded. \\t \\t Note: Do not perform the following actions until the update has been completed:\\n\\t",
+          "Disconnecting the network",
+          "Closing the Web App screen (web browser)",
+          "The following screen appears: \\t \\n\\t",
+          "The update will fail if no update is required. Check the software version of the camera again.",
+          "The update file will start uploading. A progress bar will appear during this process. Wait until the uploading is complete before proceeding. \\t",
+          "When the update file finishes uploading, the Web App screen will appear and the update will start. \\t Notes: \\n\\t",
+          "The update process time will vary depending on your network environment.",
+          "The POWER lamp will blink yellow during the update process.",
+          "When the update process ends, the camera will reboot automatically. This will take a few minutes. Leave the camera turned on and wait until the POWER lamp lights up in green."
+        ]
+      }
+    ],
+    "file_name": "Update_ILMEFR7V400.dat",
+    "install_version": "V4.00",
+    "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -439,7 +1150,62 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [
+      "Fixes an issue where recording in DCI 4K at 24fps and shooting at 48fps results in normal-speed recording at 24fps when the APS-C S35 Shooting setting is Off or when a full-frame lens is attached and set to Auto \\t Note: APS-C S35 Shooting is locked to On when selecting a shooting frame rate of 48fps.",
+      "Fixes an issue where the power may turn off when a mount adapter is attached despite having sufficient battery charge"
+    ],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t",
+          "If the system software version is Ver. 1.01 , the update is not required.",
+          "If the Date/Time setting screen appears when you turn on your camera, be sure to set the date and/or time to the correct values."
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please format the memory card in advance using this camera.",
+          "Before formatting, copy the data to a computer or other device.\\n\\t",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software version update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY: Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute .",
+          "Please scroll down the screen as necessary to view the full text.",
+          "When the system software update starts, a black screen will appear. The access lamp will flash 1 time -> 3 times -> 5 times , and the recording lamp and rec (recording) button will flash 1 time -> 2 times -> 3 times depending on the progress of the update. The update will take approximately 6 minutes to complete. \\t \\t Notes: \\n\\t",
+          "If the access lamp repeats 5 long blinks (0.5-second cycle) and 6 short blinks (0.25-second cycle), or 7 long blinks (0.5-second cycle) and 7 short blinks (0.25-second cycle), the system software may have been incorrectly copied to the memory card.\\n\\t\\t",
+          "When the update is complete, the camera will automatically restart. \\tAfter restarting, when the “Body update complete” screen appears, press OK . \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 1.01 . \\t"
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V1.01",
+    "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
+    "guides": []
   },
   {
     "manufacturer": "ARRI",
@@ -454,7 +1220,25 @@
     "notes_url": "https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "summary": "We are pleased to announce the release of ALEXA Mini LF Software Update Package SUP 7.3.2.",
-    "features": []
+    "features": [],
+    "install": [
+      {
+        "heading": "Update Procedure",
+        "items": [
+          "After downloading the update file from the Software Update Packages for Cameras webpage, double-click the downloaded .zip file to unpack it, or unpack it manually. This will extract two update files to your computer (*.SUP and *.lic)",
+          "If not done beforehand, prepare the memory stick for use with the ALEXA Mini LF by connecting it to the Web Remote and press CONFIRM. This will create the required folder structure on the memory stick",
+          "Connect the memory stick to your computer. Place the downloaded *.SUP file in the ARRI/A-MINI-LF/SUP folder. Place the downloaded *.lic file in the ARRI/A-MINI-LF/LICENSES folder",
+          "The camera Software Update Package includes updates not only for the camera body but also for the MVF-2 viewfinder and the lens mount. Therefore, ensure that the MVF-2 viewfinder and the lens mount are connected to the camera during the update process",
+          "Ensure the camera is connected to a power supply or powered by a fully charged battery to prevent power loss during the update",
+          "Connect the memory stick to the camera and navigate to the menu item",
+          "Select the SUP file from the list and start the installation. The MVF-2 as well as the camera side display will show a screen displaying the update progress. Please note, that the update can take up to 20 minutes. The MVF-2 viewfinder may turn off during the update process and will not provide continuous visual feedback. Do not power off or unplug the camera until it has rebooted. After the update process has finished, a success message is displayed",
+          "Ensure that the correct time zone is set in MENU > System > System Time & Date"
+        ]
+      }
+    ],
+    "install_version": "SUP 7.3.2",
+    "install_source": "https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf",
+    "file_name": "*.SUP"
   },
   {
     "manufacturer": "Sony",
@@ -497,7 +1281,30 @@
     "notes_url": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all ALEXA Mini owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
-    "features": []
+    "features": [],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
+          "If not done beforehand, prepare the USB memory stick for use with ALEXA Mini by connecting it to the monitor and press CONFIRM. This will create the required folder structure on the USB stick",
+          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/A-Mini/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/A-Mini/LICENSES on the USB stick",
+          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1, the lens mount and LBUS accessories should be attached to the camera when performing an update",
+          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
+          "Remove the recording media from camera",
+          "Select the SUP file from the list and click the item",
+          "In the following message, press INSTALL to start the installation",
+          "Press CONFIRM to start the installation",
+          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
+          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
+          "Make sure you set the correct time zone in Menu > System > System Time & Date",
+          "If the MVF-1 viewfinder, CCP-1, lens mount or LBUS accessories were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.2",
+    "install_source": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
+    "file_name": "*.SUP"
   },
   {
     "manufacturer": "ARRI",
@@ -512,7 +1319,30 @@
     "notes_url": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
-    "features": []
+    "features": [],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
+          "If not done beforehand, prepare the USB memory stick for use with AMIRA by connecting it to the camera. and press CONFIRM. This will create the required folder structure on the USB stick",
+          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/AMIRA/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/AMIRA/LICENSES on the USB stick",
+          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1 and the lens mount should be attached to the camera when performing an update",
+          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
+          "Remove the recording media from camera",
+          "Select the SUP file from the list and click the item",
+          "In the following message, press INSTALL to start the installation",
+          "Press CONFIRM to start the installation",
+          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
+          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
+          "Make sure you set the correct time zone in Menu > System > System Time & Date",
+          "If the MVF-1 viewfinder, CCP-1 or lens mount were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.2",
+    "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
+    "file_name": "*.SUP"
   },
   {
     "manufacturer": "ARRI",
@@ -527,7 +1357,40 @@
     "notes_url": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
     "summary": "ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This includes a fix for the orange line bug and the replacement of the MAGNIFICATION indication orange line/outline by MAGNIFICATION icons in the status area to the right of the image.",
-    "features": []
+    "features": [],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for",
+          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated, and you can use the camera. Updating an Electronic Viewfinder EVF-1 or EVF-2 In case an ALEXA electronic viewfinder EVF-1 or EVF-2 has not been updated with the camera, it is possible to update the viewfinder separately by using a computer. Please note that the viewfinder will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the viewfinder to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
+          "Depending on its software version, the camera may state: ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
+        ]
+      }
+    ],
+    "install_version": "SUP 4.3",
+    "install_source": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
+    "file_name": null
   },
   {
     "manufacturer": "ARRI",
@@ -551,7 +1414,40 @@
       "Separate control of MON OUT 1, 2 and 3",
       "Faster Controlled Lens Motor (CLM) response",
       "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for ALEXA 7123: http://alexa7123.local/update.cgi)",
+          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electronic viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF-1 will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the EVF-1 to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
+          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
+        ]
+      }
+    ],
+    "install_version": "SUP 2.1",
+    "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
+    "file_name": null
   },
   {
     "manufacturer": "ARRI",
@@ -579,7 +1475,47 @@
       "Refined user buttons",
       "Framelines in metadata",
       "Time Zone in metadata"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ -45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi , where XXXX is the four -digit serial number of your camera (e.g. for",
+          "If you are using a computer without Bonjour support please use the camera’s IP address t o connect, e.g.: http://192.168.xxx.xxx/update.cgi , where xxx.xxx is the two last groups of your camera“s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software packet. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electroni c viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF -1 will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of th e computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the EVF-1 to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfin der is up to date",
+          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera. Updating the V-Mount Top/Back Battery Adapter with a Computer This procedure requires the ALEXA to be connected to a computer and SUP 4.0 or later. To update the firmware of the V-mount battery adapters please perform the following steps:",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a compu ter’",
+          "Attach a charged V -Mount battery to the mount",
+          "Click the 'Update VMOUNT' button in the ‘V-Mount Update’ section",
+          "The update will take approximately three minutes. You can watch the progress of the update on the screen",
+          "If you get an error, you might have an old style V -mount battery adapter, which cannot be updated",
+          "When the update is done, the last line on the screen reads ‘successfully updated V -Mount Adapter’ and the V-mount battery adapter’s firmware is up to date",
+          "If your V-mount battery adapter cannot be updated, please contact ARRI Service http://www.arri.com/service. E"
+        ]
+      }
+    ],
+    "install_version": "SUP 11.1.1",
+    "install_source": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
+    "file_name": null
   },
   {
     "manufacturer": "ARRI",
@@ -607,7 +1543,47 @@
       "Web Remote 2.0",
       "Refined user buttons",
       "Framelines in metadata"
-    ]
+    ],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ -45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi , where XXXX is the four -digit serial number of your camera (e.g. for",
+          "If you are using a computer without Bonjour support please use the camera’s IP address t o connect, e.g.: http://192.168.xxx.xxx/update.cgi , where xxx.xxx is the two last groups of your camera“s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software packet. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electroni c viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF -1 will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of th e computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the EVF-1 to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfin der is up to date",
+          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera. Updating the V-Mount Top/Back Battery Adapter with a Computer This procedure requires the ALEXA to be connected to a computer and SUP 4.0 or later. To update the firmware of the V-mount battery adapters please perform the following steps:",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a compu ter’",
+          "Attach a charged V -Mount battery to the mount",
+          "Click the 'Update VMOUNT' button in the ‘V-Mount Update’ section",
+          "The update will take approximately three minutes. You can watch the progress of the update on the screen",
+          "If you get an error, you might have an old style V -mount battery adapter, which cannot be updated",
+          "When the update is done, the last line on the screen reads ‘successfully updated V -Mount Adapter’ and the V-mount battery adapter’s firmware is up to date",
+          "If your V-mount battery adapter cannot be updated, please contact ARRI Service http://www.arri.com/service. E"
+        ]
+      }
+    ],
+    "install_version": "SUP 11.1.1",
+    "install_source": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
+    "file_name": null
   },
   {
     "manufacturer": "Sony",
@@ -677,6 +1653,12 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [],
+    "install": [],
+    "file_name": null,
+    "install_version": "V4.03",
+    "install_source": "https://www.sony.com/electronics/support/professional-camcorders-handheld-camcorders/pxw-fs5/software/mpengb00000897",
+    "guides": []
   }
 ]
