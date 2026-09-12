@@ -64,7 +64,7 @@ def english_extras(product):
             row = EN_DETAILS.get(alias)
     if row is None:
         return {}
-    return {
+    extras = {
         "changelog": row.get("changelog") or [],
         "install": row.get("install") or [],
         "file_name": row.get("file_name"),
@@ -73,6 +73,12 @@ def english_extras(product):
         "guides": row.get("guides") or [],
         "source_url": row.get("source_url"),
     }
+    if row.get("firmware_url"):
+        extras["firmware_url"] = row["firmware_url"]
+        extras["firmware_kind"] = "file"
+    if row.get("previous_versions"):
+        extras["previous_versions"] = row["previous_versions"]
+    return extras
 
 feed = []
 # FX pages give exact dates, so they override the month-only index values

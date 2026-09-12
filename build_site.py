@@ -636,6 +636,7 @@ def panel_payload(cam, name, label):
         "summary": cam.get("summary") or "",
         "links": links,
         "monitors": cam.get("compatible_monitors") or [],
+        "prev": cam.get("previous_versions") or [],
     }
 
 

@@ -456,6 +456,36 @@ def main():
             "guides": cinema.get("guides") or [],
             "language": "en",
         }
+        # ---- Previous versions (up to 5) ----
+        prev = []
+        for prev_entry in (entries[1:6] if product not in ("VENICE", "VENICE 2", "BURANO", "PXW-FS5") else []):
+            pv = {"v": None, "d": None, "cl": [], "dl": None}
+            # Extract version from title
+            pv_ver = re.search(r"(?:Ver\.?\s*|V)([0-9]+(?:\.[0-9]+)+)", prev_entry["title"])
+            if pv_ver:
+                pv["v"] = "V" + pv_ver.group(1)
+            try:
+                prev_page = fetch(prev_entry["url"], tries=1)
+                prev_info = file_info(flat(prev_page))
+                if prev_info.get("version"):
+                    pv["v"] = prev_info["version"]
+                if prev_info.get("release_date"):
+                    pv["d"] = prev_info["release_date"]
+                prev_cl, _ = split_sections(blocks(prev_page))
+                pv["cl"] = prev_cl[:10]
+                try:
+                    prev_dl = DOWNLOAD_RE.search(prev_page)
+                except NameError:
+                    prev_dl = None
+                if prev_dl:
+                    pv["dl"] = prev_dl.group(1)
+            except Exception:
+                pass
+            if pv["v"]:
+                prev.append(pv)
+            time.sleep(0.5)
+        row["previous_versions"] = prev
+
         results.append(row)
 
         print("  Version: " + str(row["version"])
@@ -465,6 +495,7 @@ def main():
         for line in changelog[:2]:
             print("    - " + line[:72])
         print("  Install sections: " + str(len(install)))
+        print("  Previous versions: " + str(len(prev)))
         for block in install:
             print("    [" + block["heading"][:44] + "] "
                   + str(len(block["items"])) + " lines")

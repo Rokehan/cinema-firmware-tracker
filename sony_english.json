@@ -72,7 +72,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -131,7 +132,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -191,7 +193,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -254,7 +257,15 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": [
+      {
+        "v": "V1.00",
+        "d": "2025-07-09",
+        "cl": [],
+        "dl": null
+      }
+    ]
   },
   {
     "manufacturer": "Sony",
@@ -268,7 +279,8 @@
     "install": [],
     "firmware_url": null,
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -282,7 +294,8 @@
     "install": [],
     "firmware_url": null,
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -296,7 +309,8 @@
     "install": [],
     "firmware_url": null,
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -353,7 +367,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -367,7 +382,8 @@
     "install": [],
     "firmware_url": null,
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -441,7 +457,15 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": [
+      {
+        "v": "V2.00",
+        "d": "2026-14-05",
+        "cl": [],
+        "dl": null
+      }
+    ]
   },
   {
     "manufacturer": "Sony",
@@ -501,7 +525,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -559,7 +584,8 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   },
   {
     "manufacturer": "Sony",
@@ -619,6 +645,7 @@
     ],
     "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
-    "language": "en"
+    "language": "en",
+    "previous_versions": []
   }
 ]
