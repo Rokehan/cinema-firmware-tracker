@@ -644,7 +644,7 @@ def panel_links(cam):
             out.append(("Source", cam["firmware_url"]))
     if cam.get("notes_url"):
         out.append(("Release notes", cam["notes_url"]))
-    out.append(("Source", cam.get("source_url") or ""))
+    out.append(("Source", cam.get("install_source") or cam.get("source_url") or ""))
 
     seen = []
     final = []
@@ -689,7 +689,7 @@ def card(cam):
         links.append((text, cam["firmware_url"]))
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
-    links.append(("Source", cam.get("source_url") or ""))
+    links.append(("Source", cam.get("install_source") or cam.get("source_url") or ""))
     # archive_url is deliberately unused: every ARRI camera points at the
     # same archive page, so a per-camera button added nothing.
 

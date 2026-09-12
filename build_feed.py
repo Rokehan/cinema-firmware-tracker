@@ -71,6 +71,7 @@ def english_extras(product):
         "install_version": row.get("version"),
         "install_source": row.get("source_url"),
         "guides": row.get("guides") or [],
+        "source_url": row.get("source_url"),
     }
 
 feed = []
