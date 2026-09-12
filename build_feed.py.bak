@@ -66,6 +66,9 @@ with open("arri_cameras.json") as f:
 with open("sony_cameras.json") as f:
     for row in json.load(f):
         fx = FX_OVERRIDE.get(row["product"])
+        # sony_files.py resolves the real BODYDATA.DAT URL where Sony
+        # publishes one. Absent, the support page stands in as before.
+        fx_file = (fx or {}).get("firmware_url")
         feed.append({
             "manufacturer": "Sony",
             "product": row["product"],
@@ -77,8 +80,12 @@ with open("sony_cameras.json") as f:
                 if (row.get("firmware_url") or fx) else "documentation_only",
             "source_url": fx["page_url"] if fx
                 else (row.get("page_url") or "https://www.sony.jp/ls-camera/update/"),
-            "firmware_url": row.get("firmware_url") or (fx["page_url"] if fx else None),
-            "firmware_kind": "page" if (fx and not row.get("firmware_url")) else "file",
+            "firmware_url": row.get("firmware_url") or fx_file
+            or (fx["page_url"] if fx else None),
+            "firmware_kind": "file"
+            if (row.get("firmware_url") or fx_file)
+            else ("page" if fx else "file"),
+            "file_size": (fx or {}).get("file_size"),
             "notes_url": row.get("notes_url"),
             "archive_url": None,
         })

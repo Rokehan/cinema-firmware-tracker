@@ -114,6 +114,32 @@ try:
 except FileNotFoundError:
     print("red_cameras.json not found, skipping RED")
 
+# ---- Sony Alpha bodies ----
+# Stills-hybrid bodies that get used on cinema jobs. sony_alpha.py writes
+# feed-shaped rows, including the real BODYDATA.DAT file URL where Sony
+# publishes one.
+try:
+    with open("sony_alpha.json") as f:
+        for row in json.load(f):
+            feed.append({
+                "manufacturer": "Sony",
+                "product": row["product"],
+                "version": row["version"],
+                "release_date": row["release_date"],
+                "release_precision": row.get("release_precision") or "day",
+                "status": row["status"],
+                "source_url": row["source_url"],
+                "firmware_url": row.get("firmware_url"),
+                "firmware_kind": row.get("firmware_kind") or "file",
+                "notes_url": row.get("notes_url"),
+                "archive_url": None,
+                "summary": row.get("summary"),
+                "features": row.get("features") or [],
+                "file_size": row.get("file_size"),
+            })
+except FileNotFoundError:
+    print("sony_alpha.json not found, skipping Sony Alpha bodies")
+
 feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
 
 with open("feed.json", "w") as f:

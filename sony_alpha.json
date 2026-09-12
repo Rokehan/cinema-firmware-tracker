@@ -1,0 +1,53 @@
+[
+  {
+    "manufacturer": "Sony",
+    "product": "α7 V (ILCE-7M5)",
+    "slug": "ilce-7m5",
+    "version": "V2.00",
+    "release_date": "2026-05-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377433",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/pHc079e9a9/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "376.5 MB"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "α7 IV (ILCE-7M4)",
+    "slug": "ilce-7m4",
+    "version": "V6.02",
+    "release_date": "2026-05-28",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00400195",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/YE19b5b7b3/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "757.5 MB"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "α7S III (ILCE-7SM3)",
+    "slug": "ilce-7sm3",
+    "version": "V5.01",
+    "release_date": "2026-05-28",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00400068",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Y416105adc/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "743.8 MB"
+  }
+]

@@ -30,6 +30,9 @@ jobs:
       - name: Scrape Sony FX line
         run: python sony_fx.py
 
+      - name: Resolve Sony file URLs
+        run: python sony_files.py
+
       - name: Scrape RED
         run: python red_cameras.py
 

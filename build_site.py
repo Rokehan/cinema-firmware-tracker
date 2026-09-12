@@ -293,6 +293,11 @@ def card(cam):
         cam.get("product") or "",
         (cam.get("release_date") or "")[:4],
     ]).lower()
+
+    # Sony brands these bodies with a Greek alpha. Nobody types that, so
+    # "a7" and "alpha" find them too.
+    if "\u03b1" in haystack:
+        haystack += " " + haystack.replace("\u03b1", "a") + " alpha"
     # Three button labels only: Download, Release notes, Source.
     # "Download" is claimed for a real file, or for RED, whose file sits
     # behind an account login (the plate says so). A page-style link is the
