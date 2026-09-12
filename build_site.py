@@ -639,10 +639,7 @@ def panel_links(cam):
     make = cam.get("manufacturer")
     out = []
     if cam.get("firmware_url"):
-        if cam.get("firmware_kind") != "page" or make == "RED":
-            out.append(("Download", cam["firmware_url"]))
-        else:
-            out.append(("Source", cam["firmware_url"]))
+        out.append(("Download", cam["firmware_url"]))
     if cam.get("notes_url"):
         out.append(("Release notes", cam["notes_url"]))
     out.append(("Source", cam.get("source_url") or ""))
@@ -683,11 +680,7 @@ def card(cam):
     # Source button when the URL is the same.
     links = []
     if cam.get("firmware_url"):
-        if cam.get("firmware_kind") != "page" or make == "RED":
-            text = "Download"
-        else:
-            text = "Source"
-        links.append((text, cam["firmware_url"]))
+        links.append(("Download", cam["firmware_url"]))
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
     links.append(("Source", cam.get("source_url") or ""))

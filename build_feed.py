@@ -240,6 +240,13 @@ for en_key, meta in EN_ONLY_BODIES.items():
         **english_extras(meta["display"]),
     })
 
+# Cameras without a direct file but with a source page get a
+# page-type download link so the Download button appears.
+for entry in feed:
+    if not entry.get("firmware_url") and entry.get("source_url"):
+        entry["firmware_url"] = entry["source_url"]
+        entry["firmware_kind"] = "page"
+
 feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
 
 with open("feed.json", "w") as f:
