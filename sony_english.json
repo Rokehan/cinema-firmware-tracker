@@ -70,7 +70,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -129,7 +129,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -189,7 +189,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -252,7 +252,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -278,6 +278,20 @@
     "file_name": null,
     "file_size": null,
     "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
+    "changelog": [],
+    "install": [],
+    "firmware_url": null,
+    "guides": [],
+    "language": "en"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "VENICE",
+    "version": "V6.30",
+    "release_date": null,
+    "file_name": null,
+    "file_size": null,
+    "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
     "changelog": [],
     "install": [],
     "firmware_url": null,
@@ -337,7 +351,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -425,7 +439,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -485,7 +499,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -543,7 +557,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   },
@@ -603,7 +617,7 @@
         ]
       }
     ],
-    "firmware_url": null,
+    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
     "guides": [],
     "language": "en"
   }

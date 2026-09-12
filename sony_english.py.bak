@@ -36,10 +36,6 @@ CAMC = ("/electronics/support/camcorders-and-video-cameras-"
 CINE = "/electronics/support/professional-cameras-digital-cinema-cameras/"
 ALPHA = "/electronics/support/e-mount-body-ilce-7-series/"
 
-# EN pages for these legacy models are dead (500/408/404 as of Sep 2026).
-# Skip to avoid hanging the pipeline. Re-enable if Sony revives them.
-SKIP_MODELS = {"FX9", "FS7 II", "PXW-FS7", "PMW-F55", "PMW-F5"}
-
 MODELS = {
     "FX6": [ILME + "ilme-fx6v/downloads", CAMC + "ilme-fx6v/downloads"],
     "FX3": [CAMC + "ilme-fx3/downloads", ILME + "ilme-fx3/downloads"],
@@ -123,7 +119,7 @@ LATEST_LINK_RE = re.compile(
 HEADING_RE = re.compile(r"(?is)<h([1-6])[^>]*>(.*?)</h\1>")
 
 
-def fetch(url, tries=2):
+def fetch(url, tries=3):
     """Fetch with retries. sony.com throws intermittent 500s."""
     last = None
     for attempt in range(tries):
@@ -381,12 +377,6 @@ def main():
     print("")
 
     for product, paths in MODELS.items():
-        if product in SKIP_MODELS:
-            print("=" * 60)
-            print(product)
-            print("  skipped (EN page known dead)")
-            print()
-            continue
         print("=" * 60)
         print(product)
         entries = []

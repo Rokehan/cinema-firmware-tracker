@@ -1311,12 +1311,18 @@
     "release_date": "2023-01",
     "release_precision": "month",
     "status": "firmware_available",
-    "source_url": "https://www.sony.jp/ls-camera/update/VENICE.html",
+    "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
     "firmware_url": "https://download.pro.sony/22/12/KJBBLlo_bA/MPC-3610_V630.zip",
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3610_V630_ReleaseNote.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "changelog": [],
+    "install": [],
+    "file_name": null,
+    "install_version": "V6.30",
+    "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
+    "guides": []
   },
   {
     "manufacturer": "Sony",
