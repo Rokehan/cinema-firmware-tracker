@@ -367,6 +367,30 @@ function render(data) {
       + '<ul class="lines">' + guides + "</ul></div></details>";
   }
 
+
+ if (data.prev && data.prev.length) {
+   var pvInner = "";
+   data.prev.forEach(function (pv) {
+     var pvHead = esc(pv.v || "");
+     if (pv.d) { pvHead += " / " + esc(pv.d); }
+     pvInner += "<details><summary>" + pvHead + "</summary>";
+     pvInner += '<div class="inner">';
+     if (pv.cl && pv.cl.length) {
+       pvInner += listOf(pv.cl, false);
+     } else {
+       pvInner += '<p class="said">No changelog published.</p>';
+     }
+     if (pv.dl) {
+       pvInner += '<div class="acts" style="margin-top:12px">';
+       pvInner += '<a href="' + esc(pv.dl) + '" target="_blank" rel="noopener">';
+       pvInner += "Download " + esc(pv.v || "") + "</a></div>";
+     }
+     pvInner += "</div></details>";
+   });
+   html += "<details><summary>Previous versions (" + data.prev.length;
+   html += ')</summary><div class="inner">' + pvInner;
+   html += "</div></details>";
+ }
   panelBody.innerHTML = html;
   panelBody.scrollTop = 0;
 }
