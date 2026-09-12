@@ -1,0 +1,72 @@
+[
+  {
+    "manufacturer": "SmallHD",
+    "product": "PageOS",
+    "version": "6.3.0",
+    "release_date": "2026-01-16",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://downloads.smallhd.com/firmware/smallhdos/6.3.0",
+    "firmware_url": "https://downloads.smallhd.com/firmware/smallhdos/6.3.0",
+    "firmware_kind": "page",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": "Shared firmware for all current SmallHD monitors.",
+    "compatible_monitors": [
+      "703 Bolt",
+      "703 UltraBright",
+      "503 UltraBright",
+      "Ultra 5",
+      "Ultra 7",
+      "Cine 5",
+      "Cine 7",
+      "Cine 13",
+      "Cine 18",
+      "Cine 24",
+      "Vision 17",
+      "OLED 27"
+    ],
+    "changelog": [
+      "Fleet Control: manage multiple monitors simultaneously over a network",
+      "Portrait Mode UI for vertical video production",
+      "Canon camera control (C70, C80, C300 III, C400, C500 II)",
+      "Camera control on physical dials (Quantum/Ultra 10 series)",
+      "Downstream LUT support on 4K Production Monitors",
+      "Ultra 7 Max Bright mode",
+      "Cross conversion and Signal Routing Diagram on 4K Production Monitors"
+    ],
+    "install": [
+      {
+        "heading": "Prepare the SD card",
+        "items": [
+          "SD card must be 16 GB or smaller.",
+          "Format as FAT or FAT32 (Windows) or MS-DOS FAT (macOS). If partitioned, select MBR Master Boot Record under Scheme."
+        ]
+      },
+      {
+        "heading": "Download and copy firmware",
+        "items": [
+          "Visit downloads.smallhd.com and download the latest PageOS firmware.",
+          "Extract the .bin file from the .zip download.",
+          "Drag and drop the .bin file onto your SD card."
+        ]
+      },
+      {
+        "heading": "Install on the monitor",
+        "items": [
+          "Remove the SD card from your computer.",
+          "Insert the SD card into your SmallHD monitor.",
+          "Turn on the monitor.",
+          "Swipe/toggle left, or tap the screen to access the Settings Menu.",
+          "Scroll down and tap FIRMWARE.",
+          "Tap the available firmware, then follow the prompts to begin the update.",
+          "Once complete, hold the power button for at least 5 seconds to reboot.",
+          "Press the power button again to start using the updated firmware.",
+          "CAUTION: Do not lose power during the firmware update."
+        ]
+      }
+    ],
+    "install_version": "6.3.0",
+    "install_source": "https://guide.smallhd.com/a/1810433-firmware"
+  }
+]

@@ -428,7 +428,7 @@ ORANGE = "#ff7200"
 OLIVE = "#a3bd6a"
 GREY = "#8d8378"
 
-EXPECTED_MAKES = ["ARRI", "Sony", "RED"]
+EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD"]
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -635,6 +635,7 @@ def panel_payload(cam, name, label):
         "source": cam.get("source_url") or "",
         "summary": cam.get("summary") or "",
         "links": links,
+        "monitors": cam.get("compatible_monitors") or [],
     }
 
 
@@ -672,6 +673,7 @@ def card(cam):
         cam.get("version") or "",
         cam.get("product") or "",
         (cam.get("release_date") or "")[:4],
+        " ".join(cam.get("compatible_monitors") or []),
     ]).lower()
 
     # Sony brands these bodies with a Greek alpha. Nobody types that, so
@@ -705,7 +707,10 @@ def card(cam):
                     + '" target="_blank" rel="noopener">' + esc(text) + "</a>")
 
     summary = cam.get("summary")
+    monitors = cam.get("compatible_monitors") or []
     summary_html = ""
+    if monitors:
+        summary = (summary or "") + " Compatible: " + ", ".join(monitors) + "."
     if summary:
         short = summary if len(summary) < 190 else summary[:187].rstrip() + "..."
         summary_html = '<p class="sum">' + esc(short) + "</p>"

@@ -240,6 +240,17 @@ for en_key, meta in EN_ONLY_BODIES.items():
         **english_extras(meta["display"]),
     })
 
+# ---- SmallHD ----
+# SmallHD ships one firmware (PageOS) for all current monitors.
+# The compatible_monitors list goes into the search haystack so
+# typing a monitor name finds the firmware entry.
+try:
+    with open("smallhd.json") as f:
+        for row in json.load(f):
+            feed.append(row)
+except FileNotFoundError:
+    print("smallhd.json not found, skipping SmallHD")
+
 # Cameras without a direct file but with a source page get a
 # page-type download link so the Download button appears.
 for entry in feed:
