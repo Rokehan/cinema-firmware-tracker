@@ -9,13 +9,13 @@ import json
 import re
 from datetime import datetime, timezone
 
-TEMPLATE = """<!DOCTYPE html>
+TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Firmware Index / cinema camera firmware, in one place</title>
-<meta name="description" content="Every professional cinema camera firmware update in one place. ARRI and Sony, checked daily, every record linked to the manufacturer.">
+<meta name="description" content="Every professional cinema camera firmware update in one place. __WATCHING__, checked daily, every record linked to the manufacturer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -55,6 +55,28 @@ nav button:hover{border-color:var(--edge-hi);color:var(--text)}
 nav button[aria-current=true]{border-color:var(--orange);color:var(--orange)}
 nav .soon{opacity:.45;cursor:default;pointer-events:none}
 
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  padding:26px 0;border-bottom:1px solid var(--edge)}
+.controls nav{padding:0;border:0}
+.search{position:relative;margin-left:auto}
+.search input{font-family:"JetBrains Mono",monospace;font-size:.8rem;
+  letter-spacing:.04em;color:var(--text);background:var(--plate);
+  border:1px solid var(--edge);padding:10px 34px 10px 14px;width:254px;
+  transition:.18s}
+.search input::placeholder{color:var(--mute);text-transform:uppercase;
+  font-size:.7rem;letter-spacing:.16em}
+.search input:focus{outline:none;border-color:var(--orange)}
+.search button{position:absolute;right:0;top:0;bottom:0;width:32px;padding:0;
+  border:0;background:none;color:var(--mute);cursor:pointer;font-size:1rem;
+  display:none}
+.search button:hover{color:var(--orange)}
+.search.has-text button{display:block}
+
+.empty{display:none;padding:64px 4px;font-family:"JetBrains Mono",monospace;
+  font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.empty.on{display:block}
+.empty b{color:var(--text)}
+
 .grid{display:grid;gap:1px;background:var(--edge);border:1px solid var(--edge);
   grid-template-columns:repeat(auto-fill,minmax(272px,1fr));margin:32px 0 0}
 .plate{background:var(--plate);padding:0;position:relative;display:flex;flex-direction:column}
@@ -83,7 +105,7 @@ footer strong{color:var(--text);font-weight:700}
 <body>
 <div class="wrap">
 <header>
-  <p class="eyebrow"><span class="tally"></span> Firmware Index / monitoring ARRI + Sony</p>
+  <p class="eyebrow"><span class="tally"></span> Firmware Index / monitoring __WATCHING__</p>
   <h1>Every cinema camera firmware update, <em>in one place.</em></h1>
   <div class="stats">
     <div class="stat"><span>Cameras</span><strong>__COUNT__</strong></div>
@@ -93,10 +115,20 @@ footer strong{color:var(--text);font-weight:700}
   </div>
 </header>
 
-<nav id="filters">
-  <button data-make="all" aria-current="true">All</button>
-  __TABS__
-</nav>
+<div class="controls">
+  <nav id="filters">
+    <button data-make="all" aria-current="true">All</button>
+    __TABS__
+  </nav>
+  <div class="search" id="search">
+    <label for="q" class="visually-hidden"></label>
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search camera or version" aria-label="Search cameras">
+    <button type="button" id="clear" aria-label="Clear search">&times;</button>
+  </div>
+</div>
+
+<p class="empty" id="empty">No camera matches <b id="term"></b></p>
 
 <main class="grid" id="grid">
 __CARDS__
@@ -113,15 +145,57 @@ __CARDS__
 
 <script>
 var buttons = document.querySelectorAll("#filters button[data-make]:not(.soon)");
-buttons.forEach(function (b) {
-  b.addEventListener("click", function () {
-    var make = b.dataset.make;
-    buttons.forEach(function (o) { o.setAttribute("aria-current", String(o === b)); });
-    document.querySelectorAll("#grid .plate").forEach(function (p) {
-      p.style.display = (make === "all" || p.dataset.make === make) ? "flex" : "none";
+var plates = document.querySelectorAll("#grid .plate");
+var box = document.getElementById("q");
+var wrap = document.getElementById("search");
+var clear = document.getElementById("clear");
+var empty = document.getElementById("empty");
+var term = document.getElementById("term");
+var make = "all";
+
+function apply() {
+  var query = box.value.trim().toLowerCase();
+  var words = query.split(/\s+/).filter(Boolean);
+  var shown = 0;
+
+  plates.forEach(function (plate) {
+    var hay = plate.dataset.find || "";
+    var hit = words.every(function (word) { return hay.indexOf(word) > -1; });
+    var inMake = make === "all" || plate.dataset.make === make;
+    var on = hit && inMake;
+    plate.style.display = on ? "flex" : "none";
+    if (on) { shown += 1; }
+  });
+
+  wrap.classList.toggle("has-text", query.length > 0);
+  empty.classList.toggle("on", shown === 0);
+  term.textContent = query ? String.fromCharCode(34) + box.value.trim() + String.fromCharCode(34) : "that filter";
+}
+
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    make = button.dataset.make;
+    buttons.forEach(function (other) {
+      other.setAttribute("aria-current", String(other === button));
     });
+    apply();
   });
 });
+
+box.addEventListener("input", apply);
+box.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") { box.value = ""; apply(); }
+});
+clear.addEventListener("click", function () { box.value = ""; box.focus(); apply(); });
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "/" && document.activeElement !== box) {
+    event.preventDefault();
+    box.focus();
+  }
+});
+
+apply();
 </script>
 </body>
 </html>
@@ -202,27 +276,46 @@ def card(cam):
     label, tone = state_of(cam)
     make = cam.get("manufacturer", "")
     esc = html.escape
+    name = display_name(cam.get("product"))
+
+    # Everything a tech might type: name, maker, version, the raw product
+    # string from the feed, and the year. Matched case-insensitively.
+    haystack = " ".join(str(part) for part in [
+        name,
+        make,
+        cam.get("version") or "",
+        cam.get("product") or "",
+        (cam.get("release_date") or "")[:4],
+    ]).lower()
+    # Three button labels only: Download, Release notes, Source.
+    # "Download" is claimed for a real file, or for RED, whose file sits
+    # behind an account login (the plate says so). A page-style link is the
+    # manufacturer's own page, so it is a Source and collapses into the
+    # Source button when the URL is the same.
     links = []
     if cam.get("firmware_url"):
-        if cam.get("firmware_kind") != "page":
+        if cam.get("firmware_kind") != "page" or make == "RED":
             text = "Download"
-        elif make == "RED":
-            text = "Download (RED login)"
         else:
-            text = "Update page"
+            text = "Source"
         links.append((text, cam["firmware_url"]))
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
-    if cam.get("archive_url"):
-        links.append(("Archive", cam["archive_url"]))
     links.append(("Source", cam.get("source_url") or ""))
+    # The ARRI archive page is a different thing from this release's page.
+    # With only three labels allowed it would have to masquerade as a
+    # Source, so it is left off rather than mislabelled.
+    if cam.get("archive_url"):
+        links.append(("Source", cam["archive_url"]))
 
     rows = []
     used = []
+    seen_labels = []
     for text, href in links:
-        if not href or href in used:
+        if not href or href in used or text in seen_labels:
             continue
         used.append(href)
+        seen_labels.append(text)
         rows.append('<a href="' + esc(href, quote=True)
                     + '" target="_blank" rel="noopener">' + esc(text) + "</a>")
 
@@ -233,13 +326,14 @@ def card(cam):
         summary_html = '<p class="sum">' + esc(short) + "</p>"
 
     return (
-        '<article class="plate" data-make="' + esc(make, quote=True) + '">'
+        '<article class="plate" data-make="' + esc(make, quote=True) + '"'
+        + ' data-find="' + esc(haystack, quote=True) + '">'
         + '<span class="stripe" style="background:' + tone + '"></span>'
         + '<div class="top"><span>' + esc(make) + "</span><span>"
         + esc(date_label(cam.get("release_date"), cam.get("release_precision")))
         + "</span></div>"
         + '<div class="body">'
-        + '<h2 class="name">' + esc(display_name(cam.get("product"))) + "</h2>"
+        + '<h2 class="name">' + esc(name) + "</h2>"
         + '<p class="ver" style="color:' + tone + '">'
         + esc(cam.get("version") or "unknown") + "</p>"
         + '<p class="state">' + esc(label) + "</p>"
@@ -279,6 +373,7 @@ def main():
 
     page = page.replace("__COUNT__", str(len(cams)))
     page = page.replace("__LINKED__", str(linked))
+    page = page.replace("__WATCHING__", " + ".join(ordered))
     page = page.replace("__MAKES__", str(len(makes)))
     page = page.replace("of 3", "of " + str(len(EXPECTED_MAKES)))
     page = page.replace("__TABS__", tabs)
