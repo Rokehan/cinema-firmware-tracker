@@ -21,6 +21,9 @@ jobs:
       - name: Scrape ARRI
         run: python arri_cameras.py
 
+      - name: Fetch ARRI details
+        run: python arri_details.py
+
       - name: Scrape Sony index
         run: python sony_downloads.py
 
@@ -40,6 +43,6 @@ jobs:
         run: |
           git config user.name "firmware-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add feed.json snapshot.json arri_cameras.json index.html sony_cameras.json sony_fx.json
+          git add feed.json snapshot.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
           git diff --staged --quiet || git commit -m "Daily firmware check"
           git push

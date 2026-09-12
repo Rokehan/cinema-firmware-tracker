@@ -96,7 +96,6 @@ footer strong{color:var(--text);font-weight:700}
 <nav id="filters">
   <button data-make="all" aria-current="true">All</button>
   __TABS__
-  <button class="soon" data-make="RED">RED / soon</button>
 </nav>
 
 <main class="grid" id="grid">
@@ -132,6 +131,8 @@ ORANGE = "#ff7200"
 OLIVE = "#a3bd6a"
 GREY = "#8d8378"
 
+EXPECTED_MAKES = ["ARRI", "Sony", "RED"]
+
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -148,9 +149,17 @@ def date_label(value, precision):
 
 
 def state_of(cam):
-    """What a tech actually gets if they click. Four honest outcomes."""
+    """What a tech actually gets if they click. Honest outcomes only.
+
+    A "page" link is not a download: Sony's FX bodies want a file copied to
+    a card, and RED puts the firmware behind an account login. Say so
+    rather than promising a file.
+    """
     kind = cam.get("firmware_kind")
+    make = cam.get("manufacturer")
     if cam.get("firmware_url") and kind == "page":
+        if make == "RED":
+            return "Login to download", OLIVE
         return "Card update via Sony", OLIVE
     if cam.get("firmware_url"):
         return "Firmware + notes", ORANGE
@@ -195,7 +204,12 @@ def card(cam):
     esc = html.escape
     links = []
     if cam.get("firmware_url"):
-        text = "Update page" if cam.get("firmware_kind") == "page" else "Download"
+        if cam.get("firmware_kind") != "page":
+            text = "Download"
+        elif make == "RED":
+            text = "Release history"
+        else:
+            text = "Update page"
         links.append((text, cam["firmware_url"]))
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
@@ -204,9 +218,11 @@ def card(cam):
     links.append(("Source", cam.get("source_url") or ""))
 
     rows = []
+    used = []
     for text, href in links:
-        if not href:
+        if not href or href in used:
             continue
+        used.append(href)
         rows.append('<a href="' + esc(href, quote=True)
                     + '" target="_blank" rel="noopener">' + esc(text) + "</a>")
 
@@ -244,11 +260,19 @@ def main():
             makes.append(cam["manufacturer"])
 
     linked = sum(1 for cam in cams if cam.get("firmware_url"))
-    tabs = "".join(
-        '<button data-make="' + html.escape(m, quote=True) + '">'
-        + html.escape(m) + "</button>"
-        for m in makes
-    )
+    ordered = [m for m in EXPECTED_MAKES if m in makes]
+    ordered += [m for m in makes if m not in ordered]
+
+    parts = []
+    for make in ordered:
+        parts.append('<button data-make="' + html.escape(make, quote=True)
+                     + '">' + html.escape(make) + "</button>")
+    for make in EXPECTED_MAKES:
+        if make not in makes:
+            parts.append('<button class="soon" data-make="'
+                         + html.escape(make, quote=True) + '">'
+                         + html.escape(make) + " / soon</button>")
+    tabs = "".join(parts)
     stamp = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
 
     page = TEMPLATE
@@ -256,6 +280,7 @@ def main():
     page = page.replace("__COUNT__", str(len(cams)))
     page = page.replace("__LINKED__", str(linked))
     page = page.replace("__MAKES__", str(len(makes)))
+    page = page.replace("of 3", "of " + str(len(EXPECTED_MAKES)))
     page = page.replace("__TABS__", tabs)
     page = page.replace("__CARDS__", chr(10).join(card(c) for c in cams))
     page = page.replace("__STAMP__", stamp)

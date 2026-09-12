@@ -30,6 +30,9 @@ jobs:
       - name: Scrape Sony FX line
         run: python sony_fx.py
 
+      - name: Scrape RED
+        run: python red_cameras.py
+
       - name: Build feed
         run: python build_feed.py
 
@@ -43,6 +46,6 @@ jobs:
         run: |
           git config user.name "firmware-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add feed.json snapshot.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
+          git add feed.json snapshot.json red_cameras.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
           git diff --staged --quiet || git commit -m "Daily firmware check"
           git push
