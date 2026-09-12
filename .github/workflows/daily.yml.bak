@@ -33,10 +33,13 @@ jobs:
       - name: Detect changes
         run: python check_changes.py
 
+      - name: Build site
+        run: python build_site.py
+
       - name: Commit updated data
         run: |
           git config user.name "firmware-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add feed.json snapshot.json arri_cameras.json sony_cameras.json sony_fx.json
+          git add feed.json snapshot.json arri_cameras.json index.html sony_cameras.json sony_fx.json
           git diff --staged --quiet || git commit -m "Daily firmware check"
           git push

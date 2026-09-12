@@ -188,7 +188,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/n71p0l1o954drfvr24vd68gk3s/KdPOZDBssbImP_zipxeLgzdLboc/original?content-type=application%2Fzip&amp;name=alexa-mini-sup-6-1-2-data.zip",
     "notes_url": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "summary": null,
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all ALEXA Mini owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
     "features": []
   },
   {
@@ -202,7 +202,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;name=AMIRA_SUP_6.1.2_data.zip",
     "notes_url": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "summary": null,
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
     "features": []
   },
   {
@@ -230,8 +230,17 @@
     "firmware_url": null,
     "notes_url": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
     "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "summary": null,
-    "features": []
+    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
+    "features": [
+      "Default look files for PQ and HLG",
+      "Automatically matched status brightness for HDR",
+      "HDR metadata",
+      "Monitoring-based or Log C-based",
+      "Live camera information (warnings &amp; errors) on WCU‑4",
+      "Separate control of MON OUT 1, 2 and 3",
+      "Faster Controlled Lens Motor (CLM) response",
+      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
+    ]
   },
   {
     "manufacturer": "ARRI",

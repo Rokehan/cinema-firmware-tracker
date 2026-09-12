@@ -30,6 +30,33 @@
     "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup"
   },
   {
+    "slug": "alexa-mini-sup-overview",
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all ALEXA Mini owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-sup-overview"
+  },
+  {
+    "slug": "alexa-sxt-sup-overview",
+    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
+    "features": [
+      "Default look files for PQ and HLG",
+      "Automatically matched status brightness for HDR",
+      "HDR metadata",
+      "Monitoring-based or Log C-based",
+      "Live camera information (warnings &amp; errors) on WCU‑4",
+      "Separate control of MON OUT 1, 2 and 3",
+      "Faster Controlled Lens Motor (CLM) response",
+      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sxt-sup-overview"
+  },
+  {
+    "slug": "amira-sup-overview",
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/amira-sup-overview"
+  },
+  {
     "slug": "alexa-sup-11-1",
     "summary": "Software Update Package (SUP) 11.1.1 for ALEXA Classic contains: New ARRI Debayer Algorithm ADA-5 Sharper images and even better color separation Expanded Media Support SxS Pro+ revision c cards (SBP-64C and SBP-128C) Expanded Support for the ARRI Electronic Control System (ECS) Support of Lens Data Encoder LDE-1 and Controlled Lens Motor CLM-5 WCU‑4 controls ALEXA user buttons 4, 5 and 6 Lens Motor calibration",
     "features": [
