@@ -159,7 +159,7 @@ def state_of(cam):
     make = cam.get("manufacturer")
     if cam.get("firmware_url") and kind == "page":
         if make == "RED":
-            return "Login to download", OLIVE
+            return "Login required for download", OLIVE
         return "Card update via Sony", OLIVE
     if cam.get("firmware_url"):
         return "Firmware + notes", ORANGE
@@ -207,7 +207,7 @@ def card(cam):
         if cam.get("firmware_kind") != "page":
             text = "Download"
         elif make == "RED":
-            text = "Release history"
+            text = "Download (RED login)"
         else:
             text = "Update page"
         links.append((text, cam["firmware_url"]))
