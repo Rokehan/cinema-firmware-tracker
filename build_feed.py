@@ -207,6 +207,38 @@ try:
 except FileNotFoundError:
     print("sony_alpha.json not found, skipping Sony Alpha bodies")
 
+# ---- Sony EN-only bodies ----
+# Some bodies have English firmware data but aren't listed on the Japanese
+# site. Let sony_english.json contribute feed rows for those.
+EN_ONLY_BODIES = {
+    "a7R V": {
+        "display": "α7R V (ILCE-7RM5)",
+    },
+}
+
+existing_products = {r["product"] for r in feed}
+for en_key, meta in EN_ONLY_BODIES.items():
+    if meta["display"] in existing_products:
+        continue
+    row = EN_DETAILS.get(en_key)
+    if row is None:
+        continue
+    feed.append({
+        "manufacturer": "Sony",
+        "product": meta["display"],
+        "version": row.get("version"),
+        "release_date": row.get("release_date"),
+        "release_precision": "day" if len(row.get("release_date") or "") == 10 else "month",
+        "status": "firmware_available" if row.get("version") else "documentation_only",
+        "source_url": row.get("source_url") or "https://www.sony.com",
+        "firmware_url": row.get("source_url"),
+        "firmware_kind": "page",
+        "file_size": row.get("file_size") or row.get("size"),
+        "notes_url": None,
+        "archive_url": None,
+        **english_extras(meta["display"]),
+    })
+
 feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
 
 with open("feed.json", "w") as f:

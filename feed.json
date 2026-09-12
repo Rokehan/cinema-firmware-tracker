@@ -1140,6 +1140,70 @@
   },
   {
     "manufacturer": "Sony",
+    "product": "α7R V (ILCE-7RM5)",
+    "version": "V4.00",
+    "release_date": "2025-11-26",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
+    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
+    "firmware_kind": "page",
+    "file_size": "754.5 MB",
+    "notes_url": null,
+    "archive_url": null,
+    "changelog": [],
+    "install": [
+      {
+        "heading": "Check the System Software Version",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\t"
+        ]
+      },
+      {
+        "heading": "Saving the System Software Data to a Memory Card",
+        "items": [
+          "Click the Download button.",
+          "After reading the disclaimer, click Download .",
+          "Save the file to your computer.",
+          "Insert the formatted memory card into the computer.",
+          "Save the BODYDATA.DAT file in the root directory of the memory card. Do not change the file name.",
+          "Please format the memory card in advance using this camera.",
+          "Before formatting, copy the data to a computer or other device. \\tOnce you format the memory card, all the data recorded on the memory card will be deleted and cannot be restored.",
+          "Please refer to the instruction manual of the camera for compatible memory cards."
+        ]
+      },
+      {
+        "heading": "Step 1: Update the System Software",
+        "items": [
+          "Insert the memory card that contains the saved system software data into slot 1 of the camera. For models with two slots, make sure to insert the memory card into slot 1 . Only slot 1 will recognize the system software data.",
+          "Select Menu -> Setup -> Setup Option -> Version -> Body.",
+          "Select Software Update .",
+          "Select Execute on the system software update confirmation screen. The software update will start. \\t \\t On-screen message: \\n\\t",
+          "Y.YY : Newest version number",
+          "Do not remove the battery or memory card during the update.",
+          "After confirming the details, you may click Execute .",
+          "Please scroll down the screen as necessary to view the full text.",
+          "When the system software update starts, a black screen will appear and the access lamp will flash 1 time -> 3 times -> 5 times depending on the progress of the update. The update will take approximately 6 minutes to complete. \\t \\t Notes: \\n\\t",
+          "If the access lamp repeats 5 long blinks (0.5-second cycle) and 6 short blinks (0.25-second cycle), or 7 long blinks (0.5-second cycle) and 7 short blinks (0.25-second cycle), the system software may have been incorrectly copied to the memory card.\\n\\t\\t",
+          "When the update is complete, the camera will automatically restart. After restarting, press OK on the “Body update complete” screen. \\t"
+        ]
+      },
+      {
+        "heading": "Step 2: Confirm the System Software Version of Your Camera",
+        "items": [
+          "Select Menu -> Setup -> Setup Option -> Version -> Body .",
+          "The system software version will be displayed. \\tThe update was successful if the screen shows Ver. 4.00 . \\t"
+        ]
+      }
+    ],
+    "file_name": "BODYDATA.DAT",
+    "install_version": "V4.00",
+    "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
+    "guides": []
+  },
+  {
+    "manufacturer": "Sony",
     "product": "FX2",
     "version": "V1.01",
     "release_date": "2025-11",
