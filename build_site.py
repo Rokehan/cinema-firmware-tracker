@@ -302,11 +302,8 @@ def card(cam):
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
     links.append(("Source", cam.get("source_url") or ""))
-    # The ARRI archive page is a different thing from this release's page.
-    # With only three labels allowed it would have to masquerade as a
-    # Source, so it is left off rather than mislabelled.
-    if cam.get("archive_url"):
-        links.append(("Source", cam["archive_url"]))
+    # archive_url is deliberately unused: every ARRI camera points at the
+    # same archive page, so a per-camera button added nothing.
 
     rows = []
     used = []
