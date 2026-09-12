@@ -231,13 +231,19 @@ def state_of(cam):
     """
     kind = cam.get("firmware_kind")
     make = cam.get("manufacturer")
-    if cam.get("firmware_url") and kind == "page":
+    has_file = bool(cam.get("firmware_url"))
+    has_notes = bool(cam.get("notes_url"))
+
+    if has_file and kind == "page":
         if make == "RED":
             return "Login required for download", OLIVE
         return "Card update via Sony", OLIVE
-    if cam.get("firmware_url"):
+    if has_file and has_notes:
         return "Firmware + notes", ORANGE
-    if cam.get("notes_url"):
+    if has_file:
+        # Sony ships the file without a scrapeable changelog.
+        return "Firmware", ORANGE
+    if has_notes:
         return "Documentation only", OLIVE
     return "Version only", GREY
 

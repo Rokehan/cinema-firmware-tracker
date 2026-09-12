@@ -8,7 +8,10 @@
     "file_name": "BODYDATA.DAT",
     "summary": null,
     "features": [],
-    "changelog_version": null
+    "changelog_version": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Dobb4b83c7/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "847.1 MB"
   },
   {
     "manufacturer": "Sony",
@@ -19,7 +22,11 @@
     "file_name": null,
     "summary": null,
     "features": [],
-    "changelog_version": null
+    "changelog_version": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/ey8d8a84ee/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "811.9 MB",
+    "download_page": "https://support.sony.jp/electronics/support/software/00379243"
   },
   {
     "manufacturer": "Sony",
@@ -30,7 +37,10 @@
     "file_name": "BODYDATA.DAT",
     "summary": null,
     "features": [],
-    "changelog_version": null
+    "changelog_version": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/FN707dd8dc/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "786.8 MB"
   },
   {
     "manufacturer": "Sony",
@@ -41,6 +51,10 @@
     "file_name": null,
     "summary": null,
     "features": [],
-    "changelog_version": null
+    "changelog_version": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/9j74e39884/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "906.6 MB",
+    "download_page": "https://support.sony.jp/electronics/support/software/00379374"
   }
 ]
