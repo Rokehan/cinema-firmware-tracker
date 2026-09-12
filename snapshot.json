@@ -7,8 +7,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://support.sony.jp/electronics/support/software/00378932",
-    "firmware_url": "https://support.sony.jp/electronics/support/software/00378932",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Dobb4b83c7/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "847.1 MB",
     "notes_url": null,
     "archive_url": null
   },
@@ -58,6 +59,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/VENICE_2.html",
     "firmware_url": "https://download.pro.sony/26/07/Dg7f1deef3/MPC-3628_3626_V500.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3628_3626_V500_ReleaseNote.pdf",
     "archive_url": null
   },
@@ -82,6 +84,38 @@
       "Improved Lens compatibility",
       "Changed Serial Protocol \"Network (PPP)\" to \"Network RCP2 (PPP)\""
     ]
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "α7 IV (ILCE-7M4)",
+    "version": "V6.02",
+    "release_date": "2026-05-28",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00400195",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/YE19b5b7b3/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "757.5 MB"
+  },
+  {
+    "manufacturer": "Sony",
+    "product": "α7S III (ILCE-7SM3)",
+    "version": "V5.01",
+    "release_date": "2026-05-28",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00400068",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Y416105adc/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "743.8 MB"
   },
   {
     "manufacturer": "RED",
@@ -309,6 +343,22 @@
   },
   {
     "manufacturer": "Sony",
+    "product": "α7 V (ILCE-7M5)",
+    "version": "V2.00",
+    "release_date": "2026-05-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://support.sony.jp/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377433",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/pHc079e9a9/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "features": [],
+    "file_size": "376.5 MB"
+  },
+  {
+    "manufacturer": "Sony",
     "product": "BURANO",
     "version": "V3.00",
     "release_date": "2026-05",
@@ -317,6 +367,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/BURANO.html",
     "firmware_url": "https://download.pro.sony/26/05/0zcde5bfee/MPC-2610_V300.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-2610_V30_ReleaseNotes.pdf",
     "archive_url": null
   },
@@ -328,8 +379,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://support.sony.jp/electronics/support/software/00378858",
-    "firmware_url": "https://support.sony.jp/electronics/support/software/00378858",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/ey8d8a84ee/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "811.9 MB",
     "notes_url": null,
     "archive_url": null
   },
@@ -341,8 +393,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://support.sony.jp/electronics/support/software/00378859",
-    "firmware_url": "https://support.sony.jp/electronics/support/software/00378859",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/FN707dd8dc/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "786.8 MB",
     "notes_url": null,
     "archive_url": null
   },
@@ -354,8 +407,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://support.sony.jp/electronics/support/software/00378860",
-    "firmware_url": "https://support.sony.jp/electronics/support/software/00378860",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/9j74e39884/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "906.6 MB",
     "notes_url": null,
     "archive_url": null
   },
@@ -369,6 +423,7 @@
     "source_url": "https://support.d-imaging.sony.co.jp/www/cscs/firm/?mdl=ILME-FR7&area=jp&lang=jp",
     "firmware_url": null,
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null
   },
@@ -382,6 +437,7 @@
     "source_url": "https://support.d-imaging.sony.co.jp/www/cscs/firm/?mdl=ILME-FX2&lang=jp&area=jp",
     "firmware_url": null,
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null
   },
@@ -410,6 +466,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/VENICE.html",
     "firmware_url": "https://download.pro.sony/22/12/KJBBLlo_bA/MPC-3610_V630.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3610_V630_ReleaseNote.pdf",
     "archive_url": null
   },
@@ -423,6 +480,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pxw-fx9.html",
     "firmware_url": "https://download.pro.sony/23/01/TJB8027o1f/PXW-FX9_V402.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/download/pdf/PXW-FX9_Update_Guide.pdf",
     "archive_url": null
   },
@@ -561,6 +619,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pxw-fs7m2.html",
     "firmware_url": "https://download.pro.sony/20/05/rN5MfEtjGx/PXW-FS7M2_V123.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null
   },
@@ -574,6 +633,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pmw-f55.html",
     "firmware_url": "http://support.d-imaging.sony.co.jp/download/CCS/OHnxRg45K7/PMW-F55_V920.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf",
     "archive_url": null
   },
@@ -587,6 +647,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pmw-f5.html",
     "firmware_url": "http://support.d-imaging.sony.co.jp/download/CCS/OHnxRg45K7/PMW-F5_V920.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf",
     "archive_url": null
   },
@@ -600,6 +661,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pxw-fs7.html",
     "firmware_url": "http://support.d-imaging.sony.co.jp/download/CCS/BDdL1e19jG/PXW-FS7_V431.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null
   },
@@ -613,6 +675,7 @@
     "source_url": "https://www.sony.jp/ls-camera/update/pxw-fs5.html",
     "firmware_url": "https://download.pro.sony/23/09/CgFpRi-6r0/PXW-FS5_V403_J.zip",
     "firmware_kind": "file",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null
   }
