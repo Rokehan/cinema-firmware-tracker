@@ -6,6 +6,7 @@ link points at the manufacturer's own URL.
 
 import html
 import json
+import re
 from datetime import datetime, timezone
 
 TEMPLATE = """<!DOCTYPE html>
@@ -162,6 +163,32 @@ def sort_key(cam):
     return cam.get("release_date") or ""
 
 
+# ARRI's page headlines are the source of the version, but they are not always
+# the name a tech uses for the body. ARRI's own release notes and user manual
+# for SUP 11.1.1 call it "ALEXA Classic" (the h1 just says "ALEXA"), and the
+# camera index writes the Mini bodies in mixed case. Nothing here invents a
+# product: each value is the manufacturer's own wording for the same camera.
+DISPLAY_NAMES = {
+    "ALEXA": "ALEXA Classic",
+    "ALEXA MINI": "ALEXA Mini",
+    "ALEXA MINI LF": "ALEXA Mini LF",
+    "AMIRA LIVE / AMIRA": "AMIRA",
+}
+
+
+def display_name(product):
+    """Manufacturer's own name for the body, tidied for reading."""
+    if not product:
+        return ""
+    name = " ".join(product.split())
+    fixed = DISPLAY_NAMES.get(name.upper())
+    if fixed:
+        return fixed
+    # Sony ships model codes bolted onto the name, e.g. FX3(ILME-FX3A).
+    name = re.sub(r"(?<=[^ (])\(", " (", name)
+    return name
+
+
 def card(cam):
     label, tone = state_of(cam)
     make = cam.get("manufacturer", "")
@@ -196,7 +223,7 @@ def card(cam):
         + esc(date_label(cam.get("release_date"), cam.get("release_precision")))
         + "</span></div>"
         + '<div class="body">'
-        + '<h2 class="name">' + esc(cam.get("product", "")) + "</h2>"
+        + '<h2 class="name">' + esc(display_name(cam.get("product"))) + "</h2>"
         + '<p class="ver" style="color:' + tone + '">'
         + esc(cam.get("version") or "unknown") + "</p>"
         + '<p class="state">' + esc(label) + "</p>"
