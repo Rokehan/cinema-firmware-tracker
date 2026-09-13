@@ -295,7 +295,32 @@
     "firmware_url": null,
     "guides": [],
     "language": "en",
-    "previous_versions": []
+    "previous_versions": [
+      {
+        "v": "V2.10",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00375795"
+      },
+      {
+        "v": "V2.03",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00368173"
+      },
+      {
+        "v": "V2.02",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00357383"
+      },
+      {
+        "v": "V1.10",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00343873"
+      }
+    ]
   },
   {
     "manufacturer": "Sony",
@@ -310,7 +335,62 @@
     "firmware_url": null,
     "guides": [],
     "language": "en",
-    "previous_versions": []
+    "previous_versions": [
+      {
+        "v": "V6.20",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00277546"
+      },
+      {
+        "v": "V6.10",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00263833"
+      },
+      {
+        "v": "V6.01",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00257082"
+      },
+      {
+        "v": "V6.00",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00255311"
+      },
+      {
+        "v": "V5.02",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00246407"
+      },
+      {
+        "v": "V5.01",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00242562"
+      },
+      {
+        "v": "V5.00",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00241284"
+      },
+      {
+        "v": "V4.00",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/mpueus00000990"
+      },
+      {
+        "v": "V3.00",
+        "d": null,
+        "cl": [],
+        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/mpueus00000981"
+      }
+    ]
   },
   {
     "manufacturer": "Sony",
