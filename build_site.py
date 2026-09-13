@@ -448,7 +448,7 @@ ORANGE = "#ff7200"
 OLIVE = "#a3bd6a"
 GREY = "#8d8378"
 
-EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD"]
+EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD", "Canon"]
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]

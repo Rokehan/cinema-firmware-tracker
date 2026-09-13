@@ -24,6 +24,11 @@ jobs:
       - name: Fetch ARRI details
         run: python arri_details.py
 
+      - name: Extract ARRI install steps
+        run: |
+          pip install --quiet pypdf
+          python arri_install.py
+
       - name: Scrape Sony index
         run: python sony_downloads.py
 
@@ -52,6 +57,6 @@ jobs:
         run: |
           git config user.name "firmware-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add feed.json snapshot.json sony_alpha.json red_cameras.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
+          git add feed.json snapshot.json arri_install.json sony_alpha.json red_cameras.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
           git diff --staged --quiet || git commit -m "Daily firmware check"
           git push

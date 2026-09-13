@@ -81,6 +81,152 @@
     "guides": []
   },
   {
+    "manufacturer": "Canon",
+    "product": "EOS C400",
+    "version": "1.0.7.1",
+    "release_date": "2026-08-19",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c400",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c400?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C400-Firmware-Version-1-0-7-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture]. Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure]. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount). Adds [Auto Exp. Ramping Comp.] (Auto Exposure Ramping Compensation) to [Camera Settings]. Applying in-camera gain compensation according to the zoom position, maintains image brightness. Compatible lenses:",
+      "CN7×17 KAS S/E1",
+      "CN10×25 IAS S/E1",
+      "CN20×50 IAS H/E1",
+      "CN8×15 IAS S/E1",
+      "CN7×17 KAS T/R1",
+      "CN5×11 IAS T/R1",
+      "CN30×40 IAS J/R1 Adds [S&F External Audio Output] during Slow & Fast Motion recording. When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones)."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C80",
+    "version": "1.0.7.1",
+    "release_date": "2026-08-19",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c80",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c80?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C80-Firmware-Version-1-0-7-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture]. Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure]. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount). Adds [S&F External Audio Output] during Slow & Fast Motion recording. When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones). Improves operational stability."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C70",
+    "version": "1.1.4.1",
+    "release_date": "2026-08-19",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c70",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c70?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C70-Firmware-Version-1-1-4-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount). When connected to external devices using the XC protocol, if the T value is 10 or greater, only the integer part is displayed on the external devices. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server. Improves operational stability."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.4.1",
+        "d": "2022-09-20",
+        "cl": [
+          "1. Fixes an issue, in which, in rare instances, the camera cannot be normally operated when operating the REC button with the camera set to the [Continuous Recording] function."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C70-Firmware-Version-1-0-4-1"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2022-03-23",
+        "cl": [
+          "Adds support for the Cinema RAW Light recording modes. Resolution：4096x2160、2048x1080 Bit Depth：12 bit Frame rate：59.94P, 50.00P, 29.97P, 23.98P, 25.00P, 24.00P Adds [Frame Recording] modes. Adds [Interval Recording] modes."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c70--firmware-version-1-0-3-1"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2021-12-06",
+        "cl": [
+          "1. Adds［EOS Standard］and [EOS Neutral] to the Custom Picture Presets.",
+          "2. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter. CN-E14mm T3.1 L F CN-E20mm T1.5 L F CN-E24mm T1.5 L F CN-E35mm T1.5 L F CN-E50mm T1.3 L F CN-E85mm T1.3 L F CN-E135mm T2.2 L F EF14mm f/2.8LⅡUSM EF24mm f/1.4LⅡUSM EF35mm f/1.4LⅡUSM EF50mm f/1.2L USM EF85mm f/1.2LⅡUSM EF135mm f/2L USM"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c70-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2021-06-28",
+        "cl": [
+          "1. Adds ITU-R.BT.709 standard compliant Gamma［BT.709 Standard / BT.709］the to the Custom Picture.",
+          "2. Adds [Whole Area] to the AF Frame option so the camera focuses automatically on a subject at the center of the screen.",
+          "3. Object or Face Tracking can now be initiated by touching the LCD monitor during ‘Whole Area’ AF.",
+          "4. Adds [2x] option to the Magnification.",
+          "5. Adds [Mask 100%] to the [Aspect Marker] and [Safe Area Marker].",
+          "6. Adds \"B&W during Magn.\" as an option to the Assistance Function menu.",
+          "7. Adds View Assist function to video output from the HDMI OUT terminal.",
+          "8. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter. 1 EF16-35mm F2.8L II USM EF16-35mm F4L IS USM EF24-105mm F4L IS USM EF70-200mm F2.8L IS II USM EF70-200mm F2.8L IS III USM EF70-200mm F4L IS USM EF70-200mm F4L IS II USM",
+          "9. Changes to display the AF frame only when operating the AF, while using with EF-EOS R 0.71x Mount Adapter",
+          "10. Adds Wi-Fi adapters tested for use with the camera. ASUS USB-AC68 TP-LINK Archer T9UH 1 EF-EOS R 0.71 Mount Adapter requires its firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c70-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C50",
+    "version": "1.0.5.1",
+    "release_date": "2026-08-19",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c50",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c50?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C50-Firmware-Version-1-0-5-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount). Improves operational stability."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "file_name": null,
+    "file_size": null
+  },
+  {
     "manufacturer": "ARRI",
     "product": "ALEXA 265",
     "version": "SUP 6.1.1",
@@ -167,7 +313,13 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3628_3626_V500_ReleaseNote.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "“Signature” Preset Look option for monitoring has been added.",
+      "4096×2160P 12G has been added as an SDI output format (Project Frame Rate 47.95 fps).",
+      "The CNA-2 Camera Control Network Adaptor can now be used as a LAN conversion adaptor.",
+      "The visibility of the “Out of Range” text in the moiré alert level display has been improved under In-Camera VFX mode.",
+      "The brightness of the Bubble gauge marking has been improved to enhance monitor visibility."
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V5.00",
@@ -933,7 +1085,22 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-2610_V30_ReleaseNotes.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "Addition of Imager Scan Modes\\n\\t",
+      "S35c 3.8K 16:9 (maximum frame rate: 120 fps)",
+      "Added X-OCN recording support for S35 1.9K 16:9",
+      "Improved Operability and Workflow\\n\\t",
+      "Support for selecting edge detection methods for Color Peaking",
+      "Support for selecting the tracking target for Real-time Tracking AF using the multi-selector",
+      "Support for configuring Wireless LAN, Wired LAN, and USB Tethering directly from the status screen",
+      "Expanded Functionality for Live Production\\n\\t",
+      "Support for simplified SDR display and SDR Gain",
+      "Support for FPS, Shutter, and Saturation commands from RCP",
+      "Support for selecting output range for SDI and HDMI outputs",
+      "Other Functional Improvements\\n\\t",
+      "Support for selecting bandwidth when a 5 GHz channel is set in Access Point mode",
+      "Improved clip name display method"
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V3.00",
@@ -1464,6 +1631,149 @@
     "file_name": "*.SUP"
   },
   {
+    "manufacturer": "Canon",
+    "product": "EOS C500 Mark II",
+    "version": "1.1.5.1",
+    "release_date": "2025-05-21",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c500-mark-ii?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C500-Mark-II-Firmware-Version-1-1-5-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2]. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display]. Adds the [Motion Vector for Digital IS] menu option. Default [Disable]*. * [Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement. Fixes minor issues. Fixes an issue, in which aspect markers and other markers are not displayed correctly if the resolution of the video output configuration is set to [4192ｘ3140 (4:3)] or [3768ｘ3140 (6:5)] and the anamorphic desqueeze is applied. Fixes an issue in which markers, AF frame, focus position guide, and tally OSD do not display correctly when the main recording format is set to [XF-AVC] under certain conditions. Note: #1 to #5 were added in Version 1.1.4.1. #6 is added in Version 1.1.5.1. For details, please refer to the user manual (latest version) for this product."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. - Firmware version 1.1.5.1 is for updating EOS C500 Mark II cameras running firmware version 1.0.0.1 - 1.1.4.1. If your camera's firmware is already version 1.1.5.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. - Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations. Preparations for a firmware update: After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Menu Settings.\" The downloaded folder contains the firmware (file name: VPC20.FIR / file size: 84,669,984 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions.",
+          "Preparations for a firmware update: After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Menu Settings.\" The downloaded folder contains the firmware (file name: VPC20.FIR / file size: 84,669,984 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions.",
+          "The following items are required to perform this firmware update: Camera Body EOS C500 Mark II A computer SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera The firmware (the downloaded file)"
+        ]
+      }
+    ],
+    "install_version": "1.1.5.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C500-Mark-II-Firmware-Version-1-1-5-1",
+    "previous_versions": [
+      {
+        "v": "1.1.2.1",
+        "d": "2024-07-03",
+        "cl": [
+          "1. Adds [Sensor mode] as an option to assignable buttons.",
+          "2. Adds the following size option to the Focus Guide function: -Normal/Large",
+          "3. Enables the display of Markers during playback.",
+          "4. Fixes minor issues."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C500-Mark-II-Firmware-Version-1-1-2-1"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2022-05-26",
+        "cl": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F, CN-E20-50mm T2.4 L FP ‐ Displaying metadata, such as the model name and the focal distance of the lens attached. - Displaying T number ‐ Support for peripheral illumination Correction.（EF only） - Support for [Dual Pixel Focus Guide](EF only）",
+          "2. Adds file name to SDI Ancillary data on the video output signal."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c500-mark-ii--firmware-version-1-0-5-1"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2021-12-06",
+        "cl": [
+          "1. Adds［EOS Standard］and [EOS Neutral] to the Custom Picture Presets.",
+          "2. Adds \"MEDIA\" to the assignable buttons",
+          "3. Adds Viewfinder Double Speed Drive Function"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500-mark-ii-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2021-07-28",
+        "cl": [
+          "Adds [XC Protocol]. Adds Anamorphic resolution options of 4192ｘ3140（4:3）and 3768ｘ3140 (6:5）when Sensor Mode is Full Frame, when RAW format is selected. Adds [1.8x] to the Anamorphic De-squeeze setting. Add 2048×1080/1920×1080 option to the 12G-SDI output when recording resolution is 4K or 5.9K RAW. Adds MON.OUT and HDMI Simultaneous output option. （1920×1080p/i） Adds Look File function（3D LUT file .cube） Adds ITU-R.BT.709 standard compliant Gamma［BT.709 Standard / BT.709］the to the Custom Picture. Adds Power Saving Mode. (by restricting some functions) Adds [2x] option to the Magnification. Adds [Mask 100%] to the [Aspect Marker]. Improvement in retaining recording settings when switching sensor modes. Clips can now be played by operating the joystick. Adds Ukrainian language to the Language."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500-mark-ii-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2020-08-13",
+        "cl": [
+          "Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1.",
+          "Peripheral illumination / chromatic aberration correction has been added.",
+          "Enable autofocus with Dual Pixel CMOS AF.",
+          "Added support for \"Dual Pixel Focus Guide\" feature. The ability to record XF-AVC Proxy has been added during XF-AVC recording. The XF-AVC Long GOP bit rate recording mode has been added. The ability to update the SDI/HDMI output from 59.94P to 29.97P (or 23.98P) has been added. The ability to select “5 sec. Pre REC function” in XF-AVC recording mode has been added. Improved the card file name when simultaneously recording XF-AVC or Cinema RAW Light. \"B&W during Magn. \" menu has been added when Magnification is enabled. The default value of the assign button has been changed from \"Magnification: Video terminal\" to \"Magnification\"."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500-mark-ii-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2020-02-19",
+        "cl": [
+          "Remote A terminal and Remote B terminal can be used simultaneously. Sensor mode information can be displayed. Fixes a phenomenon in which, under specific conditions, high-brightness areas may appear tinted. Fixes a phenomenon where the [C. Temp. Increment] setting cannot be changed. Fixes a phenomenon where the SSID (stealth) setting cannot be made in a Wi-Fi connection. Fixes the metadata to be recognized color profile correctly in some editing software."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500-mark-ii-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300 Mark III",
+    "version": "1.0.9.1",
+    "release_date": "2024-12-18",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300-mark-iii?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/Firmware-Notice-EOS-C300-Mark-III-Firmware-Version-1-0-9-1",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2]. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display]. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*. *[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement. Fixes minor issues."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.3.1",
+        "d": "2022-05-26",
+        "cl": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F, CN-E20-50mm T2.4 L FP ‐ Displaying metadata, such as the model name and the focal distance of the lens attached. - Displaying T number ‐ Support for peripheral illumination Correction.（EF only） - Support for [Dual Pixel Focus Guide](EF only）",
+          "2. Adds file name to SDI Ancillary data on the video output signal."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c300-mark-iii--firmware-version-1-0-3-1-"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2021-12-06",
+        "cl": [
+          "1. Adds［EOS Standard］and [EOS Neutral] to the Custom Picture Presets.",
+          "2. Adds \"MEDIA\" to the assignable buttons",
+          "3. Adds Viewfinder Double Speed Drive Function"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-iii-firmware-version-1-0-2-1"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2021-07-28",
+        "cl": [
+          "Adds [XC Protocol]. Adds [1.8x] to the Anamorphic De-squeeze setting. Add 2048×1080/1920×1080 option to the 12G-SDI output when recording resolution is 4K or 5.9K RAW. Adds MON.OUT and HDMI Simultaneous output option. （1920×1080p/i） Adds Look File function.（3D LUT file .cube） Adds ITU-R.BT.709 standard compliant Gamma［BT.709 Standard / BT.709 to the Custom Picture. Adds Power Saving Mode. (by restricting some functions) Adds [2x] option to the Magnification. Adds [Mask 100%] to the [Aspect Marker]. Adds the ability to update the MON.OUT/HDMI output from 59.94P to 29.97P (or 23.98P). Adds the option for ‘same file name’ simultaneous recording in XF-AVC or Cinema RAW Light. Adds \"B&W during Magn.\" as an option to the Assistance Function menu. Modifies the default value of the assign button from \"Magnification: Video terminal\" to \"Magnification.\" Improvement in retaining recording settings when switching sensor modes. Clips can now be played by operating the joystick. Adds Ukrainian language to the Language."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-iii-firmware-version-1-0-1-1"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
     "manufacturer": "Sony",
     "product": "VENICE",
     "version": "V6.30",
@@ -1476,7 +1786,11 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3610_V630_ReleaseNote.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "CBK-3620XS Camera Extension System connection function",
+      "Firmware version display at startup",
+      "Enhanced security"
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V6.30",
@@ -1748,7 +2062,26 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
-    "previous_versions": [],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76388/a4bae68236d1be0e6cc39dc12f5d126e/alexa-classic-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76386/4f855f89c5ace85adaac6c84d0d98368/alexa-classic-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
   },
   {
@@ -1817,8 +2150,534 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
-    "previous_versions": [],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76404/a4bae68236d1be0e6cc39dc12f5d126e/alexa-xt-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76406/4f855f89c5ace85adaac6c84d0d98368/alexa-xt-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C200",
+    "version": "1.0.8.1",
+    "release_date": "2020-08-30",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c200",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c200?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200-eos-c200b-firmware-version-1-0-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "EOS C200 / EOS C200B: Firmware Version 1.0.8.1.00 Firmware Notice: EOS C200 / EOS C200B: Firmware Version 1.0.8.1.00 Firmware Version 1.0.8.1.00 incorporates the following fix.",
+      "1. Fixes a phenomenon that may result in images not being displayed when a LM-V2 monitor is connected to the camera. Version 1.0.8.1.00 includes the same functions and functional improvements as Version 1.0.7.1.00. Details of the functions and functional improvements added in Version 1.0.7.1.00 are as follows.",
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. - Peripheral illumination / chromatic aberration correction has been added. - Enable autofocus with Dual Pixel CMOS AF. - Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The ability to update the SDI/HDMI output from 59.94P to 29.97P (or 23.98P) has been added.",
+      "3. Simultaneous output of HDMI connector and 3G-SDI connector is supported.",
+      "4. Kelvin has been added to the color temperature step setting."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware version 1.0.8.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00",
+          "1.0.7.1.00. If your camera's firmware is already version 1.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      }
+    ],
+    "install_version": "1.0.8.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200-eos-c200b-firmware-version-1-0-8-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.7.1",
+        "d": "2020-07-14",
+        "cl": [
+          "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+          "2. The ability to update the SDI/HDMI output from 59.94P to 29.97P (or 23.98P) has been added.",
+          "3. Simultaneous output of HDMI connector and 3G-SDI connector is supported.",
+          "4. Kelvin has been added to the color temperature step setting."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200--eos-c200b-firmware-version-1-0-7-1-00"
+      },
+      {
+        "v": "1.0.6.1",
+        "d": "2020-02-19",
+        "cl": [
+          "Support for the separately-sold LCD Monitor LM-V2 has been added."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-6-1-00"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2018-10-29",
+        "cl": [
+          "A Continuous Recording function has been added allowing for nonstop recording. *1 Peripheral illumination / chromatic aberration correction has been added for the following lenses:",
+          "EF Cinema Lens: CN-E20mm T1.5 L F",
+          "EF Lens: EF 70-200mm f/4L IS II USM For LUTs that can be applied to output footage, official support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:.",
+          "SDI terminal",
+          "HDMI OUT terminal Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance corresponds to Diffuse White (100%) being 203nits *2 . Support for the [Reset] function that resets the clip number when the reel number is set, has been added. When using an assignable button, the White Balance setting will be maintained after the power has been turned off. Fixes a phenomenon that occurs on cameras with firmware versions 1.0.3.1.00 to 1.0.4.1.00 in which resolution appears to be reduced in SD card recordings and in external outputs when shooting with specific menu settings *3 . *1 When using the continuous recording function, only MP4 format/1920x1080 resolution is possible. *2 The HLG output is the brightness in the case of displaying on a 1000nits monitor. *3 Specific menu settings:",
+          "When [Resolution/Color Sampling] is set to [3840x2160 YCC420 8 bit].",
+          "When [Resolution/Color Sampling] is set to [1920x1080 YCC420 8 bit], and [Slow Motion Recording] is activated.",
+          "When [Resolution/Color Sampling] is set to [1920x1080 YCC420 8 bit], and the digital tele-converter and EF-S lens correction are activated. For further information, please refer to the latest version of the unit's Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2018-06-18",
+        "cl": [
+          "EOS C200 / C200B: Firmware Version 1.0.4.1.00 Thank you for using Canon products. We have determined that a recording error may occur with the EOS C200 / C200B. The details of the phenomenon and support plan are described below. Firmware resolving this phenomenon is available here We sincerely apologize for the inconvenience caused to customers, and we ask for your ongoing patience. Phenomena Image quality degradation, such as color misalignment or edge distortion, may occur in the recorded footage when using the following combination of settings: recording format XF-AVC frame rate 59.94i / 50.00i 1920x1080 resolution Affected Products EOS C200 / C200B Digital Cinema Cameras equipped with Firmware Version 1.0.3.1.00 are affected ."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2018-04-04",
+        "cl": [
+          "XF-AVC format recording has been added* 1 * 2 * 3 . Retrieval of lens metadata, such as focal length, is now supported during XF-AVC recording. Hybrid Log Gamma HDR ITU-R BT.2100 output has been added. Sensitivity adjustment has been added for the LM-V1 LCD Monitor. LPCM 24-bit audio recording has been added when recording in the Cinema RAW Light format* 4 . 4X magnification has been added. A PsF output function from SDI and HDMI has been added during progressive internal recording. A digital tele-converter function has been added (1.5x, 3.0x, and 6.0x). Auto IRIS support has been added for the following lenses EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Peripheral illumination/chromatic aberration correction has been added for the following lenses EF 70-300mm f/4-5.6 IS II USM EF 16-35mm f/2.8L III USM EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM The reproducibility of bright areas has been enhanced when the gamma setting is from Normal 1 to",
+          "4. Browser remote setting options are retained after switching off the camera. * 1 Please use the following software applications: Canon XF Utility 3.3 for Windows/macOS Canon XF Plugin 3.3 for Avid Media Access (Windows/macOS) * 2 You will need to format the SD cards completely with the camera before recording. * 3 For detailed information about SD cards that have been verified to work with this camera, please visit Canon's Web site. * 4 Please use the following software applications: Cinema RAW Development 2.2 for Windows/macOS Canon RAW Plugin 2.1 for Avid Media Access (Windows/macOS) Canon RAW Plugin 1.1 for Final Cut Pro X Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.3.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00-1.0.2.1.00. If your camera's firmware is already version 1.0.3.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200--eos-c200b-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2017-11-06",
+        "cl": [
+          "When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function Dual Pixel Focus Guide function. The joystick on the camera's grip unit can be set to operate the zoom. Manual control of the iris with Camera's Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the separately-sold lens grip ZSG-C10. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Peripheral illumination / chromatic aberration correction. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.2.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00-1.0.1.1.00. If your camera's firmware is already version 1.0.2.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. Support Click here for the most recent Firmware available for this model"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---eos-c200b-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2017-09-25",
+        "cl": [
+          "Fixes a phenomenon in which the start time code is not correctly displayed when MP4 clips captured at 59.94P/50.00P frame rate are imported into NLE software. * RAW clips are not affected. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.1.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00. If your camera's firmware is already version 1.0.1.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---eos-c200b-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C200B",
+    "version": "1.0.8.1",
+    "release_date": "2020-08-30",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c200b",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c200b?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200-eos-c200b-firmware-version-1-0-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "EOS C200 / EOS C200B: Firmware Version 1.0.8.1.00 Firmware Notice: EOS C200 / EOS C200B: Firmware Version 1.0.8.1.00 Firmware Version 1.0.8.1.00 incorporates the following fix.",
+      "1. Fixes a phenomenon that may result in images not being displayed when a LM-V2 monitor is connected to the camera. Version 1.0.8.1.00 includes the same functions and functional improvements as Version 1.0.7.1.00. Details of the functions and functional improvements added in Version 1.0.7.1.00 are as follows.",
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. - Peripheral illumination / chromatic aberration correction has been added. - Enable autofocus with Dual Pixel CMOS AF. - Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The ability to update the SDI/HDMI output from 59.94P to 29.97P (or 23.98P) has been added.",
+      "3. Simultaneous output of HDMI connector and 3G-SDI connector is supported.",
+      "4. Kelvin has been added to the color temperature step setting."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware version 1.0.8.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00",
+          "1.0.7.1.00. If your camera's firmware is already version 1.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      }
+    ],
+    "install_version": "1.0.8.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200-eos-c200b-firmware-version-1-0-8-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.7.1",
+        "d": "2020-07-14",
+        "cl": [
+          "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+          "2. The ability to update the SDI/HDMI output from 59.94P to 29.97P (or 23.98P) has been added.",
+          "3. Simultaneous output of HDMI connector and 3G-SDI connector is supported.",
+          "4. Kelvin has been added to the color temperature step setting."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200--eos-c200b-firmware-version-1-0-7-1-00"
+      },
+      {
+        "v": "1.0.6.1",
+        "d": "2020-02-19",
+        "cl": [
+          "Support for the separately-sold LCD Monitor LM-V2 has been added."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-6-1-00"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2018-10-29",
+        "cl": [
+          "A Continuous Recording function has been added allowing for nonstop recording. *1 Peripheral illumination / chromatic aberration correction has been added for the following lenses:",
+          "EF Cinema Lens: CN-E20mm T1.5 L F",
+          "EF Lens: EF 70-200mm f/4L IS II USM For LUTs that can be applied to output footage, official support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:.",
+          "SDI terminal",
+          "HDMI OUT terminal Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance corresponds to Diffuse White (100%) being 203nits *2 . Support for the [Reset] function that resets the clip number when the reel number is set, has been added. When using an assignable button, the White Balance setting will be maintained after the power has been turned off. Fixes a phenomenon that occurs on cameras with firmware versions 1.0.3.1.00 to 1.0.4.1.00 in which resolution appears to be reduced in SD card recordings and in external outputs when shooting with specific menu settings *3 . *1 When using the continuous recording function, only MP4 format/1920x1080 resolution is possible. *2 The HLG output is the brightness in the case of displaying on a 1000nits monitor. *3 Specific menu settings:",
+          "When [Resolution/Color Sampling] is set to [3840x2160 YCC420 8 bit].",
+          "When [Resolution/Color Sampling] is set to [1920x1080 YCC420 8 bit], and [Slow Motion Recording] is activated.",
+          "When [Resolution/Color Sampling] is set to [1920x1080 YCC420 8 bit], and the digital tele-converter and EF-S lens correction are activated. For further information, please refer to the latest version of the unit's Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2018-06-18",
+        "cl": [
+          "EOS C200 / C200B: Firmware Version 1.0.4.1.00 Thank you for using Canon products. We have determined that a recording error may occur with the EOS C200 / C200B. The details of the phenomenon and support plan are described below. Firmware resolving this phenomenon is available here We sincerely apologize for the inconvenience caused to customers, and we ask for your ongoing patience. Phenomena Image quality degradation, such as color misalignment or edge distortion, may occur in the recorded footage when using the following combination of settings: recording format XF-AVC frame rate 59.94i / 50.00i 1920x1080 resolution Affected Products EOS C200 / C200B Digital Cinema Cameras equipped with Firmware Version 1.0.3.1.00 are affected ."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---c200b-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2018-04-04",
+        "cl": [
+          "XF-AVC format recording has been added* 1 * 2 * 3 . Retrieval of lens metadata, such as focal length, is now supported during XF-AVC recording. Hybrid Log Gamma HDR ITU-R BT.2100 output has been added. Sensitivity adjustment has been added for the LM-V1 LCD Monitor. LPCM 24-bit audio recording has been added when recording in the Cinema RAW Light format* 4 . 4X magnification has been added. A PsF output function from SDI and HDMI has been added during progressive internal recording. A digital tele-converter function has been added (1.5x, 3.0x, and 6.0x). Auto IRIS support has been added for the following lenses EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Peripheral illumination/chromatic aberration correction has been added for the following lenses EF 70-300mm f/4-5.6 IS II USM EF 16-35mm f/2.8L III USM EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM The reproducibility of bright areas has been enhanced when the gamma setting is from Normal 1 to",
+          "4. Browser remote setting options are retained after switching off the camera. * 1 Please use the following software applications: Canon XF Utility 3.3 for Windows/macOS Canon XF Plugin 3.3 for Avid Media Access (Windows/macOS) * 2 You will need to format the SD cards completely with the camera before recording. * 3 For detailed information about SD cards that have been verified to work with this camera, please visit Canon's Web site. * 4 Please use the following software applications: Cinema RAW Development 2.2 for Windows/macOS Canon RAW Plugin 2.1 for Avid Media Access (Windows/macOS) Canon RAW Plugin 1.1 for Final Cut Pro X Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.3.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00-1.0.2.1.00. If your camera's firmware is already version 1.0.3.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200--eos-c200b-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2017-11-06",
+        "cl": [
+          "When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function Dual Pixel Focus Guide function. The joystick on the camera's grip unit can be set to operate the zoom. Manual control of the iris with Camera's Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the separately-sold lens grip ZSG-C10. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Peripheral illumination / chromatic aberration correction. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.2.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00-1.0.1.1.00. If your camera's firmware is already version 1.0.2.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. Support Click here for the most recent Firmware available for this model"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---eos-c200b-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2017-09-25",
+        "cl": [
+          "Fixes a phenomenon in which the start time code is not correctly displayed when MP4 clips captured at 59.94P/50.00P frame rate are imported into NLE software. * RAW clips are not affected. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.1.1.00 is for updating Cinema EOS C200 cameras running firmware version 1.0.0.1.00. If your camera's firmware is already version 1.0.1.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c200---eos-c200b-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C700",
+    "version": "1.0.8.1",
+    "release_date": "2020-07-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c700",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c700?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-firmware-version-1-0-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The following on screen display improvements have been made: S&F icon has changed. REC color change from white to red. STBY color change from white to green."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware Version 1.0.8.1.00 is for updating Cinema EOS C700 cameras running firmware version 1.0.0.1.00-1.0.7.1.00. If your camera’s firmware is already version 1.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For customers who are using the optional OU-700 Remote Operation Unit, the firmware of the camera and the OU-700 Remote Operation Unit have to be the same. After updating the camera firmware, connect the camera with the OU-700 to update the firmware of the OU-700 from the camera's system settings. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled “Saving and Loading Camera Settings.” The downloaded firmware folder contains the firmware (File Name: VMA8.FIM, File Size: 114,524,380 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please carefully review and confirm your understanding of the firmware update procedures set forth in the manual.",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled “Saving and Loading Camera Settings.” The downloaded firmware folder contains the firmware (File Name: VMA8.FIM, File Size: 114,524,380 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please carefully review and confirm your understanding of the firmware update procedures set forth in the manual."
+        ]
+      }
+    ],
+    "install_version": "1.0.8.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-firmware-version-1-0-8-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.7.1",
+        "d": "2018-12-12",
+        "cl": [
+          "Peripheral illumination / chromatic aberration correction has been added for the following lenses: EF Cinema Lens: CN-E20mm T1.5 L F EF Lens: EF 70-200mm f/4L IS II USM Chromatic aberration correction has been added for the following EFP lenses: CJ45e×9.7B IASE-V H CJ45e×13.6B IASE-V H Support for these EFP lenses has been added. CJ24e×7.5B IASE S CJ18e×7.6B IRSE S / IASE S CJ14e×4.3B IRSE S / IASE S Enables AF/ face detection mode to be used during Super16mm sized (2K crop) recording. For LUTs that can be applied to output footage, support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:. SDI OUT terminal HDMI OUT terminal [HDR-PQ(OOTF On /Off)] will change to [HDR-PQ *1 ]. Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance correspond to Diffuse White (100%) being 203nit s*2 . VIDEO terminal (optional Viewfinder) [HDR1600%(OOTF On /Off)] will change to [HDR-1600%*1]. [HDR400%(OOTF On /Off)] will change to [HDR-400%*1]. *1 :OOTF On *2 The brightness before the change to OOTF On 83nits/OOTF Off 111nits The HLG output is the brightness in the case of displaying on a 1000nits monitor. Please use the Canon lookup table that is released on and after November, 2018. Support for the [Reset] function that resets the clip number when the reel number is set, has been added. Fixes a phenomenon in which signal outputting of more than 100% occurs when in the HLG output of LUT. LUT: HDR-HLG output Color Space: BT.2020 Three sets of customizable submenu [My Menu] functions have been added. 4X magnification has been added. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-7-1-00"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2018-04-04",
+        "cl": [
+          "Super16mm sized (2K crop) recording mode now supports these adapters (sold separately): B4 Mount Adapter MO-4E B4 Mount Adapter MO-4P Camera will display AC adapter and battery voltage, when connected to RAW recorder. Retrieval of Lens metadata, such as focal length, is supported with XF-AVC recording. Auto IRIS support lens has been added. EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Fixes the phenomenon where camera may not accurately record metadata of face detection when the frame rate is set to 59.94i or 50.00i. Fixes the phenomenon where white balance setting values may be rewritten when importing saved settings into the camera* 1 . * 1 EOS C700 camera firmware Version 1.0.4.1.00"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-and-eos-c700pl-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2017-12-17",
+        "cl": [
+          "Hybrid Log Gamma HDR ITU-R BT.2100 output has been added. Importation of 3D LUTs (.cube format) created within Blackmagic Design’s DaVinci Resolve TM software is now supported. Super16mm sized (2K crop) recording mode has been added. The following progressive frame rates, are now supported when using the B4 Mount Adapter MO-4E/MO-4P (sold separately) 59.94Hz: 59.94P, 29.97P, 23.98P 50.00Hz: 50P, 25P 24.00Hz: 24P New white balance color temperature settings have been added. Slow & Fast mode icon will be displayed in red when in use. Slow and Fast mode frame rate selection have been simplified. Fixes a sound lag issue which may occur when [Scan Reverse Rec] is enabled. Peripheral illumination/chromatic aberration correction has been added for the following lenses: EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM DaVinci Resolve TM is the trademark of Blackmagic Design Pty Ltd."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-and-eos-c700pl-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2017-09-05",
+        "cl": [
+          "Corrects the phenomenon in which the final clip of a recording may be corrupted under the following conditions. The main recording format is set to either [ProRes(CFast)] or [ProRes(Capture Drive *1 )]. The output recording command is set to [On]. The recording media becomes full. When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. Dual Pixel Focus Guide function. The zoom rocker seesaw on the lens or separately sold SG-1 grip accessory will operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Allows the position of waveform monitor to be changed on the display. Adds peripheral illumination/chromatic aberration correction for the following lenses: COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF 24-105mm f/4 L IS II USM]、[EF 70-300mm f/4-5.6 IS II USM]、[EF 16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. PQ HDR BT.2100 output has been added. Fixes an error in the displayed list of shutter speeds when using Browser Remote. Fixes a malfunction in the displayed F number for F76 or higher. Changes the specifications so that when the aspect ratio set for sub recording differs from that set for RAW recording, the MON OUT, HDMI OUT, and VIDEO OUT terminals will output the aspect ratio set for RAW Recording *1 In the case of using the separately sold CDX-36150 (CODEX Recorder for EOS C700)"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2017-05-14",
+        "cl": [
+          "EOS C700 / EOS C700 PL: Firmware Version 1.0.2.1.00 Firmware Version 1.0.2.1.00 incorporates the following enhancements. Adds a [-1] *1 option to the [Noise Reduction] setting under Custom Picture Settings to completely cancel the effects of noise reduction. Improves menu operations so that when changing the menu settings under specific conditions *2 , the settings related to [Sub Rec (XF-AVC)] or [Double / Relay Rec] will be retained. *1 On this product, even if the [Noise Reduction] setting is set to [Off], a small amount of noise reduction is still applied. If the [-1] setting is selected, no noise reduction is applied, so the amount of noise will increase compared to when the [Off] setting is selected. Furthermore, when displaying the metadata of clips captured with the [-1] setting using Canon XF Utility Ver. 3.2, the [Noise Reduction] setting will be displayed as blank. *2 The menu operations are improved under the following conditions listed below:",
+          "When resuming normal recording from slow & fast motion recording, the setting selected for the sub recording [Recording Media] or [Double Slot Rec] submenu before slow & fast motion recording will be restored.",
+          "When changing the setting selected for the sub recording [Recording Media] submenu, the setting for the [Resolution/Sampling] submenu will not change.",
+          "With the [Relay Recording] and [Double Slot Recording] settings both set to [On], if the [Double Slot Recording] setting is later set to [Off], the [Relay Recording] setting will still be [On]."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2017-03-29",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c700?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C700 FF",
+    "version": "1.0.2.1",
+    "release_date": "2020-07-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c700-ff",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c700-ff?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-digital-cinema-camera-eos-c700ff-firmware-version-1-0-2-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The following on screen display improvements have been made: S&F icon has changed. REC color change from white to red. STBY color change from white to green."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware Version 1.0.2.1.00 is for updating Cinema EOS C700FF cameras running firmware version 1.0.0.1.00-1.0.1.1.00. If your camera’s firmware is already version 1.0.2.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For customers who are using the optional OU-700 Remote Operation Unit, the firmware of the camera and the OU-700 Remote Operation Unit have to be the same. After updating the camera firmware, connect the camera with the OU-700 to update the firmware of the OU-700 from the camera's system settings. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an commercially available SD/SDHC/SDXC memory card that is 512MB or greater to performmore for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled “Saving and Loading Camera Settings.” The downloaded firmware folder contains the firmware (File Name: VMI3.FIM, File Size: 115,048,668bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please carefully review and confirm your understanding of check the firmware update procedures set forth in the manual carefully before starting update operations.",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an commercially available SD/SDHC/SDXC memory card that is 512MB or greater to performmore for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled “Saving and Loading Camera Settings.” The downloaded firmware folder contains the firmware (File Name: VMI3.FIM, File Size: 115,048,668bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please carefully review and confirm your understanding of check the firmware update procedures set forth in the manual carefully before starting update operations."
+        ]
+      }
+    ],
+    "install_version": "1.0.2.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-digital-cinema-camera-eos-c700ff-firmware-version-1-0-2-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.1.1",
+        "d": "2018-12-12",
+        "cl": [
+          "Chromatic aberration correction has been added for the following EFP lenses: CJ45e×9.7B IASE-V H CJ45e×13.6B IASE-V H Support for these EFP lenses has been added. CJ24e×7.5B IASE S CJ18e×7.6B IRSE S / IASE S CJ14e×4.3B IRSE S / IASE S For LUTs that can be applied to output footage, support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:. SDI OUT terminal HDMI OUT terminal [HDR-PQ(OOTF On /Off)] will change to [HDR-PQ *1 ]. Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance correspond to Diffuse White (100%) being 203nit s*2 . VIDEO terminal (optional Viewfinder) [HDR1600%(OOTF On /Off)] will change to [HDR-1600%*1]. [HDR400%(OOTF On /Off)] will change to [HDR-400%*1]. * 1 :OOTF On *2 The brightness before the change to OOTF On 83nits/OOTF Off 111nits The HLG output is the brightness in the case of displaying on a 1000nits monitor. Please use the Canon lookup table that is released on and after November, 2018. Fixes a phenomenon in which signal outputting of more than 100% occurs when in the HLG output of LUT. LUT: HDR-HLG output Color Space: BT.2020 Support for Double slot recording in Full Frame sensor mode has been added for the following settings. XF-AVC 59.94P/50P ProRes 59.94P/50P *Double slot recording cannot be used together with relay recording, or with slow & fast motion recording. Refer to the Instruction manual for more details. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700ff-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300 Mark II",
+    "version": "1.1.3.1",
+    "release_date": "2020-07-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300-mark-ii",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300-mark-ii?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-3-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The default setting for [Custom Display 2] > [Resolution/Color Sampling] has been set to ON."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware version 1.1.3.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00 - 1.1.2.1.00. If your camera's firmware is already version 1.1.3.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. Please note that after updating the camera to Firmware Version 1.0.6.1.00 or later, if you wish to continue using CFast (VPG130) cards that were used before the firmware update, you will need to format the CFast cards with the camera. After the firmware update, and before formatting the CFast cards with the camera, make sure to back up the clips saved to the CFast cards. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the firmware update has been performed, the camera's menu and custom picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and custom picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings.\" The downloaded folder contains the firmware (file name: VLB4.FIM / file size: 43,974,688 bytes), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions. The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the firmware update has been performed, the camera's menu and custom picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and custom picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings.\" The downloaded folder contains the firmware (file name: VLB4.FIM / file size: 43,974,688 bytes), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions. The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)",
+          "The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)"
+        ]
+      }
+    ],
+    "install_version": "1.1.3.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-3-1-00",
+    "previous_versions": [
+      {
+        "v": "1.1.2.1",
+        "d": "2018-12-12",
+        "cl": [
+          "Peripheral illumination / chromatic aberration correction has been added for the following lenses: EF Cinema Lens: CN-E20mm T1.5 L F EF Lens: EF 70-200mm f/4L IS II USM Support for the [Reset] function that resets the clip number when the reel number is set, has been added. Fixes a phenomenon in which joy stick operation does not reverse in Mirror mode for the LM-V1. Fixes a phenomenon in which a green image may display when using OLED Viewfinder EVF-V70. Optimizes the [Black Gamma] compensation when [Normal 1] to [Normal 4] is set for [Gamma] in the Custom Picture settings. Optimizes color accuracy in areas of high brightness when [Normal 1] to [Normal 4] is set for [Gamma] in the Custom Picture settings. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-1-2-1-00"
+      },
+      {
+        "v": "1.1.1.1",
+        "d": "2018-04-04",
+        "cl": [
+          "Retrieval of lens metadata, such as focal length, is now supported during XF-AVC recording. Sensitivity adjustment has been added for the LM-V1 LCD Monitor. Auto IRIS support has been added for the following lenses: EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Fixed a phenomenon in which the CFast card recording and/or REC OUT terminal output footage may be momentarily distorted when the shooting frame rate is set to 120fps in the [Slow & Fast Motion (crop)] recording mode on cameras running Firmware Version 1.0.8.1.00 or later. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.1.1.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.1.0.1.00. If your camera's firmware is already version 1.1.1.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-1-1-00"
+      },
+      {
+        "v": "1.1.0.1",
+        "d": "2017-12-11",
+        "cl": [
+          "Support for LCD monitor LM-V1* 1 , 2 (separately sold) has been added. Peripheral illumination/chromatic aberration correction has been added for the following lenses: EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM * 1 The LA-V1 LCD Attachment Unit cannot be used to attach the LM-V1 to the EOS C300 Mark II / EOS C300 Mark II PL cameras. 3 rd party mounting options are required to use the monitor on this model camera. * 2 When using the LM-V1 with the separately-sold WFT-E6 or WFT-E8 Wireless File Transmitter and GP-E1 GPS Receiver, please be sure to maintain space between the two accessories. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.1.0.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.9.1.00. If your camera's firmware is already version 1.1.0.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-update-eos-c300-mark-ii-eos-c300-mark-ii-pl-firmware-version-1-1-0-1-00"
+      },
+      {
+        "v": "1.0.9.1",
+        "d": "2017-08-28",
+        "cl": [
+          "EOS C300 Mark II / EOS C300 Mark II PL: Firmware Version 1.0.9.1.00 Firmware Version 1.0.9.1.00 incorporates the following fixes and enhancements When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. Dual Pixel Focus Guide function. The joystick on the camera’s grip unit can be set to operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Allows the position of waveform monitor to be changed on the display. Adds peripheral illumination/chromatic aberration correction for the following lenses: COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF70-300mm f/4-5.6 IS II USM], [F16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. Fixes the list of shutter speed on the display when using browser remote. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.9.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.8.1.00. If your camera's firmware is already version 1.0.9.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-0-9-1-00"
+      },
+      {
+        "v": "1.0.8.1",
+        "d": "2017-06-13",
+        "cl": [
+          "EOS C300 Mark II / EOS C300 Mark II PL: Firmware Version 1.0.8.1.00 Firmware Version 1.0.8.1.00 incorporates the following correction. Fixes a phenomenon in which a horizontal-line noise may appear for an instant in 4K RAW footage output from the REC OUT terminal and/or MON. terminal while simultaneously recording to a CFast card. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.8.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.7.1.00. If your camera's firmware is already version 1.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the unit’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-0-8-1-00"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2016-10-26",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300-mark-ii?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300 Mark II PL",
+    "version": "1.1.3.1",
+    "release_date": "2020-07-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300-mark-ii-pl",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300-mark-ii-pl?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-3-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "1. Compatible with EF Cinema Lens CN 10 x 25 IAS S/E1. Peripheral illumination / chromatic aberration correction has been added. Enable autofocus with Dual Pixel CMOS AF. Added support for \"Dual Pixel Focus Guide\" feature.",
+      "2. The default setting for [Custom Display 2] > [Resolution/Color Sampling] has been set to ON."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware version 1.1.3.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00 - 1.1.2.1.00. If your camera's firmware is already version 1.1.3.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. Please note that after updating the camera to Firmware Version 1.0.6.1.00 or later, if you wish to continue using CFast (VPG130) cards that were used before the firmware update, you will need to format the CFast cards with the camera. After the firmware update, and before formatting the CFast cards with the camera, make sure to back up the clips saved to the CFast cards. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the firmware update has been performed, the camera's menu and custom picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and custom picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings.\" The downloaded folder contains the firmware (file name: VLB4.FIM / file size: 43,974,688 bytes), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions. The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update. After the firmware update has been performed, the camera's menu and custom picture settings will be reset. It is recommended that, prior to starting the firmware update operations, users save their menu and custom picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings.\" The downloaded folder contains the firmware (file name: VLB4.FIM / file size: 43,974,688 bytes), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions. The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)",
+          "The following items are required to perform this firmware update: An EOS C300 Mark II or EOS C300 Mark II PL Digital Cinema Camera A computer (OS requirements: Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Mac OS X 10.7 - 10.15) SD/SDHC/SDXC memory card with a capacity of 512MB or more (commercially available) An SD card reader/writer (commercially available) or an SD card slot built into the computer A fully charged battery pack for the camera Compact power adapter bundled with the camera The firmware (the downloaded file)"
+        ]
+      }
+    ],
+    "install_version": "1.1.3.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-3-1-00",
+    "previous_versions": [
+      {
+        "v": "1.1.2.1",
+        "d": "2018-12-12",
+        "cl": [
+          "Peripheral illumination / chromatic aberration correction has been added for the following lenses: EF Cinema Lens: CN-E20mm T1.5 L F EF Lens: EF 70-200mm f/4L IS II USM Support for the [Reset] function that resets the clip number when the reel number is set, has been added. Fixes a phenomenon in which joy stick operation does not reverse in Mirror mode for the LM-V1. Fixes a phenomenon in which a green image may display when using OLED Viewfinder EVF-V70. Optimizes the [Black Gamma] compensation when [Normal 1] to [Normal 4] is set for [Gamma] in the Custom Picture settings. Optimizes color accuracy in areas of high brightness when [Normal 1] to [Normal 4] is set for [Gamma] in the Custom Picture settings. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-1-2-1-00"
+      },
+      {
+        "v": "1.1.1.1",
+        "d": "2018-04-04",
+        "cl": [
+          "Retrieval of lens metadata, such as focal length, is now supported during XF-AVC recording. Sensitivity adjustment has been added for the LM-V1 LCD Monitor. Auto IRIS support has been added for the following lenses: EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Fixed a phenomenon in which the CFast card recording and/or REC OUT terminal output footage may be momentarily distorted when the shooting frame rate is set to 120fps in the [Slow & Fast Motion (crop)] recording mode on cameras running Firmware Version 1.0.8.1.00 or later. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.1.1.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.1.0.1.00. If your camera's firmware is already version 1.1.1.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii--eos-c300-mark-ii-pl-firmware-version-1-1-1-1-00"
+      },
+      {
+        "v": "1.1.0.1",
+        "d": "2017-12-11",
+        "cl": [
+          "Support for LCD monitor LM-V1* 1 , 2 (separately sold) has been added. Peripheral illumination/chromatic aberration correction has been added for the following lenses: EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM * 1 The LA-V1 LCD Attachment Unit cannot be used to attach the LM-V1 to the EOS C300 Mark II / EOS C300 Mark II PL cameras. 3 rd party mounting options are required to use the monitor on this model camera. * 2 When using the LM-V1 with the separately-sold WFT-E6 or WFT-E8 Wireless File Transmitter and GP-E1 GPS Receiver, please be sure to maintain space between the two accessories. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.1.0.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.9.1.00. If your camera's firmware is already version 1.1.0.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-update-eos-c300-mark-ii-eos-c300-mark-ii-pl-firmware-version-1-1-0-1-00"
+      },
+      {
+        "v": "1.0.9.1",
+        "d": "2017-08-28",
+        "cl": [
+          "EOS C300 Mark II / EOS C300 Mark II PL: Firmware Version 1.0.9.1.00 Firmware Version 1.0.9.1.00 incorporates the following fixes and enhancements When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. Dual Pixel Focus Guide function. The joystick on the camera’s grip unit can be set to operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Allows the position of waveform monitor to be changed on the display. Adds peripheral illumination/chromatic aberration correction for the following lenses: COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF70-300mm f/4-5.6 IS II USM], [F16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. Fixes the list of shutter speed on the display when using browser remote. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.9.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.8.1.00. If your camera's firmware is already version 1.0.9.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-0-9-1-00"
+      },
+      {
+        "v": "1.0.8.1",
+        "d": "2017-06-13",
+        "cl": [
+          "EOS C300 Mark II / EOS C300 Mark II PL: Firmware Version 1.0.8.1.00 Firmware Version 1.0.8.1.00 incorporates the following correction. Fixes a phenomenon in which a horizontal-line noise may appear for an instant in 4K RAW footage output from the REC OUT terminal and/or MON. terminal while simultaneously recording to a CFast card. Caution You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 64MB or more for the firmware update. Firmware version 1.0.8.1.00 is for updating Cinema EOS C300 Mark II cameras running firmware version 1.0.0.1.00",
+          "1.0.7.1.00. If your camera's firmware is already version 1.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For further information, please refer to the latest version of the unit’s Instruction Manual that is released with the firmware update."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300-mark-ii---eos-c300-mark-ii-pl-firmware-version-1-0-8-1-00"
+      },
+      {
+        "v": "1.0.5.1",
+        "d": "2016-10-26",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300-mark-ii-pl?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
   },
   {
     "manufacturer": "Sony",
@@ -1833,6 +2692,135 @@
     "file_size": null,
     "notes_url": null,
     "archive_url": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C700 PL",
+    "version": "1.0.7.1",
+    "release_date": "2018-12-12",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c700-pl",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c700-pl?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-7-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Peripheral illumination / chromatic aberration correction has been added for the following lenses: EF Cinema Lens: CN-E20mm T1.5 L F EF Lens: EF 70-200mm f/4L IS II USM Chromatic aberration correction has been added for the following EFP lenses: CJ45e×9.7B IASE-V H CJ45e×13.6B IASE-V H Support for these EFP lenses has been added. CJ24e×7.5B IASE S CJ18e×7.6B IRSE S / IASE S CJ14e×4.3B IRSE S / IASE S Enables AF/ face detection mode to be used during Super16mm sized (2K crop) recording. For LUTs that can be applied to output footage, support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:. SDI OUT terminal HDMI OUT terminal [HDR-PQ(OOTF On /Off)] will change to [HDR-PQ *1 ]. Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance correspond to Diffuse White (100%) being 203nit s*2 . VIDEO terminal (optional Viewfinder) [HDR1600%(OOTF On /Off)] will change to [HDR-1600%*1]. [HDR400%(OOTF On /Off)] will change to [HDR-400%*1]. *1 :OOTF On *2 The brightness before the change to OOTF On 83nits/OOTF Off 111nits The HLG output is the brightness in the case of displaying on a 1000nits monitor. Please use the Canon lookup table that is released on and after November, 2018. Support for the [Reset] function that resets the clip number when the reel number is set, has been added. Fixes a phenomenon in which signal outputting of more than 100% occurs when in the HLG output of LUT. LUT: HDR-HLG output Color Space: BT.2020 Three sets of customizable submenu [My Menu] functions have been added. 4X magnification has been added. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware Version 1.0.7.1.00 is for updating Cinema EOS C700 cameras running firmware version 1.0.0.1.00-1.0.6.1.00. If your camera’s firmware is already version 1.0.7.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For customers who are using the optional OU-700 Remote Operation Unit, the firmware of the camera and the OU-700 Remote Operation Unit have to be the same. After updating the camera firmware, connect the camera with the OU-700 to update the firmware of the OU-700 from the camera's system settings. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 128MB or more for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled Saving and Loading Camera Settings. The downloaded firmware folder contains the firmware (File Name: VMA7.FIM, File Size: 112,296,156 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Please check the firmware update procedure manual carefully before starting update operations.",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 128MB or more for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled Saving and Loading Camera Settings. The downloaded firmware folder contains the firmware (File Name: VMA7.FIM, File Size: 112,296,156 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Please check the firmware update procedure manual carefully before starting update operations."
+        ]
+      }
+    ],
+    "install_version": "1.0.7.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-7-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.5.1",
+        "d": "2018-04-04",
+        "cl": [
+          "Super16mm sized (2K crop) recording mode now supports these adapters (sold separately): B4 Mount Adapter MO-4E B4 Mount Adapter MO-4P Camera will display AC adapter and battery voltage, when connected to RAW recorder. Retrieval of Lens metadata, such as focal length, is supported with XF-AVC recording. Auto IRIS support lens has been added. EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Fixes the phenomenon where camera may not accurately record metadata of face detection when the frame rate is set to 59.94i or 50.00i. Fixes the phenomenon where white balance setting values may be rewritten when importing saved settings into the camera* 1 . * 1 EOS C700 camera firmware Version 1.0.4.1.00"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-and-eos-c700pl-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2017-12-17",
+        "cl": [
+          "Hybrid Log Gamma HDR ITU-R BT.2100 output has been added. Importation of 3D LUTs (.cube format) created within Blackmagic Design’s DaVinci Resolve TM software is now supported. Super16mm sized (2K crop) recording mode has been added. The following progressive frame rates, are now supported when using the B4 Mount Adapter MO-4E/MO-4P (sold separately) 59.94Hz: 59.94P, 29.97P, 23.98P 50.00Hz: 50P, 25P 24.00Hz: 24P New white balance color temperature settings have been added. Slow & Fast mode icon will be displayed in red when in use. Slow and Fast mode frame rate selection have been simplified. Fixes a sound lag issue which may occur when [Scan Reverse Rec] is enabled. Peripheral illumination/chromatic aberration correction has been added for the following lenses: EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM DaVinci Resolve TM is the trademark of Blackmagic Design Pty Ltd."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-and-eos-c700pl-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.3.1",
+        "d": "2017-09-05",
+        "cl": [
+          "Corrects the phenomenon in which the final clip of a recording may be corrupted under the following conditions. The main recording format is set to either [ProRes(CFast)] or [ProRes(Capture Drive *1 )]. The output recording command is set to [On]. The recording media becomes full. When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. Dual Pixel Focus Guide function. The zoom rocker seesaw on the lens or separately sold SG-1 grip accessory will operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Allows the position of waveform monitor to be changed on the display. Adds peripheral illumination/chromatic aberration correction for the following lenses: COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF 24-105mm f/4 L IS II USM]、[EF 70-300mm f/4-5.6 IS II USM]、[EF 16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. PQ HDR BT.2100 output has been added. Fixes an error in the displayed list of shutter speeds when using Browser Remote. Fixes a malfunction in the displayed F number for F76 or higher. Changes the specifications so that when the aspect ratio set for sub recording differs from that set for RAW recording, the MON OUT, HDMI OUT, and VIDEO OUT terminals will output the aspect ratio set for RAW Recording *1 In the case of using the separately sold CDX-36150 (CODEX Recorder for EOS C700)"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2017-05-14",
+        "cl": [
+          "EOS C700 / EOS C700 PL: Firmware Version 1.0.2.1.00 Firmware Version 1.0.2.1.00 incorporates the following enhancements. Adds a [-1] *1 option to the [Noise Reduction] setting under Custom Picture Settings to completely cancel the effects of noise reduction. Improves menu operations so that when changing the menu settings under specific conditions *2 , the settings related to [Sub Rec (XF-AVC)] or [Double / Relay Rec] will be retained. *1 On this product, even if the [Noise Reduction] setting is set to [Off], a small amount of noise reduction is still applied. If the [-1] setting is selected, no noise reduction is applied, so the amount of noise will increase compared to when the [Off] setting is selected. Furthermore, when displaying the metadata of clips captured with the [-1] setting using Canon XF Utility Ver. 3.2, the [Noise Reduction] setting will be displayed as blank. *2 The menu operations are improved under the following conditions listed below:",
+          "When resuming normal recording from slow & fast motion recording, the setting selected for the sub recording [Recording Media] or [Double Slot Rec] submenu before slow & fast motion recording will be restored.",
+          "When changing the setting selected for the sub recording [Recording Media] submenu, the setting for the [Resolution/Sampling] submenu will not change.",
+          "With the [Relay Recording] and [Double Slot Recording] settings both set to [On], if the [Double Slot Recording] setting is later set to [Off], the [Relay Recording] setting will still be [On]."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700---eos-c700-pl-firmware-version-1-0-2-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C700 GS PL",
+    "version": "1.0.5.1",
+    "release_date": "2018-12-12",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c700-gs-pl",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c700-gs-pl?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-gs-pl-firmware-version-1-0-5-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Peripheral illumination / chromatic aberration correction has been added for the following lenses: EF Cinema Lens: CN-E20mm T1.5 L F EF Lens: EF 70-200mm f/4L IS II USM Chromatic aberration correction has been added for the following EFP lenses: CJ45e×9.7B IASE-V H CJ45e×13.6B IASE-V H Support for these EFP lenses has been added. CJ24e×7.5B IASE S CJ18e×7.6B IRSE S / IASE S CJ14e×4.3B IRSE S / IASE S For LUTs that can be applied to output footage, support for the ITU-R BT.2100 standard and ITU-R BT.2408 report have been added for the following terminals:. SDI OUT terminal HDMI OUT terminal [HDR-PQ(OOTF On /Off)] will change to [HDR-PQ *1 ]. Changes have been made so that the [HDR: PQ] and [HDR: HLG] base luminance correspond to Diffuse White (100%) being 203nit s*2 . VIDEO terminal (optional Viewfinder) [HDR1600%(OOTF On /Off)] will change to [HDR-1600%*1]. [HDR400%(OOTF On /Off)] will change to [HDR-400%*1]. *1 OOTF On *2 The brightness before the change to OOTF On 83nits/OOTF Off 111nits The HLG output is the brightness in the case of displaying on a 1000nits monitor. Please use the Canon lookup table that is released on and after November, 2018. Support for the [Reset] function that resets the clip number when the reel number is set, has been added. Fixes a phenomenon in which signal outputting of more than 100% occurs when in the HLG output of LUT. Three sets of customizable submenu [My Menu] functions have been added. 4X magnification has been added. For further information, please refer to the latest version of the camera’s Instruction Manual that is released with the firmware update."
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Firmware Version 1.0.5.1.00 is for updating Cinema EOS C700 cameras running firmware version 1.0.0.1.00 – 1.0.4.1.00. If your camera’s firmware is already version 1.0.5.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version. For customers who are using the optional OU-700 Remote Operation Unit, the firmware of the camera and the OU-700 Remote Operation Unit have to be the same. After updating the camera firmware, connect the camera with the OU-700 to update the firmware of the OU-700 from the camera's system settings. Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 128MB or more for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled Saving and Loading Camera Settings. The downloaded firmware folder contains the firmware (File Name: VMB5.FIM, File Size: 112,296,156 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Please check the firmware update procedure manual carefully before starting update operations. The following items are required to perform this firmware update: A Cinema EOS C700GSPL camera body A computer (OS: Windows 10, Windows 8 .1, Windows 8, Windows 7 SP1 or Mac OS X (",
+          "10. 7 -10.1 ４ ) . A 128 MB or higher-capacity SD/SDHC/SDXC memory card (both commercially available) An SD card reader-writer (commercially available) or an SD card slot on the computer. Fully charged V-mount battery (commercially available), 14.8 V DC (acceptable range: 12 V to 20 V DC) Power adapter (commercially available, DC IN 12V terminal): 4-pin XLR plug (female connector), 12 V DC (acceptable range: 11.5 V to 20 V DC), 10 A (acceptable maximum load current) The firmware (the file downloaded from the Canon Web site)",
+          "Preparations for a firmware update: You cannot perform the firmware update using CFast 2.0 cards. Please use a commercially available SD/SDHC/SDXC memory card that is 128MB or more for the firmware update. After the Firmware update has been performed, the camera’s menu settings and Custom Picture settings will be reset. It is recommended that users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update, before starting update operations. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the camera’s user manual titled Saving and Loading Camera Settings. The downloaded firmware folder contains the firmware (File Name: VMB5.FIM, File Size: 112,296,156 bytes) and a procedure manual for updating the firmware (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Please check the firmware update procedure manual carefully before starting update operations. The following items are required to perform this firmware update: A Cinema EOS C700GSPL camera body A computer (OS: Windows 10, Windows 8 .1, Windows 8, Windows 7 SP1 or Mac OS X (",
+          "10. 7 -10.1 ４ ) . A 128 MB or higher-capacity SD/SDHC/SDXC memory card (both commercially available) An SD card reader-writer (commercially available) or an SD card slot on the computer. Fully charged V-mount battery (commercially available), 14.8 V DC (acceptable range: 12 V to 20 V DC) Power adapter (commercially available, DC IN 12V terminal): 4-pin XLR plug (female connector), 12 V DC (acceptable range: 11.5 V to 20 V DC), 10 A (acceptable maximum load current) The firmware (the file downloaded from the Canon Web site)",
+          "The following items are required to perform this firmware update: A Cinema EOS C700GSPL camera body A computer (OS: Windows 10, Windows 8 .1, Windows 8, Windows 7 SP1 or Mac OS X (",
+          "10. 7 -10.1 ４ ) . A 128 MB or higher-capacity SD/SDHC/SDXC memory card (both commercially available) An SD card reader-writer (commercially available) or an SD card slot on the computer. Fully charged V-mount battery (commercially available), 14.8 V DC (acceptable range: 12 V to 20 V DC) Power adapter (commercially available, DC IN 12V terminal): 4-pin XLR plug (female connector), 12 V DC (acceptable range: 11.5 V to 20 V DC), 10 A (acceptable maximum load current) The firmware (the file downloaded from the Canon Web site)"
+        ]
+      }
+    ],
+    "install_version": "1.0.5.1",
+    "install_source": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-gs-pl-firmware-version-1-0-5-1-00",
+    "previous_versions": [
+      {
+        "v": "1.0.3.1",
+        "d": "2018-04-04",
+        "cl": [
+          "Super16mm sized (2K crop) recording mode now supports these adapters (sold separately): B4 Mount Adapter MO-4P Camera will display AC adapter and battery voltage, when connected to RAW recorder. Retrieval of Lens metadata, such as focal length, is supported with XF-AVC recording. Model distinction metadata of C700 and C700GS has been added. Fixes the phenomenon where white balance setting values may be rewritten when importing saved settings into the camera* 1 . * 1 EOS C700 camera firmware Version 1.0.2.1.00."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-gs-pl-firmware-version-1-0-3-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2017-12-17",
+        "cl": [
+          "Hybrid Log Gamma HDR ITU-R BT.2100 output has been added. Importation of 3D LUTs(.cube format) created within Blackmagic Design’s DaVinci Resolve TM software is now supported. Super16mm sized (2K crop) recording mode has been added. The progressive frame rates below are now supported when using the B4 Mount Adapter MO-4P (sold separately). 59.94Hz: 59.94P, 29.97P, 23.98P 50.00Hz: 50P, 25P 24.00Hz: 24P New white balance color temperature settings have been added. Slow and Fast mode icon will be displayed in red when in use. Slow and Fast mode frame rate selection have been simplified Fixes a sound lag issue which may occur when [Scan Reverse Rec] is enabled. DaVinci Resolve TM is the trademark of Blackmagic Design Pty Ltd."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-gs-pl-firmware-version-1-0-2-1-00"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2017-09-05",
+        "cl": [
+          "Corrects the phenomenon in which the final clip of a recording may be corrupted under the following conditions: The main recording format is set to either [ProRes(CFast)] or [ProRes(Capture Drive *1 )]. The output recording command is set to [On]. The recording media becomes full. Allows the position of waveform monitor to be changed on the display. PQ HDR BT.2100 output has been added. Fixes an error in the displayed list of shutter speeds when using Browser Remote. Changes the specifications so that when the aspect ratio set for sub recording differs from that set for RAW recording, the MON OUT, HDMI OUT, and VIDEO OUT terminals will output the aspect ratio set for RAW Recording *1 In the case of using the separately sold CDX-36150 (CODEX Recorder for EOS C700)"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c700-gs-pl-firmware-version-1-0-1-1-00"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
   },
   {
     "manufacturer": "Sony",
@@ -1895,5 +2883,294 @@
     "install_version": "V4.03",
     "install_source": "https://www.sony.com/electronics/support/professional-camcorders-handheld-camcorders/pxw-fs5/software/mpengb00000897",
     "guides": []
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300 (Dual Pixel AF)",
+    "version": "2.1.9.1",
+    "release_date": "2017-12-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300--with-the-dual-pixel-cmos-af-feature-upgrade-applied--firmware-version-2-1-9-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "EOS C300 (with the Dual Pixel CMOS AF Feature Upgrade applied): Firmware Version 2.1.9.1.00 Firmware Version 2.1.9.1.00 i ncorporates the following enhancements: When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function The joystick on the camera's grip unit can be set to operate the zoom. Manual control of the iris with Camera's Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the separately-sold lens grip ZSG-C10. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. Adds peripheral illumination correction for the following lenses: COMPACT-SERVO Lens CN-E70-200mm T4.4 L IS KAS S EF Lens EF 70-300mm f/4-5.6 IS II USM EF 16-35mm f/2.8L III USM EF-S 18-55mm f/4-5.6 IS STM EF-S 35mm f/2.8 Macro IS STM EF 85mm f/1.4L IS USM Note: Firmware Version 2.1.9.1.00 is only for EOS C300 cameras which have Firmware Version 2.1.2.1.00",
+      "2.1.8.1.00 with the Dual Pixel CMOS AF Feature Upgrade applied. If your camera’s firmware is already version 2.1.9.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. If the EOS C300 camera does not have Dual Pixel CMOS AF Feature Upgrade applied, please"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2.1.8.1",
+        "d": "2016-12-12",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300?subtab=downloads-firmware"
+      },
+      {
+        "v": "2.1.3.1",
+        "d": "2014-11-04",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C100 (Dual Pixel AF)",
+    "version": "2.0.9.1",
+    "release_date": "2017-12-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c100",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100--with-the-dual-pixel-cmos-af-feature-upgrade-applied---firmware-version-2-0-9-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function The joystick on the camera's grip unit can be set to operate the zoom. Manual control of the iris with Camera's Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the separately-sold lens grip ZSG-C10. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch. Adds peripheral illumination correction for the following lenses: COMPACT-SERVO Lens CN-E70-200mm T4.4 L IS KAS S EF Lens EF70-300mm f/4-5.6 IS II USM EF16-35mm f/2.8L III USM EF-S18-55mm f/4-5.6 IS STM EF-S35mm f/2.8 Macro IS STM EF-85mm f/1.4L IS USM Note: Firmware Version 2.0.9.1.00 is only for EOS C100 cameras which have Firmware Version 2.0.3.1.00",
+      "2.0.8.1.00 with the Dual Pixel CMOS AF Feature Upgrade applied. If your camera’s firmware is already version 2.0.9.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. If the EOS C100 camera does not have Dual Pixel CMOS AF Feature Upgrade applied, please"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2.0.8.1",
+        "d": "2017-03-28",
+        "cl": [
+          "The following features are enabled when these lenses are attached: CN7x17 KAS S/E1 * , CN-E18-80mm T4.4 L IS KAS S or CN20x50 IAS H/E1 * . Saving and displaying metadata, such as the model name and the focal distance of the lens attached. Support for peripheral illumination Correction. Manual Iris control via the camera’s control dial on the grip.. Zoom operation via the joystick on the camera’s grip. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Support for Dual Pixel CMOS AF function. (Not applicable to the CN20x50 IAS H/E1 lens). Automatic aperture and push auto iris functions. Operation of REC start/stop via the lens’s grip unit. *The lens firmware also needs to be updated. If you have CN7x17 KAS S/E1 or CN20x50 IAS H/E1, please contact the Canon Support Center. Adds Peripheral Illumination Correction for the following lenses: EF 35mm f/1.4L II USM EF 50mm f/1.8 STM EF-S 18-135mm f/3.5-5.6 IS USM EF24-105mm f4L IS II USM Note: Firmware Version 2.0.8.1.00 is only for EOS C100 cameras which have Firmware Version 2.0.3.1.00",
+          "2.0.7.1.00 with the Dual Pixel CMOS AF Feature Upgrade applied. If your camera’s firmware is already version 2.0.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. If the EOS C100 camera does not have Dual Pixel CMOS AF Feature Upgrade applied, please"
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c100--with-dual-pixel-cmos-af-feature-upgrade-applied--firmware-version-2-0-8-1-00"
+      },
+      {
+        "v": "2.0.4.1",
+        "d": "2014-06-11",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C100 Mark II",
+    "version": "1.0.8.1",
+    "release_date": "2017-03-29",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.5.1",
+        "d": "2017-08-28",
+        "cl": [
+          "EOS C100 Mark II: Firmware Version 1.0.5.1.00 Firmware Version",
+          "1. 0 .5 . 1.00 incorporates the f ollowing enhancements: When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. The joystick on the camera’s grip unit can be set to operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Adds peripheral illumination correction for the following lenses. COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF70-300mm f/4-5.6 IS II USM], [EF16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2017-03-28",
+        "cl": [
+          "EOS C100 Mark II: Firmware Version 1.0.4.1.00 Firmware Version",
+          "1. 0 .4 . 1.00 incorporates the f ollowing enhancements: Shutter Angle Priority has been added. A constant shutter angle can now be maintained, regardless of any other camera settings being changed. Support for peripheral illumination correction when the EF 24-105mm f/4L IS II USM lens is attached, has been added."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2016-07-27",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C100",
+    "version": "1.0.8.1",
+    "release_date": "2017-03-28",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c100",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-firmware-version-1-0-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "The following features are enabled when these lenses are attached: CN7x17 KAS S/E1 * , CN-E18-80mm T4.4 L IS KAS S or CN20x50 IAS H/E1 *3 . Saving and displaying metadata, such as the model name and the focal distance of the lens attached. Support for peripheral illumination Correction. Manual Iris control via the camera’s control dial on the grip.. Zoom operation via the joystick on the camera’s. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Operation of REC start/stop via the lens’s grip unit. *The lens firmware also needs to be updated. If you have CN7x17 KAS S/E1 or CN20x50 IAS H/E1, please contact the Canon Support Center. Adds Peripheral Illumination Correction for the following lenses: EF 35mm f/1.4L II USM EF 50mm f/1.8 STM EF-S 18-135mm f/3.5-5.6 IS USM EF24-105mm f4L IS II USM Note: Firmware Version 1.0.8.1.00 is only for EOS C100 cameras without the Dual Pixel CMOS AF Feature Upgrade. If the EOS C100 camera has had the DAF Feature Upgrade applied, please"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.4.1",
+        "d": "2014-06-11",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware"
+      },
+      {
+        "v": "1.0.1.1",
+        "d": "2017-03-29",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300",
+    "version": "1.1.8.1",
+    "release_date": "2016-12-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300---eos-c300-pl-firmware-version-1-1-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "For EOS C300 EF only With the CN7x17 KAS S/E1 ※ 1 , CN-E18-80mm T4.4 L IS KAS, or CN20x50 IAS H/E1 ※ 1 attached, the following functions are available. — Metadata, such as the model name and focal distance of the lens attached, can be acquired and displayed on the camera. *2 — Peripheral illumination correction is supported. *2 — Aperture can be adjusted manually by operating the camera’s control dial. *2 — Settings can be changed so that the zoom can be operated using the joystick on the grip unit of the camera. — The zoom/focus *2 /iris *2 can be operated using the separately-sold RC-V100 Remote Controller. — The focus and iris can be operated via Wi-Fi Remote. *2 — The automatic aperture and Push Auto Iris functions can be used. Support for peripheral illumination correction when the EF24-105mm f/4L IS II USM is attached has been added. *1 The firmware of the lenses also need to be updated. *2 For the CN7x17 KAS S/E1, support has already been provided in Firmware Version 2.1.7.1.00 or later. For EOS C300 EF/PL Support for the separately-sold WFT-E8 Wireless File Transmitter has been added. Note: Firmware Version 1.1.8.1.00 is only for EOS C300 cameras which have Firmware Version 1.0.4.1.00",
+      "1.1.7.1.00 without the Dual Pixel CMOS AF Feature Upgrade. If your camera’s firmware is already version 1.1.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. If the EOS C300 camera has had the Dual Pixel CMOS AF Feature Upgrade applied, please"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.1.3.1",
+        "d": "2014-11-04",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C300 PL",
+    "version": "1.1.8.1",
+    "release_date": "2016-12-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c300-pl",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c300-pl?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c300---eos-c300-pl-firmware-version-1-1-8-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "For EOS C300 EF only With the CN7x17 KAS S/E1 ※ 1 , CN-E18-80mm T4.4 L IS KAS, or CN20x50 IAS H/E1 ※ 1 attached, the following functions are available. — Metadata, such as the model name and focal distance of the lens attached, can be acquired and displayed on the camera. *2 — Peripheral illumination correction is supported. *2 — Aperture can be adjusted manually by operating the camera’s control dial. *2 — Settings can be changed so that the zoom can be operated using the joystick on the grip unit of the camera. — The zoom/focus *2 /iris *2 can be operated using the separately-sold RC-V100 Remote Controller. — The focus and iris can be operated via Wi-Fi Remote. *2 — The automatic aperture and Push Auto Iris functions can be used. Support for peripheral illumination correction when the EF24-105mm f/4L IS II USM is attached has been added. *1 The firmware of the lenses also need to be updated. *2 For the CN7x17 KAS S/E1, support has already been provided in Firmware Version 2.1.7.1.00 or later. For EOS C300 EF/PL Support for the separately-sold WFT-E8 Wireless File Transmitter has been added. Note: Firmware Version 1.1.8.1.00 is only for EOS C300 cameras which have Firmware Version 1.0.4.1.00",
+      "1.1.7.1.00 without the Dual Pixel CMOS AF Feature Upgrade. If your camera’s firmware is already version 1.1.8.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. If the EOS C300 camera has had the Dual Pixel CMOS AF Feature Upgrade applied, please"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.6.1",
+        "d": "2014-11-04",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c300-pl?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C500",
+    "version": "1.0.7.1",
+    "release_date": "2015-11-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c500",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c500?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500---eos-c500-pl-cinema-eos-cinema-firmware-1-0-7-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Enables control of CINE-SERVO lenses using the RC-V100 remote controller. Enables peripheral illumination correction for the following lenses: EF lenses: EF16-35mm f/4L IS USM EF-S10-18mm f/4-5.6 IS STM EF400mm f/4L DO IS USM EF11-24mm f/4L USM EF24-105mm f/3.5-5.6 IS STM EF100-400mm f/4.5-5.6LII IS USM EF-S24mm f/2.8 STM CINE-SERVO lens: CN7×17 KAS S/E1 When one of the following EF lenses is attached and power is turned off, the lens automatically retracts to its minimum length. EF 40mm f/2.8 STM EF-S 24mm f/2.8 STM EF 50mm f/1.8 STM. Notes Firmware Version 1.0.7.1.00 is for updating Cinema EOS C500 and EOS C500 PL cameras with firmware of a version from 1.0.6.1.00 or earlier. If your camera’s firmware is already version 1.0.7.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. For details, please refer to the instruction manual (the updated version)."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.6.1",
+        "d": "2014-11-04",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c500?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C500 PL",
+    "version": "1.0.7.1",
+    "release_date": "2015-11-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c500-pl",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c500-pl?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c500---eos-c500-pl-cinema-eos-cinema-firmware-1-0-7-1-00",
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Enables control of CINE-SERVO lenses using the RC-V100 remote controller. Enables peripheral illumination correction for the following lenses: EF lenses: EF16-35mm f/4L IS USM EF-S10-18mm f/4-5.6 IS STM EF400mm f/4L DO IS USM EF11-24mm f/4L USM EF24-105mm f/3.5-5.6 IS STM EF100-400mm f/4.5-5.6LII IS USM EF-S24mm f/2.8 STM CINE-SERVO lens: CN7×17 KAS S/E1 When one of the following EF lenses is attached and power is turned off, the lens automatically retracts to its minimum length. EF 40mm f/2.8 STM EF-S 24mm f/2.8 STM EF 50mm f/1.8 STM. Notes Firmware Version 1.0.7.1.00 is for updating Cinema EOS C500 and EOS C500 PL cameras with firmware of a version from 1.0.6.1.00 or earlier. If your camera’s firmware is already version 1.0.7.1.00, it is not necessary to update the firmware. Once the camera is updated to the latest firmware version, it cannot be restored to a previous version. For details, please refer to the instruction manual (the updated version)."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.6.1",
+        "d": "2014-11-04",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c500-pl?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
   }
 ]

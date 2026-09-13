@@ -200,6 +200,123 @@ try:
 except FileNotFoundError:
     print("red_cameras.json not found, skipping RED")
 
+# ---- Canon ----
+# canon_cameras.py writes its own shape: one changelog string, one install
+# string, "model" instead of "product". Canon's firmware table is JS-rendered
+# and the rendition XML is Akamai 403, so the download link opens Canon's own
+# support page. firmware_kind "page" reuses the same Download arrow the Sony
+# and RED page links already render, and state_of() then reports
+# "Firmware + notes" for the 21 bodies that have a notice.
+CANON_HEADINGS = [
+    "How to check the firmware version",
+    "Preparations", "Preparation",
+    "Required items", "Items required",
+    "Procedures", "Procedure",
+    "How to update",
+    "Cautions", "Caution",
+    "Notes", "Note",
+]
+
+
+def canon_items(text):
+    """Canon prose as a list of items. Verbatim, only re-split."""
+    if not text:
+        return []
+    parts = [p.strip() for p in str(text).split(chr(10))]
+    parts = [p for p in parts if p]
+    if len(parts) == 1:
+        one = parts[0]
+        bits = re.split(r"\s+-\s+", one)
+        if len(bits) < 2:
+            bits = re.split(r"(?<=[.)])\s+(?=\d+[.)]\s)", one)
+        parts = bits
+    out = []
+    for p in parts:
+        p = p.strip().lstrip("-").strip()
+        if p:
+            out.append(p)
+    return out
+
+
+def canon_install(text):
+    """Canon install steps as {heading, items} blocks, quoted verbatim.
+
+    Canon writes "Caution:", "Preparations:" and so on inline. Anything
+    before the first heading becomes an unheaded block rather than being
+    dropped, and with no heading at all the whole text stays one block. That
+    is honest: rule 5 wants the manufacturer's words, not a tidy shape.
+    """
+    if not text:
+        return []
+    body = str(text)
+    rx = re.compile("(" + "|".join(CANON_HEADINGS) + r")\s*:", re.I)
+    marks = list(rx.finditer(body))
+    chunks = []
+    lead = body[:marks[0].start()] if marks else body
+    if lead.strip():
+        chunks.append(("", lead))
+    for i, m in enumerate(marks):
+        end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
+        chunks.append((m.group(1), body[m.end():end]))
+    blocks = []
+    for heading, chunk in chunks:
+        items = canon_items(chunk)
+        if items:
+            blocks.append({"heading": heading, "items": items})
+    return blocks
+
+
+def canon_prev(row):
+    """Previous Canon versions, the same v/d/cl/dl shape as arri_prev().
+
+    "dl" prefers the version's own notice page, matching ARRI, where the
+    previous-version link is the release notes rather than a file. Canon's
+    download_url is the model page and is identical for every version, so it
+    is only a fallback.
+    """
+    out = []
+    for p in row.get("previous_versions") or []:
+        out.append({
+            "v": p.get("version"),
+            "d": p.get("date"),
+            "cl": canon_items(p.get("changelog")),
+            "dl": p.get("release_notes_url") or p.get("download_url"),
+        })
+    return out
+
+
+try:
+    with open("canon_cameras.json") as f:
+        for row in json.load(f):
+            notes = row.get("release_notes_url") or None
+            steps = canon_install(row.get("install_steps"))
+            feed.append({
+                "manufacturer": "Canon",
+                "product": row["model"],
+                "version": row["version"],
+                "release_date": row.get("date"),
+                "release_precision": "day",
+                "status": "firmware_available"
+                if row.get("download_url") else "documentation_only",
+                "source_url": row.get("source_url"),
+                "firmware_url": row.get("download_url") or row.get("source_url"),
+                "firmware_kind": "page"
+                if row.get("download_opens_page") else "file",
+                "notes_url": notes,
+                "archive_url": None,
+                "summary": None,
+                "changelog": canon_items(row.get("changelog")),
+                "features": [],
+                "install": steps,
+                "install_version": row["version"] if steps else None,
+                "install_source": notes if steps else None,
+                "previous_versions": canon_prev(row),
+                "file_name": None,
+                "file_size": None,
+            })
+except FileNotFoundError:
+    print("canon_cameras.json not found, skipping Canon")
+
 # ---- Sony Alpha bodies ----
 # Stills-hybrid bodies that get used on cinema jobs. sony_alpha.py writes
 # feed-shaped rows, including the real BODYDATA.DAT file URL where Sony

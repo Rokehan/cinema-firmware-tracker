@@ -1,0 +1,655 @@
+cwd: /workspaces/cinema-firmware-tracker
+python files present:
+    add_alpha_step.py 2962 bytes
+    add_details_step.py 3483 bytes
+    add_prev_versions.py 2932 bytes
+    add_red_step.py 2780 bytes
+    add_site_step.py 3331 bytes
+    add_sony_files_step.py 2609 bytes
+    add_sony_prev.py 5062 bytes
+    arri_cameras.py 7402 bytes
+    arri_details.py 2610 bytes
+    arri_install.py 6531 bytes
+    build_feed.py 10859 bytes
+    build_feed_red.py 2994 bytes
+    build_site.py 31217 bytes
+    canon_cameras.py 24994 bytes
+    canon_details.py 9012 bytes
+    canon_merge_peek.py 2867 bytes
+    canon_peek.py 4397 bytes
+    canon_peek2.py 5526 bytes
+    canon_peek3.py 4107 bytes
+    canon_peek4.py 7702 bytes
+    canon_peek5.py 7625 bytes
+    check_changes.py 1599 bytes
+    fix_canon_403.py 5053 bytes
+    fix_canon_details_403.py 4464 bytes
+    fix_dates.py 5161 bytes
+    fix_discover.py 2639 bytes
+    fix_panel_prev.py 4081 bytes
+    fix_panel_prev2.py 1567 bytes
+    fix_prev_versions.py 4480 bytes
+    patch_canon_integrate.py 11600 bytes
+    patch_canon_v6.py 7371 bytes
+    red_cameras.py 8300 bytes
+    sony_alpha.py 7929 bytes
+    sony_dl_peek.py 2971 bytes
+    sony_downloads.py 3960 bytes
+    sony_english.py 19230 bytes
+    sony_files.py 4557 bytes
+    sony_fx.py 2766 bytes
+    sony_probe.py 2069 bytes
+    use_sony_alpha.py 2557 bytes
+    use_sony_files.py 2345 bytes
+json files present:
+    arri_cameras.json 20270 bytes
+    arri_details.json 6040 bytes
+    arri_install.json 27856 bytes
+    canon_cameras.json 134105 bytes
+    debug_advisories.json 12254 bytes
+    debug_notices.json 12650 bytes
+    feed.json 110474 bytes
+    peek5_rows.json 2283 bytes
+    red_cameras.json 22028 bytes
+    smallhd.json 4418 bytes
+    snapshot.json 107544 bytes
+    sony_alpha.json 1779 bytes
+    sony_cameras.json 4723 bytes
+    sony_english.json 36907 bytes
+    sony_fx.json 2028 bytes
+    sony_index.json 7366 bytes
+    sony_links.json 3634 bytes
+
+======================================================================
+FILE: build_feed.py
+======================================================================
+  total lines: 294
+
+       1| import json
+       2| import re
+       3| 
+       4| SONY_CAMERAS = [
+      ...
+      13|     "Sep": "09", "Oct": "10", "Nov": "11", "Dec": "12",
+      14| }
+      15| 
+      16| def arri_date(s):
+      17|     if not s:
+      18|         return None
+      19|     m = re.match(r"(\w{3})\.?\s+(\d{1,2}),\s+(\d{4})", s)
+      ...
+      21|         return None
+      22|     return m.group(3) + "-" + MONTHS.get(m.group(1), "01") + "-" + m.group(2).zfill(2)
+      23| 
+      24| def arri_product(slug):
+      25|     name = slug.replace("-", " ").upper()
+      26|     name = re.sub(r"\s+SUP.*$", "", name)
+      27|     return name.replace("ALEXA", "ALEXA").strip()
+      28| 
+      29| EN_DETAILS = {}
+      30| try:
+      31|     with open("sony_english.json") as f:
+      32|         for row in json.load(f):
+      33|             EN_DETAILS[row["product"]] = row
+      34| except FileNotFoundError:
+      35|     pass
+      36| 
+      37| 
+      38| # feed product name -> sony_english.json key. Explicit, because loose
+      39| # matching once gave the FX3A the FX3's changelog: they are separate bodies
+      40| # on separate firmware tracks.
+      41| EN_ALIASES = {
+      ...
+      54| def english_extras(product):
+      55|     """Sony's English changelog and install steps for this body, if any.
+      56| 
+      57|     Only an exact name or a declared alias counts. An unmatched body gets
+      58|     nothing rather than a neighbour's instructions.
+      59|     """
+      60|     row = EN_DETAILS.get(product)
+      ...
+      81|     return extras
+      82| 
+      83| 
+      84| def arri_prev(row):
+      85|     """Previous ARRI SUP versions from the release notes list."""
+      86|     import re as _re
+      87|     notes = [d for d in (row.get("all_downloads") or []) if d["kind"] == "release_notes"]
+      88|     prev = []
+      89|     for n in notes[1:]:
+      90|         hit = _re.search(r"SUP\s+([\d.]+)", n["label"])
+      91|         if hit:
+      92|             prev.append({"v": "SUP " + hit.group(1), "d": n.get("date"), "cl": [], "dl": n["url"]})
+      93|     return prev
+      94| 
+      95| feed = []
+      96| # FX pages give exact dates, so they override the month-only index values
+      97| FX_OVERRIDE = {}
+      98| try:
+      99|     with open("sony_fx.json") as f:
+     100|         for row in json.load(f):
+     101|             if row.get("version"):
+     102|                 FX_OVERRIDE[row["product"]] = row
+     103| except FileNotFoundError:
+     104|     pass
+     105| ARRI_INSTALL = {}
+     106| try:
+     107|     with open("arri_install.json") as f:
+     108|         for row in json.load(f):
+     109|             ARRI_INSTALL[row["slug"]] = row
+     110| except FileNotFoundError:
+     111|     pass
+      ...
+     113| 
+     114| ARRI_DETAILS = {}
+     115| try:
+     116|     with open("arri_details.json") as f:
+     117|         for row in json.load(f):
+     118|             ARRI_DETAILS[row["slug"]] = row
+     119| except FileNotFoundError:
+     120|     pass
+     121| # ---- ARRI ----
+     122| with open("arri_cameras.json") as f:
+     123|     for row in json.load(f):
+     124|         feed.append({
+     125|             "manufacturer": "ARRI",
+     126|             "product": arri_product(row["slug"]),
+     127|             "version": row["version"],
+     128|             "release_date": arri_date(row["release_date"]),
+     129|             "release_precision": "day",
+     130|             "status": row["status"],
+     131|             "source_url": row["source_url"],
+      ...
+     138|             "install": (ARRI_INSTALL.get(row["slug"]) or {}).get("install") or [],
+     139|             "install_version": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_version"),
+     140|             "install_source": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_source"),
+     141|             "previous_versions": arri_prev(row),
+     142|             "file_name": (ARRI_INSTALL.get(row["slug"]) or {}).get("file_name"),
+     143|         })
+     144| 
+     145| # ---- Sony ----
+     146| with open("sony_cameras.json") as f:
+     147|     for row in json.load(f):
+     148|         fx = FX_OVERRIDE.get(row["product"])
+     149|         # sony_files.py resolves the real BODYDATA.DAT URL where Sony
+     150|         # publishes one. Absent, the support page stands in as before.
+     151|         fx_file = (fx or {}).get("firmware_url")
+     152|         feed.append({
+     153|             "manufacturer": "Sony",
+     154|             "product": row["product"],
+     155|             "version": fx["version"] if fx else row["version"],
+      ...
+     159|             "status": "firmware_available"
+     160|                 if (row.get("firmware_url") or fx) else "documentation_only",
+     161|             "source_url": fx["page_url"] if fx
+     162|                 else (row.get("page_url") or "https://www.sony.jp/ls-camera/update/"),
+     163|             "firmware_url": row.get("firmware_url") or fx_file
+     164|             or (fx["page_url"] if fx else None),
+     165|             "firmware_kind": "file"
+      ...
+     172|         })
+     173| 
+     174| # ---- RED ----
+     175| # red_cameras.py already writes feed-shaped rows. RED gates the file behind
+     176| # a login, so firmware_url points at RED's own page, not a direct download.
+     177| try:
+     178|     with open("red_cameras.json") as f:
+     179|         for row in json.load(f):
+     180|             feed.append({
+     181|                 "manufacturer": "RED",
+     182|                 "product": row["product"],
+     183|                 "version": row["version"],
+      ...
+     198|                 "file_size": row.get("file_size"),
+     199|             })
+     200| except FileNotFoundError:
+     201|     print("red_cameras.json not found, skipping RED")
+     202| 
+     203| # ---- Sony Alpha bodies ----
+     204| # Stills-hybrid bodies that get used on cinema jobs. sony_alpha.py writes
+     205| # feed-shaped rows, including the real BODYDATA.DAT file URL where Sony
+     206| # publishes one.
+     207| try:
+     208|     with open("sony_alpha.json") as f:
+     209|         for row in json.load(f):
+     210|             feed.append({
+     211|                 "manufacturer": "Sony",
+     212|                 "product": row["product"],
+     213|                 "version": row["version"],
+      ...
+     225|                 **english_extras(row["product"]),
+     226|             })
+     227| except FileNotFoundError:
+     228|     print("sony_alpha.json not found, skipping Sony Alpha bodies")
+     229| 
+     230| # ---- Sony EN-only bodies ----
+     231| # Some bodies have English firmware data but aren't listed on the Japanese
+     232| # site. Let sony_english.json contribute feed rows for those.
+     233| EN_ONLY_BODIES = {
+     234|     "a7R V": {
+     235|         "display": "α7R V (ILCE-7RM5)",
+     236|     },
+     237| }
+     238| 
+     239| existing_products = {r["product"] for r in feed}
+     240| for en_key, meta in EN_ONLY_BODIES.items():
+     241|     if meta["display"] in existing_products:
+     242|         continue
+     243|     row = EN_DETAILS.get(en_key)
+     244|     if row is None:
+     245|         continue
+     246|     feed.append({
+     247|         "manufacturer": "Sony",
+     248|         "product": meta["display"],
+     249|         "version": row.get("version"),
+     250|         "release_date": row.get("release_date"),
+     251|         "release_precision": "day" if len(row.get("release_date") or "") == 10 else "month",
+     252|         "status": "firmware_available" if row.get("version") else "documentation_only",
+     253|         "source_url": row.get("source_url") or "https://www.sony.com",
+     254|         "firmware_url": row.get("source_url"),
+     255|         "firmware_kind": "page",
+     256|         "file_size": row.get("file_size") or row.get("size"),
+      ...
+     264| # The compatible_monitors list goes into the search haystack so
+     265| # typing a monitor name finds the firmware entry.
+     266| try:
+     267|     with open("smallhd.json") as f:
+     268|         for row in json.load(f):
+     269|             feed.append(row)
+     270| except FileNotFoundError:
+     271|     print("smallhd.json not found, skipping SmallHD")
+     272| 
+     273| # Cameras without a direct file but with a source page get a
+     274| # page-type download link so the Download button appears.
+     275| for entry in feed:
+     276|     if not entry.get("firmware_url") and entry.get("source_url"):
+     277|         entry["firmware_url"] = entry["source_url"]
+     278|         entry["firmware_kind"] = "page"
+     279| 
+     280| feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
+     281| 
+     282| with open("feed.json", "w") as f:
+     283|     json.dump(feed, f, indent=2, ensure_ascii=False)
+     284| 
+     285| print("Feed: " + str(len(feed)) + " camera entries")
+     286| print()
+     287| for r in feed:
+     288|     print("  " + str(r["release_date"]).ljust(11)
+     289|           + r["manufacturer"].ljust(6)
+     290|           + str(r["product"])[:22].ljust(23)
+     291|           + str(r["version"]).ljust(10)
+     292|           + ("dl" if r["firmware_url"] else "--"))
+     293| print()
+     294| print("Saved to feed.json")
+
+======================================================================
+FILE: build_site.py
+======================================================================
+  total lines: 806
+
+      16| <meta name="viewport" content="width=device-width,initial-scale=1">
+      17| <title>Firmware Index / cinema camera firmware, in one place</title>
+      18| <meta name="description" content="Every professional cinema camera firmware update in one place. __WATCHING__, checked daily, every record linked to the manufacturer.">
+      19| <link rel="preconnect" href="https://fonts.googleapis.com">
+      20| <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      21| <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+      22| <style>
+      23| :root{
+      24|   --ink:#100c09; --plate:#191510; --edge:#2b2521; --edge-hi:#5c4a37;
+      ...
+      48|   font-size:1.65rem;font-weight:500;letter-spacing:-.02em;color:var(--text)}
+      49| 
+      50| nav{display:flex;gap:8px;padding:26px 0;border-bottom:1px solid var(--edge)}
+      51| nav button{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.16em;
+      52|   text-transform:uppercase;color:var(--mute);background:none;cursor:pointer;
+      53|   border:1px solid var(--edge);padding:9px 16px;transition:.18s}
+      54| nav button:hover{border-color:var(--edge-hi);color:var(--text)}
+      55| nav button[aria-current=true]{border-color:var(--orange);color:var(--orange)}
+      56| nav .soon{opacity:.45;cursor:default;pointer-events:none}
+      57| 
+      58| .controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+      ...
+      65|   transition:.18s}
+      66| .search input::placeholder{color:var(--mute);text-transform:uppercase;
+      67|   font-size:.7rem;letter-spacing:.16em}
+      68| .search input::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
+      69| .search input:focus{outline:none;border-color:var(--orange)}
+      70| .search button{position:absolute;right:0;top:0;bottom:0;width:32px;padding:0;
+      71|   border:0;background:none;color:var(--mute);cursor:pointer;font-size:1rem;
+      72|   display:none}
+      73| .search button:hover{color:var(--orange)}
+      74| .search.has-text button{display:block}
+      75| 
+      76| .empty{display:none;padding:64px 4px;font-family:"JetBrains Mono",monospace;
+      77|   font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+      ...
+     185| 
+     186| <div class="controls">
+     187|   <nav id="filters">
+     188|     <button data-make="all" aria-current="true">All</button>
+     189|     __TABS__
+     190|   </nav>
+     191|   <div class="search" id="search">
+     192|     <label for="q" class="visually-hidden"></label>
+     193|     <input id="q" type="search" autocomplete="off" spellcheck="false"
+     194|            placeholder="Search equipment or version" aria-label="Search cameras">
+     195|     <button type="button" id="clear" aria-label="Clear search">&times;</button>
+     196|   </div>
+     197| </div>
+     198| 
+      ...
+     212|       <p class="ver" id="panel-ver"></p>
+     213|       <p class="meta" id="panel-meta"></p>
+     214|     </div>
+     215|     <button type="button" class="shut" id="panel-shut"
+     216|             aria-label="Close">&times;</button>
+     217|   </header>
+     218|   <div class="scroll" id="panel-body"></div>
+     219| </aside>
+      ...
+     222|   <strong>Every record links to the manufacturer's own page.</strong>
+     223|   Version numbers, dates and files are read from that page, never generated.
+     224|   Sony publishes month-precision dates outside the FX line, and the FX bodies
+     225|   update from a file copied to a card rather than a direct download.
+     226|   Last checked __STAMP__.
+     227| </footer>
+     228| </div>
+     229| 
+     230| <script>
+     231| var buttons = document.querySelectorAll("#filters button[data-make]:not(.soon)");
+     232| var plates = document.querySelectorAll("#grid .plate");
+     233| var box = document.getElementById("q");
+     234| var wrap = document.getElementById("search");
+      ...
+     256|   term.textContent = query ? String.fromCharCode(34) + box.value.trim() + String.fromCharCode(34) : "that filter";
+     257| }
+     258| 
+     259| buttons.forEach(function (button) {
+     260|   button.addEventListener("click", function () {
+     261|     make = button.dataset.make;
+     262|     buttons.forEach(function (other) {
+     263|       other.setAttribute("aria-current", String(other === button));
+     264|     });
+     265|     apply();
+     266|   });
+      ...
+     312|    if (data.links && data.links.length) {
+     313|     html += '<div class="acts">';
+     314|     data.links.forEach(function (link, index) {
+     315|       html += '<a class="' + (index === 0 && link.t === "Download" ? "lead" : "")
+     316|         + '" href="' + esc(link.u) + '" target="_blank" rel="noopener">'
+     317|         + esc(link.t) + "</a>";
+     318|     });
+     319|     html += "</div>";
+      ...
+     345|       html += '<p class="said">These steps are published for '
+     346|         + esc(data.stepsVersion) + ".</p>";
+     347|     }
+     348|     if (data.stepsSource) {
+     349|       html += '<p class="said">Steps quoted from <a href="'
+     350|         + esc(data.stepsSource) + '" target="_blank" rel="noopener">'
+     351|         + "the manufacturer's page</a>.</p>";
+     352|     }
+     353|     html += "</div></details>";
+     354|   } else if (data.guides && data.guides.length) {
+     355|     var guides = "";
+     356|     data.guides.forEach(function (guide) {
+     357|       guides += '<li><a href="' + esc(guide.url) + '" target="_blank" '
+     358|         + 'rel="noopener">' + esc(guide.label) + "</a></li>";
+     359|     });
+     360|     html += "<details><summary>How to install</summary>"
+      ...
+     378|      }
+     379|      if (pv.dl) {
+     380|        pvInner += '<div class="acts" style="margin-top:12px">';
+     381|        pvInner += '<a href="' + esc(pv.dl) + '" target="_blank" rel="noopener">';
+     382|        pvInner += "Download " + esc(pv.v || "") + "</a></div>";
+     383|      }
+     384|      pvInner += "</div></details>";
+     385|    });
+      ...
+     448| OLIVE = "#a3bd6a"
+     449| GREY = "#8d8378"
+     450| 
+     451| EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD", "Canon"]
+     452| 
+     453| MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+     454|           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+      ...
+     568| def state_of(cam):
+     569|     """What a tech actually gets if they click. Honest outcomes only.
+     570| 
+     571|     A "page" link is not a download: Sony's FX bodies want a file copied to
+     572|     a card, and RED puts the firmware behind an account login. Say so
+     573|     rather than promising a file.
+     574|     """
+      ...
+     579| 
+     580|     if has_file and kind == "page":
+     581|         if make == "RED":
+     582|             return "Login required for download", OLIVE
+     583|         if make == "Sony":
+     584|             return "Card update via Sony", OLIVE
+     585|         if has_notes:
+      ...
+     635|             steps.append({"h": block.get("heading") or "", "i": items})
+     636| 
+     637|     links = []
+     638|     for text, href in panel_links(cam):
+     639|         if href:
+     640|             links.append({"t": text, "u": href})
+     641| 
+     642|     return {
+     643|         "make": cam.get("manufacturer") or "",
+      ...
+     651|         "steps": steps,
+     652|         "guides": cam.get("guides") or [],
+     653|         "stepsVersion": cam.get("install_version") or "",
+     654|         "stepsSource": cam.get("install_source") or "",
+     655|         "source": cam.get("source_url") or "",
+     656|         "summary": cam.get("summary") or "",
+     657|         "links": links,
+      ...
+     665|     make = cam.get("manufacturer")
+     666|     out = []
+     667|     if cam.get("firmware_url"):
+     668|         dl_label = "Download ↗" if cam.get("firmware_kind") == "page" else "Download"
+     669|         out.append((dl_label, cam["firmware_url"]))
+     670|     if cam.get("notes_url"):
+     671|         out.append(("Release notes", cam["notes_url"]))
+     672|     out.append(("Source", cam.get("source_url") or ""))
+     673| 
+     674|     seen = []
+     675|     final = []
+     676|     for text, href in out:
+     677|         if not href or (href in [u for _, u in final] and text != "Source") or text in seen:
+     678|             continue
+     679|         seen.append(text)
+     680|         final.append((text, href))
+     681|     return final
+     682| 
+     683| def card(cam):
+      ...
+     701|     # "a7" and "alpha" find them too.
+     702|     if "\u03b1" in haystack:
+     703|         haystack += " " + haystack.replace("\u03b1", "a") + " alpha"
+     704|     # Three button labels only: Download, Release notes, Source.
+     705|     # "Download" is claimed for a real file, or for RED, whose file sits
+     706|     # behind an account login (the plate says so). A page-style link is the
+     707|     # manufacturer's own page, so it is a Source and collapses into the
+     708|     # Source button when the URL is the same.
+     709|     links = []
+     710|     if cam.get("firmware_url"):
+     711|         dl_label = "Download ↗" if cam.get("firmware_kind") == "page" else "Download"
+     712|         links.append((dl_label, cam["firmware_url"]))
+     713|     if cam.get("notes_url"):
+     714|         links.append(("Release notes", cam["notes_url"]))
+     715|     links.append(("Source", cam.get("source_url") or ""))
+     716|     # archive_url is deliberately unused: every ARRI camera points at the
+     717|     # same archive page, so a per-camera button added nothing.
+     718| 
+     719|     rows = []
+     720|     used = []
+     721|     seen_labels = []
+     722|     for text, href in links:
+     723|         if not href or (href in used and text != "Source") or text in seen_labels:
+     724|             continue
+     725|         used.append(href)
+     726|         seen_labels.append(text)
+     727|         rows.append('<a href="' + esc(href, quote=True)
+     728|                     + '" target="_blank" rel="noopener">' + esc(text) + "</a>")
+     729| 
+     730|     summary = cam.get("summary")
+      ...
+     739|     return (
+     740|         '<article class="plate" data-make="' + esc(make, quote=True) + '"'
+     741|         + ' data-find="' + esc(haystack, quote=True) + '"'
+     742|         + ' tabindex="0" role="button"'
+     743|         + ' data-panel="' + esc(json.dumps(
+     744|             panel_payload(cam, name, label), ensure_ascii=False), quote=True)
+     745|         + '">'
+      ...
+     769|             makes.append(cam["manufacturer"])
+     770| 
+     771|     linked = sum(1 for cam in cams if cam.get("firmware_url"))
+     772|     ordered = [m for m in EXPECTED_MAKES if m in makes]
+     773|     ordered += [m for m in makes if m not in ordered]
+     774| 
+     775|     parts = []
+     776|     for make in ordered:
+     777|         parts.append('<button data-make="' + html.escape(make, quote=True)
+     778|                      + '">' + html.escape(make) + "</button>")
+     779|     for make in EXPECTED_MAKES:
+     780|         if make not in makes:
+     781|             parts.append('<button class="soon" data-make="'
+     782|                          + html.escape(make, quote=True) + '">'
+     783|                          + html.escape(make) + " / soon</button>")
+     784|     tabs = "".join(parts)
+     785|     stamp = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
+     786| 
+      ...
+     790|     page = page.replace("__LINKED__", str(linked))
+     791|     page = page.replace("__WATCHING__", " + ".join(ordered))
+     792|     page = page.replace("__MAKES__", str(len(makes)))
+     793|     page = page.replace("of 3", "of " + str(len(EXPECTED_MAKES)))
+     794|     page = page.replace("__TABS__", tabs)
+     795|     page = page.replace("__CARDS__", chr(10).join(card(c) for c in cams))
+     796|     page = page.replace("__STAMP__", stamp)
+
+======================================================================
+FILE: check_changes.py
+======================================================================
+  total lines: 60
+
+      14| if not os.path.exists(SNAPSHOT):
+      15|     with open(SNAPSHOT, "w") as f:
+      16|         json.dump(current, f, indent=2, ensure_ascii=False)
+      17|     print("First run. Saved baseline of " + str(len(now)) + " cameras.")
+      18|     print("Run this again after the next scrape to see changes.")
+      19|     raise SystemExit
+      20| 
+      21| with open(SNAPSHOT) as f:
+      ...
+      28|     if k in before and now[k]["version"] != before[k]["version"]:
+      29|         changed.append((k, before[k]["version"], now[k]["version"]))
+      30| 
+      31| print("Cameras: " + str(len(before)) + " before, " + str(len(now)) + " now")
+      32| print()
+      33| 
+      34| if changed:
+      35|     print("NEW FIRMWARE:")
+      36|     for k, old, new in changed:
+      37|         print("  " + k + ": " + str(old) + " -> " + str(new))
+      38|     print()
+      39| 
+      40| if added:
+      41|     print("NEW CAMERAS:")
+      42|     for k in added:
+      43|         print("  " + k + " " + str(now[k]["version"]))
+      44|     print()
+      45| 
+      46| if removed:
+      47|     print("*** WARNING: cameras disappeared ***")
+      48|     for k in removed:
+      49|         print("  " + k)
+      50|     print("A scraper may be broken. Snapshot NOT updated.")
+      51|     print("Investigate before re-running.")
+      52|     raise SystemExit(1)
+      53| 
+      54| if not (changed or added):
+      55|     print("No changes.")
+      56|     print()
+      57| 
+      58| with open(SNAPSHOT, "w") as f:
+      59|     json.dump(current, f, indent=2, ensure_ascii=False)
+      60| print("Snapshot updated.")
+
+======================================================================
+FULL FILE (short enough to show whole): build_feed.py
+======================================================================
+  294 lines, too long for a full dump, see excerpt above
+
+======================================================================
+FULL FILE (short enough to show whole): check_changes.py
+======================================================================
+       1| import json
+       2| import os
+       3| 
+       4| SNAPSHOT = "snapshot.json"
+       5| 
+       6| with open("feed.json") as f:
+       7|     current = json.load(f)
+       8| 
+       9| def key(r):
+      10|     return r["manufacturer"] + " " + str(r["product"])
+      11| 
+      12| now = {key(r): r for r in current}
+      13| 
+      14| if not os.path.exists(SNAPSHOT):
+      15|     with open(SNAPSHOT, "w") as f:
+      16|         json.dump(current, f, indent=2, ensure_ascii=False)
+      17|     print("First run. Saved baseline of " + str(len(now)) + " cameras.")
+      18|     print("Run this again after the next scrape to see changes.")
+      19|     raise SystemExit
+      20| 
+      21| with open(SNAPSHOT) as f:
+      22|     before = {key(r): r for r in json.load(f)}
+      23| 
+      24| added = [k for k in now if k not in before]
+      25| removed = [k for k in before if k not in now]
+      26| changed = []
+      27| for k in now:
+      28|     if k in before and now[k]["version"] != before[k]["version"]:
+      29|         changed.append((k, before[k]["version"], now[k]["version"]))
+      30| 
+      31| print("Cameras: " + str(len(before)) + " before, " + str(len(now)) + " now")
+      32| print()
+      33| 
+      34| if changed:
+      35|     print("NEW FIRMWARE:")
+      36|     for k, old, new in changed:
+      37|         print("  " + k + ": " + str(old) + " -> " + str(new))
+      38|     print()
+      39| 
+      40| if added:
+      41|     print("NEW CAMERAS:")
+      42|     for k in added:
+      43|         print("  " + k + " " + str(now[k]["version"]))
+      44|     print()
+      45| 
+      46| if removed:
+      47|     print("*** WARNING: cameras disappeared ***")
+      48|     for k in removed:
+      49|         print("  " + k)
+      50|     print("A scraper may be broken. Snapshot NOT updated.")
+      51|     print("Investigate before re-running.")
+      52|     raise SystemExit(1)
+      53| 
+      54| if not (changed or added):
+      55|     print("No changes.")
+      56|     print()
+      57| 
+      58| with open(SNAPSHOT, "w") as f:
+      59|     json.dump(current, f, indent=2, ensure_ascii=False)
+      60| print("Snapshot updated.")
+
