@@ -79,6 +79,53 @@ def english_extras(product):
     if row.get("previous_versions"):
         extras["previous_versions"] = row["previous_versions"]
     return extras
+
+
+# ── english_extras precedence ─────────────────────────────────────
+# sony_english.py finds the English changelog and install steps, which is what
+# it is for. It also used to report a firmware_url, scraped with a regex that
+# matched the page's own <link rel="stylesheet">, and because the Sony rows
+# spread english_extras LAST that asset overwrote real BODYDATA.DAT urls from
+# sony_fx.json and sony_alpha.json. Nine cameras ended up sharing one
+# Salesforce asset id.
+#
+# So the English side no longer decides where the file is. A download url from
+# it survives only if it looks like a firmware file; otherwise the Japanese
+# side, which is the authority, keeps its own.
+
+_EN_DOWNLOAD_KEYS = ("firmware_url", "firmware_kind", "file_size", "file_name")
+
+_EN_FILE_EXTS = (".zip", ".dat", ".fir", ".exe", ".dmg", ".pkg", ".bin",
+                 ".tar.gz", ".tgz")
+
+_EN_ASSET_MARKS = ("/articleimage", "/articleimages", ".css", ".js", ".svg",
+                   ".png", ".jpg", ".woff", "/styles/")
+
+
+def _en_url_is_file(url):
+    if not url:
+        return False
+    low = str(url).lower()
+    if any(mark in low for mark in _EN_ASSET_MARKS):
+        return False
+    path = low.split("?", 1)[0]
+    return any(path.endswith(ext) for ext in _EN_FILE_EXTS)
+
+
+def en_extras_safe(product):
+    """english_extras() without its download fields, unless they are real."""
+    extras = english_extras(product) or {}
+    url = extras.get("firmware_url")
+    if not _EN_URL_OK(url):
+        for key in _EN_DOWNLOAD_KEYS:
+            extras.pop(key, None)
+    return extras
+
+
+def _EN_URL_OK(url):
+    return _en_url_is_file(url)
+
+
 ARRI_ARCHIVE = {}
 try:
     with open("arri_archive.json") as f:
@@ -317,7 +364,7 @@ with open("sony_cameras.json") as f:
             "file_size": (fx or {}).get("file_size"),
             "notes_url": row.get("notes_url"),
             "archive_url": None,
-            **english_extras(row["product"]),
+            **en_extras_safe(row["product"]),
         })
 
 # ---- RED ----
@@ -488,7 +535,7 @@ try:
                 "summary": row.get("summary"),
                 "features": row.get("features") or [],
                 "file_size": row.get("file_size"),
-                **english_extras(row["product"]),
+                **en_extras_safe(row["product"]),
             })
 except FileNotFoundError:
     print("sony_alpha.json not found, skipping Sony Alpha bodies")
@@ -522,7 +569,7 @@ for en_key, meta in EN_ONLY_BODIES.items():
         "file_size": row.get("file_size") or row.get("size"),
         "notes_url": None,
         "archive_url": None,
-        **english_extras(meta["display"]),
+        **en_extras_safe(meta["display"]),
     })
 
 # ---- SmallHD ----

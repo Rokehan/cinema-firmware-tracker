@@ -7,9 +7,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
-    "firmware_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
-    "firmware_kind": "page",
-    "file_size": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Dobb4b83c7/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "847.1 MB",
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -75,7 +75,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
     "guides": [],
@@ -537,7 +536,6 @@
       "The brightness of the Bubble gauge marking has been improved to enhance monitor visibility."
     ],
     "install": [],
-    "file_name": null,
     "install_version": "V5.00",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3628/software/00376811",
     "guides": [],
@@ -603,13 +601,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
-    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/YE19b5b7b3/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": null,
+    "file_size": "757.5 MB",
     "changelog": [
       "Fixes an issue where Focus Bracket shooting could not be performed in some cases",
       "Improves the operational stability of the camera"
@@ -658,7 +656,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V6.02",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
     "guides": [],
@@ -672,13 +669,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
-    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Y416105adc/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": null,
+    "file_size": "743.8 MB",
     "changelog": [
       "Fixes an issue where part of the green frame indicating the AF (autofocus) status was not displayed when using the Expand Spot feature",
       "Improves the operational stability of the camera"
@@ -727,7 +724,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V5.01",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
     "guides": [],
@@ -1218,13 +1214,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
-    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
-    "firmware_kind": "page",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/pHc079e9a9/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": null,
+    "file_size": "376.5 MB",
     "changelog": [
       "Allows high-quality audio recording (96 kHz, 32-bit float) when the XLR-A4 adapter (sold separately) is attached to the Multi Interface Shoe",
       "Adds support for the Preset Focus function with lenses that do not have power zoom\\n",
@@ -1287,7 +1283,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V2.00",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
     "guides": [],
@@ -1331,7 +1326,6 @@
       "Improved clip name display method"
     ],
     "install": [],
-    "file_name": null,
     "install_version": "V3.00",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
     "guides": [],
@@ -1345,9 +1339,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "firmware_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "firmware_kind": "page",
-    "file_size": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/ey8d8a84ee/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "811.9 MB",
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -1397,7 +1391,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V7.02",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
     "guides": [],
@@ -1426,9 +1419,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
-    "firmware_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
-    "firmware_kind": "page",
-    "file_size": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/9j74e39884/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "906.6 MB",
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -1479,7 +1472,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
     "guides": [],
@@ -1543,7 +1535,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
     "guides": [],
@@ -1700,7 +1691,7 @@
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
     "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
     "firmware_kind": "page",
-    "file_size": null,
+    "file_size": "754.5 MB",
     "notes_url": null,
     "archive_url": null,
     "changelog": [],
@@ -1749,7 +1740,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
     "guides": [],
@@ -1819,7 +1809,6 @@
         ]
       }
     ],
-    "file_name": null,
     "install_version": "V1.01",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
     "guides": [],
@@ -2123,7 +2112,6 @@
       "Enhanced security"
     ],
     "install": [],
-    "file_name": null,
     "install_version": "V6.30",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
     "guides": [],
@@ -3324,7 +3312,6 @@
     "archive_url": null,
     "changelog": [],
     "install": [],
-    "file_name": null,
     "install_version": "V4.03",
     "install_source": "https://www.sony.com/electronics/support/professional-camcorders-handheld-camcorders/pxw-fs5/software/mpengb00000897",
     "guides": [],
