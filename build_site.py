@@ -379,7 +379,7 @@ function render(data) {
      if (pv.dl) {
        pvInner += '<div class="acts" style="margin-top:12px">';
        pvInner += '<a href="' + esc(pv.dl) + '" target="_blank" rel="noopener">';
-       pvInner += "Download " + esc(pv.v || "") + "</a></div>";
+       pvInner += "Download " + esc(pv.v || "") + (pv.dl_kind === "page" ? " \u2197" : "") + "</a></div>";
      }
      pvInner += "</div></details>";
    });

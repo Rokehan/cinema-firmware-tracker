@@ -5,3 +5,5 @@ peek*
 *_peek.py
 patch_*.py
 fix_*.py
+ck.txt
+*.txt.bak
