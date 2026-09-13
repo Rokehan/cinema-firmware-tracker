@@ -1830,7 +1830,26 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
-    "previous_versions": [],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76388/a4bae68236d1be0e6cc39dc12f5d126e/alexa-classic-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76386/4f855f89c5ace85adaac6c84d0d98368/alexa-classic-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
   },
   {
@@ -1899,7 +1918,26 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
-    "previous_versions": [],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76404/a4bae68236d1be0e6cc39dc12f5d126e/alexa-xt-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76406/4f855f89c5ace85adaac6c84d0d98368/alexa-xt-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
   },
   {

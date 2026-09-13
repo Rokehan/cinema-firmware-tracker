@@ -80,6 +80,18 @@ def english_extras(product):
         extras["previous_versions"] = row["previous_versions"]
     return extras
 
+
+def arri_prev(row):
+    """Previous ARRI SUP versions from the release notes list."""
+    import re as _re
+    notes = [d for d in (row.get("all_downloads") or []) if d["kind"] == "release_notes"]
+    prev = []
+    for n in notes[1:]:
+        hit = _re.search(r"SUP\s+([\d.]+)", n["label"])
+        if hit:
+            prev.append({"v": "SUP " + hit.group(1), "d": n.get("date"), "cl": [], "dl": n["url"]})
+    return prev
+
 feed = []
 # FX pages give exact dates, so they override the month-only index values
 FX_OVERRIDE = {}
@@ -126,7 +138,7 @@ with open("arri_cameras.json") as f:
             "install": (ARRI_INSTALL.get(row["slug"]) or {}).get("install") or [],
             "install_version": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_version"),
             "install_source": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_source"),
-            "previous_versions": row.get("previous_versions") or [],
+            "previous_versions": arri_prev(row),
             "file_name": (ARRI_INSTALL.get(row["slug"]) or {}).get("file_name"),
         })
 
