@@ -167,7 +167,13 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3628_3626_V500_ReleaseNote.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "“Signature” Preset Look option for monitoring has been added.",
+      "4096×2160P 12G has been added as an SDI output format (Project Frame Rate 47.95 fps).",
+      "The CNA-2 Camera Control Network Adaptor can now be used as a LAN conversion adaptor.",
+      "The visibility of the “Out of Range” text in the moiré alert level display has been improved under In-Camera VFX mode.",
+      "The brightness of the Bubble gauge marking has been improved to enhance monitor visibility."
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V5.00",
@@ -933,38 +939,27 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-2610_V30_ReleaseNotes.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "Addition of Imager Scan Modes\\n\\t",
+      "S35c 3.8K 16:9 (maximum frame rate: 120 fps)",
+      "Added X-OCN recording support for S35 1.9K 16:9",
+      "Improved Operability and Workflow\\n\\t",
+      "Support for selecting edge detection methods for Color Peaking",
+      "Support for selecting the tracking target for Real-time Tracking AF using the multi-selector",
+      "Support for configuring Wireless LAN, Wired LAN, and USB Tethering directly from the status screen",
+      "Expanded Functionality for Live Production\\n\\t",
+      "Support for simplified SDR display and SDR Gain",
+      "Support for FPS, Shutter, and Saturation commands from RCP",
+      "Support for selecting output range for SDI and HDMI outputs",
+      "Other Functional Improvements\\n\\t",
+      "Support for selecting bandwidth when a 5 GHz channel is set in Access Point mode",
+      "Improved clip name display method"
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V3.00",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
-    "guides": [],
-    "previous_versions": [
-      {
-        "v": "V2.10",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00375795"
-      },
-      {
-        "v": "V2.03",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00368173"
-      },
-      {
-        "v": "V2.02",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00357383"
-      },
-      {
-        "v": "V1.10",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00343873"
-      }
-    ]
+    "guides": []
   },
   {
     "manufacturer": "Sony",
@@ -1507,63 +1502,7 @@
     "file_name": null,
     "install_version": "V6.30",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
-    "guides": [],
-    "previous_versions": [
-      {
-        "v": "V6.20",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00277546"
-      },
-      {
-        "v": "V6.10",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00263833"
-      },
-      {
-        "v": "V6.01",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00257082"
-      },
-      {
-        "v": "V6.00",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00255311"
-      },
-      {
-        "v": "V5.02",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00246407"
-      },
-      {
-        "v": "V5.01",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00242562"
-      },
-      {
-        "v": "V5.00",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00241284"
-      },
-      {
-        "v": "V4.00",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/mpueus00000990"
-      },
-      {
-        "v": "V3.00",
-        "d": null,
-        "cl": [],
-        "dl": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/mpueus00000981"
-      }
-    ]
+    "guides": []
   },
   {
     "manufacturer": "Sony",

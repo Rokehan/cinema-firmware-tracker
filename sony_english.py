@@ -113,7 +113,7 @@ SKIP_SECTIONS = (
     "required downloads",
 )
 
-CHANGELOG_HEADS = ("benefits and improvements",)
+CHANGELOG_HEADS = ("benefits and improvements", "contents of")
 
 LATEST_LINK_RE = re.compile(
     r'<a[^>]+href="([^"]+)"[^>]*>((?:(?!</a>).){0,200})</a>',
