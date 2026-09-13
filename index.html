@@ -53,7 +53,7 @@ nav .soon{opacity:.45;cursor:default;pointer-events:none}
       background:none;cursor:pointer;border:1px solid var(--edge);
       padding:6px 11px;transition:.18s}
     #cats button:hover{border-color:var(--edge-hi);color:var(--text)}
-    #cats button[aria-pressed=true]{border-color:var(--olive);color:var(--olive)}
+    #cats button[aria-current=true]{border-color:var(--olive);color:var(--olive)}
     #cats .lede{color:var(--dim);font-family:"JetBrains Mono",monospace;
       font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
       align-self:center;padding-right:4px}
@@ -191,7 +191,7 @@ footer strong{color:var(--text);font-weight:700}
     <button data-make="all" aria-current="true">All</button>
     <button data-make="ARRI">ARRI</button><button data-make="Sony">Sony</button><button data-make="RED">RED</button><button data-make="SmallHD">SmallHD</button><button data-make="Canon">Canon</button>
   </nav>
-        <nav id="cats" aria-label="Equipment type"><span class="lede">Type</span><button type="button" data-category="Cameras" aria-pressed="false">Cameras</button><button type="button" data-category="Monitors" aria-pressed="false">Monitors</button><button type="button" data-category="Wireless Video" aria-pressed="false">Wireless Video</button><button type="button" data-category="Lens Control" aria-pressed="false">Lens Control</button><button type="button" data-category="Stabilizers" aria-pressed="false">Stabilizers</button><button type="button" data-category="Power &amp; Media" aria-pressed="false">Power &amp; Media</button></nav>
+        <nav id="cats" aria-label="Equipment type"><span class="lede">Type</span><button type="button" data-category="all" aria-current="true">All</button><button type="button" data-category="Cameras">Cameras</button><button type="button" data-category="Monitors">Monitors</button><button type="button" data-category="Wireless Video">Wireless Video</button><button type="button" data-category="Lens Control">Lens Control</button><button type="button" data-category="Stabilizers">Stabilizers</button><button type="button" data-category="Power &amp; Media">Power &amp; Media</button></nav>
   <div class="search" id="search">
     <label for="q" class="visually-hidden"></label>
     <input id="q" type="search" autocomplete="off" spellcheck="false"
@@ -317,7 +317,7 @@ footer strong{color:var(--text);font-weight:700}
 <footer>
   <strong>Every record links to the manufacturer's own page.</strong>
   Version numbers, dates and files are read from that page, never generated.
-  Last checked 13 Sep 2026 10:10 UTC.
+  Last checked 13 Sep 2026 10:34 UTC.
 </footer>
 </div>
 
@@ -330,18 +330,19 @@ var clear = document.getElementById("clear");
 var empty = document.getElementById("empty");
 var term = document.getElementById("term");
 var make = "all";
-    // Equipment categories are a second, independent facet. Several can be on
-    // at once; none on means no category restriction.
-    var cats = [];
+    // Equipment type is single select, exactly like the brand row: one type
+    // at a time, and All clears the filter.
+    var cat = "all";
     var catButtons = document.querySelectorAll("#cats button[data-category]");
     catButtons.forEach(function (button) {
       button.addEventListener("click", function () {
-        var name = button.dataset.category;
-        var at = cats.indexOf(name);
-        if (at > -1) { cats.splice(at, 1); } else { cats.push(name); }
-        button.setAttribute("aria-pressed", String(cats.indexOf(name) > -1));
+        cat = button.dataset.category;
+        catButtons.forEach(function (other) {
+          other.setAttribute("aria-current", String(other === button));
+        });
         apply();
       });
+    });
     });
 
 function apply() {
@@ -353,8 +354,7 @@ function apply() {
     var hay = plate.dataset.find || "";
     var hit = words.every(function (word) { return hay.indexOf(word) > -1; });
     var inMake = make === "all" || plate.dataset.make === make;
-    var inCat = cats.length === 0
-        || cats.indexOf(plate.dataset.category) > -1;
+    var inCat = cat === "all" || plate.dataset.category === cat;
       var on = hit && inMake && inCat;
     plate.style.display = on ? "flex" : "none";
     if (on) { shown += 1; }

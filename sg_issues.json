@@ -4057,5 +4057,1445 @@
     "file_name": "c50-v1041-mac.dmg",
     "file_size": "131.89 MB",
     "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401179402",
+    "url": "https://sg.canon/en/support/0401179402",
+    "model": "EOS C50",
+    "version": "1.0.5.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C50 Firmware Version 1.0.5.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.0.5.1 incorporates the following fixes and enhancements:",
+      "1. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "2. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.5.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.4.1. If your camera's firmware is already version 1.0.5.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations.",
+          "Firmware update must be performed in VIDEO mode."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings as well as the Custom Picture settings will be reset. It is recommended that, prior to starting update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VVA5.FIR / file size: 135,333,616 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.5.1",
+    "install_source": "https://sg.canon/en/support/0401179402",
+    "history": [
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds [Ease In / Ease Out] to [Digital Zoom Speed].",
+          "When set to On, this setting smooths the transitions at the start and end of digital zoom operations.",
+          "2. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [VIDEO] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "3. Changes the color of the level indicator when the orientation of the camera is level.",
+          "4. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "5. View Assist can now be applied and adjusted during playback.",
+          "6. Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Fixes an issue that may cause certain CFexpress cards to be unable to format in the camera.",
+          "10. Fixes an issue that may cause Digital IS metadata to not be output correctly under the following settings: [Recording Mode] set to [Slow & Fast Motion], the frame rate set to lower than 24P, and [Shutter Manual] to [Angle] with an angle of 180.00° or below.",
+          "11. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "12. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Fixes an issue, in which when the System Frequency is set to [59.94Hz], the Sensor Mode to [Full frame 3:2], the Shutter Speed to [1/4] or [1/8], and the Focus Breathing Correction to [On], the power cannot be turned on.",
+          "2. Fixes an issue, in which footage captured by RAW recording with Slow & Fast Motion Recording set to 125P, 144P or 150P is corrupted."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Fixes an issue where, when using the camera in PHOTO mode with [High-speed continuous shooting +] selected and certain lenses attached, it may be unable to shoot.",
+          "2. Fixes an issue where, after downloading the latest firmware using the Automatic Firmware Update function, the firmware could not be updated."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Fixes an issue that may, under certain conditions, prevent the camera from connecting to Wi-Fi when switching from PHOTO to VIDEO while [Connection to smartphone, (tablet)] is active."
+        ]
+      }
+    ],
+    "file_name": "c50-v1051-win.zip",
+    "file_size": "130.42 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401179602",
+    "url": "https://sg.canon/en/support/0401179602",
+    "model": "EOS C80",
+    "version": "1.0.7.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C80 Firmware Version 1.0.7.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.0.7.1 incorporates the following fixes and enhancements:",
+      "1. Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture].",
+      "Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure].",
+      "2. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "3. Adds [S&F External Audio Output] during Slow & Fast Motion recording.",
+      "When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones).",
+      "4. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.7.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.6.1. If your camera's firmware is already version 1.0.7.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings, Custom Picture settings, and Cinema Exposure settings will be reset. It is recommended that, prior to starting update operations, users save these settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VUB8.FIR / file size: 80,320,048 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.7.1",
+    "install_source": "https://sg.canon/en/support/0401179602",
+    "history": [
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [CAMERA] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "2. Changes the color of the level indicator when the orientation of the camera is level.",
+          "3. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "4. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+          "5. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "6. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "3. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "4. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "5. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "7. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "8. Improves operational stability.",
+          "9. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #8 were added in Version 1.0.4.1. #9 was added in Version 1.0.5.1."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "3. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "4. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "5. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "7. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "8. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Improves security features. A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "*For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers.",
+          "3. Adds Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "4. Enables playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "5. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "Level (Numeric)",
+          "6. Changes the behavior of an assignable button when set to [Pause Digital IS]: The function will toggle on/off with each press, rather than pausing only when the button is depressed."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Adds support for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "4. Adds [1920x1080P] to [SDI Output Signal] option.",
+          "5. Adds [CAMERA MEDIA] to assignable button menus [CAMERA] and [REMOTE A].",
+          "6. Fixes minor issues.",
+          "7. The accuracy of the timecode when the camera is turned off and the [Time Code Run] setting is set to [Free Run] has been improved.",
+          "#1 to #6were added in Version 1.0.1.1. #7 was added in Version 1.0.2.1."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Supports for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Enables to display digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Enables application of Full-Screen display to external display according to OSD Output setting, even in the display level with [Peripheral border display].",
+          "4. Adds [1920x1080P] to [SDI Output Signal] option.",
+          "5. Adds [CAMERA MEDIA] to assign button menu [CAMERA] and [REMOTE A].",
+          "6. Fixes minor issues."
+        ]
+      }
+    ],
+    "file_name": "c80-v1071-win.zip",
+    "file_size": "78.11 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401179702",
+    "url": "https://sg.canon/en/support/0401179702",
+    "model": "EOS C70",
+    "version": "1.1.4.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C70 Firmware Version 1.1.4.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.1.4.1 incorporates the following fixes and enhancements:",
+      "1. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "When connected to external devices using the XC protocol, if the T value is 10 or greater, only the integer part is displayed on the external devices.",
+      "2. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+      "3. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.4.1 is for updating cameras running firmware version 1.0.0.1 - 1.1.3.1. If your camera's firmware is already version 1.1.4.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings as well as the Custom Picture settings will be reset. It is recommended that, prior to starting update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VQB16.FIR / file size: 67,300,352 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.4.1",
+    "install_source": "https://sg.canon/en/support/0401179702",
+    "history": [
+      {
+        "version": "1.1.3.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "4. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "5. The \"CN5x11 IAS T/R1\" (RF mount) CINE-SERVO cinema lens now supports the following features:",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "7. Improved operational stability.",
+          "8. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #7 were added in Version 1.1.2.1. #8 was added in Version 1.1.3.1."
+        ]
+      },
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "4. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "5. The \"CN5x11 IAS T/R1\" (RF mount) CINE-SERVO cinema lens now supports the following features:",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "7. Improved operational stability."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Improves security features.",
+          "A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "* For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1. Enables the playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "2. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Adds the ability to apply Full-Screen display to an external display according to [OSD Output] setting when using [Peripheral Border Display].",
+          "4. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*",
+          "* [Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "5. Adds support for the RF-Mount Cinema Lens: CN7x17 KAS T/R",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Displaying T number.",
+          "Enables the remote operation from the camera, RC-V100, RC-IP100, RC-IP1000, Canon Multi-Camera Control and Remote Camera Control Application.",
+          "Enables the zoom operation by joystick on camera body.",
+          "Support for Dual Pixel CMOS AF autofocus",
+          "Support for [Focus Guide].",
+          "Support for [Push Auto Iris].",
+          "6. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "2. Enables the following functions to be assigned as options to the Select Dial:",
+          "Shutter",
+          "Iris",
+          "ISO/Gain",
+          "White Balance Mode",
+          "White Balance (K)",
+          "White Balance (CC)",
+          "Select Subject.",
+          "3. Enables the Shutter Speed option to be assigned to the Front Control dial, the Rear control dial, and Control Ring.",
+          "4. Enables the display of Markers during playback.",
+          "5. Enhances security for FTPS (File Transfer Protocol Security) connections.",
+          "6. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1. The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for [Focus Guide].",
+          "2. Adds support for the following RF-Mount Cinema Prime Lenses:",
+          "CN-R14mm T3.1 L F",
+          "CN-R20mm T1.5 L F",
+          "CN-R24mm T1.5 L F",
+          "CN-R35mm T1.5 L F",
+          "CN-R50mm T1.3 L F",
+          "CN-R85mm T1.3 L F",
+          "CN-R135mm T2.2 L F",
+          "3. The following features are enabled when the following lens is attached: RF24-105mm F2.8L IS USM Z",
+          "Support for aperture ring adjustment.",
+          "Support for zoom operations.",
+          "4. Adds support for the Power Zoom Adapter PZ-E2.",
+          "5. Adds support for the Canon Multi-Camera Control.",
+          "6. Adds support for the RC-IP1000.",
+          "7. Adds Digital-Teleconverter function. [x1.5/x2.0/x2.5/x3.0]",
+          "8. Adds [_Proxy] option in XF-AVC proxy media name.",
+          "9. Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for [Focus Guide].",
+          "2. Enhances Clear Scan resolution.",
+          "3. Enables to change WFM size.",
+          "4. Enables to change Vector scope gain by touch.",
+          "5. Enables to change WFM/Vector scope transparency.",
+          "6. Improves AF performance.",
+          "Enables tracking frame to change variably depending on subject.",
+          "Enables to detect heads facing sideways or backwards, or in situations such as when wearing a helmet.",
+          "7. Adds [Select Subject] assignable function via control ring/dial."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Fixes a problem that was a rare cause of instability in operation when using the control ring of the lens or adapter."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when the following lenses are attached: CN8×15 IAS S/E1, CN-E20-50mm T2.4 L F, CN-E45-135mm T2.4 L F:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for Dual Pixel CMOS AF autofocus (CN8×15 IAS S/E1 only)",
+          "Support for [Focus Guide].",
+          "2. The following features are enabled when the following lenses are attached: RF-S18-45mm F4.5-6.3 IS STM, RF-S18-150mm F3.5-6.3 IS STM:",
+          "Adds a menu to switch lens functions. [Focus / Control Ring],[ Lens Optical IS]",
+          "3. Adds support for Canon IP [XC Protocol].",
+          "4. Enables SD Card recording in XF-AVC 4K Intra setting frame rate 50/60 frames per second.",
+          "5. Enables Eye detection.",
+          "6. Enables Eye / Face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] to the Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [BT.709 (CMT 709)] in LUT and Proxy Rec Color Conversion.",
+          "11. Adds [CMT 709] in View Assist.",
+          "12. Adds [G Gain] in White Balance in Custom Picture settings."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Fixes an issue, in which, in rare instances, the camera cannot be normally operated when operating the REC button with the camera set to the [Continuous Recording] function."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Adds support for the Cinema RAW Light recording modes.",
+          "Resolution:4096×2160,2048×1080",
+          "Bit Depth:12 bit",
+          "Frame rate:59.94P,50.00P,29.97P,23.98P,25.00P,24.00P",
+          "2. Adds [Frame Recording] modes.",
+          "3. Adds [Interval Recording] modes."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Adds[EOS Standard]and [EOS Neutral] to the Custom Picture Presets.",
+          "2. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter.",
+          "CN-E14mm T3.1 L F",
+          "CN-E20mm T1.5 L F",
+          "CN-E24mm T1.5 L F",
+          "CN-E35mm T1.5 L F",
+          "CN-E50mm T1.3 L F",
+          "CN-E85mm T1.3 L F",
+          "CN-E135mm T2.2 L F",
+          "EF14mm f/2.8L II USM",
+          "EF24mm f/1.4L II USM",
+          "EF35mm f/1.4L II USM",
+          "EF50mm f/1.2L USM",
+          "EF85mm f/1.2L II USM",
+          "EF135mm f/2L USM"
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Adds ITU-R.BT.709 standard compliant Gamma[BT.709 Standard / BT.709]the to the Custom Picture.",
+          "2. Adds [Whole Area] to the AF Frame option so the camera focuses automatically on a subject at the center of the screen.",
+          "3. Object or Face Tracking can now be initiated by touching the LCD monitor during 'Whole Area' AF.",
+          "4. Adds [2x] option to the Magnification.",
+          "5. Adds [Mask 100%] to the [Aspect Marker] and [Safe Area Marker].",
+          "6. Adds \"B&W during Magn.\" as an option to the Assistance Function menu.",
+          "7. Adds View Assist function to video output from the HDMI OUT terminal.",
+          "8. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter.",
+          "EF16-35mm f/2.8L II USM",
+          "EF16-35mm f/4L IS USM",
+          "EF24-105mm f/4L IS USM",
+          "EF70-200mm f/2.8L IS II USM",
+          "EF70-200mm f/2.8L IS III USM",
+          "EF70-200mm f/4L IS USM",
+          "EF70-200mm f/4L IS II USM",
+          "9. Changes to display the AF frame only when operating the AF, while using with EF-EOS R 0.71x Mount Adapter",
+          "10. Adds Wi-Fi adapters tested for use with the camera.",
+          "ASUS USB-AC68",
+          "TP-LINK Archer T9UH"
+        ]
+      }
+    ],
+    "file_name": "c70-v1141-win.zip",
+    "file_size": "65.60 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401179802",
+    "url": "https://sg.canon/en/support/0401179802",
+    "model": "EOS C50",
+    "version": "1.0.5.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C50 Firmware Version 1.0.5.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.0.5.1 incorporates the following fixes and enhancements:",
+      "1. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "2. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.5.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.4.1. If your camera's firmware is already version 1.0.5.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations.",
+          "Firmware update must be performed in VIDEO mode."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings as well as the Custom Picture settings will be reset. It is recommended that, prior to starting update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VVA5.FIR / file size: 135,333,616 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.5.1",
+    "install_source": "https://sg.canon/en/support/0401179802",
+    "history": [
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds [Ease In / Ease Out] to [Digital Zoom Speed].",
+          "When set to On, this setting smooths the transitions at the start and end of digital zoom operations.",
+          "2. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [VIDEO] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "3. Changes the color of the level indicator when the orientation of the camera is level.",
+          "4. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "5. View Assist can now be applied and adjusted during playback.",
+          "6. Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Fixes an issue that may cause certain CFexpress cards to be unable to format in the camera.",
+          "10. Fixes an issue that may cause Digital IS metadata to not be output correctly under the following settings: [Recording Mode] set to [Slow & Fast Motion], the frame rate set to lower than 24P, and [Shutter Manual] to [Angle] with an angle of 180.00° or below.",
+          "11. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "12. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Fixes an issue, in which when the System Frequency is set to [59.94Hz], the Sensor Mode to [Full frame 3:2], the Shutter Speed to [1/4] or [1/8], and the Focus Breathing Correction to [On], the power cannot be turned on.",
+          "2. Fixes an issue, in which footage captured by RAW recording with Slow & Fast Motion Recording set to 125P, 144P or 150P is corrupted."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Fixes an issue where, when using the camera in PHOTO mode with [High-speed continuous shooting +] selected and certain lenses attached, it may be unable to shoot.",
+          "2. Fixes an issue where, after downloading the latest firmware using the Automatic Firmware Update function, the firmware could not be updated."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Fixes an issue that may, under certain conditions, prevent the camera from connecting to Wi-Fi when switching from PHOTO to VIDEO while [Connection to smartphone, (tablet)] is active."
+        ]
+      }
+    ],
+    "file_name": "c50-v1051-mac.dmg",
+    "file_size": "132.29 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401179902",
+    "url": "https://sg.canon/en/support/0401179902",
+    "model": "EOS C400",
+    "version": "1.0.7.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C400 Firmware Version 1.0.7.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.0.7.1 incorporates the following fixes and enhancements:",
+      "1. Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture].",
+      "Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure].",
+      "2. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "3. Adds [Auto Exp. Ramping Comp.] (Auto Exposure Ramping Compensation) to [Camera Settings].",
+      "Applying in-camera gain compensation according to the zoom position, maintains image brightness.",
+      "Compatible lenses:",
+      "- CN7×17 KAS S/E1",
+      "- CN10×25 IAS S/E1",
+      "- CN20×50 IAS H/E1",
+      "- CN8×15 IAS S/E1",
+      "- CN7×17 KAS T/R1",
+      "- CN5×11 IAS T/R1",
+      "- CN30×40 IAS J/R1",
+      "4. Adds [S&F External Audio Output] during Slow & Fast Motion recording.",
+      "When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones).",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.7.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.6.1. If your camera's firmware is already version 1.0.7.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings, Custom Picture settings, and Cinema Exposure settings will be reset. It is recommended that, prior to starting update operations, users save these settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VUA8.FIR / file size: 100,794,176 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.7.1",
+    "install_source": "https://sg.canon/en/support/0401179902",
+    "history": [
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [CAMERA] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "2. Changes the color of the level indicator when the orientation of the camera is level.",
+          "3. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "4. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+          "5. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "6. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. Adds [Full Frame 3:2] to the sensor mode.",
+          "The following formats can be recorded to CFexpress card:",
+          "Main video recording",
+          "RAW",
+          "6000x4000",
+          "29.97P/23.98P/25.00P/24.00P",
+          "The following formats can be recorded to SD card:",
+          "Proxy Recording",
+          "XF-AVC S/XF-HEVC S format",
+          "1920×1280",
+          "29.97P/23.98P/25.00P/24.00P",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "4. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "5. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "6. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Improves operational stability.",
+          "10. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #9 were added in Version 1.0.4.1. #10 was added in Version 1.0.5.1."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds [Full Frame 3:2] to the sensor mode.",
+          "The following formats can be recorded to CFexpress card:",
+          "Main video recording",
+          "RAW",
+          "6000x4000",
+          "29.97P/23.98P/25.00P/24.00P",
+          "The following formats can be recorded to SD card:",
+          "Proxy Recording",
+          "XF-AVC S/XF-HEVC S format",
+          "1920×1280",
+          "29.97P/23.98P/25.00P/24.00P",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "4. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "5. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "6. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Improves security features. A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "*For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers.",
+          "3. Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "4. Enables the playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "5. Adds [Track after Focusing] function.",
+          "6. Enables to display below information on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "Level (Numeric)",
+          "7. Toggles On/Off each time the button is pressed when using the [Pause Digital IS] function instead of pausing only while button is pressed, to improve usability.",
+          "8. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Supports for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Adds ability to retain previously set exposure parameters (Shutter/ISO gain) when using Output: 60 60 (24) fps, Output: 60 60 (30) fps.",
+          "3. Adds [1.5x] to the Anamorphic De-squeeze setting.",
+          "4. Enables to display digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "5. Enables the option to apply Full-Screen display to external display according to OSD Output setting, even in the display level with [Peripheral border display].",
+          "6. Adds [1920x1080P] to [MON. Output Signal] and [SDI Output Signal] option.",
+          "7. Adds the option [CAMERA MEDIA] to assign button menu [Camera], [Grip], [LCD], and [REMOTE A].",
+          "8. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Enables AF when S&F shooting frame rate is set to 100/120 frames per second.",
+          "2. Enables [Subject Detection Function] when S&F shooting frame rate is set to 72-120 frames per second.",
+          "3. The default Focus Ring Response setting has been changed from [Varies with Rotation Speed] to [Linked to Rotation Degree] to improve usability."
+        ]
+      }
+    ],
+    "file_name": "c400-v1071-mac.dmg",
+    "file_size": "98.89 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401180002",
+    "url": "https://sg.canon/en/support/0401180002",
+    "model": "EOS C80",
+    "version": "1.0.7.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C80 Firmware Version 1.0.7.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.0.7.1 incorporates the following fixes and enhancements:",
+      "1. Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture].",
+      "Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure].",
+      "2. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "3. Adds [S&F External Audio Output] during Slow & Fast Motion recording.",
+      "When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones).",
+      "4. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.7.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.6.1. If your camera's firmware is already version 1.0.7.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings, Custom Picture settings, and Cinema Exposure settings will be reset. It is recommended that, prior to starting update operations, users save these settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VUB8.FIR / file size: 80,320,048 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.7.1",
+    "install_source": "https://sg.canon/en/support/0401180002",
+    "history": [
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [CAMERA] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "2. Changes the color of the level indicator when the orientation of the camera is level.",
+          "3. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "4. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+          "5. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "6. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "3. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "4. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "5. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "7. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "8. Improves operational stability.",
+          "9. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #8 were added in Version 1.0.4.1. #9 was added in Version 1.0.5.1."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "3. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "4. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "5. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "7. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "8. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Improves security features. A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "*For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers.",
+          "3. Adds Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "4. Enables playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "5. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "Level (Numeric)",
+          "6. Changes the behavior of an assignable button when set to [Pause Digital IS]: The function will toggle on/off with each press, rather than pausing only when the button is depressed."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Adds support for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "4. Adds [1920x1080P] to [SDI Output Signal] option.",
+          "5. Adds [CAMERA MEDIA] to assignable button menus [CAMERA] and [REMOTE A].",
+          "6. Fixes minor issues.",
+          "7. The accuracy of the timecode when the camera is turned off and the [Time Code Run] setting is set to [Free Run] has been improved.",
+          "#1 to #6were added in Version 1.0.1.1. #7 was added in Version 1.0.2.1."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Supports for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Enables to display digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Enables application of Full-Screen display to external display according to OSD Output setting, even in the display level with [Peripheral border display].",
+          "4. Adds [1920x1080P] to [SDI Output Signal] option.",
+          "5. Adds [CAMERA MEDIA] to assign button menu [CAMERA] and [REMOTE A].",
+          "6. Fixes minor issues."
+        ]
+      }
+    ],
+    "file_name": "c80-v1071-mac.dmg",
+    "file_size": "79.63 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401180302",
+    "url": "https://sg.canon/en/support/0401180302",
+    "model": "EOS C70",
+    "version": "1.1.4.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C70 Firmware Version 1.1.4.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.1.4.1 incorporates the following fixes and enhancements:",
+      "1. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "When connected to external devices using the XC protocol, if the T value is 10 or greater, only the integer part is displayed on the external devices.",
+      "2. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+      "3. Improves operational stability.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.4.1 is for updating cameras running firmware version 1.0.0.1 - 1.1.3.1. If your camera's firmware is already version 1.1.4.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings as well as the Custom Picture settings will be reset. It is recommended that, prior to starting update operations, users save their menu and Custom Picture settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VQB16.FIR / file size: 67,300,352 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.4.1",
+    "install_source": "https://sg.canon/en/support/0401180302",
+    "history": [
+      {
+        "version": "1.1.3.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "4. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "5. The \"CN5x11 IAS T/R1\" (RF mount) CINE-SERVO cinema lens now supports the following features:",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "7. Improved operational stability.",
+          "8. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #7 were added in Version 1.1.2.1. #8 was added in Version 1.1.3.1."
+        ]
+      },
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. View Assist can now be applied and adjusted during playback.",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Enables display of the information below on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "4. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "5. The \"CN5x11 IAS T/R1\" (RF mount) CINE-SERVO cinema lens now supports the following features:",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "6. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "7. Improved operational stability."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Improves security features.",
+          "A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "* For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1. Enables the playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "2. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "3. Adds the ability to apply Full-Screen display to an external display according to [OSD Output] setting when using [Peripheral Border Display].",
+          "4. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*",
+          "* [Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "5. Adds support for the RF-Mount Cinema Lens: CN7x17 KAS T/R",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Displaying T number.",
+          "Enables the remote operation from the camera, RC-V100, RC-IP100, RC-IP1000, Canon Multi-Camera Control and Remote Camera Control Application.",
+          "Enables the zoom operation by joystick on camera body.",
+          "Support for Dual Pixel CMOS AF autofocus",
+          "Support for [Focus Guide].",
+          "Support for [Push Auto Iris].",
+          "6. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "2. Enables the following functions to be assigned as options to the Select Dial:",
+          "Shutter",
+          "Iris",
+          "ISO/Gain",
+          "White Balance Mode",
+          "White Balance (K)",
+          "White Balance (CC)",
+          "Select Subject.",
+          "3. Enables the Shutter Speed option to be assigned to the Front Control dial, the Rear control dial, and Control Ring.",
+          "4. Enables the display of Markers during playback.",
+          "5. Enhances security for FTPS (File Transfer Protocol Security) connections.",
+          "6. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1. The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for [Focus Guide].",
+          "2. Adds support for the following RF-Mount Cinema Prime Lenses:",
+          "CN-R14mm T3.1 L F",
+          "CN-R20mm T1.5 L F",
+          "CN-R24mm T1.5 L F",
+          "CN-R35mm T1.5 L F",
+          "CN-R50mm T1.3 L F",
+          "CN-R85mm T1.3 L F",
+          "CN-R135mm T2.2 L F",
+          "3. The following features are enabled when the following lens is attached: RF24-105mm F2.8L IS USM Z",
+          "Support for aperture ring adjustment.",
+          "Support for zoom operations.",
+          "4. Adds support for the Power Zoom Adapter PZ-E2.",
+          "5. Adds support for the Canon Multi-Camera Control.",
+          "6. Adds support for the RC-IP1000.",
+          "7. Adds Digital-Teleconverter function. [x1.5/x2.0/x2.5/x3.0]",
+          "8. Adds [_Proxy] option in XF-AVC proxy media name.",
+          "9. Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for [Focus Guide].",
+          "2. Enhances Clear Scan resolution.",
+          "3. Enables to change WFM size.",
+          "4. Enables to change Vector scope gain by touch.",
+          "5. Enables to change WFM/Vector scope transparency.",
+          "6. Improves AF performance.",
+          "Enables tracking frame to change variably depending on subject.",
+          "Enables to detect heads facing sideways or backwards, or in situations such as when wearing a helmet.",
+          "7. Adds [Select Subject] assignable function via control ring/dial."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Fixes a problem that was a rare cause of instability in operation when using the control ring of the lens or adapter."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when the following lenses are attached: CN8×15 IAS S/E1, CN-E20-50mm T2.4 L F, CN-E45-135mm T2.4 L F:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Periph. Illum. Corr.",
+          "Magn. Ratio Chromatic Aberr. Corr.",
+          "Support for Dual Pixel CMOS AF autofocus (CN8×15 IAS S/E1 only)",
+          "Support for [Focus Guide].",
+          "2. The following features are enabled when the following lenses are attached: RF-S18-45mm F4.5-6.3 IS STM, RF-S18-150mm F3.5-6.3 IS STM:",
+          "Adds a menu to switch lens functions. [Focus / Control Ring],[ Lens Optical IS]",
+          "3. Adds support for Canon IP [XC Protocol].",
+          "4. Enables SD Card recording in XF-AVC 4K Intra setting frame rate 50/60 frames per second.",
+          "5. Enables Eye detection.",
+          "6. Enables Eye / Face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] to the Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [BT.709 (CMT 709)] in LUT and Proxy Rec Color Conversion.",
+          "11. Adds [CMT 709] in View Assist.",
+          "12. Adds [G Gain] in White Balance in Custom Picture settings."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Fixes an issue, in which, in rare instances, the camera cannot be normally operated when operating the REC button with the camera set to the [Continuous Recording] function."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Adds support for the Cinema RAW Light recording modes.",
+          "Resolution:4096×2160,2048×1080",
+          "Bit Depth:12 bit",
+          "Frame rate:59.94P,50.00P,29.97P,23.98P,25.00P,24.00P",
+          "2. Adds [Frame Recording] modes.",
+          "3. Adds [Interval Recording] modes."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Adds[EOS Standard]and [EOS Neutral] to the Custom Picture Presets.",
+          "2. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter.",
+          "CN-E14mm T3.1 L F",
+          "CN-E20mm T1.5 L F",
+          "CN-E24mm T1.5 L F",
+          "CN-E35mm T1.5 L F",
+          "CN-E50mm T1.3 L F",
+          "CN-E85mm T1.3 L F",
+          "CN-E135mm T2.2 L F",
+          "EF14mm f/2.8L II USM",
+          "EF24mm f/1.4L II USM",
+          "EF35mm f/1.4L II USM",
+          "EF50mm f/1.2L USM",
+          "EF85mm f/1.2L II USM",
+          "EF135mm f/2L USM"
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Adds ITU-R.BT.709 standard compliant Gamma[BT.709 Standard / BT.709]the to the Custom Picture.",
+          "2. Adds [Whole Area] to the AF Frame option so the camera focuses automatically on a subject at the center of the screen.",
+          "3. Object or Face Tracking can now be initiated by touching the LCD monitor during 'Whole Area' AF.",
+          "4. Adds [2x] option to the Magnification.",
+          "5. Adds [Mask 100%] to the [Aspect Marker] and [Safe Area Marker].",
+          "6. Adds \"B&W during Magn.\" as an option to the Assistance Function menu.",
+          "7. Adds View Assist function to video output from the HDMI OUT terminal.",
+          "8. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter.",
+          "EF16-35mm f/2.8L II USM",
+          "EF16-35mm f/4L IS USM",
+          "EF24-105mm f/4L IS USM",
+          "EF70-200mm f/2.8L IS II USM",
+          "EF70-200mm f/2.8L IS III USM",
+          "EF70-200mm f/4L IS USM",
+          "EF70-200mm f/4L IS II USM",
+          "9. Changes to display the AF frame only when operating the AF, while using with EF-EOS R 0.71x Mount Adapter",
+          "10. Adds Wi-Fi adapters tested for use with the camera.",
+          "ASUS USB-AC68",
+          "TP-LINK Archer T9UH"
+        ]
+      }
+    ],
+    "file_name": "c70-v1141-mac.dmg",
+    "file_size": "66.93 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401180402",
+    "url": "https://sg.canon/en/support/0401180402",
+    "model": "EOS C400",
+    "version": "1.0.7.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C400 Firmware Version 1.0.7.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.0.7.1 incorporates the following fixes and enhancements:",
+      "1. Adds a new [Capture Mode], enabling selection of the new [Cinema Exposure] feature in addition to the existing [Custom Picture].",
+      "Enables adjustment of the dynamic range balance (allocation between highlight and shadow ranges) based on ISO sensitivity in [Cinema Exposure].",
+      "2. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN30×40 IAS J/R1\" (RF mount) and \"CN30×40 IAS J/P1\" (PL mount).",
+      "3. Adds [Auto Exp. Ramping Comp.] (Auto Exposure Ramping Compensation) to [Camera Settings].",
+      "Applying in-camera gain compensation according to the zoom position, maintains image brightness.",
+      "Compatible lenses:",
+      "- CN7×17 KAS S/E1",
+      "- CN10×25 IAS S/E1",
+      "- CN20×50 IAS H/E1",
+      "- CN8×15 IAS S/E1",
+      "- CN7×17 KAS T/R1",
+      "- CN5×11 IAS T/R1",
+      "- CN30×40 IAS J/R1",
+      "4. Adds [S&F External Audio Output] during Slow & Fast Motion recording.",
+      "When this audio option is set to On, it allows audio output via external outputs (SDI/HDMI/headphones).",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.7.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.6.1. If your camera's firmware is already version 1.0.7.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera’s menu settings, Custom Picture settings, and Cinema Exposure settings will be reset. It is recommended that, prior to starting update operations, users save these settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera after the update has been completed. For further information on this, please refer to the section in the unit’s Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VUA8.FIR / file size: 100,794,176 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.7.1",
+    "install_source": "https://sg.canon/en/support/0401180402",
+    "history": [
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Enables operation of the following camera functions from an external device via USB connection when the power switch is set to [CAMERA] and the camera is in camera mode:",
+          "Start/Stop Recording",
+          "One-Shot AF",
+          "Manual Focus Adjustment",
+          "Iris",
+          "Shutter Speed",
+          "ISO Speed",
+          "2. Changes the color of the level indicator when the orientation of the camera is level.",
+          "3. Enables automatic reconnection attempts during SRT protocol streaming if the connection is lost, continuing for the duration specified in the [SRT: Reconnection Timeout] setting.",
+          "4. Fixes an issue that may interfere with the camera’s ability to connect to an FTP server.",
+          "5. Fixes an issue that may cause the camera to not be recognized when connected to a smartphone via USB.",
+          "6. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. Adds [Full Frame 3:2] to the sensor mode.",
+          "The following formats can be recorded to CFexpress card:",
+          "Main video recording",
+          "RAW",
+          "6000x4000",
+          "29.97P/23.98P/25.00P/24.00P",
+          "The following formats can be recorded to SD card:",
+          "Proxy Recording",
+          "XF-AVC S/XF-HEVC S format",
+          "1920×1280",
+          "29.97P/23.98P/25.00P/24.00P",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "4. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "5. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "6. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Improves operational stability.",
+          "10. Fixes an issue that may result in an error during a firmware update when performing the update via the Automatic Firmware Update function.",
+          "#1 to #9 were added in Version 1.0.4.1. #10 was added in Version 1.0.5.1."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds [Full Frame 3:2] to the sensor mode.",
+          "The following formats can be recorded to CFexpress card:",
+          "Main video recording",
+          "RAW",
+          "6000x4000",
+          "29.97P/23.98P/25.00P/24.00P",
+          "The following formats can be recorded to SD card:",
+          "Proxy Recording",
+          "XF-AVC S/XF-HEVC S format",
+          "1920×1280",
+          "29.97P/23.98P/25.00P/24.00P",
+          "2. It is now possible to change the LUT applied during playback.",
+          "3. Optimizes Focus peaking to reduce interference from noise at high sensitivity settings.",
+          "4. Adds the assignable buttons settings menu function:",
+          "Tele-converter [Tele-converter x1.5 / Tele-converter x2.0 / Tele-converter x2.5 / Tele-converter x3.0]",
+          "Subject to Detect [People / Animals]",
+          "AF Frame [Small Zone / Zone / Large Zone: Vert / Large Zone: Hori]",
+          "Frame.io upload",
+          "5. Improves the responsiveness of Joystick-driven AF Frame movement, with faster initial reaction time.",
+          "6. Adds compatibility with the \"CINE-SERVO\" cinema lenses \"CN5x11 IAS T/R1\" (RF mount) and \"CN5x11 IAS T/P1\" (PL mount).",
+          "Metadata (Focal Length, T number, lens model name)",
+          "Displaying T number.",
+          "The \"CN5×11 IAS T/R1\" (RF mount) also supports the following functions:",
+          "Canon Virtual Production System Compatibility",
+          "Periph. Illum. Corr.",
+          "Chromatic Aberr. Corr.",
+          "Distortion Aberr. Corr.",
+          "Dual Pixel CMOS AutoFocus Compatibility",
+          "[Focus Guide] Compatibility",
+          "Supports Decimal Point Display of Focal Length",
+          "7. Adds a communication setting menu, making it now possible to select OpenLensIO-Equiv. Model.",
+          "8. When registering a Look File, it is now possible to refer to the description in the Look File and reflect it in the Custom Picture settings.",
+          "9. Improves operational stability."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. Improves security features. A password must be set initially.",
+          "• Adds the ability to review the history of any changes made to the password, network information, or other settings.",
+          "*For more information, please refer to the 'Setting a Password' section in the Advanced User Guide on cam.start.canon.",
+          "2. Enables firmware updates to be performed when the camera is connected to the internet and new firmware is made available on Canon servers.",
+          "3. Supports the following transmission methods in the CV Protocol:",
+          "Broadcast",
+          "Multicast (Same segment only.)",
+          "4. Enables the playback of RAW clips in Media mode with Lens corrections such as Distortion Aberration Correction.",
+          "5. Adds [Track after Focusing] function.",
+          "6. Enables to display below information on [DISP Level 2].",
+          "Recording Format",
+          "Main Resolution",
+          "Sensor Mode",
+          "Digital IS",
+          "Gamma/Color Space",
+          "Level (Numeric)",
+          "7. Toggles On/Off each time the button is pressed when using the [Pause Digital IS] function instead of pausing only while button is pressed, to improve usability.",
+          "8. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Supports for Frame.io Camera to Cloud.",
+          "Available in regions served by Frame.io.",
+          "2. Adds ability to retain previously set exposure parameters (Shutter/ISO gain) when using Output: 60 60 (24) fps, Output: 60 60 (30) fps.",
+          "3. Adds [1.5x] to the Anamorphic De-squeeze setting.",
+          "4. Enables to display digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "5. Enables the option to apply Full-Screen display to external display according to OSD Output setting, even in the display level with [Peripheral border display].",
+          "6. Adds [1920x1080P] to [MON. Output Signal] and [SDI Output Signal] option.",
+          "7. Adds the option [CAMERA MEDIA] to assign button menu [Camera], [Grip], [LCD], and [REMOTE A].",
+          "8. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Enables AF when S&F shooting frame rate is set to 100/120 frames per second.",
+          "2. Enables [Subject Detection Function] when S&F shooting frame rate is set to 72-120 frames per second.",
+          "3. The default Focus Ring Response setting has been changed from [Varies with Rotation Speed] to [Linked to Rotation Degree] to improve usability."
+        ]
+      }
+    ],
+    "file_name": "c400-v1071-win.zip",
+    "file_size": "97.78 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
   }
 ]

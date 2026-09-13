@@ -64,7 +64,7 @@ nav .soon{opacity:.45;cursor:default;pointer-events:none}
       background:none;cursor:pointer;border:1px solid var(--edge);
       padding:6px 11px;transition:.18s}
     #cats button:hover{border-color:var(--edge-hi);color:var(--text)}
-    #cats button[aria-pressed=true]{border-color:var(--olive);color:var(--olive)}
+    #cats button[aria-current=true]{border-color:var(--olive);color:var(--olive)}
     #cats .lede{color:var(--dim);font-family:"JetBrains Mono",monospace;
       font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
       align-self:center;padding-right:4px}
@@ -249,18 +249,19 @@ var clear = document.getElementById("clear");
 var empty = document.getElementById("empty");
 var term = document.getElementById("term");
 var make = "all";
-    // Equipment categories are a second, independent facet. Several can be on
-    // at once; none on means no category restriction.
-    var cats = [];
+    // Equipment type is single select, exactly like the brand row: one type
+    // at a time, and All clears the filter.
+    var cat = "all";
     var catButtons = document.querySelectorAll("#cats button[data-category]");
     catButtons.forEach(function (button) {
       button.addEventListener("click", function () {
-        var name = button.dataset.category;
-        var at = cats.indexOf(name);
-        if (at > -1) { cats.splice(at, 1); } else { cats.push(name); }
-        button.setAttribute("aria-pressed", String(cats.indexOf(name) > -1));
+        cat = button.dataset.category;
+        catButtons.forEach(function (other) {
+          other.setAttribute("aria-current", String(other === button));
+        });
         apply();
       });
+    });
     });
 
 function apply() {
@@ -272,8 +273,7 @@ function apply() {
     var hay = plate.dataset.find || "";
     var hit = words.every(function (word) { return hay.indexOf(word) > -1; });
     var inMake = make === "all" || plate.dataset.make === make;
-    var inCat = cats.length === 0
-        || cats.indexOf(plate.dataset.category) > -1;
+    var inCat = cat === "all" || plate.dataset.category === cat;
       var on = hit && inMake && inCat;
     plate.style.display = on ? "flex" : "none";
     if (on) { shown += 1; }
@@ -856,11 +856,13 @@ def main():
             present.append(c)
     cat_order = [c for c in CAT_ORDER if c in present]
     cat_order += [c for c in present if c not in cat_order]
-    cat_parts = ['<span class="lede">Type</span>']
+    cat_parts = ['<span class="lede">Type</span>',
+                 '<button type="button" data-category="all"'
+                 ' aria-current="true">All</button>']
     for cat in cat_order:
         cat_parts.append('<button type="button" data-category="'
                          + html.escape(cat, quote=True)
-                         + '" aria-pressed="false">'
+                         + '">'
                          + html.escape(cat) + "</button>")
     cats_html = "".join(cat_parts)
 

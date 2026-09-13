@@ -233,6 +233,124 @@ def kind_of(href, filetype="", title=""):
     return ""
 
 
+def content_lines(html):
+    """Page lines from the h1 to the footer, so ARRI's nav is never scanned.
+
+    ARRI's mega-menu and footer are enormous: on the CCM-1 page the real text
+    starts at line 2,895 of 3,364. Counting lines from the top of the document
+    therefore reads navigation, which is why an earlier version of this
+    scraper found nothing at all. Anchor on the h1 instead.
+    """
+    body = html
+    hm = re.search(r"<h1[^>]*>", body, re.I)
+    if hm:
+        body = body[hm.start():]
+    foot = re.search(r"(?i)<footer|footer__|ci-footer", body)
+    if foot:
+        body = body[:foot.start()]
+    body = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", body)
+    body = re.sub(r"(?i)</(p|div|li|tr|h[1-6])>", NL, body)
+    body = re.sub(r"(?i)<br\s*/?>", NL, body)
+    body = re.sub(r"<[^>]+>", " ", body)
+    out = [squash(x) for x in htmlmod.unescape(body).split(NL)]
+    return [x for x in out if x]
+
+
+CHANGELOG_HEADS = ("overview of new features", "overview of new feature",
+                   "new features", "what's new", "highlights")
+
+CHANGELOG_STOP = ("end user license agreement", "end user licence agreement",
+                  "notice to user", "please take your time",
+                  "for more information", "sup download archive",
+                  "list of all current software", "downloads", "disclaimer")
+
+
+def changelog_from(html):
+    """The page's own new-features list, verbatim. Empty when absent.
+
+    ARRI writes the changelog as page text under "Overview of new features",
+    e.g. Hi-5 lists "Camera Control License for Hi-5 & Hi-5 SX" and "Bug fix for
+    focus distance display on the SmallHD Lens Overlay". Sub-headings like
+    "Improvements for TRINITY 2 and the TRINITY 2 Pan Axis Module" are kept as
+    items because they are ARRI's own wording.
+    """
+    lines = content_lines(html)
+
+    at = None
+    for i, line in enumerate(lines):
+        low = line.lower().rstrip(":")
+        if any(low.startswith(h) for h in CHANGELOG_HEADS):
+            at = i
+            break
+    if at is None:
+        return []
+
+    out = []
+    for line in lines[at + 1:at + 40]:
+        low = line.lower()
+        if any(low.startswith(s) for s in CHANGELOG_STOP):
+            break
+        # The feature list ends where ARRI's announcement prose starts, and
+        # before the download rows, whose lines are a bare date or a filetype
+        # and size such as "cmf | 3 MB".
+        if ANNOUNCE_RX.match(line):
+            break
+        if re.match(r"(?i)^(?:cmf|pdf|txt|zip|download)\s*(?:\||$)", line):
+            break
+        if re.match(r"(?i)^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+                    r"[a-z]*\.?\s+\d{1,2},?\s+\d{4}$", line):
+            break
+        item = line.lstrip("-\u2013\u2022 ").strip()
+        if not item or len(item) < 3:
+            continue
+        if item in out:
+            continue
+        out.append(item)
+        if len(out) >= 24:
+            break
+    return out
+
+
+# ARRI's own sentence shapes on these pages, verbatim:
+#   "We hereby announce the release of the Software Update Package SUP 3.2.2..."
+#   "We highly recommend that you take your time to go through the release
+#    notes and the user manual before operating the device."
+ANNOUNCE_RX = re.compile(
+    r"(?i)^\s*(?:we\s+(?:hereby|highly|are|would|announce|recommend)"
+    r"|arri\s+(?:is\s+pleased|announces|recommends)"
+    r"|this\s+(?:software\s+)?update"
+    r"|the\s+(?:software\s+)?update\s+package"
+    r"|with\s+(?:this\s+)?sup"
+    r"|please\s+note)")
+
+
+def summary_from(html, product, version):
+    """ARRI's own announcement sentences, when there is no feature list.
+
+    Most accessory pages carry prose rather than bullets, e.g. the EJW-1:
+    "We hereby announce the release of the Software Update Package SUP 3.2.2
+    for the External Jog-Wheels EJW-1. We highly recommend updating your EJW-1
+    to this Software Update Package." That is ARRI's wording and it is more
+    use than an empty section, so it becomes the summary. It is never mixed
+    with the changelog, which stays reserved for a real feature list.
+    """
+    lines = content_lines(html)
+
+    picked = []
+    for line in lines:
+        low = line.lower()
+        if low.startswith("end user licen") or low.startswith("notice to user"):
+            break
+        if len(line) < 30:
+            continue
+        if ANNOUNCE_RX.match(line):
+            if line not in picked:
+                picked.append(line)
+        if len(picked) >= 3:
+            break
+    return " ".join(picked)
+
+
 def parse(slug, html, section, default_cat):
     """One kit record, or None when ARRI publishes no version on the page."""
     hm = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S | re.I)
@@ -282,10 +400,19 @@ def parse(slug, html, section, default_cat):
     if not date:
         date = iso_date(strip_tags(html))
 
+    # Only a real per-product SUP archive counts. ARRI also links a generic
+    # "discontinued products" archive at learn-help/config-overview/archive and
+    # an archive-technologies page; both are site furniture, not this product's
+    # version history, and recording them would promise previous versions the
+    # page does not have.
     archive = ""
     for m in re.finditer(r'href=["\']([^"\']*archive[^"\']*)["\']', html, re.I):
         u = absolute(m.group(1))
-        if "archive-technologies" in u.lower():
+        low = u.lower()
+        if "archive-technologies" in low or "config-overview" in low \
+                or "learn-help" in low:
+            continue
+        if "/firmware/" not in low:
             continue
         archive = u
         break
@@ -296,6 +423,8 @@ def parse(slug, html, section, default_cat):
 
     return {
         "manufacturer": "ARRI",
+        "changelog": changelog_from(html),
+        "summary": summary_from(html, product, version),
         "category": category_for(product + " " + slug, default_cat),
         "product": product,
         "version": version,
@@ -350,10 +479,12 @@ def main():
                 skipped.append(slug)
                 continue
             out.append(rec)
-            print("  %-30s %-12s %-11s %-14s %s"
-                  % (rec["product"][:30], rec["version"][:12],
+            print("  %-28s %-11s %-11s %-14s %-5s cl=%d%s"
+                  % (rec["product"][:28], rec["version"][:11],
                      rec["release_date"] or "no date", rec["category"],
-                     rec["firmware_kind"] or "-"))
+                     rec["firmware_kind"] or "-", len(rec["changelog"]),
+                     ("  summary" if rec["summary"] else "")
+                     + ("  archive" if rec["archive_url"] else "")))
         print()
 
     Path("arri_kit.json").write_text(
@@ -370,11 +501,20 @@ def main():
     withpage = sum(1 for r in out if r["firmware_kind"] == "page")
     withnotes = sum(1 for r in out if r["notes_url"])
     withdate = sum(1 for r in out if r["release_date"])
+    withcl = sum(1 for r in out if r.get("changelog"))
+    witharc = sum(1 for r in out if r.get("archive_url"))
     print()
     print("  direct file:   %d/%d" % (withfile, len(out)))
     print("  page download: %d/%d" % (withpage, len(out)))
     print("  release notes: %d/%d" % (withnotes, len(out)))
     print("  dated:         %d/%d" % (withdate, len(out)))
+    withsum = sum(1 for r in out if r.get("summary"))
+    print("  changelog:     %d/%d" % (withcl, len(out)))
+    print("  summary:       %d/%d" % (withsum, len(out)))
+    print("  neither:       %d/%d"
+          % (sum(1 for r in out if not r.get("changelog")
+                 and not r.get("summary")), len(out)))
+    print("  SUP archive:   %d/%d" % (witharc, len(out)))
     if skipped:
         print("  skipped: " + ", ".join(skipped[:12]))
 

@@ -1,6 +1,8 @@
 [
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We would like to announce the release of the Software Update Package 1.2.3 for the NIA-1. This is a maintenance release. In order to ensure compatibility of components and firmware versions, we highly recommend keeping all devices updated to the most current version.",
     "category": "Lens Control",
     "product": "NIA-1",
     "version": "SUP 1.2.3",
@@ -11,7 +13,7 @@
     "firmware_url": "https://arri.canto.de/b/P7VUJ",
     "firmware_kind": "page",
     "notes_url": "",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/nia-1-software-update/nia-1-sup-archive",
     "guides": [],
     "file_size": "",
     "file_type": "download",
@@ -20,6 +22,12 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Hi‑5 & Hi‑5 SX SUP 3.5.2",
+      "Camera Control License for Hi‑5 & Hi‑5 SX",
+      "Bug fix for focus distance display on the SmallHD Lens Overlay"
+    ],
+    "summary": "",
     "category": "Lens Control",
     "product": "Hi-5 & Hi-5 SX",
     "version": "SUP 3.5.2",
@@ -30,7 +38,7 @@
     "firmware_url": "https://arri.canto.de/b/TSTVU",
     "firmware_kind": "page",
     "notes_url": "",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/hi-5-software-update/hi-5-sup-archive",
     "guides": [],
     "file_size": "",
     "file_type": "download",
@@ -39,6 +47,12 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "RIA‑1 SUP 2.5.0",
+      "Support for additional Camera information",
+      "Bug fixes and Improvements"
+    ],
+    "summary": "",
     "category": "Lens Control",
     "product": "RIA-1",
     "version": "SUP 2.5.0",
@@ -49,7 +63,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/nimm8i7l555cd3tiegfsahks1n/AiF6JKyqhtacHNkRV3rSmyyyAzk/original?content-type=application%2Fzip&name=RIA-1+SUP+2.5.0.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/402412/b20e54e70215e52bfbe5b325cc11b0d7/ecs-january26-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/ria-1-software-update/ria-1-sup-archive",
     "guides": [],
     "file_size": "538 KB",
     "file_type": "download",
@@ -58,6 +72,11 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "ZMU‑4 SUP 1.5.0",
+      "Support for additional Camera information"
+    ],
+    "summary": "",
     "category": "Lens Control",
     "product": "ZMU-4",
     "version": "SUP 1.5.0",
@@ -68,7 +87,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/vcd8d7f5dd00pbijavugcqo93c/8DicU6FqN8FAlQngmLVLx5_OCO8/original?content-type=application%2Fzip&name=ZMU-4+SUP+1.5.0.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/402412/b20e54e70215e52bfbe5b325cc11b0d7/ecs-january26-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/zmu-4-software-update/zmu-4-sup-archive",
     "guides": [],
     "file_size": "538 KB",
     "file_type": "download",
@@ -77,6 +96,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.1.2 for the Single Axis Unit SXU-1. This is a maintenance release and ensures compatibility with the Radio Interface Adapter RIA‑1 and other ARRI products, as well as a bug fix. We highly recommend updating the SXU-1 to this Software Update Package. Please be aware, that this update is mandatory if the SXU-1 is connected to a RIA‑1 in client mode.",
     "category": "Lens Control",
     "product": "SXU-1",
     "version": "SUP 2.1.2",
@@ -87,7 +108,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/296326/5b96bd134e7de292aff37173fd67180f/sxu-1-sup-2-1-2-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/296324/a7cdc0f6330198098865485bdbcc7a7e/sxu-1-sup-2-1-2-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-sxu-1/sxu-1-sup-archive",
     "guides": [],
     "file_size": "183 KB",
     "file_type": "upd",
@@ -96,6 +117,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.0.2 for the Master Grips. This is a maintenance release and ensures compatibility with the Radio Interface Adapter RIA‑1 and other ARRI products. We highly recommend updating the Master Grips to this Software Update Package. Please be aware, that this update is mandatory if Master Grips are used in combination with the RIA‑1.",
     "category": "Lens Control",
     "product": "Master Grips",
     "version": "SUP 2.0.2",
@@ -106,7 +129,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/296410/ebd879a4155f590d5db564715114bab0/master-grips-sup-2-0-2-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/296408/479a0d9b446577b2544678c534526107/master-grips-sup-2-0-2-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-master-grips/master-grips-sup-archive",
     "guides": [],
     "file_size": "203 KB",
     "file_type": "cmf",
@@ -115,6 +138,10 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Support for region settings SUP 1.29 allows setting the radio output power according to regions1. This function is only available with EMC-1 devices containing the EMIP300 type radio module (ARRI white coded radio module with the latest generation chipset). Please check transceiver ID for the installed radio module labeled on the back of the EMC-1 device."
+    ],
+    "summary": "We are proud to announce the release of Software Update Packet (SUP) 1.30 for the ENG Motor Controller EMC-1. This SUP adds support for region settings to the EMC-1 (only available with EMIP300 radio module). We highly recommend updating the EMC-1 to this software update package. Downgrading It is not possible to revert back to a previous release version. Warning: EMC-1 software before SUP 1.30 (EMC1_V0130) should no longer be used and may cause the EMC-1 to malfunction and become inaccessible. If that happens, the EMC-1 can only be made accessible with the support of an ARRI Service Center.",
     "category": "Lens Control",
     "product": "EMC-1",
     "version": "SUP 1.3.0",
@@ -125,7 +152,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/42934/6ea5fea8adcf94ee257da7fc1e342673/emc1-v0130-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/42932/88ebdeb9d5455f7c7d1dd806f17f974e/emc1-sup0130-releasenotes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [
       {
         "label": "EMC-1 Manual",
@@ -139,6 +166,16 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "6 additional radio channels (14 in total)",
+      "Support of override function",
+      "Lens Files for Signature Primes in LDA",
+      "cforce mini RF support",
+      "Several minor improvements and bugfixes",
+      "Six additional Radio Channels",
+      "The UMC-4 now offer 14 (0-13) instead of 8 radio channels to choose from. Those additional channels are currently supported by the ALEXA LF camera and the cforce mini RF motor."
+    ],
+    "summary": "We are proud to announce the release of Software Update Package (SUP) 2.1 for the Universal Motor Controller UMC-4. This release adds 6 additional radio channels to choose from and supports the override function of the Operator Control Unit OCU‑1. We highly recommend updating the UMC-4 to this software update package. Devices delivered from ARRI Austria from now onwards include SUP 2.1 This software update supports the override function triggered by the Operator Control OCU‑1 or the Master Grips (SUP 2.0). The override function enables operators to override and return focus, iris or zoom at the touch of a button.",
     "category": "Lens Control",
     "product": "UMC-4",
     "version": "SUP 2.1",
@@ -149,7 +186,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/85010/79f54f4eb498620c1d40864d2179cb90/umc-4-sup-2-1-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/85012/1a699d2f30e4ba0f7f4b1ac0ece19b38/umc-4-sup-2-1-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-umc-4/umc-4-sup-archive",
     "guides": [],
     "file_size": "86 KB",
     "file_type": "upd",
@@ -158,6 +195,20 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "cforce plus support",
+      "The AMC-1 now supports the new cforce plus motors.",
+      "UDM‑1 support via LCUBE CUB-1",
+      "It is now possible to connect a UDM‑1 to the AMC-1 via the LCUBE CUB-1. The UDM‑1 distance readout will be displayed on the screen of the WCU‑4 handset. The distance reaout unit (metric/imperial) can be set in the AMC-1 menu.",
+      "Bug fixes",
+      "Soft buttons not matching screen",
+      "Fixes a bug where the soft buttons would not match the actual screen.",
+      "System reboot with several files on mircoSD card",
+      "Fixes a bug where the AMC-1 would crash and reboot if a microSD card with multiple files on it is accessed.",
+      "\"no file on card\" popup",
+      "Fixes a bug where a \"no file on card\" popup would appear in the process of selecting an update file from microSD card, even if a file is present."
+    ],
+    "summary": "We highly recommend updating the AMC-1 to this software update package.",
     "category": "Lens Control",
     "product": "AMC-1",
     "version": "SUP 1.44",
@@ -168,7 +219,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/42974/c48d90739aa31f40f97111a283598cbd/amc1-v0144-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/42976/6ad64694778512f0ed5c43e63a1841ab/sup-amc-1-1-44-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-amc-1/amc-1-sup-archive",
     "guides": [
       {
         "label": "AMC-1 - Manual",
@@ -182,6 +233,10 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Bugfixes and Improvements"
+    ],
+    "summary": "This Software Update Package, LCUBE CUB-1 SUP 3.1 is a compatibility and bugfix update. We are happy to introduce this update to enhance your on-set experience.",
     "category": "Lens Control",
     "product": "CUB-1",
     "version": "SUP 3.1",
@@ -192,7 +247,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/400846/a0ee0f8cadc9275e99ca3894b0775f4f/lcube-cub-1-sup-3-1-0-file-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/400844/8323bd79367201604dca50a9f19f0ce8/ecs-october25-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-cub-1/cub-1-sup-archive",
     "guides": [],
     "file_size": "551 KB",
     "file_type": "txt",
@@ -201,6 +256,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Wireless Video",
     "product": "WVS",
     "version": "SUP 4.3.28",
@@ -211,7 +268,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/bknt7be3pd0918d5ebr90ar84l/pBE1JB57l4XxHWgy167HS2AjbFk/original?content-type=application%2Fzip&name=WVS_SUP_4_3_28_data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/43016/6cdf3c7d27f459912eb9be7d16525310/wvs-4-3-28-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [
       {
         "label": "WVS Wireless Video System - Manual",
@@ -225,6 +282,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We are proud to announce the release of Software Update Package (SUP) 1.71 for the Single Motor Controller SMC-1. Please take your time to go through this document before you start using the SMC-1.",
     "category": "Lens Control",
     "product": "SMC-1",
     "version": "SUP 1.71",
@@ -235,7 +294,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/43060/078cdb51fdc733fed428b7fd0e77fac0/smc1-0171-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/43062/140785ac906655f4b6c7e283526d7207/smc-1-sup-1-71-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-smc-1/smc-1-sup-archive",
     "guides": [
       {
         "label": "SMC-1 Manual",
@@ -249,6 +308,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We highly recommend updating the hand unit to this Software Update Package.",
     "category": "Lens Control",
     "product": "WCU-4",
     "version": "SUP 3.3.20",
@@ -259,7 +320,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/263154/f8e2ceea26f8599cbb38de5556fbeb83/hotfix-3-3-20-wcu-4-data.bin",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/261192/dab114d8bad7d03b874a57386de0a37b/release-notes-hotfix-3-3-20-wcu-4-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-wcu-4/wcu-4-sup-archive",
     "guides": [],
     "file_size": "162 KB",
     "file_type": "upd",
@@ -268,6 +329,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.0 for the cforce mini motor. We highly recommend updating all cforce mini motors to firmware 2.0. Please take your time to go through the Release Notes document before using the motor.",
     "category": "Lens Control",
     "product": "cforce mini",
     "version": "SUP 2.0",
@@ -278,7 +341,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/328994/2bcee6b2c722d1897637a0115f1083ed/cforce-mini-2-0-0-0-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/329372/c2ba63ac51462d2f22d627619f4b83ed/cforce-mini-sup-2-0-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-cforce-mini/cforce-mini-sup-archive",
     "guides": [],
     "file_size": "224 KB",
     "file_type": "cmf",
@@ -287,6 +350,10 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Support for additional Camera information"
+    ],
+    "summary": "",
     "category": "Lens Control",
     "product": "cforce mini RF",
     "version": "SUP 2.5.0",
@@ -297,7 +364,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/i80o319ss16ol52iekuo3qof1a/1jz0v7UsZlukf7IJ5Kd9n58Xnpo/original?content-type=application%2Fzip&name=cforce+mini+RF+SUP+2.5.0.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/402412/b20e54e70215e52bfbe5b325cc11b0d7/ecs-january26-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-cforce-mini-rf/cforce-mini-rf-sup-archive",
     "guides": [],
     "file_size": "538 KB",
     "file_type": "download",
@@ -306,6 +373,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.0 for the cforce plus motor. We highly recommend updating all cforce plus motors to firmware 2.0. Please take your time to go through the Release Notes document before using the motor.",
     "category": "Lens Control",
     "product": "cforce plus",
     "version": "SUP 2.0",
@@ -316,7 +385,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/328998/4f99dd919ee3c459ab728b92a9437ae4/cforce-plus-2-0-0-0-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/329374/c1239b11bad1195b45c2e57ec71a6357/cforce-plus-sup-2-0-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/cforce-plus-firmware-update/cforce-plus-sup-archive",
     "guides": [],
     "file_size": "202 KB",
     "file_type": "txt",
@@ -325,6 +394,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.0.2 for the Operator Control Unit OCU‑1. This is a maintenance release and ensures compatibility with the Radio Interface Adapter RIA‑1 and other ARRI products. We highly recommend updating the Operator Control Unit OCU‑1 to this Software Update Package. Please be aware, that this update is mandatory if an OCU‑1 is used in combination with the RIA‑1.",
     "category": "Lens Control",
     "product": "OCU-1",
     "version": "SUP 2.0.2",
@@ -335,7 +406,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/296384/ebd879a4155f590d5db564715114bab0/ocu-1-sup-2-0-2-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/296386/479a0d9b446577b2544678c534526107/ocu-1-release-notes-2-0-2-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-ocu-1/ocu-1-sup-archive",
     "guides": [],
     "file_size": "203 KB",
     "file_type": "cmf",
@@ -344,6 +415,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Lens Control",
     "product": "LCUBE CUB-2",
     "version": "SUP 1.3.1",
@@ -354,7 +427,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/392114/72967aff6b301b71a59cf3dd080c37e0/lcube-cub-2-1-3-1-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/392086/ae170502b1e3a25e1cbe52b661a63462/ecs-march25-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-ecs/software-update-for-cub-2/cub-2-sup-archive",
     "guides": [
       {
         "label": "LCUBE CUB-2 Manual",
@@ -368,6 +441,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "This update adds support for the SmallHD Monitor Overlay License for Hi‑5 and Hi‑5 SX. We highly recommend that you take your time to go through the release notes and the user manual before operating the device.",
     "category": "Monitors",
     "product": "CCM-1",
     "version": "SUP 6.3.1",
@@ -378,7 +453,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/um9ujjeedd5kt53clfo999417a/ypzILypUKYKWqvln25jrU4EIWCk/original?content-type=application%2Fzip&name=CCM-1_SUP_6.3.1_data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/405046/2086869dce613bf456c41ee6bc0c1fbd/ccm-1-sup-6-3-1-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [
       {
         "label": "CCM-1 SUP 5.5.0 - Quick Start Guide",
@@ -396,6 +471,19 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Improvements for TRINITY 2 and the TRINITY 2 Pan Axis Module",
+      "Five new TRINITY user modes",
+      "Zoom Sync (pan/tilt speed matched to focal length)",
+      "PID Auto Tune method",
+      "Motor ON/OFF switch via PID menu",
+      "Faster start-up",
+      "Screen lock feature",
+      "Improved Drop mode",
+      "Improved RF-2400 pairing and radio communication",
+      "Bug fixes"
+    ],
+    "summary": "",
     "category": "Stabilizers",
     "product": "TRINITY 2",
     "version": "SUP 4.0",
@@ -406,7 +494,7 @@
     "firmware_url": "https://arri.canto.de/direct/other/2hd15t3am15u7752r7d8qmg87o/E5WUa-TY5BG0IUrNA1_Bkhrojxw/original?content-type=application%2Fzip&name=TRINITY+2+SUP+4.0.zip",
     "firmware_kind": "file",
     "notes_url": "https://arri.canto.de/direct/document/i3k187b6v16cpdi4o9rufgan1g/Gi7Ce3tuGwwldAral2Q7c09pcA8/original?content-type=application%2Fpdf&name=TRINITY+2+SUP+4.0+-+Release+Notes.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-css/software-update-trinity-2/trinity-2-sup-archive",
     "guides": [
       {
         "label": "Remote Control Panel 3 (RCP-3) SUP 4.0 - User Manual",
@@ -420,6 +508,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Stabilizers",
     "product": "360 EVO",
     "version": "SUP 3.0.10",
@@ -430,7 +520,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/383232/aa42760f20de761c6df50e954772ff54/css-evo-gui-3-0-10-zip-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/383266/9e460aab39b86cf401afbc9e91e69e9f/sup-3-0-evo-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "1.4 MB",
     "file_type": "zip",
@@ -439,6 +529,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Stabilizers",
     "product": "TRINITY Gen.1",
     "version": "SUP 3.1.0.4",
@@ -449,7 +541,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/43092/57e590dcaa24d11d871d82dfec8e613f/trinity-and-trinity-live-sup-3-1-0-4-data.zip",
     "firmware_kind": "file",
     "notes_url": "",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [
       {
         "label": "TRINITY Gen.1 - User Manual",
@@ -467,6 +559,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Stabilizers",
     "product": "MAXIMA",
     "version": "SUP 3.1.0.2",
@@ -477,7 +571,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/43092/57e590dcaa24d11d871d82dfec8e613f/trinity-and-trinity-live-sup-3-1-0-4-data.zip",
     "firmware_kind": "file",
     "notes_url": "",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [
       {
         "label": "GUI - User Manual (Vers. 3.1.0.2) for MAXIMA and TRINITY Gen.1",
@@ -495,6 +589,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 2.15 for the Battery Hanger Module BHM-2, which is compatible with TRINITY 2 and ARTEMIS 2. We highly recommend updating your BHM-2 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Power & Media",
     "product": "BHM-2",
     "version": "SUP 2.15",
@@ -505,7 +601,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/312826/5aacfb3cad752d4622b7eee752ef8a89/batteryhangermodule2-sup-bhm-2-sup2-15-data.txt",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/312734/c5b490b43a87fdded5a74e608395007d/batteryhangermodule-bhm-2-sup2-15-releasenotes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "1 MB",
     "file_type": "txt",
@@ -514,6 +610,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "",
     "category": "Stabilizers",
     "product": "TRINITY Live",
     "version": "SUP 3.1.0.4",
@@ -524,7 +622,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/402140/57e590dcaa24d11d871d82dfec8e613f/foma-control-setup-3-1-0-4-data.zip",
     "firmware_kind": "file",
     "notes_url": "",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "",
     "file_type": "zip",
@@ -533,6 +631,16 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [
+      "Unified Firmware for SRH‑3 and SRH‑360: SUP 3.1.3 supports both the SRH‑3 and the SRH‑360 systems.",
+      "Full support of c-force mini motors running the 2.0 software.",
+      "New changes introduced with SUP 3.1.3:",
+      "Higher rate of current values from the head to the remote control: The transmission rate of the current values (e.g. the position of the pan, tilt, roll, focus, iris and zoom axes) from the head to the remote control has been increased.",
+      "Bugfixes:",
+      "Extensive bugfixes and general improvements in overall system performance",
+      "Further details can be found in the Release Notes in the download section below."
+    ],
+    "summary": "We are proud to announce the release of Software Update Package SUP 3.1.3 for the SRH‑360 and SRH‑3 Stabilized Remote Head and the Remote Control Panel. We highly recommend updating the SRH‑360 and SRH‑3 Stabilized Remote Head, as well as the Remote Control Panel with this new Software Update Package.",
     "category": "Stabilizers",
     "product": "SRH",
     "version": "SUP 3.1.3",
@@ -543,7 +651,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/362338/409a9ce08ea2468f9fae221954782e75/srh-sup-3-1-3-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/362350/53b9aad1c8d52299782361898d7dcefe/srh-sup-3-1-3-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/software-updates-css/software-update-srh/srh-sup-archive",
     "guides": [
       {
         "label": "Standard Joystick for SRH Remote Control Panel",
@@ -569,6 +677,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of Software Update Package SUP 1.0.12 for the Master Grip TRINITY 1 and 2.",
     "category": "Stabilizers",
     "product": "MGT",
     "version": "SUP 3.2.2",
@@ -579,7 +689,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/399966/1db4478e9ff20daa852cc744e8b6bc97/master-grip-triinity-mgt-1-sup-3-2-2-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/399968/11fe432d9c3a5fc8841f5e98cad72bb7/arri-mgt-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -588,6 +698,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the Digital Encoder Head DEH-1. We highly recommend updating your DEH-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "DEH-1",
     "version": "SUP 3.2.2",
@@ -598,7 +710,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/399954/09e34025e829128823889c2263d1b1aa/digital-encoder-head-deh-1-sup-3-2-2-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/399956/11fe432d9c3a5fc8841f5e98cad72bb7/arri-deh-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -607,6 +719,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the Digital Encoder Head DEH-2. We highly recommend updating your DEH-2 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "DEH-2",
     "version": "SUP 3.2.2",
@@ -617,7 +731,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/399962/eb2ac5eebe84e911ea529453dae9ac8c/digital-encoder-head-deh-2-sup-3-2-2-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/399964/11fe432d9c3a5fc8841f5e98cad72bb7/arri-deh-2-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -626,6 +740,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.3 for the Digital Encoder Pedal DEP-1. We highly recommend updating your DEP-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "DEP-1",
     "version": "SUP 3.2.3",
@@ -636,7 +752,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/399970/96a283e51566868c1c346ae226adfc56/digital-encoder-pedal-dep-1-sup-3-2-3-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/399972/11fe432d9c3a5fc8841f5e98cad72bb7/arri-dep-1-sup-3-2-3-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -645,6 +761,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.1.8 for the Digital Remote Wheels DRW-1. We highly recommend updating your DRW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "DRW-1",
     "version": "SUP 3.2.2",
@@ -655,7 +773,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/399960/feeaa25a6876efddd2da4eeb4398c6de/digital-remote-wheels-drw-1-sup-3-2-2zip-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/399958/11fe432d9c3a5fc8841f5e98cad72bb7/arri-drw-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -664,6 +782,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the External Joystick EJS-1. We highly recommend updating your EJS-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "EJS-1",
     "version": "SUP 3.2.2",
@@ -674,7 +794,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/400002/e7689fb31b9c6ccb27b325025f6250c8/external-joystick-ejs-1-3-2-2-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/400004/11fe432d9c3a5fc8841f5e98cad72bb7/arri-ejs-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
@@ -683,6 +803,8 @@
   },
   {
     "manufacturer": "ARRI",
+    "changelog": [],
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the External Jog-Wheels EJW-1. We highly recommend updating your EJW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "category": "Stabilizers",
     "product": "EJW-1",
     "version": "SUP 3.2.2",
@@ -693,7 +815,7 @@
     "firmware_url": "https://www.arri.com/resource/blob/400008/e9efa9e4df2a89174804bf6e197c5bce/external-jog-wheels-ejw-1-3-2-2-data.zip",
     "firmware_kind": "file",
     "notes_url": "https://www.arri.com/resource/blob/400010/11fe432d9c3a5fc8841f5e98cad72bb7/arri-ejw-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": "https://www.arri.com/en/learn-help/learn-help-camera-system/config-overview/archive",
+    "archive_url": "",
     "guides": [],
     "file_size": "165 KB",
     "file_type": "zip",
