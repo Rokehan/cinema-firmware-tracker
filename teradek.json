@@ -1,0 +1,1309 @@
+[
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Ace 750",
+    "version": "4.4.10",
+    "release_date": "2026-06-22",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#ace750",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.4.x/4.4.10/Teradek_Bolt4k_firmware_v4.4.10.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Components",
+      "Controller: 2.37 (LT/XT), 2.3 (HDMI only)",
+      "TX Video Processor: 1.29.0 (XT), 1.13.0 (LT)",
+      "RX Video Processor: 1.30.0 (XT), 1.14.0 (LT)",
+      "Radio: 7.8.21 (TX), 7.8.20 (RX)",
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Bug Fixes",
+      "Screen tearing/artifacts could occur when using 1080i video formats"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [
+      {
+        "label": "Bolt Manager 3.7.5 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.dmg"
+      },
+      {
+        "label": "Bolt Manager 3.7.5 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.exe"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Firmware",
+    "slug": "ace750"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "ART",
+    "version": "2.15.20230510",
+    "release_date": "2023-05-17",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#art",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/ART/Firmware/Releases/2.x/2.15/teradek_art_firmware_v2.15.20230510.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Decoder jitter buffer can now manually be set to a value between 0-400 ms",
+      "Changes and Improvements",
+      "Improved synchronization between audio and video",
+      "Improve Frame Cleaning Mechanism",
+      "Bug Fixes",
+      "Decoder ART Core connection could fail to initialize",
+      "Encoder frame rate could be incorrect",
+      "Packet size was incorrect when transmitting 80 packets per frame",
+      "Sharp drops in bandwidth could cause the stream to restart"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.2",
+        "d": "2022-08-08",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/ART/Docs/ART_2U_Reference_Guide_v1.2_0822.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "art"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Bolt",
+    "version": "3.1.10",
+    "release_date": "2022-02-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#bolt",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Bolt3/Firmware/3.1.x/3.1.10/Teradek_Bolt_firmware_v3.1.10.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added support for Sony SDI clip name data for Bolt XT",
+      "Changes and Improvements",
+      "None",
+      "Bug Fixes",
+      "Fixed audio detection for some BlackMagic products",
+      "SMPTE 352 indication for HD-SDI formats incorrectly reported BT.2020 colorspace"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1",
+        "d": "2019-11-15",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Bolt3/Docs/xt_lt/Teradek_Bolt_500_XT_Quick_Start_Guide_v1.6_1119_web.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Bolt Manager 3.6.31 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.6.x/3.6.31/Teradek_Bolt_Manager_v3.6.31.dmg"
+      },
+      {
+        "label": "Bolt Manager 3.6.31 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.6.x/3.6.31/Teradek_Bolt_Manager_v3.6.31.exe"
+      },
+      {
+        "label": "Bolt Manager Hardware Guide (Bolt Manager)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt3/Docs/Teradek_Bolt_Manager_Quick_Start_Guide_v1_0318.pdf"
+      },
+      {
+        "label": "Bolt Manager Software Manual (&nbsp;)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt/Docs/Teradek_Bolt_Manager_Guide_v2_0515.pdf"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Bolt Firmware",
+    "slug": "bolt"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Bolt 4K",
+    "version": "4.4.10",
+    "release_date": "2026-06-22",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#bolt4k",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.4.x/4.4.10/Teradek_Bolt4k_firmware_v4.4.10.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Components",
+      "Controller: 2.37 (LT/XT), 2.3 (HDMI only)",
+      "TX Video Processor: 1.29.0 (XT), 1.13.0 (LT)",
+      "RX Video Processor: 1.30.0 (XT), 1.14.0 (LT)",
+      "Radio: 7.8.21 (TX), 7.8.20 (RX)",
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Bug Fixes",
+      "Screen tearing/artifacts could occur when using 1080i video formats"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "3.0",
+        "d": "2022-02-09",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Bolt4k/Docs/Teradek_Bolt_4K_System_Reference Guide_v3_0222.pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1.5",
+        "d": "2022-06-21",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Bolt4k/Docs/Teradek_Bolt_4K_LT_Quick_Start_Guide_v1.5_0622_web.pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1",
+        "d": "2022-02-04",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Bolt4k/Docs/Teradek_Bolt_Panel_Antenna_V4_Quick_Start_Guide_v1.2_0222.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Firmware",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.4.x/4.4.10/Teradek_Bolt4k_firmware_v4.4.10_SmallHD.bin"
+      },
+      {
+        "label": "Bolt Manager 3.7.5 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.dmg"
+      },
+      {
+        "label": "Bolt Manager 3.7.5 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.exe"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Bolt 4K Firmware",
+    "slug": "bolt4k"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Bolt 6",
+    "version": "4.4.10",
+    "release_date": "2026-06-22",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#bolt6",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.4.x/4.4.10/Teradek_Bolt4k_firmware_v4.4.10.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Components",
+      "Controller: 2.37 (LT/XT), 2.3 (HDMI only)",
+      "TX Video Processor: 1.29.0 (XT), 1.13.0 (LT)",
+      "RX Video Processor: 1.30.0 (XT), 1.14.0 (LT)",
+      "Radio: 7.8.21 (TX), 7.8.20 (RX)",
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Bug Fixes",
+      "Screen tearing/artifacts could occur when using 1080i video formats"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1",
+        "d": "2024-07-01",
+        "cl": [],
+        "dl": "https://guide.teradek.com/a/1800473-ace-750-quick-start-guide",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Firmware",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.4.x/4.4.10/Teradek_Bolt4k_firmware_v4.4.10_SmallHD.bin"
+      },
+      {
+        "label": "Bolt Manager 3.7.5 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.dmg"
+      },
+      {
+        "label": "Bolt Manager 3.7.5 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.5/Teradek_Bolt_Manager_v3.7.5.exe"
+      },
+      {
+        "label": "Bolt App for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.bolt&hl=en_US"
+      },
+      {
+        "label": "Bolt App for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/teradek-bolt/id1456197163"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Firmware",
+    "slug": "bolt6"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Monitors",
+    "product": "Colr",
+    "version": "2",
+    "release_date": "2016-12-05",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#colr",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Colr/Docs/Teradek_COLR_Operation_Guide_v2_1116.pdf",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.2.11",
+        "d": "2018-02-12",
+        "cl": [
+          "COLR v1.2.11 Release Notes",
+          "New Features",
+          "None",
+          "Changes",
+          "So Bug Fixes",
+          "3D LUT defaults were not being restored correctly"
+        ],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Colr/Firmware/Releases/1.2.x/1.2.11/Teradek_COLR_firmware_v1.2.11r31557.bin",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1",
+        "d": "2016-12-06",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Colr/Docs/Teradek_COLR_Duo_Quick_Start_Guide_v1_1216.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "COLR Quick Start Guide",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Colr/Docs/Teradek_COLR_Quick_Start_Guide_v2_1216.pdf"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "colr"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Cube",
+    "version": "7.3.14",
+    "release_date": "2019-06-14",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#cube",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Cube/Firmware/Releases/7.3.x/7.3.14/Teradek_Cube_firmware_v7.3.14r29337.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Updated Twitch API - authentication change prevented devices from logging in",
+      "Special characters can now be used in Periscope post titles",
+      "Bug Fixes",
+      "Bond II front panel did not start correctly",
+      "Max bitrate was not set correctly when streaming to Core",
+      "Periscope API errors occurred after reboots of authenticated devices",
+      "Group, Event, and Video support were missing from Facebook settings",
+      "YouTube event caption settings were being set to disabled when captions were not present in stream",
+      "Decoder cloud settings page displayed encoder text"
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "How to install",
+        "items": [
+          "NOTE: 7.3.14 is currently recommended as the latest stable release. Other versions contain specific improvements and fixes and can be downloaded as needed."
+        ]
+      }
+    ],
+    "install_version": "7.3.14",
+    "install_source": "https://teradek.com/pages/downloads#cube",
+    "previous_versions": [
+      {
+        "v": "2",
+        "d": "2014-09-16",
+        "cl": [
+          "The Recovery Image is used to reprogram your Cube in case of a system failure.",
+          "Performing this upgrade will NOT overwrite your settings or affect your main firmware image.",
+          "Please click the \"Upgrade\" button below to download and install this image."
+        ],
+        "dl": "https://update.teradek.com/download.php?file=Cube/Firmware/Releases/Recovery/Teradek_Cube_recovery_v2.bin",
+        "dl_kind": "file"
+      },
+      {
+        "v": "?",
+        "d": "0000-00-00",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Cube/Docs/Teradek_Cube_quick_start_guide_v1_0712.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "cube"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Link / Link Pro",
+    "version": "1.1.5",
+    "release_date": "2026-04-01",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#link",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Link/Firmware/Releases/1.1.x/1.1.5/Teradek_Link_firmware_v1.1.5g6b51bf608.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Allow users to select Hyperion Server",
+      "Changes and Improvements",
+      "None",
+      "Bug Fixes"
+    ],
+    "features": [],
+    "install": [
+      {
+        "heading": "How to install",
+        "items": [
+          "NOTE: Please factory reset Link after updating the firmware"
+        ]
+      }
+    ],
+    "install_version": "1.1.5",
+    "install_source": "https://teradek.com/pages/downloads#link",
+    "previous_versions": [
+      {
+        "v": "?",
+        "d": "2018-10-18",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Link/Docs/Teradek_Link_Quick_Start_Guide_v4.2_1018.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "link"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Link AX",
+    "version": "1.1.0",
+    "release_date": "2024-09-23",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#link-ax",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/LinkAX/Firmware/Releases/1.1.x/1.1.0/link_ax_firmware_v1.1.0g89f99adf0.img",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added updated Node 5G support for all current Node modems",
+      "Supports SIM PIN configuration",
+      "Supports worldwide Teradek Data SIMs",
+      "Supports eSIM/Physical SIM switching",
+      "Changes and Improvements",
+      "Added compatibility warning message for security modes that aren't compatible with Teradek encoder/decoder products",
+      "Added password length restrictions for WPA3 security configuration",
+      "Added additional modem status information",
+      "Bug Fixes",
+      "Modem was not used for Internet access if Ethernet was first plugged into WAN port then removed",
+      "Wi-Fi network would be temporarily unavailable when configuring other connection settings"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "?",
+        "d": "2023-06-24",
+        "cl": [],
+        "dl": "https://guide.teradek.com/m/117500",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "link-ax"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Prism Rack v1",
+    "version": "2.25.20260526",
+    "release_date": "2026-06-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#prism",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Prism/Firmware/Releases/2.x/2.25/prism_firmware_v2.25.20260526.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+      "Changes and Improvements",
+      "Added support for RTMP App name in ingest URLs",
+      "Keep ordering consistent when exporting user settings",
+      "Added license information to exported settings",
+      "Bug Fixes",
+      "Teradek Bond stream over UDP did not work with Prism Rack cards if one Ethernet was left disconnected",
+      "Fixed issues with Multi-track audio - track assignments were incorrect and audio could be distorted",
+      "Devices could not connect to Core on some networks",
+      "Network priority labels were incorrect for Prism rack devices",
+      "Hyperion decoder could not ingest SRT streams",
+      "SRT and MPEG-TS streams did not work as outputs for Hyperion decoder",
+      "RTMP and RTSP streams into Hyperion decoder didn't recover after restart",
+      "Fixed RTSP stream metadata",
+      "Some output stream modes did not work with IP stream as an input",
+      "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2",
+        "d": "2025-01-01",
+        "cl": [],
+        "dl": "https://guide.teradek.com/m/109577",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1.0",
+        "d": "2020-07-06",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Prism/Docs/Teradek_Prism_Quick_Start_Guide_v1.0_0720_web.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek Prism for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.prism"
+      },
+      {
+        "label": "Teradek Prism for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/teradek-prism/id1582532805"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "prism"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Prism Mobile",
+    "version": "2.25.20260526",
+    "release_date": "2026-06-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#prism-bond",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Prism/Firmware/Releases/2.x/2.25/prism_mobile_firmware_v2.25.20260526.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+      "Changes and Improvements",
+      "Added support for RTMP App name in ingest URLs",
+      "Keep ordering consistent when exporting user settings",
+      "Added license information to exported settings",
+      "Bug Fixes",
+      "Teradek Bond stream over UDP did not work with Prism Rack cards if one Ethernet was left disconnected",
+      "Fixed issues with Multi-track audio - track assignments were incorrect and audio could be distorted",
+      "Devices could not connect to Core on some networks",
+      "Network priority labels were incorrect for Prism rack devices",
+      "Hyperion decoder could not ingest SRT streams",
+      "SRT and MPEG-TS streams did not work as outputs for Hyperion decoder",
+      "RTMP and RTSP streams into Hyperion decoder didn't recover after restart",
+      "Fixed RTSP stream metadata",
+      "Some output stream modes did not work with IP stream as an input",
+      "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0",
+        "d": "2024-03-13",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Prism/Docs/Prism_Mobile_Quick_Start_Guide (1).pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1",
+        "d": "2024-03-13",
+        "cl": [],
+        "dl": "https://guide.teradek.com/m/109577",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "prism-bond"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Prism Jetpack",
+    "version": "6.2.1",
+    "release_date": "2025-09-11",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#prism-jetpack",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Jetpack/Firmware/BETA/SmallHD/smallhd5_jetpack_v6.2.1.update.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "Prism Jetpack Monitor Firmware v6.2.1",
+      "New Features",
+      "Initial release. See www.smallhd.com for more information.",
+      "Changes and Improvements",
+      "None",
+      "Bug Fixes"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2.25.20260526",
+        "d": "2026-06-03",
+        "cl": [
+          "New Features",
+          "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+          "Changes and Improvements",
+          "Added support for RTMP App name in ingest URLs",
+          "Keep ordering consistent when exporting user settings",
+          "Added license information to exported settings",
+          "Bug Fixes",
+          "Teradek Bond stream over UDP did not work with Prism Rack cards if one Ethernet was left disconnected",
+          "Fixed issues with Multi-track audio - track assignments were incorrect and audio could be distorted",
+          "Devices could not connect to Core on some networks",
+          "Network priority labels were incorrect for Prism rack devices",
+          "Hyperion decoder could not ingest SRT streams",
+          "SRT and MPEG-TS streams did not work as outputs for Hyperion decoder",
+          "RTMP and RTSP streams into Hyperion decoder didn't recover after restart",
+          "Fixed RTSP stream metadata",
+          "Some output stream modes did not work with IP stream as an input",
+          "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+        ],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Prism/Firmware/Releases/2.x/2.25/prism_jetpack_firmware_v2.25.20260526.swu",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Firmware",
+    "slug": "prism-jetpack"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Prism Flex",
+    "version": "2.25.20260526",
+    "release_date": "2026-06-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#prism-mobile",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Prism/Firmware/Releases/2.x/2.25/prism_flex_firmware_v2.25.20260526.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+      "Changes and Improvements",
+      "Added support for RTMP App name in ingest URLs",
+      "Keep ordering consistent when exporting user settings",
+      "Added license information to exported settings",
+      "Bug Fixes",
+      "Teradek Bond stream over UDP did not work with Prism Rack cards if one Ethernet was left disconnected",
+      "Fixed issues with Multi-track audio - track assignments were incorrect and audio could be distorted",
+      "Devices could not connect to Core on some networks",
+      "Network priority labels were incorrect for Prism rack devices",
+      "Hyperion decoder could not ingest SRT streams",
+      "SRT and MPEG-TS streams did not work as outputs for Hyperion decoder",
+      "RTMP and RTSP streams into Hyperion decoder didn't recover after restart",
+      "Fixed RTSP stream metadata",
+      "Some output stream modes did not work with IP stream as an input",
+      "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0",
+        "d": "2022-03-23",
+        "cl": [],
+        "dl": "https://www.youtube.com/playlist?list=PLIfpN7XSe5K_hyiPCwNBKBiO1DlHfPeO5",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1",
+        "d": "2022-03-23",
+        "cl": [],
+        "dl": "https://guide.teradek.com/m/109577",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek Prism for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.prism"
+      },
+      {
+        "label": "Teradek Prism for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/teradek-prism/id1582532805"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "prism-mobile"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Prism Rack v2",
+    "version": "2.25.20260526",
+    "release_date": "2026-06-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#prism-v2",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Prism/Firmware/Releases/2.x/2.25/prism_v2_firmware_v2.25.20260526.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+      "Changes and Improvements",
+      "Added support for RTMP App name in ingest URLs",
+      "Keep ordering consistent when exporting user settings",
+      "Added license information to exported settings",
+      "Bug Fixes",
+      "Teradek Bond stream over UDP did not work with Prism Rack cards if one Ethernet was left disconnected",
+      "Fixed issues with Multi-track audio - track assignments were incorrect and audio could be distorted",
+      "Devices could not connect to Core on some networks",
+      "Network priority labels were incorrect for Prism rack devices",
+      "Hyperion decoder could not ingest SRT streams",
+      "SRT and MPEG-TS streams did not work as outputs for Hyperion decoder",
+      "RTMP and RTSP streams into Hyperion decoder didn't recover after restart",
+      "Fixed RTSP stream metadata",
+      "Some output stream modes did not work with IP stream as an input",
+      "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "prism-v2"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Ranger",
+    "version": "1.2",
+    "release_date": "2021-12-27",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#ranger",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Ranger/Docs/Teradek_Ranger_System_Reference_Guide_v1.2_1221.pdf",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.16",
+        "d": "2026-07-28",
+        "cl": [
+          "Components",
+          "Controller: 2.36",
+          "TX Video Processor: 1.29.0 (Mk II), 1.13.0 (Micro)",
+          "RX Video Processor: 1.30.0 (Mk II), 1.14.0 (Micro)",
+          "Radio: 7.8.20",
+          "New Features",
+          "None",
+          "Changes and Improvements",
+          "Updated package to include current hardware revision support",
+          "Bug Fixes"
+        ],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Ranger/Firmware/Releases/1.0.x/1.0.16/Teradek_Ranger_Firmware_v1.0.16.bin",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1.0",
+        "d": "2020-07-30",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Ranger/Docs/Teradek Ranger_Quick_Start_Guide_1.0_0320_web.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek Ranger Manager 1.0.12 1.0.12 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Ranger/Software/Releases/1.0.x/1.0.12/Teradek_Ranger_Manager_v1.0.12.dmg&protocol=https"
+      },
+      {
+        "label": "Teradek Ranger Manager 1.0.12 1.0.12 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Ranger/Software/Releases/1.0.x/1.0.12/Teradek_Ranger_Manager_v1.0.12.exe&protocol=https"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "ranger"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Serv 4K",
+    "version": "2.25.20260526",
+    "release_date": "2026-06-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#serv-4k",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/Serv4k/Firmware/Releases/2.x/2.25/serv_4k_firmware_v2.25.20260526.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added controls for starting/stopping all Core and Cloud linked streams from the device",
+      "Changes and Improvements",
+      "Keep ordering consistent when exporting user settings",
+      "Added license information to exported settings",
+      "Bug Fixes",
+      "Devices could not connect to Core on some networks",
+      "Modems did not connect when used with Teradek Data set to Carrier Lock mode"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1",
+        "d": "2022-04-28",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/Serv4k/Docs/Teradek_Serv_4K_Quick_Start_Guide_v1_0422.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek Serv for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.serv"
+      },
+      {
+        "label": "Teradek Serv for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/teradek-serv/id1611211791"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "serv-4k"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Serv Micro",
+    "version": "2.21.20240909",
+    "release_date": "2024-09-12",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#serv-micro",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/ServMicro/Firmware/Releases/2.x/2.21/serv_micro_firmware_v2.21.20240909.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "WiFi Hotspot is now available -- Wi-Fi can be used to share device's Internet connectivity",
+      "Added option to enable sidecar metadata file with recordings",
+      "Added \"AWS S3\" Cloud Service for recording file upload sync",
+      "Changes and Improvements",
+      "License entry field now allows right-click to paste",
+      "Added support for multiple network interfaces connecting to the same subnet",
+      "Remote app access can now be disabled (See System Settings)",
+      "Various security updates/improvements",
+      "Ethernet static IP can be configured via front panel",
+      "Bug Fixes",
+      "Front panel interface could freeze if recording was enabled with no media selected",
+      "Recorded file browser created file downloads with other clips' names",
+      "Switching between saved Wi-Fi networks did not always work correctly",
+      "Wi-Fi connection dialog did not always disappear after connecting to a network",
+      "Name server and domain were sometimes not configured when connecting to Wi-Fi",
+      "Wi-Fi AP advertisement was publishing incorrect security mode",
+      "Core firmware check would display \"Checking\" until device's local web UI was loaded",
+      "Stopping a recording from a camera while recording is \"Waiting\" would trigger another recording",
+      "Custom modem APNs were not being saved correctly"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1",
+        "d": "2022-09-13",
+        "cl": [],
+        "dl": "https://guide.teradek.com/a/1566270-serv-micro-quick-start-guide",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek Serv for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.serv"
+      },
+      {
+        "label": "Teradek Serv for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/teradek-serv/id1611211791"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "serv-micro"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "Serv Pro",
+    "version": "2.1.7",
+    "release_date": "2022-03-03",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#serv-pro",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/ServPro/Firmware/Releases/2.1.x/2.1.7/Teradek_ServPro_firmware_v2.1.7r35474.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Added additional hardware revision support",
+      "Bug Fixes"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "?",
+        "d": "2019-02-01",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/ServPro/Docs/Teradek_Serv_Pro_Quick_Start_Guide_v5_0219_web.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "serv-pro"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Lens Control",
+    "product": "Teradek RT",
+    "version": "2.2.20260204",
+    "release_date": "2026-02-12",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#teradekrt",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/CTRL5/Firmware/Releases/2.2/ctrl5_firmware_v2.2.20260204.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "Added Sony camera control support",
+      "Works with VENICE, VENICE 2, Burano, and FX6 cameras",
+      "Detailed camera status view",
+      "Control many key camera functions",
+      "Added configurable 'Snap to input' option allowing users to choose how the motor behaves when enabling or disabling limits",
+      "Added support for 5-pin (USB) to Ethernet adapter",
+      "Added lens map search feature",
+      "Changes and Improvements",
+      "Improved Lens map list usability",
+      "Improved lens remapping workflow",
+      "Bug Fixes",
+      "Motor control could be interrupted in some instances",
+      "Display occasionally froze, reset on boot",
+      "Axis flip state was not always correct before UI boots up",
+      "RT Overlays did not work with Cine 7 monitors using Bolt 4k/6 module",
+      "Motor would jerk slightly but suddenly when CTRL.5 boots up",
+      "Camera setting scrolling was incorrect when using up/down buttons",
+      "Lens map menu could freeze when lots of lens maps are loaded",
+      "Wifi status symbol did not update after disconnect or reset",
+      "Settings disappear momentarily when triggering record with KOMODO/V-RAPTOR",
+      "Shutter Angle/Time not showing on RED RCP2",
+      "DOF indicator only loaded after focus position changed",
+      "Iris Map displays points outside of the lens maps range",
+      "Wifi channel would revert to AUTO after selecting a different options",
+      "Connect to saved Wifi networks setting was not saved properly",
+      "Check for new FW button didn't always work"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2.2",
+        "d": "2023-05-16",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/RT/Docs/Teradek_RT_LCS_Reference_Guide_v2.2_0523.pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "2.0.3",
+        "d": "2026-08-31",
+        "cl": [
+          "Teradek RT Firmware 2.0.3 release notes",
+          "Updated Components",
+          "MDR.X: Controller 1.15",
+          "MDR.S: Controller 1.15",
+          "CTRL.3: 1.17",
+          "CTRL.1: 1.17",
+          "MOTR.S/MAX: 1.2.2",
+          "MOTR.X: 1.9.0",
+          "New Features",
+          "Added Apple MIDI mode support for MDR.S",
+          "Added support for CineTape, FocusBug Cine RT daisy-chaining with MOTR.S/MOTR.X",
+          "Changes and Improvements",
+          "Removed voltage check in MDR.S that could prevent motors from starting on 26+V systems",
+          "Bug Fixes",
+          "MDR.X/S firmware caused some motors to jitter"
+        ],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/RT/Firmware/Releases/2.0.x/2.0.3/Teradek_RT_firmware_v2.0.3.bin",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1",
+        "d": "2022-12-20",
+        "cl": [],
+        "dl": "https://guide.teradek.com/a/1802919-ctrl-5-quick-start-guide",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Teradek RT Manager 2.0.1 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/RT/Software/Releases/2.0.x/2.0.1/Teradek_RT_Manager_v2.0.1.dmg"
+      },
+      {
+        "label": "Teradek RT Manager 2.0.1 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/RT/Software/Releases/2.0.x/2.0.1/Teradek_RT_Manager_v2.0.1.exe"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "Firmware",
+    "slug": "teradekrt"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "VidiU Go",
+    "version": "3.1.19",
+    "release_date": "2025-03-18",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#vidiu-go",
+    "firmware_url": "https://update.teradek.com/download.php?file=VidiUGo/Firmware/Releases/3.1.x/3.1.19/Teradek_VidiU_Go_firmware_v3.1.19r35596.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Allow users to select Core server from front panel",
+      "Front panel status now prompts user to select Core server if they haven't already",
+      "Bug Fixes"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "2.1",
+        "d": "2019-01-08",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/VidiUGo/Docs/Teradek_VidiU_Go_quick_start_guide_v2.1_0119_web.pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "1.2",
+        "d": "2019-09-06",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/VidiUGo/Docs/Teradek_VidiU_Go_Reference_Guide_v1.2_0919.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [
+      {
+        "label": "VidiU for Android 1 (Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.android.vidiu&hl=en_US&gl=US"
+      },
+      {
+        "label": "VidiU for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/us/app/vidiu/id607368156"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "vidiu-go"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "VidiU Pro",
+    "version": "6",
+    "release_date": "2019-03-27",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#vidiu-pro",
+    "firmware_url": "https://update.teradek.com/download.php?file=VidiUPro/Firmware/Releases/Recovery/Teradek_VidiU_Pro_recovery_v6.bin",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "3.1.14",
+        "d": "2022-01-31",
+        "cl": [
+          "New Features",
+          "None",
+          "Changes and Improvements",
+          "Bug Fixes",
+          "Fixed remote access security vulnerability"
+        ],
+        "dl": "https://update.teradek.com/download.php?file=VidiUPro/Firmware/Releases/3.1.x/3.1.14/Teradek_VidiU_Pro_firmware_v3.1.14r35464.bin",
+        "dl_kind": "file"
+      },
+      {
+        "v": "2",
+        "d": "2018-07-13",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/VidiUPro/Docs/Teradek_VidiU_Pro_quick_start_guide_v2_0718.pdf",
+        "dl_kind": "file"
+      },
+      {
+        "v": "?",
+        "d": "2026-05-16",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/VidiU/Docs/Teradek_VidiU_Reference_Guide_v3.1_0426.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "vidiu-pro"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Wireless Video",
+    "product": "VidiU X",
+    "version": "2.19.20260116",
+    "release_date": "2026-01-16",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#vidiu-x",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/VidiuX/Firmware/Releases/2.x/2.19/Teradek_VidiuX_firmware_v2.19.20260116.swu",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [
+      "New Features",
+      "None",
+      "Changes and Improvements",
+      "Updated expired pre-generated SSL certificate",
+      "Bug Fixes",
+      "YouTube Live preview did not work"
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0",
+        "d": "2020-12-17",
+        "cl": [],
+        "dl": "https://update.teradek.com/download.php?file=/Teradek/VidiuX/Docs/Teradek_VidiU_X_Quick_Start_Guide_v1_1220_web.pdf",
+        "dl_kind": "file"
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "vidiu-x"
+  },
+  {
+    "manufacturer": "Teradek",
+    "category": "Monitors",
+    "product": "VUER",
+    "version": "1",
+    "release_date": "2018-06-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://teradek.com/pages/downloads#vuer",
+    "firmware_url": "https://update.teradek.com/download.php?file=/Teradek/VUER/Docs/Teradek_Vuer_Reference_Guide_v1_0518.pdf",
+    "firmware_kind": "file",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [
+      {
+        "label": "VUER for Android 1",
+        "url": "https://play.google.com/store/apps/details?id=com.teradek.android.vuer"
+      },
+      {
+        "label": "VUER for iOS 1 (iOS)",
+        "url": "https://apps.apple.com/br/app/vuer-live-video-monitor/id1213515653?l=en"
+      },
+      {
+        "label": "VUER for MacOS 1 (Mac OSX)",
+        "url": "https://apps.apple.com/us/app/vuer-hdr/id1514874968"
+      }
+    ],
+    "file_name": null,
+    "file_size": null,
+    "platform": "",
+    "slug": "vuer"
+  }
+]

@@ -481,7 +481,7 @@ ORANGE = "#ff7200"
 OLIVE = "#a3bd6a"
 GREY = "#8d8378"
 
-EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD", "Canon"]
+EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD", "Canon", "Teradek"]
 
 # Equipment categories, in the order they should appear under the brand tabs.
 CAT_ORDER = ['Cameras', 'Monitors', 'Wireless Video', 'Lens Control', 'Viewfinders', 'Stabilizers', 'Mounts', 'Audio', 'Power & Media']

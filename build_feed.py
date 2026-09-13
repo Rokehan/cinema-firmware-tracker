@@ -732,6 +732,42 @@ try:
 except FileNotFoundError:
     print("arri_kit.json not found, skipping ARRI accessories")
 
+# ---- Teradek ----
+# teradek.py reads update.teradek.com/wares.php, the same api the Teradek
+# downloads page calls. Rows are feed shaped and carry their own category.
+# Their firmware_url is a download.php link to a real .bin, and companion
+# software such as Bolt Manager rides along in guides rather than pretending
+# to be firmware.
+try:
+    with open("teradek.json") as f:
+        for row in json.load(f):
+            feed.append({
+                "manufacturer": "Teradek",
+                "category": row.get("category") or "Wireless Video",
+                "product": row["product"],
+                "version": row["version"],
+                "release_date": row.get("release_date"),
+                "release_precision": row.get("release_precision") or "day",
+                "status": row.get("status") or "firmware_available",
+                "source_url": row.get("source_url"),
+                "firmware_url": row.get("firmware_url") or row.get("source_url"),
+                "firmware_kind": row.get("firmware_kind") or "page",
+                "notes_url": row.get("notes_url") or None,
+                "archive_url": None,
+                "summary": row.get("summary") or None,
+                "changelog": row.get("changelog") or [],
+                "features": [],
+                "install": row.get("install") or [],
+                "install_version": row.get("install_version"),
+                "install_source": row.get("install_source"),
+                "previous_versions": row.get("previous_versions") or [],
+                "guides": row.get("guides") or [],
+                "file_name": None,
+                "file_size": row.get("file_size") or None,
+            })
+except FileNotFoundError:
+    print("teradek.json not found, skipping Teradek")
+
 # Cameras without a direct file but with a source page get a
 # page-type download link so the Download button appears.
 for entry in feed:

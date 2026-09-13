@@ -52,6 +52,8 @@ jobs:
 
       - name: Scrape Sony Alpha
         run: python sony_alpha.py
+      - name: Sony English data
+        run: python sony_english.py
 
       - name: Scrape RED
         run: python red_cameras.py
