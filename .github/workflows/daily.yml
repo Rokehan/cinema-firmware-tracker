@@ -28,6 +28,10 @@ jobs:
         run: |
           pip install --quiet pypdf
           python arri_install.py
+      - name: ARRI SUP archive
+        run: |
+          pip install --quiet pypdf
+          python arri_archive.py
 
       - name: Scrape Sony index
         run: python sony_downloads.py

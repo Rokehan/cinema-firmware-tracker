@@ -79,10 +79,49 @@ def english_extras(product):
     if row.get("previous_versions"):
         extras["previous_versions"] = row["previous_versions"]
     return extras
+ARRI_ARCHIVE = {}
+try:
+    with open("arri_archive.json") as f:
+        for row in json.load(f):
+            ARRI_ARCHIVE[row["slug"]] = row
+except FileNotFoundError:
+    pass
 
 
 def arri_prev(row):
-    """Previous ARRI SUP versions from the release notes list."""
+    """Previous ARRI SUP versions.
+
+    Prefers arri_archive.py's scrape of the camera's own SUP archive page,
+    which carries the real firmware package and the release notes PDF per
+    version. Falls back to the release-notes labels in all_downloads for
+    ALEXA and ALEXA XT, the two bodies ARRI publishes no archive for.
+
+    Order is ARRI's page order, not date order: the teaser footer date is the
+    asset upload date and runs out of sequence, while the page lists true
+    release order.
+
+    "cl" stays empty. ARRI's per-version changelog lives inside the release
+    notes PDF and nothing here reads PDF text, so a summary would be invented.
+    """
+    arc = ARRI_ARCHIVE.get(row.get("slug"))
+    if arc and arc.get("versions"):
+        out = []
+        for v in arc["versions"]:
+            label = v.get("version") or ""
+            note = (v.get("note") or "").strip()
+            if note:
+                label = label + " " + note
+            out.append({
+                "v": label,
+                "d": v.get("date") or v.get("date_text") or None,
+                "cl": [],
+                "dl": v.get("package_url") or v.get("notes_url") or None,
+                "dl_kind": v.get("package_kind") or "page",
+                "notes": v.get("notes_url") or None,
+                "size": v.get("notes_size") or None,
+            })
+        return out
+
     import re as _re
     notes = [d for d in (row.get("all_downloads") or []) if d["kind"] == "release_notes"]
     prev = []
@@ -91,6 +130,7 @@ def arri_prev(row):
         if hit:
             prev.append({"v": "SUP " + hit.group(1), "d": n.get("date"), "cl": [], "dl": n["url"]})
     return prev
+
 
 feed = []
 # FX pages give exact dates, so they override the month-only index values

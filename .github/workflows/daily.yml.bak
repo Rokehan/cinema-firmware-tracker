@@ -43,6 +43,8 @@ jobs:
 
       - name: Scrape RED
         run: python red_cameras.py
+      - name: Canon cameras
+        run: python canon_cameras.py
 
       - name: Build feed
         run: python build_feed.py
