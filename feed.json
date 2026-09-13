@@ -110,6 +110,7 @@
     ],
     "install_version": "SUP 6.1.1",
     "install_source": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": "*.SWU"
   },
   {
@@ -150,6 +151,7 @@
     ],
     "install_version": "SUP 6.1.0",
     "install_source": "https://www.arri.com/resource/blob/406920/b5bd5855b304302cd85940ef322e5d61/alexa-35-sup-6-1-0-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": "*.SWU"
   },
   {
@@ -1214,7 +1216,77 @@
       }
     ],
     "install_version": "6.3.0",
-    "install_source": "https://guide.smallhd.com/a/1810433-firmware"
+    "install_source": "https://guide.smallhd.com/a/1810433-firmware",
+    "previous_versions": [
+      {
+        "v": "6.2.0",
+        "d": "2025-06-05",
+        "cl": [
+          "Ultra 7 support",
+          "Cross Conversion (HDMI to SDI and SDI to HDMI)"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.2.0"
+      },
+      {
+        "v": "6.1.0",
+        "d": "2025-03-13",
+        "cl": [
+          "Quantum series support",
+          "ARRI camera control improvements",
+          "Sony VENICE 2 camera control"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.1.0"
+      },
+      {
+        "v": "6.0.0",
+        "d": "2024-11-18",
+        "cl": [
+          "Major UI redesign",
+          "PageOS 6 launch",
+          "New page management system"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.0.0"
+      },
+      {
+        "v": "5.5.6",
+        "d": "2024-05-29",
+        "cl": [
+          "Ultra 7 series support",
+          "Cross Conversion support"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.5.6"
+      },
+      {
+        "v": "5.5.4",
+        "d": "2024-02-15",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.5.4"
+      },
+      {
+        "v": "5.4.2",
+        "d": "2023-09-21",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.4.2"
+      },
+      {
+        "v": "5.3.0",
+        "d": "2023-05-18",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.3.0"
+      },
+      {
+        "v": "4.8.7",
+        "d": "2022-06-09",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/4.8.7"
+      },
+      {
+        "v": "3.6.5",
+        "d": "2021-03-25",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/3.6.5"
+      }
+    ]
   },
   {
     "manufacturer": "Sony",
@@ -1388,6 +1460,7 @@
     ],
     "install_version": "SUP 7.3.2",
     "install_source": "https://www.arri.com/resource/blob/396568/09cce9b014bacd931994c2c11f65a52f/alexa-mini-lf-sup-7-3-2-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": "*.SUP"
   },
   {
@@ -1460,6 +1533,7 @@
     ],
     "install_version": "SUP 6.1.2",
     "install_source": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": "*.SUP"
   },
   {
@@ -1498,6 +1572,7 @@
     ],
     "install_version": "SUP 6.1.2",
     "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": "*.SUP"
   },
   {
@@ -1546,6 +1621,7 @@
     ],
     "install_version": "SUP 4.3",
     "install_source": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": null
   },
   {
@@ -1603,6 +1679,7 @@
     ],
     "install_version": "SUP 2.1",
     "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
+    "previous_versions": [],
     "file_name": null
   },
   {
@@ -1671,6 +1748,26 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76384/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-classic-sup-11-0-release-notes-data.pdf",
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76388/a4bae68236d1be0e6cc39dc12f5d126e/alexa-classic-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76386/4f855f89c5ace85adaac6c84d0d98368/alexa-classic-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
   },
   {
@@ -1739,6 +1836,26 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76404/a4bae68236d1be0e6cc39dc12f5d126e/alexa-xt-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76406/4f855f89c5ace85adaac6c84d0d98368/alexa-xt-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
     "file_name": null
   },
   {

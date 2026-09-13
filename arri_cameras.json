@@ -23,7 +23,8 @@
         "date": "Aug. 10, 2026",
         "url": "https://www.arri.com/resource/blob/408648/46cc5378a26c55428fa66dc477b65475/alexa-265-sup-6-1-1-release-notes-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -61,7 +62,8 @@
         "date": "Jul. 15, 2026",
         "url": "https://www.arri.com/resource/blob/405022/a7f09a1b2b341f7231be2503b9660c84/2026-07-arri-formatsandresolutionsoverview-v6-3-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -99,7 +101,8 @@
         "date": "Oct. 18, 2023",
         "url": "https://www.arri.com/resource/blob/346124/075d4cf86300c91570f8c9a71361fb84/2023-10-alexaminilf-menusettingschart-sup7-3-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -143,7 +146,8 @@
         "date": "Dec. 3, 2019",
         "url": "https://www.arri.com/resource/blob/189502/61ebf14beb6d7a57fbad9637677f3ce3/2019-12-03-alexa-lf-supporting-tools-and-software-overview-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -181,7 +185,8 @@
         "date": "May 19, 2021",
         "url": "https://www.arri.com/resource/blob/248156/167939729cc7cf6d91bbc82f16b44706/arri-alexamini-menusettingschart-sup6-1-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -219,7 +224,8 @@
         "date": "Dec. 4, 2018",
         "url": "https://www.arri.com/resource/blob/42778/a93a2e0c57b62fb2e1ec2e142e03dcb3/alexa-sxt-msc-sup2-0-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -257,7 +263,8 @@
         "date": "Apr. 16, 2021",
         "url": "https://www.arri.com/resource/blob/247186/2dcbb801e6adc3b4c9f2f7783ee83292/2021-04-arri-amira-menusettingschart-sup6-1-data.pdf"
       }
-    ]
+    ],
+    "previous_versions": []
   },
   {
     "manufacturer": "ARRI",
@@ -318,6 +325,26 @@
         "label": "ALEXA Classic SUP 11.1.1 Nov. 5, 2025 download",
         "date": "Nov. 5, 2025",
         "url": "https://arri.canto.de/direct/other/29o1c7lrut4lp692u9hbg7bm5e/hZ8NEmPxIOsSpOKF-MgZjn5W-_Y/original?content-type=pkg&amp;name=SUP_Alexa_11.1.1_34260.pkg"
+      }
+    ],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76388/a4bae68236d1be0e6cc39dc12f5d126e/alexa-classic-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76386/4f855f89c5ace85adaac6c84d0d98368/alexa-classic-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
       }
     ]
   },
@@ -380,6 +407,26 @@
         "label": "ALEXA XT SUP 11.1.1 Nov. 5, 2025 download",
         "date": "Nov. 5, 2025",
         "url": "https://arri.canto.de/direct/other/erkqsum3dp0rp270pg9g2ov00o/sEW6GXprIA0UjIwjPK9VfO3fmaM/original?content-type=pkg&amp;name=SUP_AlexaX_11.1.1_34260.pkg"
+      }
+    ],
+    "previous_versions": [
+      {
+        "v": "SUP 11.0.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76404/a4bae68236d1be0e6cc39dc12f5d126e/alexa-xt-sup-11-0-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76406/4f855f89c5ace85adaac6c84d0d98368/alexa-xt-sup-11-1-release-notes-data.pdf"
+      },
+      {
+        "v": "SUP 11.1.1",
+        "d": "Dec. 13, 2018",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
       }
     ]
   }

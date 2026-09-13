@@ -126,6 +126,7 @@ with open("arri_cameras.json") as f:
             "install": (ARRI_INSTALL.get(row["slug"]) or {}).get("install") or [],
             "install_version": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_version"),
             "install_source": (ARRI_INSTALL.get(row["slug"]) or {}).get("install_source"),
+            "previous_versions": row.get("previous_versions") or [],
             "file_name": (ARRI_INSTALL.get(row["slug"]) or {}).get("file_name"),
         })
 

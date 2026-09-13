@@ -67,6 +67,76 @@
       }
     ],
     "install_version": "6.3.0",
-    "install_source": "https://guide.smallhd.com/a/1810433-firmware"
+    "install_source": "https://guide.smallhd.com/a/1810433-firmware",
+    "previous_versions": [
+      {
+        "v": "6.2.0",
+        "d": "2025-06-05",
+        "cl": [
+          "Ultra 7 support",
+          "Cross Conversion (HDMI to SDI and SDI to HDMI)"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.2.0"
+      },
+      {
+        "v": "6.1.0",
+        "d": "2025-03-13",
+        "cl": [
+          "Quantum series support",
+          "ARRI camera control improvements",
+          "Sony VENICE 2 camera control"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.1.0"
+      },
+      {
+        "v": "6.0.0",
+        "d": "2024-11-18",
+        "cl": [
+          "Major UI redesign",
+          "PageOS 6 launch",
+          "New page management system"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/6.0.0"
+      },
+      {
+        "v": "5.5.6",
+        "d": "2024-05-29",
+        "cl": [
+          "Ultra 7 series support",
+          "Cross Conversion support"
+        ],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.5.6"
+      },
+      {
+        "v": "5.5.4",
+        "d": "2024-02-15",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.5.4"
+      },
+      {
+        "v": "5.4.2",
+        "d": "2023-09-21",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.4.2"
+      },
+      {
+        "v": "5.3.0",
+        "d": "2023-05-18",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/5.3.0"
+      },
+      {
+        "v": "4.8.7",
+        "d": "2022-06-09",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/4.8.7"
+      },
+      {
+        "v": "3.6.5",
+        "d": "2021-03-25",
+        "cl": [],
+        "dl": "https://downloads.smallhd.com/firmware/smallhdos/3.6.5"
+      }
+    ]
   }
 ]
