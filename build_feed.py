@@ -583,6 +583,42 @@ try:
 except FileNotFoundError:
     print("smallhd.json not found, skipping SmallHD")
 
+# ---- ARRI kit that is not a camera ----
+# arri_kit.py reads ARRI's ECS, monitor and stabilizer firmware sections. Its
+# rows are already feed shaped and carry their own category, so no guessing
+# happens here. ARRI serves ECS firmware as .cmf renamed to -data.txt by their
+# CMS, and arri_kit.py records the real type in file_type.
+try:
+    with open("arri_kit.json") as f:
+        for row in json.load(f):
+            feed.append({
+                "manufacturer": "ARRI",
+                "category": row.get("category") or "Lens Control",
+                "product": row["product"],
+                "version": row["version"],
+                "release_date": row.get("release_date"),
+                "release_precision": row.get("release_precision") or "day",
+                "status": row.get("status") or "firmware_available",
+                "source_url": row.get("source_url"),
+                "firmware_url": row.get("firmware_url") or row.get("source_url"),
+                "firmware_kind": row.get("firmware_kind") or "page",
+                "notes_url": row.get("notes_url") or None,
+                "archive_url": row.get("archive_url") or None,
+                "summary": None,
+                "changelog": [],
+                "features": [],
+                "install": [],
+                "install_version": None,
+                "install_source": None,
+                "previous_versions": [],
+                "guides": row.get("guides") or [],
+                "file_name": None,
+                "file_size": row.get("file_size") or None,
+                "file_type": row.get("file_type") or None,
+            })
+except FileNotFoundError:
+    print("arri_kit.json not found, skipping ARRI accessories")
+
 # Cameras without a direct file but with a source page get a
 # page-type download link so the Download button appears.
 for entry in feed:
