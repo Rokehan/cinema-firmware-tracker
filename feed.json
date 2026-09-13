@@ -78,7 +78,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -109,7 +110,8 @@
     "install_source": null,
     "previous_versions": [],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -133,7 +135,8 @@
     "install_source": null,
     "previous_versions": [],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -200,7 +203,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -224,7 +228,8 @@
     "install_source": null,
     "previous_versions": [],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -294,7 +299,8 @@
         "size": "3 MB"
       }
     ],
-    "file_name": "*.SWU"
+    "file_name": "*.SWU",
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -507,7 +513,8 @@
         "size": "1.6 MB"
       }
     ],
-    "file_name": "*.SWU"
+    "file_name": "*.SWU",
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -533,7 +540,8 @@
     "file_name": null,
     "install_version": "V5.00",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3628/software/00376811",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -584,7 +592,8 @@
     "install_version": "V1.8.9",
     "install_source": "https://www.red.com/download/komodo-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "121.6 MB"
+    "file_size": "121.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -652,7 +661,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V6.02",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -720,7 +730,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V5.01",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -779,7 +790,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -838,7 +850,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-xl-x-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -897,7 +910,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-x-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -956,7 +970,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-xe-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -1015,7 +1030,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-xl-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -1074,7 +1090,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-xl-8k-s35-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -1133,7 +1150,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/v-raptor-s35-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "183.6 MB"
+    "file_size": "183.6 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "RED",
@@ -1189,7 +1207,8 @@
     "install_version": "V2.2.4",
     "install_source": "https://www.red.com/download/komodo-x-firmware",
     "file_name": "upgrade.bin",
-    "file_size": "161.9 MB"
+    "file_size": "161.9 MB",
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1279,7 +1298,8 @@
         "cl": [],
         "dl": null
       }
-    ]
+    ],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1314,7 +1334,8 @@
     "file_name": null,
     "install_version": "V3.00",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-2610/software/00399463",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1379,7 +1400,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V7.02",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1393,7 +1415,8 @@
     "firmware_kind": "file",
     "file_size": "786.8 MB",
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1459,7 +1482,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1522,7 +1546,8 @@
     "file_name": "Update_ILMEFR7V400.dat",
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "SmallHD",
@@ -1662,7 +1687,8 @@
         "cl": [],
         "dl": "https://downloads.smallhd.com/firmware/smallhdos/3.6.5"
       }
-    ]
+    ],
+    "category": "Monitors"
   },
   {
     "manufacturer": "Sony",
@@ -1726,7 +1752,8 @@
     "file_name": "BODYDATA.DAT",
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -1803,7 +1830,8 @@
         "cl": [],
         "dl": null
       }
-    ]
+    ],
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -1928,7 +1956,8 @@
         "size": "586 KB"
       }
     ],
-    "file_name": "*.SUP"
+    "file_name": "*.SUP",
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2019,7 +2048,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2071,7 +2101,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -2095,7 +2126,8 @@
     "file_name": null,
     "install_version": "V6.30",
     "install_source": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -2109,7 +2141,8 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/download/pdf/PXW-FX9_Update_Guide.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2185,7 +2218,8 @@
         "size": "1,023 KB"
       }
     ],
-    "file_name": "*.SUP"
+    "file_name": "*.SUP",
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2252,7 +2286,8 @@
         "size": "2 MB"
       }
     ],
-    "file_name": "*.SUP"
+    "file_name": "*.SUP",
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2320,7 +2355,8 @@
         "size": "630 KB"
       }
     ],
-    "file_name": null
+    "file_name": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2388,7 +2424,8 @@
         "size": "301 KB"
       }
     ],
-    "file_name": null
+    "file_name": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2476,7 +2513,8 @@
         "dl": "https://www.arri.com/resource/blob/76236/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-classic-sup-11-1-1-release-notes-data.pdf"
       }
     ],
-    "file_name": null
+    "file_name": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "ARRI",
@@ -2564,7 +2602,8 @@
         "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
       }
     ],
-    "file_name": null
+    "file_name": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2670,7 +2709,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2776,7 +2816,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2859,7 +2900,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2901,7 +2943,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -2986,7 +3029,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3071,7 +3115,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -3085,7 +3130,8 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3153,7 +3199,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3214,7 +3261,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -3228,7 +3276,8 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -3242,7 +3291,8 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/PMW-F55_F5_V9.00_release_note_J.pdf",
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -3256,7 +3306,8 @@
     "firmware_kind": "file",
     "file_size": null,
     "notes_url": null,
-    "archive_url": null
+    "archive_url": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Sony",
@@ -3276,7 +3327,8 @@
     "file_name": null,
     "install_version": "V4.03",
     "install_source": "https://www.sony.com/electronics/support/professional-camcorders-handheld-camcorders/pxw-fs5/software/mpengb00000897",
-    "guides": []
+    "guides": [],
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3314,7 +3366,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3355,7 +3408,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3392,7 +3446,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3424,7 +3479,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3456,7 +3512,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3487,7 +3544,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3518,7 +3576,8 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   },
   {
     "manufacturer": "Canon",
@@ -3565,6 +3624,7 @@
       }
     ],
     "file_name": null,
-    "file_size": null
+    "file_size": null,
+    "category": "Cameras"
   }
 ]

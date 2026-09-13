@@ -132,6 +132,39 @@ def arri_prev(row):
     return prev
 
 
+# ── equipment categories ──────────────────────────────────────────
+# Brand and category are independent facets, not a hierarchy: Teradek makes
+# transmitters and monitors, ARRI makes cameras, viewfinders and lens control.
+# Nesting either way would force duplication, so both live on the record.
+CATEGORIES = [
+    "Cameras",
+    "Monitors",
+    "Wireless Video",
+    "Lens Control",
+    "Viewfinders",
+    "Stabilizers",
+    "Mounts",
+    "Audio",
+    "Power & Media",
+]
+
+
+def categorise(entry):
+    """The category for one feed row, from its own data.
+
+    A row that already declares a category keeps it, so each maker script can
+    name its own without touching this. SmallHD publishes a monitor
+    compatibility list, which identifies it. Everything else in the feed today
+    is a camera body.
+    """
+    named = (entry.get("category") or "").strip()
+    if named:
+        return named
+    if entry.get("compatible_monitors"):
+        return "Monitors"
+    return "Cameras"
+
+
 feed = []
 # FX pages give exact dates, so they override the month-only index values
 FX_OVERRIDE = {}
@@ -433,6 +466,11 @@ for entry in feed:
     if not entry.get("firmware_url") and entry.get("source_url"):
         entry["firmware_url"] = entry["source_url"]
         entry["firmware_kind"] = "page"
+
+# every row carries its category, so the UI can filter on brand and category
+# independently
+for entry in feed:
+    entry["category"] = categorise(entry)
 
 feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
 

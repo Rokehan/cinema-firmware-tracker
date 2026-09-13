@@ -641,6 +641,7 @@ def panel_payload(cam, name, label):
 
     return {
         "make": cam.get("manufacturer") or "",
+        "category": cam.get("category") or "",
         "name": name,
         "version": cam.get("version") or "",
         "date": date_label(cam.get("release_date"), cam.get("release_precision")),
@@ -699,6 +700,10 @@ def card(cam):
 
     # Sony brands these bodies with a Greek alpha. Nobody types that, so
     # "a7" and "alpha" find them too.
+        # category is searchable, so "monitor" or "lens control" finds
+    # the right kit without knowing the brand
+    if cam.get("category"):
+        haystack += " " + str(cam["category"])
     if "\u03b1" in haystack:
         haystack += " " + haystack.replace("\u03b1", "a") + " alpha"
     # Three button labels only: Download, Release notes, Source.
@@ -738,6 +743,7 @@ def card(cam):
 
     return (
         '<article class="plate" data-make="' + esc(make, quote=True) + '"'
+            + ' data-category="' + esc(cam.get("category") or "", quote=True) + '"'
         + ' data-find="' + esc(haystack, quote=True) + '"'
         + ' tabindex="0" role="button"'
         + ' data-panel="' + esc(json.dumps(
