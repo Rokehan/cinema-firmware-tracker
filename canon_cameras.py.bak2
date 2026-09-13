@@ -574,7 +574,7 @@ def main():
         if r:
             cams.append(r)
 
-    n = drop_impossible_dates(cams)
+    n = drop_impossible_dates(out)
     if n:
         print("date sanity: dropped " + str(n)
               + " date(s) that contradicted version order")

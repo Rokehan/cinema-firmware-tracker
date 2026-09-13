@@ -1,0 +1,1038 @@
+[
+  {
+    "issue": "0401024202",
+    "url": "https://sg.canon/en/support/0401024202",
+    "model": "EOS C500 Mark II",
+    "version": "1.1.3.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C500 Mark II Firmware Version 1.1.3.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.1.3.1 incorporates the following enhancements and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.3.1 is for updating EOS C500 Mark II cameras running firmware version 1.0.0.1 - 1.1.2.1. If your camera's firmware is already version 1.1.3.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VPC19.FIR / file size: 84665536 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.3.1",
+    "install_source": "https://sg.canon/en/support/0401024202",
+    "history": [
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. Adds [Sensor mode] as an option to assignable buttons.",
+          "2. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "3. Enables the display of Markers during playback.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Enhances security for FTPS (File Transfer Protocol Security) connections."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name.",
+          "7.Fixes an issue, in which the custom picture files on an SD card cannot be read after having updated the firmware to Version 1.0.9.1.",
+          "*#1 to #6 were added in Version 1.0.9.1. #7 was added in Version 1.1.0.1."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Adds support for the Canon Expansion Unit 3 [EU-V3].",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Lens Aberration Correction.(EF only)",
+          "Support for Dual Pixel CMOS AF autofocus (EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "5. Enables AF when S&F shooting frame rate is set to 24/25/30/48/50/60/100/120 frames per second.",
+          "6. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] in Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "11. Adds [G Gain] in White Balance in Custom Picture setting.",
+          "12. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "13. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F,CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c500mkII-v1131-win.zip",
+    "file_size": "82.45 MB",
+    "file_languages": ""
+  },
+  {
+    "issue": "0401024302",
+    "url": "https://sg.canon/en/support/0401024302",
+    "model": "EOS C500 Mark II",
+    "version": "1.1.3.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C500 Mark II Firmware Version 1.1.3.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.1.3.1 incorporates the following enhancements and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.3.1 is for updating EOS C500 Mark II cameras running firmware version 1.0.0.1 - 1.1.2.1. If your camera's firmware is already version 1.1.3.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VPC19.FIR / file size: 84665536 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.3.1",
+    "install_source": "https://sg.canon/en/support/0401024302",
+    "history": [
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. Adds [Sensor mode] as an option to assignable buttons.",
+          "2. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "3. Enables the display of Markers during playback.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Enhances security for FTPS (File Transfer Protocol Security) connections."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name.",
+          "7.Fixes an issue, in which the custom picture files on an SD card cannot be read after having updated the firmware to Version 1.0.9.1.",
+          "*#1 to #6 were added in Version 1.0.9.1. #7 was added in Version 1.1.0.1."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Adds support for the Canon Expansion Unit 3 [EU-V3].",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Lens Aberration Correction.(EF only)",
+          "Support for Dual Pixel CMOS AF autofocus (EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "5. Enables AF when S&F shooting frame rate is set to 24/25/30/48/50/60/100/120 frames per second.",
+          "6. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] in Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "11. Adds [G Gain] in White Balance in Custom Picture setting.",
+          "12. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "13. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F,CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c500mkII-v1131-mac.dmg",
+    "file_size": "82.42 MB",
+    "file_languages": ""
+  },
+  {
+    "issue": "0401024402",
+    "url": "https://sg.canon/en/support/0401024402",
+    "model": "EOS C300 Mark III",
+    "version": "1.0.9.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C300 Mark III Firmware Version 1.0.9.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.0.9.1 incorporates the following enhancement and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.9.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.8.1. If your camera's firmware is already version 1.0.9.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VQA14.FIR / file size: 85378464 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.9.1",
+    "install_source": "https://sg.canon/en/support/0401024402",
+    "history": [
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Adds Auto ISO/Gain Function.",
+          "3. Adds [Sensor mode] as an option to assignable buttons.",
+          "4. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "5. Enables the display of Markers during playback.",
+          "6. Enhances security for FTPS (File Transfer Protocol Security) connections.",
+          "7. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2. Adds support for the Canon Multi-Camera Control.",
+          "3. Adds support for the Remote Camera Controller RC-IP1000.",
+          "4. Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5. Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6. Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds support for EU-V3 Expansion Unit 3.",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide] (EF only)",
+          "5. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "6. Adds support for 4CH display in audio meter.",
+          "7. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "8. Adds [Canon 709 / BT.709] to the Gamma/Color Space in Custom Picture setting.",
+          "9. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "10. Adds [G Gain] in White Balance in Custom Picture settings.",
+          "11. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "12. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F, CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c300mkIII-v1091-win.zip",
+    "file_size": "83.13 MB",
+    "file_languages": ""
+  },
+  {
+    "issue": "0401024502",
+    "url": "https://sg.canon/en/support/0401024502",
+    "model": "EOS C300 Mark III",
+    "version": "1.0.9.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C300 Mark III Firmware Version 1.0.9.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.0.9.1 incorporates the following enhancement and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.9.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.8.1. If your camera's firmware is already version 1.0.9.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VQA14.FIR / file size: 85378464 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.9.1",
+    "install_source": "https://sg.canon/en/support/0401024502",
+    "history": [
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Adds Auto ISO/Gain Function.",
+          "3. Adds [Sensor mode] as an option to assignable buttons.",
+          "4. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "5. Enables the display of Markers during playback.",
+          "6. Enhances security for FTPS (File Transfer Protocol Security) connections.",
+          "7. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2. Adds support for the Canon Multi-Camera Control.",
+          "3. Adds support for the Remote Camera Controller RC-IP1000.",
+          "4. Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5. Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6. Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.4.1",
+        "changelog": [
+          "1. Adds support for EU-V3 Expansion Unit 3.",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide] (EF only)",
+          "5. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "6. Adds support for 4CH display in audio meter.",
+          "7. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "8. Adds [Canon 709 / BT.709] to the Gamma/Color Space in Custom Picture setting.",
+          "9. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "10. Adds [G Gain] in White Balance in Custom Picture settings.",
+          "11. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "12. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.3.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F, CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c300mkIII-v1091-mac.dmg",
+    "file_size": "84.10 MB",
+    "file_languages": ""
+  },
+  {
+    "issue": "0401135602",
+    "url": "https://sg.canon/en/support/0401135602",
+    "model": "EOS C50",
+    "version": "1.0.3.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C50 Firmware Version 1.0.3.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.0.3.1 incorporates the following enhancements:",
+      "1. Fixes an issue, in which when the System Frequency is set to [59.94Hz], the Sensor Mode to [Full frame 3:2], the Shutter Speed to [1/4] or [1/8], and the Focus Breathing Correction to [On], the power cannot be turned on.",
+      "2. Fixes an issue, in which footage captured by RAW recording with Slow & Fast Motion Recording set to 125P, 144P or 150P is corrupted."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.3.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.2.1. If your camera's firmware is already version 1.0.3.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations.",
+          "Firmware update must be performed in VIDEO mode."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VVA3.FIR / file size: 147,554,752 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.3.1",
+    "install_source": "https://sg.canon/en/support/0401135602",
+    "history": [
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Fixes an issue that may, under certain conditions, prevent the camera from connecting to Wi-Fi when switching from PHOTO to VIDEO while [Connection to smartphone, (tablet)] is active."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Fixes an issue where, when using the camera in PHOTO mode with [High-speed continuous shooting +] selected and certain lenses attached, it may be unable to shoot.",
+          "2. Fixes an issue where, after downloading the latest firmware using the Automatic Firmware Update function, the firmware could not be updated."
+        ]
+      }
+    ],
+    "file_name": "c50-v1031-win.zip",
+    "file_size": "142.11 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401135702",
+    "url": "https://sg.canon/en/support/0401135702",
+    "model": "EOS C50",
+    "version": "1.0.3.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C50 Firmware Version 1.0.3.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.0.3.1 incorporates the following enhancements:",
+      "1. Fixes an issue, in which when the System Frequency is set to [59.94Hz], the Sensor Mode to [Full frame 3:2], the Shutter Speed to [1/4] or [1/8], and the Focus Breathing Correction to [On], the power cannot be turned on.",
+      "2. Fixes an issue, in which footage captured by RAW recording with Slow & Fast Motion Recording set to 125P, 144P or 150P is corrupted."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.0.3.1 is for updating cameras running firmware version 1.0.0.1 - 1.0.2.1. If your camera's firmware is already version 1.0.3.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations.",
+          "Firmware update must be performed in VIDEO mode."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VVA3.FIR / file size: 147,554,752 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.0.3.1",
+    "install_source": "https://sg.canon/en/support/0401135702",
+    "history": [
+      {
+        "version": "1.0.1.1",
+        "changelog": [
+          "1. Fixes an issue that may, under certain conditions, prevent the camera from connecting to Wi-Fi when switching from PHOTO to VIDEO while [Connection to smartphone, (tablet)] is active."
+        ]
+      },
+      {
+        "version": "1.0.2.1",
+        "changelog": [
+          "1. Fixes an issue where, when using the camera in PHOTO mode with [High-speed continuous shooting +] selected and certain lenses attached, it may be unable to shoot.",
+          "2. Fixes an issue where, after downloading the latest firmware using the Automatic Firmware Update function, the firmware could not be updated."
+        ]
+      }
+    ],
+    "file_name": "c50-v1031-mac.dmg",
+    "file_size": "143.27 MB",
+    "file_languages": "EN,ZH,ES,FR,JA"
+  },
+  {
+    "issue": "0401056502",
+    "url": "https://sg.canon/en/support/0401056502",
+    "model": "EOS C500 Mark II",
+    "version": "1.1.5.1",
+    "platform": "Windows",
+    "title": "Canon Digital Cinema Camera EOS C500 Mark II Firmware Version 1.1.5.1 [Windows]",
+    "changelog": [
+      "Firmware Version 1.1.5.1 incorporates the following enhancements and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "5.Fixes an issue, in which aspect markers and other markers are not displayed correctly if the resolution of the video output configuration is set to [4192x3140 (4:3)] or [3768x3140 (6:5)] and the anamorphic desqueeze is applied.",
+      "6.Fixes an issue in which markers, AF frame, focus position guide, and tally OSD do not display correctly when the main recording format is set to [XF-AVC] under certain conditions.",
+      "*#1 to #5 were added in Version 1.1.4.1. #6 was added in Version 1.1.5.1.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.5.1 is for updating EOS C500 Mark II cameras running firmware version 1.0.0.1 - 1.1.4.1. If your camera's firmware is already version 1.1.5.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VPC21.FIR / file size: 84,669,984 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.5.1",
+    "install_source": "https://sg.canon/en/support/0401056502",
+    "history": [
+      {
+        "version": "1.1.4.1",
+        "changelog": [
+          "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+          "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "4. Fixes minor issues.",
+          "5.Fixes an issue, in which aspect markers and other markers are not displayed correctly if the resolution of the video output configuration is set to [4192x3140 (4:3)] or [3768x3140 (6:5)] and the anamorphic desqueeze is applied."
+        ]
+      },
+      {
+        "version": "1.1.3.1",
+        "changelog": [
+          "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+          "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. Adds [Sensor mode] as an option to assignable buttons.",
+          "2. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "3. Enables the display of Markers during playback.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Enhances security for FTPS (File Transfer Protocol Security) connections."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name.",
+          "7.Fixes an issue, in which the custom picture files on an SD card cannot be read after having updated the firmware to Version 1.0.9.1.",
+          "*#1 to #6 were added in Version 1.0.9.1. #7 was added in Version 1.1.0.1."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Adds support for the Canon Expansion Unit 3 [EU-V3].",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Lens Aberration Correction.(EF only)",
+          "Support for Dual Pixel CMOS AF autofocus (EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "5. Enables AF when S&F shooting frame rate is set to 24/25/30/48/50/60/100/120 frames per second.",
+          "6. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] in Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "11. Adds [G Gain] in White Balance in Custom Picture setting.",
+          "12. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "13. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F,CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c500mkII-v1151-win.zip",
+    "file_size": "82.45 MB",
+    "file_languages": ""
+  },
+  {
+    "issue": "0401056602",
+    "url": "https://sg.canon/en/support/0401056602",
+    "model": "EOS C500 Mark II",
+    "version": "1.1.5.1",
+    "platform": "macOS",
+    "title": "Canon Digital Cinema Camera EOS C500 Mark II Firmware Version 1.1.5.1 [macOS]",
+    "changelog": [
+      "Firmware Version 1.1.5.1 incorporates the following enhancements and fixes:",
+      "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+      "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+      "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+      "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+      "4. Fixes minor issues.",
+      "5.Fixes an issue, in which aspect markers and other markers are not displayed correctly if the resolution of the video output configuration is set to [4192x3140 (4:3)] or [3768x3140 (6:5)] and the anamorphic desqueeze is applied.",
+      "6.Fixes an issue in which markers, AF frame, focus position guide, and tally OSD do not display correctly when the main recording format is set to [XF-AVC] under certain conditions.",
+      "*#1 to #5 were added in Version 1.1.4.1. #6 was added in Version 1.1.5.1.",
+      "For details, please refer to the user manual (latest version) for this product."
+    ],
+    "install": [
+      {
+        "heading": "Caution",
+        "items": [
+          "Please use an SD/SDHC/SDXC memory card that is 512MB or greater to perform the firmware update.",
+          "Firmware version 1.1.5.1 is for updating EOS C500 Mark II cameras running firmware version 1.0.0.1 - 1.1.4.1. If your camera's firmware is already version 1.1.5.1, it is not necessary to update the firmware. Once the camera is updated to the latest version, it cannot be restored to a previous version.",
+          "Please refrain from loading menu settings generated using the most recent firmware version to a product running an old firmware version, as doing so may affect camera operations."
+        ]
+      },
+      {
+        "heading": "Preparations for a firmware update",
+        "items": [
+          "After the firmware update has been performed, the camera's menu settings will be reset. It is recommended that, prior to starting update operations, users save their menu settings as settings data to an SD card, separate from the one that will be used to carry out the update. This saved data can be loaded into the camera and the settings can be changed after the update has been completed. For further information on this, please refer to the section in the unit's Instruction Manual titled \"Saving and Loading Camera Settings\".",
+          "The downloaded folder contains the firmware (file name: VPC21.FIR / file size: 84,669,984 byte), and instructions on the firmware update procedures (a PDF file in five languages: Japanese, English, French, Spanish and Simplified Chinese). Prior to starting the firmware update operations, please be sure to carefully review and confirm your understanding of these instructions."
+        ]
+      }
+    ],
+    "install_version": "1.1.5.1",
+    "install_source": "https://sg.canon/en/support/0401056602",
+    "history": [
+      {
+        "version": "1.1.4.1",
+        "changelog": [
+          "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+          "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "4. Fixes minor issues.",
+          "5.Fixes an issue, in which aspect markers and other markers are not displayed correctly if the resolution of the video output configuration is set to [4192x3140 (4:3)] or [3768x3140 (6:5)] and the anamorphic desqueeze is applied."
+        ]
+      },
+      {
+        "version": "1.1.3.1",
+        "changelog": [
+          "1. Enables the display of the digital tele-converter icon on [Main Recording Displays] of [DISP Level 2].",
+          "2. Adds the ability to apply Full-Screen display to an external display according to OSD Output setting when using [Peripheral Border Display].",
+          "3. Adds the [Motion Vector For Digital IS] menu option. Default [Disable]*.",
+          "*[Disable]: Prevents a phenomenon that may cause the image to shake along with the subject when recording a subject (such as a person or an animal) with a large amount movement.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.2.1",
+        "changelog": [
+          "1. Adds [Sensor mode] as an option to assignable buttons.",
+          "2. Adds the following size option to the Focus Guide function:",
+          "Normal/Large",
+          "3. Enables the display of Markers during playback.",
+          "4. Fixes minor issues."
+        ]
+      },
+      {
+        "version": "1.1.1.1",
+        "changelog": [
+          "1. Adds the following new Cinema RAW Light recording modes:",
+          "[RAW HQ], [RAW ST], and [RAW LT].",
+          "RAW HQ: High quality",
+          "RAW ST: Standard quality",
+          "RAW LT: Light recording",
+          "2. Enhances security for FTPS (File Transfer Protocol Security) connections."
+        ]
+      },
+      {
+        "version": "1.1.0.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name.",
+          "7.Fixes an issue, in which the custom picture files on an SD card cannot be read after having updated the firmware to Version 1.0.9.1.",
+          "*#1 to #6 were added in Version 1.0.9.1. #7 was added in Version 1.1.0.1."
+        ]
+      },
+      {
+        "version": "1.0.9.1",
+        "changelog": [
+          "1.The following features are enabled when the following lens is attached: CN-E31.5-95mm T1.7 L S/SP:",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide]. (CN-E31.5-95mm T1.7 L S only)",
+          "2.Adds support for the Canon Multi-Camera Control.",
+          "3.Adds support for the Remote Camera Controller RC-IP1000.",
+          "4.Adds Digital-Teleconverter function. (1.5x / 2x / 2.5x / 3x)",
+          "5.Adds [_Proxy] option in XF-AVC proxy media name.",
+          "6.Improves Vector Scope.",
+          "Changes to display [BT.2020] in the frame when the color space is set to BT.2020.",
+          "Changes to always display the target color name."
+        ]
+      },
+      {
+        "version": "1.0.8.1",
+        "changelog": [
+          "1.The following features are enabled when the following lenses are attached: CN-E14-35mm T1.7 L S",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number.",
+          "Support for Peripheral Illumination Correction and Chromatic Lens Aberration Correction.",
+          "Support for [Dual Pixel Focus Guide].",
+          "2.Enhances Clear Scan resolution.",
+          "3.Enables to change WFM size.",
+          "4.Enables to change Vector scope gain by touch.",
+          "5.Enables to change WFM/Vector scope transparency.",
+          "6.Enhances SDI-OUT functions.",
+          "Adds the ability to output PsF when in S&F mode. (16:9 only)",
+          "Enables Peaking in assistance display."
+        ]
+      },
+      {
+        "version": "1.0.7.1",
+        "changelog": [
+          "1. The default setting of the \"Rec Command\" has been changed from \"On\" to \"Off\"."
+        ]
+      },
+      {
+        "version": "1.0.6.1",
+        "changelog": [
+          "1. Adds support for the Canon Expansion Unit 3 [EU-V3].",
+          "2. Adds Focus Position Guide feature.",
+          "3. Adds support for additional commands for Canon IP [XC Protocol].",
+          "4. The following features are enabled when the following lenses are attached:CN8×15 IAS S/E1,CN8×15 IAS S/P1,",
+          "CN-E45-135mm T2.4 L F, CN-E45-135mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for Peripheral Illumination Correction and Lens Aberration Correction.(EF only)",
+          "Support for Dual Pixel CMOS AF autofocus (EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "5. Enables AF when S&F shooting frame rate is set to 24/25/30/48/50/60/100/120 frames per second.",
+          "6. Enables face detection and tracking when S&F shooting frame rate is set from 24 to 120 frames per second.",
+          "7. Adds support for 4CH display in audio meter.",
+          "8. Improves the retention of the recording settings when switching between normal shooting and S&F shooting.",
+          "9. Adds [Canon 709 / BT.709] in Gamma/Color Space in Custom Picture setting.",
+          "10. Adds [CMT 709] in LUT and Sub Rec Color Conversion.",
+          "11. Adds [G Gain] in White Balance in Custom Picture setting.",
+          "12. Adds support for the CFExpress VPG 400 (Video Performance Guarantee).",
+          "13. Fixes minor issues when using the CINE-SERVO lens."
+        ]
+      },
+      {
+        "version": "1.0.5.1",
+        "changelog": [
+          "1. The following features are enabled when these lenses are attached: CN-E20-50mm T2.4 L F,CN-E20-50mm T2.4 L FP",
+          "Displaying metadata, such as the model name and the focal distance of the lens attached.",
+          "Displaying T number",
+          "Support for peripheral illumination Correction.(EF only)",
+          "Support for [Dual Pixel Focus Guide](EF only)",
+          "2. Adds"
+        ]
+      }
+    ],
+    "file_name": "c500mkII-v1151-mac.dmg",
+    "file_size": "83.04 MB",
+    "file_languages": ""
+  }
+]

@@ -3359,53 +3359,6 @@
   },
   {
     "manufacturer": "Canon",
-    "product": "EOS C100 Mark II",
-    "version": "1.0.8.1",
-    "release_date": "2017-03-29",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii",
-    "firmware_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware",
-    "firmware_kind": "page",
-    "notes_url": null,
-    "archive_url": null,
-    "summary": null,
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [
-      {
-        "v": "1.0.5.1",
-        "d": "2017-08-28",
-        "cl": [
-          "EOS C100 Mark II: Firmware Version 1.0.5.1.00 Firmware Version",
-          "1. 0 .5 . 1.00 incorporates the f ollowing enhancements: When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. The joystick on the camera’s grip unit can be set to operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Adds peripheral illumination correction for the following lenses. COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF70-300mm f/4-5.6 IS II USM], [EF16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch."
-        ],
-        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-5-1-00"
-      },
-      {
-        "v": "1.0.4.1",
-        "d": "2017-03-28",
-        "cl": [
-          "EOS C100 Mark II: Firmware Version 1.0.4.1.00 Firmware Version",
-          "1. 0 .4 . 1.00 incorporates the f ollowing enhancements: Shutter Angle Priority has been added. A constant shutter angle can now be maintained, regardless of any other camera settings being changed. Support for peripheral illumination correction when the EF 24-105mm f/4L IS II USM lens is attached, has been added."
-        ],
-        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-4-1-00"
-      },
-      {
-        "v": "1.0.2.1",
-        "d": "2016-07-27",
-        "cl": [],
-        "dl": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware"
-      }
-    ],
-    "file_name": null,
-    "file_size": null
-  },
-  {
-    "manufacturer": "Canon",
     "product": "EOS C100",
     "version": "1.0.8.1",
     "release_date": "2017-03-28",
@@ -3433,7 +3386,7 @@
       },
       {
         "v": "1.0.1.1",
-        "d": "2017-03-29",
+        "d": "",
         "cl": [],
         "dl": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware"
       }
@@ -3562,6 +3515,53 @@
         "d": "2014-11-04",
         "cl": [],
         "dl": "https://www.usa.canon.com/support/p/eos-c500-pl?subtab=downloads-firmware"
+      }
+    ],
+    "file_name": null,
+    "file_size": null
+  },
+  {
+    "manufacturer": "Canon",
+    "product": "EOS C100 Mark II",
+    "version": "1.0.8.1",
+    "release_date": "",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii",
+    "firmware_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware",
+    "firmware_kind": "page",
+    "notes_url": null,
+    "archive_url": null,
+    "summary": null,
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "1.0.5.1",
+        "d": "2017-08-28",
+        "cl": [
+          "EOS C100 Mark II: Firmware Version 1.0.5.1.00 Firmware Version",
+          "1. 0 .5 . 1.00 incorporates the f ollowing enhancements: When CN-E70-200mm T4.4 L IS KAS S is attached the following features are enabled: Autofocus using the Dual Pixel CMOS AF function. The joystick on the camera’s grip unit can be set to operate the zoom. Manual control of the iris with Camera’s Control dial. Control of focus, zoom and iris using the separately-sold Remote Controller RC-V100. Automatic aperture and push auto iris functions. Start/stop recording on the lens grip. Retrieval of Lens metadata, such as the model name and the focal distance will display on the camera. Adds peripheral illumination correction for the following lenses. COMPACT-SERVO Lens [CN-E70-200mm T4.4 L IS KAS S] EF Lens [EF70-300mm f/4-5.6 IS II USM], [EF16-35mm f/2.8L III USM] When [Face Only] is active, the icon will change from gray to white when a face is not detected. When the camera is turned off the IS mechanical lock will be active regardless of the position of the switch."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-5-1-00"
+      },
+      {
+        "v": "1.0.4.1",
+        "d": "2017-03-28",
+        "cl": [
+          "EOS C100 Mark II: Firmware Version 1.0.4.1.00 Firmware Version",
+          "1. 0 .4 . 1.00 incorporates the f ollowing enhancements: Shutter Angle Priority has been added. A constant shutter angle can now be maintained, regardless of any other camera settings being changed. Support for peripheral illumination correction when the EF 24-105mm f/4L IS II USM lens is attached, has been added."
+        ],
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c100-mark-ii-firmware-version-1-0-4-1-00"
+      },
+      {
+        "v": "1.0.2.1",
+        "d": "2016-07-27",
+        "cl": [],
+        "dl": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware"
       }
     ],
     "file_name": null,

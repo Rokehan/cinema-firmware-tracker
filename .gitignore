@@ -7,3 +7,6 @@ patch_*.py
 fix_*.py
 ck.txt
 *.txt.bak
+sgpage_*.html
+sg_crawl_state.json
+sg_crawl.log

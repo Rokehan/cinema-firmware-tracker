@@ -694,7 +694,7 @@
     "make": "Canon",
     "model": "EOS C100 Mark II",
     "version": "1.0.8.1",
-    "date": "2017-03-29",
+    "date": "",
     "download_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii?subtab=downloads-firmware",
     "download_opens_page": true,
     "source_url": "https://www.usa.canon.com/support/p/eos-c100-mark-ii",
@@ -750,7 +750,7 @@
       },
       {
         "version": "1.0.1.1",
-        "date": "2017-03-29",
+        "date": "",
         "download_url": "https://www.usa.canon.com/support/p/eos-c100?subtab=downloads-firmware",
         "download_opens_page": true,
         "release_notes_url": "",
