@@ -165,6 +165,82 @@ def categorise(entry):
     return "Cameras"
 
 
+# ── download link guard ───────────────────────────────────────────
+# A Download button must deliver a file. Nine Sony rows once shared one
+# Salesforce id on an /articleimage/ path that served the page's stylesheet, so
+# a URL now has to look like a file before it is offered as one. Anything else
+# is downgraded to a page link, which is honest and gets the arrow.
+
+FILE_HOSTS = (
+    "download.pro.sony",
+    "support.d-imaging.sony.co.jp",
+    "gdlp01.c-wss.com",
+    "gdlp02.c-wss.com",
+    "pdisp01.c-wss.com",
+    "arri.canto.de",
+    "downloads.red.com",
+)
+
+FILE_EXTS = (".zip", ".dat", ".fir", ".exe", ".dmg", ".pkg", ".bin",
+             ".tar.gz", ".tgz", ".sit")
+
+# path fragments that mean "page asset", never firmware
+ASSET_MARKS = ("/articleimage", "/articleimages", "/resource/css",
+               "/styles/", "/static/css", ".css", ".js", ".svg", ".png",
+               ".jpg", ".jpeg", ".gif", ".woff")
+
+
+def looks_like_file(url):
+    """True when the URL's own shape says it serves a firmware file."""
+    if not url:
+        return False
+    low = str(url).lower()
+    if any(mark in low for mark in ASSET_MARKS):
+        return False
+    path = low.split("?", 1)[0]
+    if any(path.endswith(ext) for ext in FILE_EXTS):
+        return True
+    if any(host in low for host in FILE_HOSTS):
+        return True
+    return False
+
+
+def guard_downloads(rows):
+    """Downgrade any file link that does not look like a file.
+
+    Also rejects a URL claimed by more than one product: a shared link is how
+    the stylesheet bug showed itself, and no two cameras share a firmware file.
+    """
+    counts = {}
+    for row in rows:
+        if row.get("firmware_kind") == "file" and row.get("firmware_url"):
+            counts[row["firmware_url"]] = counts.get(row["firmware_url"], 0) + 1
+
+    fixed = 0
+    for row in rows:
+        if row.get("firmware_kind") != "file":
+            continue
+        url = row.get("firmware_url")
+        if not url:
+            continue
+        why = ""
+        if not looks_like_file(url):
+            why = "not a file url"
+        elif counts.get(url, 0) > 1:
+            why = "url shared by " + str(counts[url]) + " products"
+        if not why:
+            continue
+        page = row.get("source_url") or row.get("notes_url")
+        row["firmware_url"] = page
+        row["firmware_kind"] = "page" if page else None
+        row["file_name"] = None
+        row["file_size"] = None
+        fixed += 1
+        print("  download guard: " + str(row.get("manufacturer")) + " "
+              + str(row.get("product")) + " -> page (" + why + ")")
+    return fixed
+
+
 feed = []
 # FX pages give exact dates, so they override the month-only index values
 FX_OVERRIDE = {}
@@ -471,6 +547,11 @@ for entry in feed:
 # independently
 for entry in feed:
     entry["category"] = categorise(entry)
+
+n = guard_downloads(feed)
+if n:
+    print("download guard: " + str(n)
+          + " link(s) downgraded to a page, they did not serve a file")
 
 feed.sort(key=lambda r: (r["release_date"] or ""), reverse=True)
 

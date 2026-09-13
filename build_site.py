@@ -14,8 +14,8 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Firmware Index / cinema camera firmware, in one place</title>
-<meta name="description" content="Every professional cinema camera firmware update in one place. __WATCHING__, checked daily, every record linked to the manufacturer.">
+<title>Firmware Index / cinema firmware, in one place</title>
+<meta name="description" content="Every professional cinema firmware update in one place. __WATCHING__, checked daily, every record linked to the manufacturer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -54,6 +54,20 @@ nav button{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacin
 nav button:hover{border-color:var(--edge-hi);color:var(--text)}
 nav button[aria-current=true]{border-color:var(--orange);color:var(--orange)}
 nav .soon{opacity:.45;cursor:default;pointer-events:none}
+
+    /* equipment categories: their own full-width row under the brand tabs,
+       multi-select, so several types can be shown at once */
+    #cats{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px;padding:14px 0 0;
+      border:0;margin:0}
+    #cats button{font-family:"JetBrains Mono",monospace;font-size:.64rem;
+      letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+      background:none;cursor:pointer;border:1px solid var(--edge);
+      padding:6px 11px;transition:.18s}
+    #cats button:hover{border-color:var(--edge-hi);color:var(--text)}
+    #cats button[aria-pressed=true]{border-color:var(--olive);color:var(--olive)}
+    #cats .lede{color:var(--dim);font-family:"JetBrains Mono",monospace;
+      font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+      align-self:center;padding-right:4px}
 
 .controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
   padding:26px 0;border-bottom:1px solid var(--edge)}
@@ -174,11 +188,11 @@ footer strong{color:var(--text);font-weight:700}
 <div class="wrap">
 <header>
   <p class="eyebrow"><span class="tally"></span> Firmware Index / monitoring __WATCHING__</p>
-  <h1>Every cinema camera firmware update, <em>in one place.</em></h1>
+  <h1>Every cinema firmware update, <em>in one place.</em></h1>
   <div class="stats">
-    <div class="stat"><span>Cameras</span><strong>__COUNT__</strong></div>
+    <div class="stat"><span>Items</span><strong>__COUNT__</strong></div>
     <div class="stat"><span>With links</span><strong>__LINKED__</strong></div>
-    <div class="stat"><span>Manufacturers</span><strong>__MAKES__ of 3</strong></div>
+    <div class="stat"><span>Brands</span><strong>__MAKES__ of 3</strong></div>
     <div class="stat"><span>Checked daily</span><strong>09:00 JST</strong></div>
   </div>
 </header>
@@ -188,10 +202,11 @@ footer strong{color:var(--text);font-weight:700}
     <button data-make="all" aria-current="true">All</button>
     __TABS__
   </nav>
+        <nav id="cats" aria-label="Equipment type">__CATS__</nav>
   <div class="search" id="search">
     <label for="q" class="visually-hidden"></label>
     <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="Search equipment or version" aria-label="Search cameras">
+           placeholder="Search equipment or version" aria-label="Search equipment">
     <button type="button" id="clear" aria-label="Clear search">&times;</button>
   </div>
 </div>
@@ -221,8 +236,6 @@ __CARDS__
 <footer>
   <strong>Every record links to the manufacturer's own page.</strong>
   Version numbers, dates and files are read from that page, never generated.
-  Sony publishes month-precision dates outside the FX line, and the FX bodies
-  update from a file copied to a card rather than a direct download.
   Last checked __STAMP__.
 </footer>
 </div>
@@ -236,6 +249,19 @@ var clear = document.getElementById("clear");
 var empty = document.getElementById("empty");
 var term = document.getElementById("term");
 var make = "all";
+    // Equipment categories are a second, independent facet. Several can be on
+    // at once; none on means no category restriction.
+    var cats = [];
+    var catButtons = document.querySelectorAll("#cats button[data-category]");
+    catButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var name = button.dataset.category;
+        var at = cats.indexOf(name);
+        if (at > -1) { cats.splice(at, 1); } else { cats.push(name); }
+        button.setAttribute("aria-pressed", String(cats.indexOf(name) > -1));
+        apply();
+      });
+    });
 
 function apply() {
   var query = box.value.trim().toLowerCase();
@@ -246,7 +272,9 @@ function apply() {
     var hay = plate.dataset.find || "";
     var hit = words.every(function (word) { return hay.indexOf(word) > -1; });
     var inMake = make === "all" || plate.dataset.make === make;
-    var on = hit && inMake;
+    var inCat = cats.length === 0
+        || cats.indexOf(plate.dataset.category) > -1;
+      var on = hit && inMake && inCat;
     plate.style.display = on ? "flex" : "none";
     if (on) { shown += 1; }
   });
@@ -386,7 +414,13 @@ function render(data) {
    html += "<details><summary>Previous versions (" + data.prev.length;
    html += ')</summary><div class="inner">' + pvInner;
    html += "</div></details>";
- }
+ } else {
+      // Saying nothing reads as an oversight. State the fact instead.
+      html += '<details><summary>Previous versions</summary>'
+        + '<div class="inner"><p class="said">'
+        + "The manufacturer publishes no earlier versions for this item."
+        + "</p></div></details>";
+    }
   panelBody.innerHTML = html;
   panelBody.scrollTop = 0;
 }
@@ -449,6 +483,9 @@ OLIVE = "#a3bd6a"
 GREY = "#8d8378"
 
 EXPECTED_MAKES = ["ARRI", "Sony", "RED", "SmallHD", "Canon"]
+
+# Equipment categories, in the order they should appear under the brand tabs.
+CAT_ORDER = ['Cameras', 'Monitors', 'Wireless Video', 'Lens Control', 'Viewfinders', 'Stabilizers', 'Mounts', 'Audio', 'Power & Media']
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -577,6 +614,12 @@ def state_of(cam):
     has_file = bool(cam.get("firmware_url"))
     has_notes = bool(cam.get("notes_url"))
 
+    # Some manufacturers ship firmware only through their own app, with no
+    # file to download. Say so rather than offering a Download button that
+    # cannot deliver one.
+    if kind == "app":
+        return "App update required", OLIVE
+
     if has_file and kind == "page":
         if make == "RED":
             return "Login required for download", OLIVE
@@ -666,7 +709,13 @@ def panel_links(cam):
     make = cam.get("manufacturer")
     out = []
     if cam.get("firmware_url"):
-        dl_label = "Download ↗" if cam.get("firmware_kind") == "page" else "Download"
+        dl_kind = cam.get("firmware_kind")
+        if dl_kind == "app":
+            dl_label = "Open app page " + chr(0x2197)
+        elif dl_kind == "page":
+            dl_label = "Download " + chr(0x2197)
+        else:
+            dl_label = "Download"
         out.append((dl_label, cam["firmware_url"]))
     if cam.get("notes_url"):
         out.append(("Release notes", cam["notes_url"]))
@@ -713,7 +762,13 @@ def card(cam):
     # Source button when the URL is the same.
     links = []
     if cam.get("firmware_url"):
-        dl_label = "Download ↗" if cam.get("firmware_kind") == "page" else "Download"
+        dl_kind = cam.get("firmware_kind")
+        if dl_kind == "app":
+            dl_label = "Open app page " + chr(0x2197)
+        elif dl_kind == "page":
+            dl_label = "Download " + chr(0x2197)
+        else:
+            dl_label = "Download"
         links.append((dl_label, cam["firmware_url"]))
     if cam.get("notes_url"):
         links.append(("Release notes", cam["notes_url"]))
@@ -740,6 +795,11 @@ def card(cam):
     if summary:
         short = summary if len(summary) < 190 else summary[:187].rstrip() + "..."
         summary_html = '<p class="sum">' + esc(short) + "</p>"
+
+    # The front page shows name, version, date and state only. Just 10 of 60
+    # rows have a summary, so printing it on some plates and not others read as
+    # unfinished. The summary still appears in the detail panel.
+    summary_html = ""
 
     return (
         '<article class="plate" data-make="' + esc(make, quote=True) + '"'
@@ -788,6 +848,22 @@ def main():
                          + html.escape(make, quote=True) + '">'
                          + html.escape(make) + " / soon</button>")
     tabs = "".join(parts)
+    # categories present in the data, canonical order first
+    present = []
+    for cam in cams:
+        c = cam.get("category") or ""
+        if c and c not in present:
+            present.append(c)
+    cat_order = [c for c in CAT_ORDER if c in present]
+    cat_order += [c for c in present if c not in cat_order]
+    cat_parts = ['<span class="lede">Type</span>']
+    for cat in cat_order:
+        cat_parts.append('<button type="button" data-category="'
+                         + html.escape(cat, quote=True)
+                         + '" aria-pressed="false">'
+                         + html.escape(cat) + "</button>")
+    cats_html = "".join(cat_parts)
+
     stamp = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
 
     page = TEMPLATE
@@ -798,13 +874,14 @@ def main():
     page = page.replace("__MAKES__", str(len(makes)))
     page = page.replace("of 3", "of " + str(len(EXPECTED_MAKES)))
     page = page.replace("__TABS__", tabs)
+    page = page.replace("__CATS__", cats_html)
     page = page.replace("__CARDS__", chr(10).join(card(c) for c in cams))
     page = page.replace("__STAMP__", stamp)
 
     with open("index.html", "w", encoding="utf-8") as fh:
         fh.write(page)
 
-    print("index.html written:", len(cams), "cameras,", linked, "with links")
+    print("index.html written:", len(cams), "items,", linked, "with links")
 
 
 if __name__ == "__main__":

@@ -7,9 +7,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
-    "file_size": "847.1 MB",
+    "firmware_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
+    "firmware_kind": "page",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -75,7 +75,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx6v/software/00259043",
     "guides": [],
@@ -603,13 +603,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
+    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
+    "firmware_kind": "page",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "757.5 MB",
+    "file_size": null,
     "changelog": [
       "Fixes an issue where Focus Bracket shooting could not be performed in some cases",
       "Improves the operational stability of the camera"
@@ -658,7 +658,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V6.02",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/software/00280505",
     "guides": [],
@@ -672,13 +672,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
+    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
+    "firmware_kind": "page",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "743.8 MB",
+    "file_size": null,
     "changelog": [
       "Fixes an issue where part of the green frame indicating the AF (autofocus) status was not displayed when using the Expand Spot feature",
       "Improves the operational stability of the camera"
@@ -727,7 +727,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V5.01",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7sm3/software/00345071",
     "guides": [],
@@ -1218,13 +1218,13 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
+    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
+    "firmware_kind": "page",
     "notes_url": null,
     "archive_url": null,
     "summary": null,
     "features": [],
-    "file_size": "376.5 MB",
+    "file_size": null,
     "changelog": [
       "Allows high-quality audio recording (96 kHz, 32-bit float) when the XLR-A4 adapter (sold separately) is attached to the Multi Interface Shoe",
       "Adds support for the Preset Focus function with lenses that do not have power zoom\\n",
@@ -1287,7 +1287,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V2.00",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m5/software/00377087",
     "guides": [],
@@ -1345,9 +1345,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
-    "file_size": "811.9 MB",
+    "firmware_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
+    "firmware_kind": "page",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -1397,7 +1397,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V7.02",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
     "guides": [],
@@ -1426,9 +1426,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
-    "file_size": "906.6 MB",
+    "firmware_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
+    "firmware_kind": "page",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -1479,7 +1479,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V6.01",
     "install_source": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/software/00292568",
     "guides": [],
@@ -1493,8 +1493,8 @@
     "release_precision": "month",
     "status": "documentation_only",
     "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
+    "firmware_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
+    "firmware_kind": "page",
     "file_size": null,
     "notes_url": null,
     "archive_url": null,
@@ -1543,7 +1543,7 @@
         ]
       }
     ],
-    "file_name": "Update_ILMEFR7V400.dat",
+    "file_name": null,
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fr7/software/00294438",
     "guides": [],
@@ -1698,9 +1698,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
-    "file_size": "754.5 MB",
+    "firmware_url": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
+    "firmware_kind": "page",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null,
     "changelog": [],
@@ -1749,7 +1749,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V4.00",
     "install_source": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm5/software/00292267",
     "guides": [],
@@ -1763,8 +1763,8 @@
     "release_precision": "month",
     "status": "documentation_only",
     "source_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
-    "firmware_url": "https://nexim.my.salesforce-sites.com/articleimage/servlet/servlet.FileDownload?file=015F9000009UW3TIAW",
-    "firmware_kind": "file",
+    "firmware_url": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
+    "firmware_kind": "page",
     "file_size": null,
     "notes_url": null,
     "archive_url": null,
@@ -1819,7 +1819,7 @@
         ]
       }
     ],
-    "file_name": "BODYDATA.DAT",
+    "file_name": null,
     "install_version": "V1.01",
     "install_source": "https://www.sony.com/electronics/support/interchangeable-lens-camcorders-ilme-series/ilme-fx2/software/00368377",
     "guides": [],
