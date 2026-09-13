@@ -326,7 +326,11 @@
     "file_name": null,
     "file_size": null,
     "source_url": "https://www.sony.com/electronics/support/professional-cameras-digital-cinema-cameras/mpc-3610/software/00287020",
-    "changelog": [],
+    "changelog": [
+      "CBK-3620XS Camera Extension System connection function",
+      "Firmware version display at startup",
+      "Enhanced security"
+    ],
     "install": [],
     "firmware_url": null,
     "guides": [],

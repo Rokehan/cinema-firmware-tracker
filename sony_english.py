@@ -375,6 +375,22 @@ def cinema_details(html, title):
     return found
 
 
+def br_contents(page):
+    """Extract changelog from <br>-separated Contents block on cinema pages."""
+    import re as _re
+    text = flat(page)
+    hit = _re.search(r"Contents of V[\d.]+.?\s*", text)
+    if not hit:
+        return []
+    tail = text[hit.end():]
+    tail = _re.split(r"IMPORTANT|Please accept|Downloads|Prior to", tail)[0]
+    items = []
+    for piece in _re.split(r"\d+\.", tail):
+        line = piece.strip()
+        if line and len(line) > 3 and len(line) < 200:
+            items.append(line)
+    return items[:14]
+
 def main():
     results = []
     print("Models to check: " + str(len(MODELS)))
@@ -439,7 +455,7 @@ def main():
         changelog, install = split_sections(blocks(page))
         if cinema.get("version"):
             info.setdefault("version", cinema["version"])
-            changelog = changelog or cinema.get("changelog") or []
+            changelog = changelog or cinema.get("changelog") or br_contents(page)
 
         row = {
             "manufacturer": "Sony",

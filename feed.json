@@ -1497,7 +1497,11 @@
     "file_size": null,
     "notes_url": "https://www.sony.jp/ls-camera/support/download/pdf/MPC-3610_V630_ReleaseNote.pdf",
     "archive_url": null,
-    "changelog": [],
+    "changelog": [
+      "CBK-3620XS Camera Extension System connection function",
+      "Firmware version display at startup",
+      "Enhanced security"
+    ],
     "install": [],
     "file_name": null,
     "install_version": "V6.30",
