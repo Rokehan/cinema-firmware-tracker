@@ -309,15 +309,7 @@ function render(data) {
 
   var html = "";
 
-  if (data.bench) {
-    html += '<div class="bench"><p class="tag">At the bench</p><ol>'
-      + "<li>" + esc(data.bench.file) + "</li>"
-      + "<li>" + esc(data.bench.where) + "</li>"
-      + (data.bench.slot ? "<li>" + esc(data.bench.slot) + "</li>" : "")
-      + "<li>" + esc(data.bench.menu) + "</li></ol></div>";
-  }
-
-  if (data.links && data.links.length) {
+   if (data.links && data.links.length) {
     html += '<div class="acts">';
     data.links.forEach(function (link, index) {
       html += '<a class="' + (index === 0 && link.t === "Download" ? "lead" : "")
@@ -335,7 +327,11 @@ function render(data) {
     html += "<details open><summary>What's new in " + esc(data.version)
       + '</summary><div class="inner">' + listOf(data.news, false)
       + "</div></details>";
-  }
+  } else if (data.summary) {
+   html += "<details open><summary>What\'s new in " + esc(data.version)
+       + '</summary><div class="inner"><p class="said">'
+       + esc(data.summary) + "</p></div></details>";
+ }
 
   if (data.steps && data.steps.length) {
     var inner = "";

@@ -249,7 +249,7 @@ footer strong{color:var(--text);font-weight:700}
   Version numbers, dates and files are read from that page, never generated.
   Sony publishes month-precision dates outside the FX line, and the FX bodies
   update from a file copied to a card rather than a direct download.
-  Last checked 13 Sep 2026 02:16 UTC.
+  Last checked 13 Sep 2026 02:17 UTC.
 </footer>
 </div>
 
@@ -335,15 +335,7 @@ function render(data) {
 
   var html = "";
 
-  if (data.bench) {
-    html += '<div class="bench"><p class="tag">At the bench</p><ol>'
-      + "<li>" + esc(data.bench.file) + "</li>"
-      + "<li>" + esc(data.bench.where) + "</li>"
-      + (data.bench.slot ? "<li>" + esc(data.bench.slot) + "</li>" : "")
-      + "<li>" + esc(data.bench.menu) + "</li></ol></div>";
-  }
-
-  if (data.links && data.links.length) {
+   if (data.links && data.links.length) {
     html += '<div class="acts">';
     data.links.forEach(function (link, index) {
       html += '<a class="' + (index === 0 && link.t === "Download" ? "lead" : "")
@@ -361,7 +353,11 @@ function render(data) {
     html += "<details open><summary>What's new in " + esc(data.version)
       + '</summary><div class="inner">' + listOf(data.news, false)
       + "</div></details>";
-  }
+  } else if (data.summary) {
+   html += "<details open><summary>What\'s new in " + esc(data.version)
+       + '</summary><div class="inner"><p class="said">'
+       + esc(data.summary) + "</p></div></details>";
+ }
 
   if (data.steps && data.steps.length) {
     var inner = "";
