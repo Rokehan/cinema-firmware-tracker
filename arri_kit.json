@@ -23,7 +23,6 @@
   {
     "manufacturer": "ARRI",
     "changelog": [
-      "Hi‑5 & Hi‑5 SX SUP 3.5.2",
       "Camera Control License for Hi‑5 & Hi‑5 SX",
       "Bug fix for focus distance display on the SmallHD Lens Overlay"
     ],
@@ -48,7 +47,6 @@
   {
     "manufacturer": "ARRI",
     "changelog": [
-      "RIA‑1 SUP 2.5.0",
       "Support for additional Camera information",
       "Bug fixes and Improvements"
     ],
@@ -73,7 +71,6 @@
   {
     "manufacturer": "ARRI",
     "changelog": [
-      "ZMU‑4 SUP 1.5.0",
       "Support for additional Camera information"
     ],
     "summary": "",

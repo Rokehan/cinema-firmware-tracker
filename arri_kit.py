@@ -265,6 +265,12 @@ CHANGELOG_STOP = ("end user license agreement", "end user licence agreement",
                   "list of all current software", "downloads", "disclaimer")
 
 
+def _norm_dashes(t):
+    """ARRI writes Hi-5 with a non-breaking hyphen, U+2011, so normalise."""
+    return (str(t).replace(chr(0x2011), "-").replace(chr(0x2010), "-")
+            .replace(chr(0x2013), "-").replace(chr(0xA0), " "))
+
+
 def changelog_from(html):
     """The page's own new-features list, verbatim. Empty when absent.
 
@@ -300,10 +306,17 @@ def changelog_from(html):
         if re.match(r"(?i)^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
                     r"[a-z]*\.?\s+\d{1,2},?\s+\d{4}$", line):
             break
-        item = line.lstrip("-\u2013\u2022 ").strip()
+        item = line.lstrip("-\u2011\u2013\u2022 ").strip()
         if not item or len(item) < 3:
             continue
         if item in out:
+            continue
+        # ARRI repeats the product and version as the first line of the
+        # section, e.g. "Hi-5 & Hi-5 SX SUP 3.5.2". That is a heading, not a
+        # change, so it is dropped rather than shown as a feature.
+        if not out and re.search(r"(?i)\b(?:SUP|Version|Ver\.?|Firmware)\s*"
+                                 r"[0-9]+(?:\.[0-9]+)+\s*$",
+                                 _norm_dashes(item)):
             continue
         out.append(item)
         if len(out) >= 24:
