@@ -1,2 +1,7 @@
 __pycache__/
 *.bak
+debug_*
+peek*
+*_peek.py
+patch_*.py
+fix_*.py
