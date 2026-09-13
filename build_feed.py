@@ -288,6 +288,116 @@ def guard_downloads(rows):
     return fixed
 
 
+# ── ARRI kit previous versions ────────────────────────────────────
+# arri_kit_archive.py reads each accessory's own SUP archive page, the same
+# structure the camera archives use. Changelogs stay empty because ARRI keeps
+# per-version detail inside the release notes PDF.
+KIT_ARCHIVE = {}
+try:
+    with open("arri_kit_archive.json") as f:
+        KIT_ARCHIVE = json.load(f)
+except FileNotFoundError:
+    pass
+
+
+def kit_prev(row):
+    """Previous versions for one accessory, in ARRI's own page order."""
+    entry = KIT_ARCHIVE.get(row.get("slug") or "") or {}
+    out = []
+    for v in entry.get("versions") or []:
+        label = v.get("version") or ""
+        note = (v.get("note") or "").strip()
+        if note:
+            label = label + " " + note
+        out.append({
+            "v": label,
+            "d": v.get("date") or v.get("date_text") or None,
+            "cl": [],
+            "dl": v.get("package_url") or v.get("notes_url") or None,
+            "dl_kind": v.get("package_kind") or "page",
+            "notes": v.get("notes_url") or None,
+            "size": v.get("notes_size") or None,
+        })
+    return out
+
+
+# ── Canon install steps and history from Canon Singapore ──────────
+# Canon US publishes no Caution or Preparations block for the current Cinema
+# EOS bodies. Canon SG does, in English, and adds a History section with
+# per-version changelogs. sg_crawl.py collected 38 pages covering 6 bodies.
+# Windows and macOS are separate pages for the same firmware, so the first is
+# used and its platform is recorded.
+SG_BY_MODEL = {}
+try:
+    with open("sg_issues.json") as f:
+        for row in json.load(f):
+            key = (row.get("model") or "").strip()
+            if not key:
+                continue
+            SG_BY_MODEL.setdefault(key, []).append(row)
+except FileNotFoundError:
+    pass
+
+
+def sg_for(product):
+    """The SG record for this body, preferring one that has install steps."""
+    rows = SG_BY_MODEL.get((product or "").strip()) or []
+    if not rows:
+        return None
+    with_steps = [r for r in rows if r.get("install")]
+    return (with_steps or rows)[0]
+
+
+def sg_install(product):
+    """Canon's own Caution and Preparations blocks, verbatim, or nothing."""
+    rec = sg_for(product)
+    if not rec:
+        return {}
+    blocks = []
+    for b in rec.get("install") or []:
+        items = [i for i in (b.get("items") or []) if i]
+        if items:
+            blocks.append({"heading": b.get("heading") or "", "items": items})
+    if not blocks:
+        return {}
+    return {
+        "install": blocks,
+        # SG can document an older version than Canon US ships. Name the
+        # version these steps were published for rather than implying they
+        # describe the current one.
+        "install_version": rec.get("install_version") or rec.get("version"),
+        "install_source": rec.get("install_source") or rec.get("url"),
+    }
+
+
+def sg_history(product):
+    """version -> changelog list, from SG's History section."""
+    rec = sg_for(product)
+    if not rec:
+        return {}
+    out = {}
+    for h in rec.get("history") or []:
+        ver = (h.get("version") or "").strip()
+        items = [i for i in (h.get("changelog") or []) if i]
+        if ver and items:
+            out[ver] = items
+    return out
+
+
+def canon_prev_with_history(product, prevs):
+    """Fill empty previous-version changelogs from SG's History."""
+    hist = sg_history(product)
+    if not hist:
+        return prevs
+    for p in prevs:
+        if p.get("cl"):
+            continue
+        key = str(p.get("v") or "").strip()
+        if key in hist:
+            p["cl"] = hist[key]
+    return prevs
+
+
 feed = []
 # FX pages give exact dates, so they override the month-only index values
 FX_OVERRIDE = {}
@@ -503,10 +613,13 @@ try:
                 "summary": None,
                 "changelog": canon_items(row.get("changelog")),
                 "features": [],
-                "install": steps,
-                "install_version": row["version"] if steps else None,
-                "install_source": notes if steps else None,
-                "previous_versions": canon_prev(row),
+                "install": steps or sg_install(row["model"]).get("install") or [],
+                "install_version": row["version"] if steps
+                else sg_install(row["model"]).get("install_version"),
+                "install_source": notes if steps
+                else sg_install(row["model"]).get("install_source"),
+                "previous_versions": canon_prev_with_history(
+                    row["model"], canon_prev(row)),
                 "file_name": None,
                 "file_size": None,
             })
@@ -610,7 +723,7 @@ try:
                 "install": [],
                 "install_version": None,
                 "install_source": None,
-                "previous_versions": [],
+                "previous_versions": kit_prev(row),
                 "guides": row.get("guides") or [],
                 "file_name": None,
                 "file_size": row.get("file_size") or None,
