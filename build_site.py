@@ -262,7 +262,6 @@ var make = "all";
         apply();
       });
     });
-    });
 
 function apply() {
   var query = box.value.trim().toLowerCase();
