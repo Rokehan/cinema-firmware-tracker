@@ -58,7 +58,9 @@ jobs:
       - name: Scrape RED
         run: python red_cameras.py
       - name: Canon cameras
-        run: python canon_cameras.py
+        run: |
+          python -m pip install beautifulsoup4
+          python canon_cameras.py
       - name: Teradek
         run: python teradek.py
 
