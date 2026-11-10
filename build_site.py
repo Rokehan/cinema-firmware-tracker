@@ -47,6 +47,16 @@ h1 em{font-style:normal;color:var(--orange)}
 .stat strong{display:block;margin-top:8px;font-family:"JetBrains Mono",monospace;
   font-size:1.65rem;font-weight:500;letter-spacing:-.02em;color:var(--text)}
 
+.stale{margin:26px 0 0;padding:14px 18px;border:1px solid var(--orange);
+  color:var(--text);font-size:.95rem;line-height:1.5;max-width:68ch}
+.stale[hidden]{display:none}
+.site-version{display:block;margin-top:10px}
+.admin{display:block;margin-top:14px}
+.admin[hidden]{display:none}
+.admin-btn{display:inline-block;margin-right:12px;padding:8px 14px;border:1px solid var(--orange);
+  color:var(--orange);text-decoration:none;font-family:"JetBrains Mono",monospace;font-size:.8rem;
+  letter-spacing:.12em;text-transform:uppercase}
+.admin-btn:hover{background:var(--orange);color:var(--ink)}
 nav{display:flex;gap:8px;padding:26px 0;border-bottom:1px solid var(--edge)}
 nav button{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--mute);background:none;cursor:pointer;
@@ -193,8 +203,9 @@ footer strong{color:var(--text);font-weight:700}
     <div class="stat"><span>Items</span><strong>__COUNT__</strong></div>
     <div class="stat"><span>With links</span><strong>__LINKED__</strong></div>
     <div class="stat"><span>Brands</span><strong>__MAKES__ of 3</strong></div>
-    <div class="stat"><span>Checked daily</span><strong>09:00 JST</strong></div>
+    <div class="stat"><span>Last refresh</span><strong id="refresh-age" data-refreshed="__REFRESHED_ISO__">__REFRESHED_SHORT__</strong></div>
   </div>
+  <p class="stale" id="stale" hidden>Data may be out of date. The last successful refresh was <span id="stale-age"></span> ago; daily checks have not completed since. Confirm versions on the manufacturer's page.</p>
 </header>
 
 <div class="controls">
@@ -236,11 +247,38 @@ __CARDS__
 <footer>
   <strong>Every record links to the manufacturer's own page.</strong>
   Version numbers, dates and files are read from that page, never generated.
-  Last checked __STAMP__.
+  Last successful refresh __STAMP__. Checks run daily at 09:00 JST.
+  <span class="site-version">Site version: __SITE_VERSION__.</span>
+  <span class="admin" id="admin" hidden>
+    <a class="admin-btn" href="https://github.com/Rokehan/cinema-firmware-tracker/actions/workflows/clickup_update.yml" target="_blank" rel="noopener">Check for updates &#8599;</a>
+    Opens GitHub. Sign in, click <b>Run workflow</b>, then reload this page in about 10 minutes.
+  </span>
 </footer>
 </div>
 
 <script>
+(function () {
+  // Add ?admin to the address to show the update button. It only links to
+  // GitHub, which asks for a sign-in, so it gives visitors no control.
+  if (/[?&]admin\b/.test(location.search)) {
+    document.getElementById("admin").hidden = false;
+  }
+})();
+(function () {
+  // Age is computed in the visitor's browser, so the warning appears even
+  // when failed runs leave this page untouched.
+  var el = document.getElementById("refresh-age");
+  var iso = el && el.getAttribute("data-refreshed");
+  var at = iso ? Date.parse(iso) : NaN;
+  if (isNaN(at)) { return; }
+  var hours = (Date.now() - at) / 3600000;
+  if (hours > 36) {
+    var days = Math.floor(hours / 24);
+    document.getElementById("stale-age").textContent =
+      days >= 2 ? days + " days" : Math.round(hours) + " hours";
+    document.getElementById("stale").hidden = false;
+  }
+})();
 var buttons = document.querySelectorAll("#filters button[data-make]:not(.soon)");
 var plates = document.querySelectorAll("#grid .plate");
 var box = document.getElementById("q");
@@ -823,6 +861,21 @@ def card(cam):
     )
 
 
+def site_version():
+    """Newest ClickUp update installed, from the updater's own record."""
+    try:
+        with open("clickup_update_state.json", encoding="utf-8") as fh:
+            state = json.load(fh)
+    except (FileNotFoundError, ValueError):
+        return "repair 1, no ClickUp updates installed yet"
+    applied = state.get("applied") or []
+    if not applied:
+        return "repair 1, no ClickUp updates installed yet"
+    last = applied[-1]
+    when = str(last.get("applied_at") or "")[:10]
+    return "update " + str(last.get("update")).zfill(4) + (" installed " + when if when else "")
+
+
 def main():
     with open("feed.json", encoding="utf-8") as fh:
         feed = json.load(fh)
@@ -865,7 +918,22 @@ def main():
                          + html.escape(cat) + "</button>")
     cats_html = "".join(cat_parts)
 
-    stamp = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC")
+    # Only check_changes.py writes last_refresh.json, after a validated run.
+    refreshed = None
+    try:
+        with open("last_refresh.json", encoding="utf-8") as fh:
+            refreshed = datetime.strptime(json.load(fh)["refreshed_at"],
+                                          "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    except (FileNotFoundError, KeyError, ValueError):
+        pass
+    if refreshed:
+        stamp = refreshed.strftime("%d %b %Y %H:%M UTC")
+        refreshed_iso = refreshed.strftime("%Y-%m-%dT%H:%M:%SZ")
+        refreshed_short = refreshed.strftime("%d %b %Y")
+    else:
+        stamp = "not yet recorded"
+        refreshed_iso = ""
+        refreshed_short = "Unknown"
 
     page = TEMPLATE
 
@@ -878,6 +946,9 @@ def main():
     page = page.replace("__CATS__", cats_html)
     page = page.replace("__CARDS__", chr(10).join(card(c) for c in cams))
     page = page.replace("__STAMP__", stamp)
+    page = page.replace("__SITE_VERSION__", html.escape(site_version()))
+    page = page.replace("__REFRESHED_ISO__", refreshed_iso)
+    page = page.replace("__REFRESHED_SHORT__", refreshed_short)
 
     with open("index.html", "w", encoding="utf-8") as fh:
         fh.write(page)

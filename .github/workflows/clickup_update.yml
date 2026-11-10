@@ -1,0 +1,79 @@
+name: ClickUp updates
+
+# Installs approved update packages from the Firmware Tracker shelf task in
+# ClickUp. Runs hourly; use "Run workflow" to install one straight away.
+on:
+  schedule:
+    - cron: "30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: firmware-site
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      SHELF_TASK_ID: z8zyy1rj3e
+      ALLOWED_UPLOADERS: "107548027"
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The ClickUp token is only given to the steps that talk to ClickUp,
+      # never to the scrapers.
+      - name: Check the ClickUp shelf
+        id: shelf
+        env:
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+        run: python clickup_updater.py fetch
+
+      - name: Install dependencies
+        if: steps.shelf.outputs.status == 'applied'
+        run: python -m pip install --quiet pypdf beautifulsoup4
+
+      - name: Full refresh with the update
+        if: steps.shelf.outputs.status == 'applied'
+        run: python run_pipeline.py
+
+      - name: Publish
+        id: publish
+        if: steps.shelf.outputs.status == 'applied'
+        run: |
+          python clickup_updater.py finish
+          # Rebuild so the page footer names the update just installed.
+          python build_site.py
+          git config user.name "firmware-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A -- ${{ steps.shelf.outputs.paths }} clickup_update_state.json $(python run_pipeline.py --data-files)
+          git commit -m "Install approved ClickUp update"
+          git push
+
+      - name: Record rejection
+        id: reject
+        if: always() && (steps.shelf.outputs.status == 'invalid' || (steps.shelf.outputs.status == 'applied' && steps.publish.outcome != 'success'))
+        run: |
+          cp .clickup_pending.json "$RUNNER_TEMP/pending.json"
+          git reset --hard -q HEAD
+          git clean -fdq
+          cp "$RUNNER_TEMP/pending.json" .clickup_pending.json
+          python clickup_updater.py fail
+          git config user.name "firmware-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add clickup_update_state.json
+          git commit -m "Record rejected ClickUp update"
+          git push
+
+      - name: Report back to ClickUp
+        if: always() && (steps.publish.outcome == 'success' || steps.reject.outcome == 'success')
+        env:
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+        run: python clickup_updater.py notify

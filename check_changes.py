@@ -58,3 +58,12 @@ if not (changed or added):
 with open(SNAPSHOT, "w") as f:
     json.dump(current, f, indent=2, ensure_ascii=False)
 print("Snapshot updated.")
+
+# The site shows this as "Last successful refresh". It is written only here,
+# after every scraper ran and nothing vanished, so a failed run, a code-only
+# update or a manual rebuild can never make stale data look fresh.
+from datetime import datetime, timezone
+with open("last_refresh.json", "w") as f:
+    json.dump({"refreshed_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+               "items": len(current)}, f, indent=2)
+print("Refresh stamp written.")

@@ -3,29 +3,23 @@ import re
 import json
 import time
 
-def discover_camera_pages():
-    """Read the current camera list from ARRI's camera index every
-    run, so version bumps and new bodies are picked up automatically.
+import arri_index
 
-    ARRI names some real camera pages '<body>-sup-overview' (ALEXA Mini,
-    AMIRA), so only archive pages are skipped."""
-    index = fetch(
-        "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras"
-    )
-    pattern = (
-        r'href="/en/technical-service/firmware/'
-        r'software-and-firmware-updates-for-cameras/([^"/]+)"'
-    )
-    slugs = []
-    for slug in re.findall(pattern, index):
-        if slug in slugs:
-            continue
-        if "archive" in slug.lower():
-            continue
-        slugs.append(slug)
+
+def discover_camera_pages():
+    """Camera pages listed under "Cameras" on ARRI's combined firmware index.
+
+    ARRI merged its per-section indexes into one overview page in 2026, so the
+    camera list now comes from that page's own "Cameras" heading. ARRI names
+    some real camera pages '<body>-sup-overview' (ALEXA Mini, AMIRA), so only
+    archive pages are skipped. An empty list stops the run rather than
+    publishing ARRI with no cameras."""
+    slugs = arri_index.slugs("Cameras")
+    if not slugs:
+        raise SystemExit("ARRI index lists no cameras. Layout changed?")
     return slugs
 
-BASE = "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/"
+BASE = arri_index.PAGE_BASE
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})

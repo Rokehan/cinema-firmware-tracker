@@ -71,10 +71,15 @@ FW = "/en/technical-service/firmware/"
 DELAY = 0.8
 
 # section slug -> (category, human name)
+# ARRI heading on the combined firmware index -> (category, human name).
+# ARRI merged the ECS, monitor and CSS indexes into one overview page in 2026;
+# the headings below are ARRI's own, read from that page by arri_index.py.
+import arri_index
+
 SECTIONS = [
-    ("software-updates-ecs", "Lens Control", "Electronic Control System"),
-    ("software-and-firmware-updates-for-monitors", "Monitors", "Monitors"),
-    ("software-updates-css", "Stabilizers", "Camera Stabilizer Systems"),
+    ("Electronic Control Systems", "Lens Control", "Electronic Control System"),
+    ("Monitors", "Monitors", "Monitors"),
+    ("Camera Stabilizer Systems", "Stabilizers", "Camera Stabilizer Systems"),
 ]
 
 # a few ECS products are not lens control. Category is per product where the
@@ -156,19 +161,11 @@ def category_for(name, default):
 
 
 def discover(section):
-    """Product pages inside one section index, from the index itself."""
-    html, ok = curl(BASE + FW + section)
-    time.sleep(DELAY)
-    if not ok:
-        return [], "index fetch failed"
-    pat = r'href="' + re.escape(FW + section) + r'/([^"/?#]+)"'
-    slugs = []
-    for slug in re.findall(pat, html):
-        low = slug.lower()
-        if "archive" in low or slug in slugs:
-            continue
-        slugs.append(slug)
-    return slugs, "ok"
+    """Product pages under one ARRI heading on the combined index."""
+    try:
+        return arri_index.slugs(section), "ok"
+    except Exception as exc:
+        return [], "index read failed: " + str(exc)
 
 
 def teasers(html):
@@ -444,7 +441,7 @@ def parse(slug, html, section, default_cat):
         "release_date": date,
         "release_precision": "day" if len(date) == 10 else "month",
         "status": "firmware_available" if pkg else "documentation_only",
-        "source_url": BASE + FW + section + "/" + slug,
+        "source_url": arri_index.PAGE_BASE + slug,
         "firmware_url": pkg["href"] if pkg else "",
         "firmware_kind": pkg_kind or None,
         "notes_url": notes["href"] if notes else "",
@@ -466,17 +463,17 @@ def main():
         print(label + "   (" + section + ")")
         print("=" * 64)
         slugs, how = discover(section)
-        if how != "ok":
-            print("  " + how)
-            print()
-            continue
+        if how != "ok" or not slugs:
+            # An empty section once published ARRI with no accessories.
+            # Stop here instead, so the old site stays up.
+            sys.exit("ARRI " + label + ": " + (how if how != "ok" else "no products found"))
         print("  products found: " + str(len(slugs)))
         if ONLY:
             slugs = [s for s in slugs if ONLY.lower() in s.lower()]
             print("  filtered to: " + str(len(slugs)))
         print()
         for slug in slugs:
-            url = BASE + FW + section + "/" + slug
+            url = arri_index.PAGE_BASE + slug
             html, ok = curl(url)
             time.sleep(DELAY)
             if not ok:

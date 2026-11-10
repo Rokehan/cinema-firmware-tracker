@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# Shared with "ClickUp updates" so the two never push at the same time.
+concurrency:
+  group: firmware-site
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -18,65 +23,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Scrape ARRI
-        run: python arri_cameras.py
+      - name: Install dependencies
+        run: python -m pip install --quiet pypdf beautifulsoup4
 
-      - name: Fetch ARRI details
-        run: python arri_details.py
-
-      - name: Extract ARRI install steps
-        run: |
-          pip install --quiet pypdf
-          python arri_install.py
-      - name: ARRI SUP archive
-        run: |
-          pip install --quiet pypdf
-          python arri_archive.py
-      - name: ARRI accessories
-        run: |
-          pip install --quiet pypdf
-          python arri_kit.py
-      - name: ARRI accessory archives
-        run: |
-          pip install --quiet pypdf
-          python arri_kit_archive.py
-
-      - name: Scrape Sony index
-        run: python sony_downloads.py
-
-      - name: Scrape Sony FX line
-        run: python sony_fx.py
-
-      - name: Resolve Sony file URLs
-        run: python sony_files.py
-
-      - name: Scrape Sony Alpha
-        run: python sony_alpha.py
-      - name: Sony English data
-        run: python sony_english.py
-
-      - name: Scrape RED
-        run: python red_cameras.py
-      - name: Canon cameras
-        run: |
-          python -m pip install beautifulsoup4
-          python canon_cameras.py
-      - name: Teradek
-        run: python teradek.py
-
-      - name: Build feed
-        run: python build_feed.py
-
-      - name: Detect changes
-        run: python check_changes.py
-
-      - name: Build site
-        run: python build_site.py
+      # Every scraper, the version cross-check, the disappearance check and
+      # the site build, in order. The failed step is named at the bottom.
+      - name: Full refresh
+        run: python run_pipeline.py
 
       - name: Commit updated data
         run: |
           git config user.name "firmware-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add feed.json snapshot.json arri_install.json sony_alpha.json red_cameras.json arri_cameras.json arri_details.json index.html sony_cameras.json sony_fx.json
+          git add $(python run_pipeline.py --data-files)
           git diff --staged --quiet || git commit -m "Daily firmware check"
           git push

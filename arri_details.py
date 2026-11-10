@@ -5,7 +5,9 @@ import time
 
 PAGES = [row["slug"] for row in json.load(open("arri_cameras.json"))]
 
-BASE = "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/"
+# ARRI moved every product page under its combined firmware index in 2026.
+import arri_index
+BASE = arri_index.PAGE_BASE
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
