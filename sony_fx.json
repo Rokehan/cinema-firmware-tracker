@@ -2,16 +2,16 @@
   {
     "manufacturer": "Sony",
     "product": "FX6",
-    "version": "V6.01",
-    "release_date": "2026-09-01",
+    "version": "V6.02",
+    "release_date": "2026-11-05",
     "page_url": "https://support.sony.jp/electronics/support/software/00378932",
     "file_name": "BODYDATA.DAT",
     "summary": null,
     "features": [],
     "changelog_version": null,
-    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Dobb4b83c7/BODYDATA.DAT?fm=jp",
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/Dpb477d5fe/BODYDATA.DAT?fm=jp",
     "firmware_kind": "file",
-    "file_size": "847.1 MB"
+    "file_size": "848.3 MB"
   },
   {
     "manufacturer": "Sony",

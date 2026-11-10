@@ -1,39 +1,47 @@
 [
   {
-    "slug": "alexa-265-sup-6-1-1",
-    "summary": "Software Update Package 6.1.1 is a compatibility and reliability update.",
-    "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-265-sup-6-1-1"
+    "slug": "alexa-35-sup-6-2-0",
+    "summary": "We are pleased to introduce Software Update Package SUP 6.2.0. for all current 35 mm and 65 mm format ALEXA cameras: ALEXA 35, ALEXA 35 Xtreme, ALEXA 35 Live, ALEXA 35 Live Xtreme, and ALEXA 265. This release introduces full Focusbug Cine RT integration through the camera SERIAL port, new focus marker capabilities, and depth of field ramping for live productions.",
+    "features": [
+      "Shared focus marks and overlay",
+      "Full Focusbug Cine RT integration through SERIAL port",
+      "Depth of field ramping for live productions"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-35-sup-6-2-0"
   },
   {
-    "slug": "alexa-35-sup-6-1-0",
-    "summary": "We are pleased to introduce Software Update Package SUP 6.1.0. for all camera models in the ALEXA 35 family: ALEXA 35, ALEXA 35 Xtreme, ALEXA 35 Live, and ALEXA 35 Live Xtreme. This release introduces Picture-in-Picture Tracking Zoom, a new variation of the Tracking Zoom feature first introduced for the ALEXA 35 Xtreme in SUP 5.2.0.",
+    "slug": "alexa-265-sup-6-2-0",
+    "summary": "We are pleased to introduce Software Update Package SUP 6.2.0. for all current 35 mm and 65 mm format ALEXA cameras: ALEXA 35, ALEXA 35 Xtreme, ALEXA 35 Live, ALEXA 35 Live Xtreme, and ALEXA 265. This release introduces full Focusbug Cine RT integration through the camera SERIAL port, new focus marker capabilities, and depth of field ramping for live productions.",
     "features": [
-      "High Frame Rate SDI*",
-      "GPS Metadata",
-      "Picture-in-Picture Tracking Zoom**",
-      "SDI Tally Overlay",
-      "Extended Genlock Support"
+      "Shared focus marks and overlay",
+      "Full Focusbug Cine RT integration through SERIAL port",
+      "Depth of field ramping for live productions"
     ],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-6-1-0"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-265-sup-6-2-0"
   },
   {
     "slug": "alexa-mini-lf-sup-7-3-2",
     "summary": "We are pleased to announce the release of ALEXA Mini LF Software Update Package SUP 7.3.2.",
     "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-lf-sup-7-3-2"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-mini-lf-sup-7-3-2"
   },
   {
-    "slug": "alexa-lf-sup",
-    "summary": "ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This includes a fix for the orange line bug and the replacement of the MAGNIFICATION indication orange line/outline by MAGNIFICATION icons in the status area to the right of the image.",
+    "slug": "amira-sup-overview",
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
     "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-lf-sup"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/amira-sup-overview"
   },
   {
     "slug": "alexa-mini-sup-overview",
     "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all ALEXA Mini owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
     "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-mini-sup-overview"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-mini-sup-overview"
+  },
+  {
+    "slug": "alexa-lf-sup",
+    "summary": "ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This includes a fix for the orange line bug and the replacement of the MAGNIFICATION indication orange line/outline by MAGNIFICATION icons in the status area to the right of the image.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-lf-sup"
   },
   {
     "slug": "alexa-sxt-sup-overview",
@@ -48,13 +56,7 @@
       "Faster Controlled Lens Motor (CLM) response",
       "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
     ],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sxt-sup-overview"
-  },
-  {
-    "slug": "amira-sup-overview",
-    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
-    "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/amira-sup-overview"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sxt-sup-overview"
   },
   {
     "slug": "alexa-sup-11-1",
@@ -73,7 +75,7 @@
       "Framelines in metadata",
       "Time Zone in metadata"
     ],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-sup-11-1"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sup-11-1"
   },
   {
     "slug": "alexa-xt-sup-11-1",
@@ -92,6 +94,6 @@
       "Refined user buttons",
       "Framelines in metadata"
     ],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-xt-sup-11-1"
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-xt-sup-11-1"
   }
 ]
