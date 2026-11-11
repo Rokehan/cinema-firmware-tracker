@@ -26,37 +26,22 @@
     "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-mini-lf-sup-7-3-2"
   },
   {
-    "slug": "amira-sup-overview",
-    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
-    "features": [],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/amira-sup-overview"
-  },
-  {
     "slug": "alexa-mini-sup-overview",
     "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all ALEXA Mini owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
     "features": [],
     "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-mini-sup-overview"
   },
   {
+    "slug": "amira-sup-overview",
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
+    "features": [],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/amira-sup-overview"
+  },
+  {
     "slug": "alexa-lf-sup",
     "summary": "ALEXA LF SUP 4.3 This update includes useful enhancements to the usability of the monitoring overlays and the use of the ALEXA LF camera with ARRI Rental DNA and Cooke /i lenses. This includes a fix for the orange line bug and the replacement of the MAGNIFICATION indication orange line/outline by MAGNIFICATION icons in the status area to the right of the image.",
     "features": [],
     "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-lf-sup"
-  },
-  {
-    "slug": "alexa-sxt-sup-overview",
-    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
-    "features": [
-      "Default look files for PQ and HLG",
-      "Automatically matched status brightness for HDR",
-      "HDR metadata",
-      "Monitoring-based or Log C-based",
-      "Live camera information (warnings &amp; errors) on WCU‑4",
-      "Separate control of MON OUT 1, 2 and 3",
-      "Faster Controlled Lens Motor (CLM) response",
-      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
-    ],
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sxt-sup-overview"
   },
   {
     "slug": "alexa-sup-11-1",
@@ -95,5 +80,20 @@
       "Framelines in metadata"
     ],
     "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-xt-sup-11-1"
+  },
+  {
+    "slug": "alexa-sxt-sup-overview",
+    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
+    "features": [
+      "Default look files for PQ and HLG",
+      "Automatically matched status brightness for HDR",
+      "HDR metadata",
+      "Monitoring-based or Log C-based",
+      "Live camera information (warnings &amp; errors) on WCU‑4",
+      "Separate control of MON OUT 1, 2 and 3",
+      "Faster Controlled Lens Motor (CLM) response",
+      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
+    ],
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sxt-sup-overview"
   }
 ]

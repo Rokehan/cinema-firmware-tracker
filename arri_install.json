@@ -65,32 +65,6 @@
     "file_name": "*.SUP"
   },
   {
-    "slug": "amira-sup-overview",
-    "install": [
-      {
-        "heading": "Camera Update Procedure",
-        "items": [
-          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
-          "If not done beforehand, prepare the USB memory stick for use with AMIRA by connecting it to the camera. and press CONFIRM. This will create the required folder structure on the USB stick",
-          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/AMIRA/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/AMIRA/LICENSES on the USB stick",
-          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1 and the lens mount should be attached to the camera when performing an update",
-          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
-          "Remove the recording media from camera",
-          "Select the SUP file from the list and click the item",
-          "In the following message, press INSTALL to start the installation",
-          "Press CONFIRM to start the installation",
-          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
-          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
-          "Make sure you set the correct time zone in Menu > System > System Time & Date",
-          "If the MVF-1 viewfinder, CCP-1 or lens mount were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
-        ]
-      }
-    ],
-    "install_version": "SUP 6.1.2",
-    "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
-    "file_name": "*.SUP"
-  },
-  {
     "slug": "alexa-mini-sup-overview",
     "install": [
       {
@@ -114,6 +88,32 @@
     ],
     "install_version": "SUP 6.1.2",
     "install_source": "https://www.arri.com/resource/blob/263084/c32248e1ef6574c538ff2e8361497afb/alexa-mini-sup-6-1-2-release-notes-data.pdf",
+    "file_name": "*.SUP"
+  },
+  {
+    "slug": "amira-sup-overview",
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
+          "If not done beforehand, prepare the USB memory stick for use with AMIRA by connecting it to the camera. and press CONFIRM. This will create the required folder structure on the USB stick",
+          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/AMIRA/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/AMIRA/LICENSES on the USB stick",
+          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1 and the lens mount should be attached to the camera when performing an update",
+          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
+          "Remove the recording media from camera",
+          "Select the SUP file from the list and click the item",
+          "In the following message, press INSTALL to start the installation",
+          "Press CONFIRM to start the installation",
+          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
+          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
+          "Make sure you set the correct time zone in Menu > System > System Time & Date",
+          "If the MVF-1 viewfinder, CCP-1 or lens mount were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.2",
+    "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
     "file_name": "*.SUP"
   },
   {
@@ -150,42 +150,6 @@
     ],
     "install_version": "SUP 4.3",
     "install_source": "https://www.arri.com/resource/blob/200826/c9b3d1ecc8c9381a9bbe5e1e487c2cb8/alexa-lf-sup-4-3-release-notes-data.pdf",
-    "file_name": null
-  },
-  {
-    "slug": "alexa-sxt-sup-overview",
-    "install": [
-      {
-        "heading": "Camera Update Procedure",
-        "items": [
-          "using a Web Browser on your Computer How to connect ALEXA to a computer",
-          "Turn the camera on",
-          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
-          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
-          "Open a web browser",
-          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for ALEXA 7123: http://alexa7123.local/update.cgi)",
-          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
-          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
-          "Download the Software Update Package to your computer",
-          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
-          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
-          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
-          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
-          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
-          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
-          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electronic viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF-1 will be updated to match the SUP package that is installed on the camera",
-          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
-          "Connect the EVF-1 to the camera",
-          "Open a web browser on the computer and open the update web page of the camera (see above)",
-          "Click the 'Update EVF' button in the ‘EVF Update’ section",
-          "You can watch the progress of the update on the screen",
-          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
-          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
-        ]
-      }
-    ],
-    "install_version": "SUP 2.1",
-    "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
     "file_name": null
   },
   {
@@ -272,6 +236,42 @@
     ],
     "install_version": "SUP 11.1.1",
     "install_source": "https://www.arri.com/resource/blob/76418/d6b1db4f3ad3742385ef40954b2dc6c7/alexa-xt-sup-11-0-release-notes-data.pdf",
+    "file_name": null
+  },
+  {
+    "slug": "alexa-sxt-sup-overview",
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for ALEXA 7123: http://alexa7123.local/update.cgi)",
+          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electronic viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF-1 will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the EVF-1 to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
+          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
+        ]
+      }
+    ],
+    "install_version": "SUP 2.1",
+    "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
     "file_name": null
   }
 ]

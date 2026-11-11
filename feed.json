@@ -1204,16 +1204,16 @@
       },
       {
         "v": "1.0.2.1",
-        "d": "2021-12-06",
+        "d": "2021-12-07",
         "cl": [
           "1. Adds［EOS Standard］and [EOS Neutral] to the Custom Picture Presets.",
           "2. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter. CN-E14mm T3.1 L F CN-E20mm T1.5 L F CN-E24mm T1.5 L F CN-E35mm T1.5 L F CN-E50mm T1.3 L F CN-E85mm T1.3 L F CN-E135mm T2.2 L F EF14mm f/2.8LⅡUSM EF24mm f/1.4LⅡUSM EF35mm f/1.4LⅡUSM EF50mm f/1.2L USM EF85mm f/1.2LⅡUSM EF135mm f/2L USM"
         ],
-        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c70-firmware-version-1-0-2-1-00"
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c70--firmware-version-1-0-2-1-00"
       },
       {
         "v": "1.0.1.1",
-        "d": "2021-06-28",
+        "d": "2021-07-29",
         "cl": [
           "1. Adds ITU-R.BT.709 standard compliant Gamma［BT.709 Standard / BT.709］the to the Custom Picture.",
           "2. Adds [Whole Area] to the AF Frame option so the camera focuses automatically on a subject at the center of the screen.",
@@ -1222,11 +1222,11 @@
           "5. Adds [Mask 100%] to the [Aspect Marker] and [Safe Area Marker].",
           "6. Adds \"B&W during Magn.\" as an option to the Assistance Function menu.",
           "7. Adds View Assist function to video output from the HDMI OUT terminal.",
-          "8. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter. 1 EF16-35mm F2.8L II USM EF16-35mm F4L IS USM EF24-105mm F4L IS USM EF70-200mm F2.8L IS II USM EF70-200mm F2.8L IS III USM EF70-200mm F4L IS USM EF70-200mm F4L IS II USM",
+          "8. Adds EF lenses compatible with EF-EOS R 0.71x Mount Adapter.1 EF16-35mm F2.8L II USM EF16-35mm F4L IS USM EF24-105mm F4L IS USM EF70-200mm F2.8L IS II USM EF70-200mm F2.8L IS III USM EF70-200mm F4L IS USM EF70-200mm F4L IS II USM",
           "9. Changes to display the AF frame only when operating the AF, while using with EF-EOS R 0.71x Mount Adapter",
           "10. Adds Wi-Fi adapters tested for use with the camera. ASUS USB-AC68 TP-LINK Archer T9UH 1 EF-EOS R 0.71 Mount Adapter requires its firmware update."
         ],
-        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice-eos-c70-firmware-version-1-0-1-1-00"
+        "dl": "https://www.usa.canon.com/support/canon-product-advisories/firmware-notice--eos-c70--firmware-version-1-0-1-1-00"
       }
     ],
     "file_name": null,
@@ -3255,56 +3255,6 @@
   {
     "manufacturer": "ARRI",
     "category": "Stabilizers",
-    "product": "DEH-1",
-    "version": "SUP 3.2.2",
-    "release_date": "2025-09-04",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-encoder-head-deh-1",
-    "firmware_url": "https://www.arri.com/resource/blob/399954/09e34025e829128823889c2263d1b1aa/digital-encoder-head-deh-1-sup-3-2-2-data.zip",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/399956/11fe432d9c3a5fc8841f5e98cad72bb7/arri-deh-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": null,
-    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the Digital Encoder Head DEH-1. We highly recommend updating your DEH-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [],
-    "guides": [],
-    "file_name": null,
-    "file_size": "165 KB",
-    "file_type": "zip"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Stabilizers",
-    "product": "DRW-1",
-    "version": "SUP 3.2.2",
-    "release_date": "2025-09-04",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-remote-wheels-drw-1",
-    "firmware_url": "https://www.arri.com/resource/blob/399960/feeaa25a6876efddd2da4eeb4398c6de/digital-remote-wheels-drw-1-sup-3-2-2zip-data.zip",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/399958/11fe432d9c3a5fc8841f5e98cad72bb7/arri-drw-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": null,
-    "summary": "We hereby announce the release of the Software Update Package SUP 3.1.8 for the Digital Remote Wheels DRW-1. We highly recommend updating your DRW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [],
-    "guides": [],
-    "file_name": null,
-    "file_size": "165 KB",
-    "file_type": "zip"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Stabilizers",
     "product": "MGT",
     "version": "SUP 3.2.2",
     "release_date": "2025-09-04",
@@ -3355,6 +3305,31 @@
   {
     "manufacturer": "ARRI",
     "category": "Stabilizers",
+    "product": "DRW-1",
+    "version": "SUP 3.2.2",
+    "release_date": "2025-09-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-remote-wheels-drw-1",
+    "firmware_url": "https://www.arri.com/resource/blob/399960/feeaa25a6876efddd2da4eeb4398c6de/digital-remote-wheels-drw-1-sup-3-2-2zip-data.zip",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/399958/11fe432d9c3a5fc8841f5e98cad72bb7/arri-drw-1-sup-3-2-2-release-note-data.pdf",
+    "archive_url": null,
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.1.8 for the Digital Remote Wheels DRW-1. We highly recommend updating your DRW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [],
+    "file_name": null,
+    "file_size": "165 KB",
+    "file_type": "zip"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Stabilizers",
     "product": "DEH-2",
     "version": "SUP 3.2.2",
     "release_date": "2025-09-04",
@@ -3391,6 +3366,31 @@
     "notes_url": "https://www.arri.com/resource/blob/400004/11fe432d9c3a5fc8841f5e98cad72bb7/arri-ejs-1-sup-3-2-2-release-note-data.pdf",
     "archive_url": null,
     "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the External Joystick EJS-1. We highly recommend updating your EJS-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [],
+    "file_name": null,
+    "file_size": "165 KB",
+    "file_type": "zip"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Stabilizers",
+    "product": "DEH-1",
+    "version": "SUP 3.2.2",
+    "release_date": "2025-09-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-encoder-head-deh-1",
+    "firmware_url": "https://www.arri.com/resource/blob/399954/09e34025e829128823889c2263d1b1aa/digital-encoder-head-deh-1-sup-3-2-2-data.zip",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/399956/11fe432d9c3a5fc8841f5e98cad72bb7/arri-deh-1-sup-3-2-2-release-note-data.pdf",
+    "archive_url": null,
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the Digital Encoder Head DEH-1. We highly recommend updating your DEH-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "changelog": [],
     "features": [],
     "install": [],
@@ -4582,74 +4582,6 @@
   },
   {
     "manufacturer": "ARRI",
-    "product": "AMIRA",
-    "version": "SUP 6.1.2",
-    "release_date": "2022-02-07",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/amira-sup-overview",
-    "firmware_url": "https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;name=AMIRA_SUP_6.1.2_data.zip",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
-    "features": [],
-    "install": [
-      {
-        "heading": "Camera Update Procedure",
-        "items": [
-          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
-          "If not done beforehand, prepare the USB memory stick for use with AMIRA by connecting it to the camera. and press CONFIRM. This will create the required folder structure on the USB stick",
-          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/AMIRA/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/AMIRA/LICENSES on the USB stick",
-          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1 and the lens mount should be attached to the camera when performing an update",
-          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
-          "Remove the recording media from camera",
-          "Select the SUP file from the list and click the item",
-          "In the following message, press INSTALL to start the installation",
-          "Press CONFIRM to start the installation",
-          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
-          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
-          "Make sure you set the correct time zone in Menu > System > System Time & Date",
-          "If the MVF-1 viewfinder, CCP-1 or lens mount were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
-        ]
-      }
-    ],
-    "install_version": "SUP 6.1.2",
-    "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
-    "previous_versions": [
-      {
-        "v": "SUP 6.1.1",
-        "d": "2021-05-19",
-        "cl": [],
-        "dl": "https://arri.canto.de/direct/other/eis8svls2d51talb5tqqmn881s/PT-nzxvBe1yrs8ELmpfM0Ma8DGY/original?content-type=application%2Fzip&name=AMIRA_SUP_6.1.1_data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/240810/e31cc317b43b89cfe545cfa58e4dc29b/amira-sup-6-1-1-release-notes-data.pdf",
-        "size": "379 KB"
-      },
-      {
-        "v": "SUP 6.1",
-        "d": "2020-11-20",
-        "cl": [],
-        "dl": "https://arri.canto.de/direct/other/o53tjace8961t89177t35vnd2f/UbYNxRYwhi3u_JEDeFqsKSo4n0M/original?content-type=application%2Fzip&name=AMIRA_SUP_6.1_data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/223724/3a71e0d1beb1f6ebf975f9cae1418399/release-notes-amira-sup-6-1-data.pdf",
-        "size": "2 MB"
-      },
-      {
-        "v": "SUP 5.4",
-        "d": "2018-11-26",
-        "cl": [],
-        "dl": "https://arri.canto.de/direct/other/8k3hfm3t7h7bnb5gs9b637q32k/Qw6xibYp8IqPeWoBY57pRX26o1c/original?content-type=application%2Fzip&name=AMIRA+SUP+5.4_data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/42726/53106676f61bc42a04d46906fc844bf3/amira-sup-5-4-release-notes-data.pdf",
-        "size": "2 MB"
-      }
-    ],
-    "file_name": "*.SUP",
-    "category": "Cameras"
-  },
-  {
-    "manufacturer": "ARRI",
     "product": "ALEXA MINI",
     "version": "SUP 6.1.2",
     "release_date": "2022-02-07",
@@ -4720,6 +4652,74 @@
         "dl_kind": "file",
         "notes": "https://www.arri.com/resource/blob/187472/3a6320d3c788292ea608f549c72c4fe7/alexa-mini-5-3-release-notes-data.pdf",
         "size": "1,023 KB"
+      }
+    ],
+    "file_name": "*.SUP",
+    "category": "Cameras"
+  },
+  {
+    "manufacturer": "ARRI",
+    "product": "AMIRA",
+    "version": "SUP 6.1.2",
+    "release_date": "2022-02-07",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/amira-sup-overview",
+    "firmware_url": "https://arri.canto.de/direct/other/1g28gr86ah7u30b14cga9l8078/7CVDBk_SpRusSUeYQ49zzU58TrU/original?content-type=application%2Fzip&amp;name=AMIRA_SUP_6.1.2_data.zip",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "summary": "This Software Update Package is a maintenance release and includes important bug fixes and support for modified hardware parameters. For all AMIRA owners we recommend updating to SUP 6.1.2. We highly recommend that you take your time to go through the Release Notes before you start using the camera.",
+    "features": [],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "After the download, please double click the downloaded file (*.zip) to unpack it or unpack it manually. This will place two update files (*.SUP and *.lic) and the SUP release notes onto your computer",
+          "If not done beforehand, prepare the USB memory stick for use with AMIRA by connecting it to the camera. and press CONFIRM. This will create the required folder structure on the USB stick",
+          "Connect the USB stick to your computer and place the downloaded *.SUP file in the folder ARRI/AMIRA/SUP on the USB stick. Then place the downloaded *.lic file in the folder ARRI/AMIRA/LICENSES on the USB stick",
+          "SUPs contain not only updates for the camera body. Therefore, the MVF-1 viewfinder, CCP-1 and the lens mount should be attached to the camera when performing an update",
+          "Make sure the camera is connected to a power supply (best) or is powered with a full battery to avoid power loss during the update process",
+          "Remove the recording media from camera",
+          "Select the SUP file from the list and click the item",
+          "In the following message, press INSTALL to start the installation",
+          "Press CONFIRM to start the installation",
+          "The camera will present a screen presenting the update progress. Please do not shutdown the camera or unplug power until the camera reboots",
+          "After the update process has finished, a success message is displayed. Please repeat the last steps and update the camera for a second time",
+          "Make sure you set the correct time zone in Menu > System > System Time & Date",
+          "If the MVF-1 viewfinder, CCP-1 or lens mount were not connected to the camera during the update process, the camera will still store the new software for those devices. The next time those devices are connected and have an older software than the one stored in the camera, the camera will offer to update those devices"
+        ]
+      }
+    ],
+    "install_version": "SUP 6.1.2",
+    "install_source": "https://www.arri.com/resource/blob/263070/6117432ce1fdf541f071d323b15248be/amira-sup-6-1-2-release-notes-data.pdf",
+    "previous_versions": [
+      {
+        "v": "SUP 6.1.1",
+        "d": "2021-05-19",
+        "cl": [],
+        "dl": "https://arri.canto.de/direct/other/eis8svls2d51talb5tqqmn881s/PT-nzxvBe1yrs8ELmpfM0Ma8DGY/original?content-type=application%2Fzip&name=AMIRA_SUP_6.1.1_data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/240810/e31cc317b43b89cfe545cfa58e4dc29b/amira-sup-6-1-1-release-notes-data.pdf",
+        "size": "379 KB"
+      },
+      {
+        "v": "SUP 6.1",
+        "d": "2020-11-20",
+        "cl": [],
+        "dl": "https://arri.canto.de/direct/other/o53tjace8961t89177t35vnd2f/UbYNxRYwhi3u_JEDeFqsKSo4n0M/original?content-type=application%2Fzip&name=AMIRA_SUP_6.1_data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/223724/3a71e0d1beb1f6ebf975f9cae1418399/release-notes-amira-sup-6-1-data.pdf",
+        "size": "2 MB"
+      },
+      {
+        "v": "SUP 5.4",
+        "d": "2018-11-26",
+        "cl": [],
+        "dl": "https://arri.canto.de/direct/other/8k3hfm3t7h7bnb5gs9b637q32k/Qw6xibYp8IqPeWoBY57pRX26o1c/original?content-type=application%2Fzip&name=AMIRA+SUP+5.4_data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/42726/53106676f61bc42a04d46906fc844bf3/amira-sup-5-4-release-notes-data.pdf",
+        "size": "2 MB"
       }
     ],
     "file_name": "*.SUP",
@@ -4848,75 +4848,6 @@
         "dl_kind": "page",
         "notes": "https://www.arri.com/resource/blob/42666/e70c746640bfc8256fde6ccdf979e8d6/alexa-lf-sup-3-0-release-notes-data.pdf",
         "size": "630 KB"
-      }
-    ],
-    "file_name": null,
-    "category": "Cameras"
-  },
-  {
-    "manufacturer": "ARRI",
-    "product": "ALEXA SXT",
-    "version": "SUP 2.1",
-    "release_date": "2021-09-15",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sxt-sup-overview",
-    "firmware_url": "https://arri.canto.de/direct/other/flalldd9tt367fotiajtvesg2b/i4MVvW81AqdXZYyTFlXfNK3DmGo/original?content-type=pkg&amp;name=SUP_AlexaSXT_2.1_43968.pkg",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
-    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
-    "features": [
-      "Default look files for PQ and HLG",
-      "Automatically matched status brightness for HDR",
-      "HDR metadata",
-      "Monitoring-based or Log C-based",
-      "Live camera information (warnings &amp; errors) on WCU‑4",
-      "Separate control of MON OUT 1, 2 and 3",
-      "Faster Controlled Lens Motor (CLM) response",
-      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
-    ],
-    "install": [
-      {
-        "heading": "Camera Update Procedure",
-        "items": [
-          "using a Web Browser on your Computer How to connect ALEXA to a computer",
-          "Turn the camera on",
-          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
-          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
-          "Open a web browser",
-          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for ALEXA 7123: http://alexa7123.local/update.cgi)",
-          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
-          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
-          "Download the Software Update Package to your computer",
-          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
-          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
-          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
-          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
-          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
-          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
-          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electronic viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF-1 will be updated to match the SUP package that is installed on the camera",
-          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
-          "Connect the EVF-1 to the camera",
-          "Open a web browser on the computer and open the update web page of the camera (see above)",
-          "Click the 'Update EVF' button in the ‘EVF Update’ section",
-          "You can watch the progress of the update on the screen",
-          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
-          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
-        ]
-      }
-    ],
-    "install_version": "SUP 2.1",
-    "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
-    "previous_versions": [
-      {
-        "v": "SUP 2.0",
-        "d": "2018-11-26",
-        "cl": [],
-        "dl": "https://arri.canto.de/direct/other/btvred75s54rl1fg22v5m4gj3k/2bjcTzoYmMKWWMsXf0tJ-iYTQ3k/original?content-type=application%2Fzip&name=SUP_AlexaSXT_2.0_39120_data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/42774/2d88ecd71b6534a9e046042d75ac27d4/alexa-sxt-sup-2-0-release-notes-data.pdf",
-        "size": "301 KB"
       }
     ],
     "file_name": null,
@@ -5095,6 +5026,75 @@
         "d": "Dec. 13, 2018",
         "cl": [],
         "dl": "https://www.arri.com/resource/blob/76408/96f408f0b7c0f74b4e5b2cc733d956f0/alexa-xt-sup-11-1-1-release-notes-data.pdf"
+      }
+    ],
+    "file_name": null,
+    "category": "Cameras"
+  },
+  {
+    "manufacturer": "ARRI",
+    "product": "ALEXA SXT",
+    "version": "SUP 2.1",
+    "release_date": "2021-09-15",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/alexa-sxt-sup-overview",
+    "firmware_url": "https://arri.canto.de/direct/other/flalldd9tt367fotiajtvesg2b/i4MVvW81AqdXZYyTFlXfNK3DmGo/original?content-type=pkg&amp;name=SUP_AlexaSXT_2.1_43968.pkg",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
+    "archive_url": "https://www.arri.com/en/cine-systems/archive-technologies",
+    "summary": "Software Update Package (SUP) 2.1 for ALEXA SXT cameras contains:",
+    "features": [
+      "Default look files for PQ and HLG",
+      "Automatically matched status brightness for HDR",
+      "HDR metadata",
+      "Monitoring-based or Log C-based",
+      "Live camera information (warnings &amp; errors) on WCU‑4",
+      "Separate control of MON OUT 1, 2 and 3",
+      "Faster Controlled Lens Motor (CLM) response",
+      "Lens motor auto teeth detection for accurate WCU‑4 lens data display"
+    ],
+    "install": [
+      {
+        "heading": "Camera Update Procedure",
+        "items": [
+          "using a Web Browser on your Computer How to connect ALEXA to a computer",
+          "Turn the camera on",
+          "Connect the Ethernet port of the computer to the camera with the ALEXA Ethernet/RJ-45 Cable",
+          "Configure the computer’s network interface to which the camera is connected with the following settings: IP address: 169.254.1.2 (static IP) Subnet mask: 255.255.0.0",
+          "Open a web browser",
+          "If you are using a Macintosh or a computer with Apple’s Bonjour protocol installed enter the following URL into the address bar: http://alexaXXXX.local/update.cgi, where XXXX is the four-digit serial number of your camera (e.g. for ALEXA 7123: http://alexa7123.local/update.cgi)",
+          "If you are using a computer without Bonjour support please use the camera’s IP address to connect, e.g.: http://169.254.xxx.xxx/update.cgi, where xxx.xxx is the two last groups of your camera’s actual IP address. You can determine ALEXA’s IP address by going to INFO > SYSTEM",
+          "If the network settings are configured correctly you will be presented the update page of the camera. Performing the Update",
+          "Download the Software Update Package to your computer",
+          "Perform a factory reset in MENU > USER SETUPS > FACTORY RESET",
+          "In the ‘Camera Update’ section select the Software Update Package by clicking the ‘browse’ button and selecting the path to the downloaded SUP on your computer",
+          "Click the 'Update Camera’ button in the ‘Camera Update’ section",
+          "The file will be uploaded to the camera which takes about a minute. The browser will switch to the ‘Update Log’ page showing the update log of the three main boards. This page can be updated by refreshing the page. At the same time the update screen with the progress bars appears on the camera display",
+          "The update process may take 15 to 20 minutes, depending on the actual software package. Wait until the update process has finished. This is indicated by a green screen informing you that the update process is completed",
+          "If the update process fails, which will be indicated by a red screen, please restart the camera and repeat the update procedure",
+          "After the update, turn the camera off and on again. The software is now updated and you can use the camera. Updating an Electronic Viewfinder EVF-1 In case an ALEXA electronic viewfinder EVF-1 has not been updated with the camera, it is possible to update the EVF-1 separately by using a computer. Please note that the EVF-1 will be updated to match the SUP package that is installed on the camera",
+          "Connect the Ethernet port of the computer as described above in ‘How to connect ALEXA to a computer’",
+          "Connect the EVF-1 to the camera",
+          "Open a web browser on the computer and open the update web page of the camera (see above)",
+          "Click the 'Update EVF' button in the ‘EVF Update’ section",
+          "You can watch the progress of the update on the screen",
+          "When the update is done, the last line on the screen reads ‘successfully updated Evf’. The update is now finished even though the web browser continues to refresh the page. This is normal. The viewfinder is up to date",
+          "Depending on its software version the camera will state a ‘software error – reboot camera’ on the camera display. This is normal. Please reboot the camera"
+        ]
+      }
+    ],
+    "install_version": "SUP 2.1",
+    "install_source": "https://www.arri.com/resource/blob/181702/a018b63a74ed2baf684783eea3c54aa8/alexa-sxt-sup-2-1-release-notes-data.pdf",
+    "previous_versions": [
+      {
+        "v": "SUP 2.0",
+        "d": "2018-11-26",
+        "cl": [],
+        "dl": "https://arri.canto.de/direct/other/btvred75s54rl1fg22v5m4gj3k/2bjcTzoYmMKWWMsXf0tJ-iYTQ3k/original?content-type=application%2Fzip&name=SUP_AlexaSXT_2.0_39120_data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/42774/2d88ecd71b6534a9e046042d75ac27d4/alexa-sxt-sup-2-0-release-notes-data.pdf",
+        "size": "301 KB"
       }
     ],
     "file_name": null,
