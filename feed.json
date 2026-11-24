@@ -1072,12 +1072,12 @@
         "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.5.x/4.5.1/Teradek_Bolt4k_firmware_v4.5.1_SmallHD.bin"
       },
       {
-        "label": "Bolt Manager 3.7.6 (Mac OSX)",
-        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.6/Teradek_Bolt_Manager_v3.7.6.dmg"
+        "label": "Bolt Manager 3.7.7 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.7/Teradek_Bolt_Manager_v3.7.7.dmg"
       },
       {
-        "label": "Bolt Manager 3.7.6 (Windows)",
-        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.6/Teradek_Bolt_Manager_v3.7.6.exe"
+        "label": "Bolt Manager 3.7.7 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.7/Teradek_Bolt_Manager_v3.7.7.exe"
       }
     ],
     "file_name": null,
@@ -1130,12 +1130,12 @@
         "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Firmware/Releases/4.5.x/4.5.1/Teradek_Bolt4k_firmware_v4.5.1_SmallHD.bin"
       },
       {
-        "label": "Bolt Manager 3.7.6 (Mac OSX)",
-        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.6/Teradek_Bolt_Manager_v3.7.6.dmg"
+        "label": "Bolt Manager 3.7.7 (Mac OSX)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.7/Teradek_Bolt_Manager_v3.7.7.dmg"
       },
       {
-        "label": "Bolt Manager 3.7.6 (Windows)",
-        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.6/Teradek_Bolt_Manager_v3.7.6.exe"
+        "label": "Bolt Manager 3.7.7 (Windows)",
+        "url": "https://update.teradek.com/download.php?file=/Teradek/Bolt6/Software/Releases/3.7.x/3.7.7/Teradek_Bolt_Manager_v3.7.7.exe"
       },
       {
         "label": "Bolt App for Android 1 (Android)",
@@ -2239,9 +2239,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/ey8d8a84ee/BODYDATA.DAT?fm=jp",
-    "firmware_kind": "file",
-    "file_size": "811.9 MB",
+    "firmware_url": "https://support.sony.jp/electronics/support/software/00378858",
+    "firmware_kind": "page",
+    "file_size": null,
     "notes_url": null,
     "archive_url": null,
     "changelog": [
@@ -3255,67 +3255,17 @@
   {
     "manufacturer": "ARRI",
     "category": "Stabilizers",
-    "product": "MGT",
+    "product": "EJS-1",
     "version": "SUP 3.2.2",
     "release_date": "2025-09-04",
     "release_precision": "day",
     "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-master-grip-trinity-mgt",
-    "firmware_url": "https://www.arri.com/resource/blob/399966/1db4478e9ff20daa852cc744e8b6bc97/master-grip-triinity-mgt-1-sup-3-2-2-data.zip",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-external-joystick-ejs-1",
+    "firmware_url": "https://www.arri.com/resource/blob/400002/e7689fb31b9c6ccb27b325025f6250c8/external-joystick-ejs-1-3-2-2-data.zip",
     "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/399968/11fe432d9c3a5fc8841f5e98cad72bb7/arri-mgt-1-sup-3-2-2-release-note-data.pdf",
+    "notes_url": "https://www.arri.com/resource/blob/400004/11fe432d9c3a5fc8841f5e98cad72bb7/arri-ejs-1-sup-3-2-2-release-note-data.pdf",
     "archive_url": null,
-    "summary": "We hereby announce the release of Software Update Package SUP 1.0.12 for the Master Grip TRINITY 1 and 2.",
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [],
-    "guides": [],
-    "file_name": null,
-    "file_size": "165 KB",
-    "file_type": "zip"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Stabilizers",
-    "product": "DEP-1",
-    "version": "SUP 3.2.3",
-    "release_date": "2025-09-04",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-encoder-pedal-dep-1",
-    "firmware_url": "https://www.arri.com/resource/blob/399970/96a283e51566868c1c346ae226adfc56/digital-encoder-pedal-dep-1-sup-3-2-3-data.zip",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/399972/11fe432d9c3a5fc8841f5e98cad72bb7/arri-dep-1-sup-3-2-3-release-note-data.pdf",
-    "archive_url": null,
-    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.3 for the Digital Encoder Pedal DEP-1. We highly recommend updating your DEP-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [],
-    "guides": [],
-    "file_name": null,
-    "file_size": "165 KB",
-    "file_type": "zip"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Stabilizers",
-    "product": "DRW-1",
-    "version": "SUP 3.2.2",
-    "release_date": "2025-09-04",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-remote-wheels-drw-1",
-    "firmware_url": "https://www.arri.com/resource/blob/399960/feeaa25a6876efddd2da4eeb4398c6de/digital-remote-wheels-drw-1-sup-3-2-2zip-data.zip",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/399958/11fe432d9c3a5fc8841f5e98cad72bb7/arri-drw-1-sup-3-2-2-release-note-data.pdf",
-    "archive_url": null,
-    "summary": "We hereby announce the release of the Software Update Package SUP 3.1.8 for the Digital Remote Wheels DRW-1. We highly recommend updating your DRW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the External Joystick EJS-1. We highly recommend updating your EJS-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "changelog": [],
     "features": [],
     "install": [],
@@ -3355,17 +3305,67 @@
   {
     "manufacturer": "ARRI",
     "category": "Stabilizers",
-    "product": "EJS-1",
+    "product": "DRW-1",
     "version": "SUP 3.2.2",
     "release_date": "2025-09-04",
     "release_precision": "day",
     "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-external-joystick-ejs-1",
-    "firmware_url": "https://www.arri.com/resource/blob/400002/e7689fb31b9c6ccb27b325025f6250c8/external-joystick-ejs-1-3-2-2-data.zip",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-remote-wheels-drw-1",
+    "firmware_url": "https://www.arri.com/resource/blob/399960/feeaa25a6876efddd2da4eeb4398c6de/digital-remote-wheels-drw-1-sup-3-2-2zip-data.zip",
     "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/400004/11fe432d9c3a5fc8841f5e98cad72bb7/arri-ejs-1-sup-3-2-2-release-note-data.pdf",
+    "notes_url": "https://www.arri.com/resource/blob/399958/11fe432d9c3a5fc8841f5e98cad72bb7/arri-drw-1-sup-3-2-2-release-note-data.pdf",
     "archive_url": null,
-    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.2 for the External Joystick EJS-1. We highly recommend updating your EJS-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.1.8 for the Digital Remote Wheels DRW-1. We highly recommend updating your DRW-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [],
+    "file_name": null,
+    "file_size": "165 KB",
+    "file_type": "zip"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Stabilizers",
+    "product": "MGT",
+    "version": "SUP 3.2.2",
+    "release_date": "2025-09-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-master-grip-trinity-mgt",
+    "firmware_url": "https://www.arri.com/resource/blob/399966/1db4478e9ff20daa852cc744e8b6bc97/master-grip-triinity-mgt-1-sup-3-2-2-data.zip",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/399968/11fe432d9c3a5fc8841f5e98cad72bb7/arri-mgt-1-sup-3-2-2-release-note-data.pdf",
+    "archive_url": null,
+    "summary": "We hereby announce the release of Software Update Package SUP 1.0.12 for the Master Grip TRINITY 1 and 2.",
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [],
+    "file_name": null,
+    "file_size": "165 KB",
+    "file_type": "zip"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Stabilizers",
+    "product": "DEP-1",
+    "version": "SUP 3.2.3",
+    "release_date": "2025-09-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-digital-encoder-pedal-dep-1",
+    "firmware_url": "https://www.arri.com/resource/blob/399970/96a283e51566868c1c346ae226adfc56/digital-encoder-pedal-dep-1-sup-3-2-3-data.zip",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/399972/11fe432d9c3a5fc8841f5e98cad72bb7/arri-dep-1-sup-3-2-3-release-note-data.pdf",
+    "archive_url": null,
+    "summary": "We hereby announce the release of the Software Update Package SUP 3.2.3 for the Digital Encoder Pedal DEP-1. We highly recommend updating your DEP-1 to this Software Update Package. This update is mandatory to ensure overall system performance.",
     "changelog": [],
     "features": [],
     "install": [],
@@ -4285,68 +4285,6 @@
   {
     "manufacturer": "ARRI",
     "category": "Lens Control",
-    "product": "SXU-1",
-    "version": "SUP 2.1.2",
-    "release_date": "2022-10-06",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-sxu-1",
-    "firmware_url": "https://www.arri.com/resource/blob/296326/5b96bd134e7de292aff37173fd67180f/sxu-1-sup-2-1-2-data.bin",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/296324/a7cdc0f6330198098865485bdbcc7a7e/sxu-1-sup-2-1-2-release-notes-data.pdf",
-    "archive_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-sxu-1/sxu-1-sup-archive",
-    "summary": "We hereby announce the release of Software Update Package (SUP) 2.1.2 for the Single Axis Unit SXU-1. This is a maintenance release and ensures compatibility with the Radio Interface Adapter RIA‑1 and other ARRI products, as well as a bug fix. We highly recommend updating the SXU-1 to this Software Update Package. Please be aware, that this update is mandatory if the SXU-1 is connected to a RIA‑1 in client mode.",
-    "changelog": [],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [
-      {
-        "v": "SUP 2.0",
-        "d": "2019-07-01",
-        "cl": [],
-        "dl": "https://www.arri.com/resource/blob/85002/70c073d9cdf92f6e2363cab97a595d1d/sxu-1-sup-2-0-data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/156914/77bbeca2a2bcab0043809d68b0e6e965/sxu-1-sup-2-0-release-notes-data.pdf",
-        "size": "124 KB"
-      },
-      {
-        "v": "SUP 1.1.5",
-        "d": "2018-12-04",
-        "cl": [],
-        "dl": "https://www.arri.com/resource/blob/42844/82a760cb4867734080f45a9122808f1c/sxu-1-sup-1-1-5-data.bin",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/42846/3f33d320c7f2075fb8bc098571385717/sxu-1-sup-1-1-5-release-notes-data.pdf",
-        "size": "131 KB"
-      },
-      {
-        "v": "SUP 1.1.4",
-        "d": "2018-12-04",
-        "cl": [],
-        "dl": "https://www.arri.com/resource/blob/42856/82d543948c394d1086646c9ce7630694/sxu-1-sup-1-1-4-data.zip",
-        "dl_kind": "file",
-        "notes": "https://www.arri.com/resource/blob/42858/b25d4d61e0aa0b89f01be6526f6cd99c/sxu-1-sup-1-1-release-notes-data.pdf",
-        "size": "88 KB"
-      },
-      {
-        "v": "1.1",
-        "d": "2018-12-04",
-        "cl": [],
-        "dl": "https://www.arri.com/resource/blob/42864/7793bec670e9f4176e8c8b8d1df111b9/sxu-1-pre1-1-data.bin",
-        "dl_kind": "file",
-        "notes": null,
-        "size": null
-      }
-    ],
-    "guides": [],
-    "file_name": null,
-    "file_size": "183 KB",
-    "file_type": "upd"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Lens Control",
     "product": "OCU-1",
     "version": "SUP 2.0.2",
     "release_date": "2022-10-06",
@@ -4413,6 +4351,68 @@
     "file_name": null,
     "file_size": null,
     "file_type": "cmf"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Lens Control",
+    "product": "SXU-1",
+    "version": "SUP 2.1.2",
+    "release_date": "2022-10-06",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-sxu-1",
+    "firmware_url": "https://www.arri.com/resource/blob/296326/5b96bd134e7de292aff37173fd67180f/sxu-1-sup-2-1-2-data.bin",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/296324/a7cdc0f6330198098865485bdbcc7a7e/sxu-1-sup-2-1-2-release-notes-data.pdf",
+    "archive_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-sxu-1/sxu-1-sup-archive",
+    "summary": "We hereby announce the release of Software Update Package (SUP) 2.1.2 for the Single Axis Unit SXU-1. This is a maintenance release and ensures compatibility with the Radio Interface Adapter RIA‑1 and other ARRI products, as well as a bug fix. We highly recommend updating the SXU-1 to this Software Update Package. Please be aware, that this update is mandatory if the SXU-1 is connected to a RIA‑1 in client mode.",
+    "changelog": [],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [
+      {
+        "v": "SUP 2.0",
+        "d": "2019-07-01",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/85002/70c073d9cdf92f6e2363cab97a595d1d/sxu-1-sup-2-0-data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/156914/77bbeca2a2bcab0043809d68b0e6e965/sxu-1-sup-2-0-release-notes-data.pdf",
+        "size": "124 KB"
+      },
+      {
+        "v": "SUP 1.1.5",
+        "d": "2018-12-04",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/42844/82a760cb4867734080f45a9122808f1c/sxu-1-sup-1-1-5-data.bin",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/42846/3f33d320c7f2075fb8bc098571385717/sxu-1-sup-1-1-5-release-notes-data.pdf",
+        "size": "131 KB"
+      },
+      {
+        "v": "SUP 1.1.4",
+        "d": "2018-12-04",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/42856/82d543948c394d1086646c9ce7630694/sxu-1-sup-1-1-4-data.zip",
+        "dl_kind": "file",
+        "notes": "https://www.arri.com/resource/blob/42858/b25d4d61e0aa0b89f01be6526f6cd99c/sxu-1-sup-1-1-release-notes-data.pdf",
+        "size": "88 KB"
+      },
+      {
+        "v": "1.1",
+        "d": "2018-12-04",
+        "cl": [],
+        "dl": "https://www.arri.com/resource/blob/42864/7793bec670e9f4176e8c8b8d1df111b9/sxu-1-pre1-1-data.bin",
+        "dl_kind": "file",
+        "notes": null,
+        "size": null
+      }
+    ],
+    "guides": [],
+    "file_name": null,
+    "file_size": "183 KB",
+    "file_type": "upd"
   },
   {
     "manufacturer": "Teradek",
@@ -5957,6 +5957,38 @@
   {
     "manufacturer": "ARRI",
     "category": "Lens Control",
+    "product": "EMC-1",
+    "version": "SUP 1.3.0",
+    "release_date": "2018-12-04",
+    "release_precision": "day",
+    "status": "firmware_available",
+    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-emc-1",
+    "firmware_url": "https://www.arri.com/resource/blob/42934/6ea5fea8adcf94ee257da7fc1e342673/emc1-v0130-data.bin",
+    "firmware_kind": "file",
+    "notes_url": "https://www.arri.com/resource/blob/42932/88ebdeb9d5455f7c7d1dd806f17f974e/emc1-sup0130-releasenotes-data.pdf",
+    "archive_url": null,
+    "summary": "We are proud to announce the release of Software Update Packet (SUP) 1.30 for the ENG Motor Controller EMC-1. This SUP adds support for region settings to the EMC-1 (only available with EMIP300 radio module). We highly recommend updating the EMC-1 to this software update package. Downgrading It is not possible to revert back to a previous release version. Warning: EMC-1 software before SUP 1.30 (EMC1_V0130) should no longer be used and may cause the EMC-1 to malfunction and become inaccessible. If that happens, the EMC-1 can only be made accessible with the support of an ARRI Service Center.",
+    "changelog": [
+      "Support for region settings SUP 1.29 allows setting the radio output power according to regions1. This function is only available with EMC-1 devices containing the EMIP300 type radio module (ARRI white coded radio module with the latest generation chipset). Please check transceiver ID for the installed radio module labeled on the back of the EMC-1 device."
+    ],
+    "features": [],
+    "install": [],
+    "install_version": null,
+    "install_source": null,
+    "previous_versions": [],
+    "guides": [
+      {
+        "label": "EMC-1 Manual",
+        "url": "https://www.arri.com/resource/blob/42930/d3e6d0de8f8929b8e7903bbc0aa4d411/2014-09-10-emc-1-manual-data.pdf"
+      }
+    ],
+    "file_name": null,
+    "file_size": "82 KB",
+    "file_type": "upd"
+  },
+  {
+    "manufacturer": "ARRI",
+    "category": "Lens Control",
     "product": "SMC-1",
     "version": "SUP 1.71",
     "release_date": "2018-12-04",
@@ -5992,38 +6024,6 @@
     ],
     "file_name": null,
     "file_size": "75 KB",
-    "file_type": "upd"
-  },
-  {
-    "manufacturer": "ARRI",
-    "category": "Lens Control",
-    "product": "EMC-1",
-    "version": "SUP 1.3.0",
-    "release_date": "2018-12-04",
-    "release_precision": "day",
-    "status": "firmware_available",
-    "source_url": "https://www.arri.com/en/technical-service/firmware/overview-of-all-current-software-update-packages/software-update-for-emc-1",
-    "firmware_url": "https://www.arri.com/resource/blob/42934/6ea5fea8adcf94ee257da7fc1e342673/emc1-v0130-data.bin",
-    "firmware_kind": "file",
-    "notes_url": "https://www.arri.com/resource/blob/42932/88ebdeb9d5455f7c7d1dd806f17f974e/emc1-sup0130-releasenotes-data.pdf",
-    "archive_url": null,
-    "summary": "We are proud to announce the release of Software Update Packet (SUP) 1.30 for the ENG Motor Controller EMC-1. This SUP adds support for region settings to the EMC-1 (only available with EMIP300 radio module). We highly recommend updating the EMC-1 to this software update package. Downgrading It is not possible to revert back to a previous release version. Warning: EMC-1 software before SUP 1.30 (EMC1_V0130) should no longer be used and may cause the EMC-1 to malfunction and become inaccessible. If that happens, the EMC-1 can only be made accessible with the support of an ARRI Service Center.",
-    "changelog": [
-      "Support for region settings SUP 1.29 allows setting the radio output power according to regions1. This function is only available with EMC-1 devices containing the EMIP300 type radio module (ARRI white coded radio module with the latest generation chipset). Please check transceiver ID for the installed radio module labeled on the back of the EMC-1 device."
-    ],
-    "features": [],
-    "install": [],
-    "install_version": null,
-    "install_source": null,
-    "previous_versions": [],
-    "guides": [
-      {
-        "label": "EMC-1 Manual",
-        "url": "https://www.arri.com/resource/blob/42930/d3e6d0de8f8929b8e7903bbc0aa4d411/2014-09-10-emc-1-manual-data.pdf"
-      }
-    ],
-    "file_name": null,
-    "file_size": "82 KB",
     "file_type": "upd"
   },
   {
