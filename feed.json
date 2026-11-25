@@ -2239,9 +2239,9 @@
     "release_precision": "day",
     "status": "firmware_available",
     "source_url": "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx3/software/00298561",
-    "firmware_url": "https://support.sony.jp/electronics/support/software/00378858",
-    "firmware_kind": "page",
-    "file_size": null,
+    "firmware_url": "https://support.d-imaging.sony.co.jp/download/NEX/ey8d8a84ee/BODYDATA.DAT?fm=jp",
+    "firmware_kind": "file",
+    "file_size": "811.9 MB",
     "notes_url": null,
     "archive_url": null,
     "changelog": [
